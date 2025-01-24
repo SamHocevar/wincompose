@@ -489,4 +489,16 @@
   <data name="Accessibility" xml:space="preserve">
     <value>Atzessibilidade</value>
   </data>
+  <data name="MustHoldCapsLock" xml:space="preserve">
+    <value>Su Blocu Majùsculu est ativu petzi cando est incarcadu</value>
+  </data>
+  <data name="MustHoldCapsLockToolTip" xml:space="preserve">
+    <value>Lassende su Blocu Majùsculu l'as a disabilitare immediatamente, imbetzes de l'àere a dèpere torrare a incarcare una segunda borta comente a su sòlitu.</value>
+  </data>
+  <data name="RunElevated" xml:space="preserve">
+    <value>Esecuta cun privilègios elevados (racumandadu)</value>
+  </data>
+  <data name="RunElevatedToolTip" xml:space="preserve">
+    <value>Sa cumpositzione no at a funtzionare in unas cantas aplicatziones si WinCompose non s'at a esecutare cun privilègios elevados. Custa optzione mìnimat sas possibilidades chi custu acontessat.</value>
+  </data>
 </root>

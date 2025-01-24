@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.9-dev\n"
 
 #. The user can configure the application language and choose between English, French, etc. and Autodetect
@@ -132,8 +132,9 @@ msgid ""
 "(https://github.com/kragen/xcompose). These sequences may sometimes conflict "
 "with the Xorg ones."
 msgstr ""
-"Koristi 1.000 kombinacija projekta otvorenog koda XCompose (https://github."
-"com/kragen/xcompose). Te se kombinacije ponekad sukobljavaju s onima u Xorg."
+"Koristi 1.000 kombinacija projekta otvorenog koda XCompose (https://"
+"github.com/kragen/xcompose). Te se kombinacije ponekad sukobljavaju s onima "
+"u Xorg."
 
 #: language/i18n/Text.resx:209 ID:UseEmojiRules
 msgid "Use WinCompose emoji sequences"
@@ -708,7 +709,7 @@ msgstr ""
 "Kompozicija neće raditi u nekim programima ako WinCompose ne radi s višim "
 "ovlastima. Ova opcija smanjuje šanse da će se to dogoditi."
 
-#. Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
+#.  Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
 #: language/unicode/Category.resx:121 ID:Control
 msgid "Other, Control"
 msgstr "Ostalo, kontrolni znak"

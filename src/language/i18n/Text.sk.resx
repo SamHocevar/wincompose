@@ -168,6 +168,30 @@
   <data name="KeyReturn" xml:space="preserve">
     <value>Enter</value>
   </data>
+  <data name="Composing" xml:space="preserve">
+    <value>Komponovať</value>
+  </data>
+  <data name="UseXorgRules" xml:space="preserve">
+    <value>Použiť sekvencie projektu Xorg</value>
+  </data>
+  <data name="UseXorgRulesToolTip" xml:space="preserve">
+    <value>Použiť 3,000 komponovacích sekvencií z projektu Xorg (http://ww.x.org/). Tieto sekvencie sú najčastejšie nájdené na štandardnom systéme Linux.</value>
+  </data>
+  <data name="UseXComposeRules" xml:space="preserve">
+    <value>Použiť sekvencie z projektu XCompose</value>
+  </data>
+  <data name="UseXComposeRulesToolTip" xml:space="preserve">
+    <value>Použiť 1,000 komponovacích sekvencií z projektu XCompose s otvoreným zdrojovým kódom (https://github.com/kragen/xcompose/). Tieto sekvencie sa môžu dostať do konfliktu so sekvenciami z projektu Xorg.</value>
+  </data>
+  <data name="UseEmojiRules" xml:space="preserve">
+    <value>Použiť emoji sekvencie z projektu WinCompose</value>
+  </data>
+  <data name="UseEmojiRulesToolTip" xml:space="preserve">
+    <value>Použiť emoji sekvencie poskytnuté autorom WinCompose a jeho prispievateľmi.</value>
+  </data>
+  <data name="DebugWindow" xml:space="preserve">
+    <value>Ladiace okienko</value>
+  </data>
   <data name="ShowSequences" xml:space="preserve">
     <value>Zobraziť sekvencie…</value>
   </data>
@@ -177,11 +201,17 @@
   <data name="Restart" xml:space="preserve">
     <value>Reštartovať</value>
   </data>
+  <data name="DonationPage" xml:space="preserve">
+    <value>Prispejte</value>
+  </data>
   <data name="VisitWebsite" xml:space="preserve">
-    <value>Navštívte stránky</value>
+    <value>Navštívte stránku</value>
   </data>
   <data name="Exit" xml:space="preserve">
     <value>Ukončiť</value>
+  </data>
+  <data name="UnicodeCharacters" xml:space="preserve">
+    <value>Znaky Unicode</value>
   </data>
   <data name="Sequences" xml:space="preserve">
     <value>Sekvencie</value>
@@ -214,10 +244,10 @@
     <value>Ak zadaná sekvencie neexistuje, zrušiť všetky zadané znaky. Predvoleným správaním je zobrazenie zadaných znakov, ako keby sa vôbec nepoužilo tlačidlo Compose.</value>
   </data>
   <data name="BeepOnInvalid" xml:space="preserve">
-    <value>Vytvoriť pípnutie</value>
+    <value>Vydať pípnutie</value>
   </data>
   <data name="BeepOnInvalidToolTip" xml:space="preserve">
-    <value>Ak zadaná sekvencie neexistuje, urobiť systémový zvuk.</value>
+    <value>Ak zadaná sekvencie neexistuje, vydať systémový zvuk.</value>
   </data>
   <data name="Language" xml:space="preserve">
     <value>Jazyk rozhrania:</value>
@@ -241,7 +271,7 @@
     <value>Vkladať nulovú medzeru v aplikáciách Office</value>
   </data>
   <data name="InsertZwspToolTip" xml:space="preserve">
-    <value>Aplikácie Microsoft Office niekedy automaticky zmení písmo dokumentu pri zadávaní určitých znakov Unicode. Táto funkcia vloží za problémové znaky neviditeľný znak, ktorý zabráni tomuto správaniu.</value>
+    <value>Aplikácie Microsoft Office niekedy automaticky zmenia písmo dokumentu pri zadávaní určitých znakov Unicode. Táto funkcia vloží za problémové znaky neviditeľný znak, ktorý zabráni tomuto správaniu.</value>
   </data>
   <data name="EmulateCapsLock" xml:space="preserve">
     <value>Caps Lock napodobíte stlačením obidvoch klávesov Shift</value>
@@ -259,7 +289,7 @@
     <value>Pri CapsLock vždy písať veľké písmená</value>
   </data>
   <data name="CapsLockCapitalizesToolTip" xml:space="preserve">
-    <value>Ak je funkcia CapsLock zapnutá, písanie sekvencie pre písmeno, napríklad &quot;æ&quot;, vždy vytlačí príslušný variant veľkého písmena, v tomto prípade &quot;Æ&quot;.</value>
+    <value>Ak je funkcia CapsLock zapnutá, písanie sekvencie pre písmeno, napríklad &quot;é&quot;, vždy vytlačí príslušný variant veľkého písmena, v tomto prípade &quot;É&quot;.</value>
   </data>
   <data name="Categories" xml:space="preserve">
     <value>Kategórie</value>
@@ -315,6 +345,9 @@
   <data name="License" xml:space="preserve">
     <value>Licencia</value>
   </data>
+  <data name="NeedRestart" xml:space="preserve">
+    <value>WinCompose je potrebné reštartovať pre niektoré zmeny, aby sa účinok.</value>
+  </data>
   <data name="ReportBug" xml:space="preserve">
     <value>Nahlásiť chybu</value>
   </data>
@@ -344,5 +377,8 @@
   </data>
   <data name="SpecialThanks" xml:space="preserve">
     <value>Špeciálne poďakovanie</value>
+  </data>
+  <data name="KeyCompose" xml:space="preserve">
+    <value>Aktuality</value>
   </data>
 </root>

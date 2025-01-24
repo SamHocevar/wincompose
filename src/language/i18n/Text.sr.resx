@@ -153,6 +153,12 @@
   <data name="KeyEscape" xml:space="preserve">
     <value>Esc</value>
   </data>
+  <data name="KeyConvert" xml:space="preserve">
+    <value>Konverzija</value>
+  </data>
+  <data name="KeyNonConvert" xml:space="preserve">
+    <value>Ne-konverzija</value>
+  </data>
   <data name="KeyScroll" xml:space="preserve">
     <value>Scroll Lock</value>
   </data>
@@ -161,6 +167,15 @@
   </data>
   <data name="KeyReturn" xml:space="preserve">
     <value>Ентер</value>
+  </data>
+  <data name="Composing" xml:space="preserve">
+    <value>Kompozicija</value>
+  </data>
+  <data name="UseXorgRules" xml:space="preserve">
+    <value>Koristi sekvence iz projekta Xorg</value>
+  </data>
+  <data name="UseXorgRulesToolTip" xml:space="preserve">
+    <value>Koristi 3000 sekvenci za kompoziciju iz projekta Xorg (http://www.x.org/). Ovo su sekvence koje obično možete naći na standardnom Linux sistemu.</value>
   </data>
   <data name="ShowSequences" xml:space="preserve">
     <value>Прикажи комбинације…</value>

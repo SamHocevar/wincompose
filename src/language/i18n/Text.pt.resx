@@ -489,4 +489,16 @@
   <data name="Accessibility" xml:space="preserve">
     <value>Acessibilidade</value>
   </data>
+  <data name="MustHoldCapsLock" xml:space="preserve">
+    <value>O Caps Lock só está ativo enquanto é mantido em baixo</value>
+  </data>
+  <data name="MustHoldCapsLockToolTip" xml:space="preserve">
+    <value>Ao soltar a tecla Caps Lock, será imediatamente desativada, em vez do comportamento mais padrão de ter que pressioná-la uma segunda vez.</value>
+  </data>
+  <data name="RunElevated" xml:space="preserve">
+    <value>Executar com privilégios elevados (recomendado)</value>
+  </data>
+  <data name="RunElevatedToolTip" xml:space="preserve">
+    <value>A composição não funcionará em algumas aplicações se o WinCompose não for executado com privilégios elevados. Essas opções reduzem as hipóteses de que isso aconteça.</value>
+  </data>
 </root>

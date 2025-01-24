@@ -1,43 +1,48 @@
 [submodule "src/3rdparty/unicode-emoji"]
 	path = src/3rdparty/unicode-emoji
-	url = ../unicode-emoji.git
+	url = ../../samhocevar/unicode-emoji.git
 	branch = master
 	update = merge
 
 [submodule "src/3rdparty/unicode-translation"]
 	path = src/3rdparty/unicode-translation
-	url = ../unicode-translation.git
+	url = ../../samhocevar/unicode-translation.git
 	branch = master
 	update = merge
 
 [submodule "src/3rdparty/xcompose"]
 	path = src/3rdparty/xcompose
-	url = ../../samhocevar-forks/xcompose.git
+	url = ../../kragen/xcompose.git
 
 [submodule "wpf-notifyicon"]
 	path = src/3rdparty/wpf-notifyicon
-	url = ../../samhocevar-forks/wpf-notifyicon.git
-	branch = feature/net30
+	url = ../../hardcodet/wpf-notifyicon.git
+	branch = release/2.0.1
 	update = merge
 
 [submodule "src/3rdparty/libx11"]
 	path = src/3rdparty/libx11
-	url = ../../freedesktop/xorg-libX11.git
+	url = https://gitlab.freedesktop.org/xorg/lib/libx11
 	branch = master
 	update = merge
 
 [submodule "src/3rdparty/xorgproto"]
 	path = src/3rdparty/xorgproto
-	url = ../../freedesktop/xorg-xorgproto.git
+	url = https://gitlab.freedesktop.org/xorg/proto/xorgproto
 	branch = master
 	update = merge
-
-[submodule "src/3rdparty/inserticons"]
-	path = src/3rdparty/inserticons
-	url = ../../samhocevar-forks/inserticons.git
 
 [submodule "src/3rdparty/innosetup"]
 	path = src/3rdparty/innosetup
 	url = ../../jrsoftware/issrc.git
 	branch = main
 	update = merge
+
+[submodule "src/3rdparty/unicodetools"]
+	path = src/3rdparty/unicodetools
+	url = https://github.com/unicode-org/unicodetools
+	branch = main
+	update = merge
+[submodule "src/3rdparty/inserticons"]
+	path = src/3rdparty/inserticons
+	url = https://github.com/dIeGoLi/InsertIcons

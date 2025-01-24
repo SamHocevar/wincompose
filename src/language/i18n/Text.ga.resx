@@ -117,4 +117,388 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AutodetectLanguage" xml:space="preserve">
+    <value>Braith go huathoibríoch</value>
+  </data>
+  <data name="KeyLMenu" xml:space="preserve">
+    <value>Ar chlé Alt</value>
+  </data>
+  <data name="KeyRMenu" xml:space="preserve">
+    <value>Alt ar dheis</value>
+  </data>
+  <data name="KeyLControl" xml:space="preserve">
+    <value>Rialú Clé</value>
+  </data>
+  <data name="KeyRControl" xml:space="preserve">
+    <value>Rialú Ceart</value>
+  </data>
+  <data name="KeyLWin" xml:space="preserve">
+    <value>D'fhág Windows</value>
+  </data>
+  <data name="KeyRWin" xml:space="preserve">
+    <value>Windows ar dheis</value>
+  </data>
+  <data name="KeyCapital" xml:space="preserve">
+    <value>Caps Lock</value>
+  </data>
+  <data name="KeyNumLock" xml:space="preserve">
+    <value>Líon Lock</value>
+  </data>
+  <data name="KeyPause" xml:space="preserve">
+    <value>Sos</value>
+  </data>
+  <data name="KeyApps" xml:space="preserve">
+    <value>Roghchlár</value>
+  </data>
+  <data name="KeyEscape" xml:space="preserve">
+    <value>Éalú</value>
+  </data>
+  <data name="KeyConvert" xml:space="preserve">
+    <value>Comhshó</value>
+  </data>
+  <data name="KeyNonConvert" xml:space="preserve">
+    <value>Neamh-chomhshó</value>
+  </data>
+  <data name="KeyScroll" xml:space="preserve">
+    <value>Scrollaigh Lock</value>
+  </data>
+  <data name="KeySpace" xml:space="preserve">
+    <value>Spás</value>
+  </data>
+  <data name="KeyReturn" xml:space="preserve">
+    <value>Fill ar ais</value>
+  </data>
+  <data name="Composing" xml:space="preserve">
+    <value>Cumadóireacht</value>
+  </data>
+  <data name="UseXorgRules" xml:space="preserve">
+    <value>Úsáid seichimh ó thionscadal Xorg</value>
+  </data>
+  <data name="UseXorgRulesToolTip" xml:space="preserve">
+    <value>Úsáid na 3,000 seicheamh cumadóireachta ó thionscadal Xorg (http://www.x.org/). Seo iad na seichimh is coitianta a fhaightear ar chóras caighdeánach Linux.</value>
+  </data>
+  <data name="UseXComposeRules" xml:space="preserve">
+    <value>Úsáid seichimh ón tionscadal XCompose</value>
+  </data>
+  <data name="UseXComposeRulesToolTip" xml:space="preserve">
+    <value>Úsáid na 1,000 seicheamh cumadóireachta ó thionscadal foinse oscailte XCompose (https://github.com/kragen/xcompose). Uaireanta bíonn na seichimh seo ag teacht salach ar na cinn Xorg.</value>
+  </data>
+  <data name="UseEmojiRules" xml:space="preserve">
+    <value>Bain úsáid as sraitheanna emoji WinCompose</value>
+  </data>
+  <data name="UseEmojiRulesToolTip" xml:space="preserve">
+    <value>Úsáid na seichimh cumadóireachta do Emoji a chuir an t-údar WinCompose agus na rannpháirtithe ar fáil.</value>
+  </data>
+  <data name="DebugWindow" xml:space="preserve">
+    <value>Fuinneog Dífhabhtaithe</value>
+  </data>
+  <data name="ShowSequences" xml:space="preserve">
+    <value>Taispeáin Seichimh…</value>
+  </data>
+  <data name="Disable" xml:space="preserve">
+    <value>Díchumasaigh</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>Atosaigh</value>
+  </data>
+  <data name="DonationPage" xml:space="preserve">
+    <value>Leathanach Síntiúis</value>
+  </data>
+  <data name="VisitWebsite" xml:space="preserve">
+    <value>Tabhair cuairt ar an Láithreán Gréasáin</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Scoir</value>
+  </data>
+  <data name="UnicodeCharacters" xml:space="preserve">
+    <value>Carachtair Unicode</value>
+  </data>
+  <data name="Sequences" xml:space="preserve">
+    <value>Seichimh</value>
+  </data>
+  <data name="SwapOnInvalid" xml:space="preserve">
+    <value>Déan iarracht an dá eochair a mhalartú</value>
+  </data>
+  <data name="SwapOnInvalidToolTip" xml:space="preserve">
+    <value>Déan iarracht eochracha seicheamh dhá eochair a mhalartú. Mar shampla, mura seicheamh bailí é Cum E A, bain triail as Cum A E ina ionad sin.</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Scagaire Cuardaigh:</value>
+  </data>
+  <data name="ComposeKey" xml:space="preserve">
+    <value>Cum Eochair:</value>
+  </data>
+  <data name="ComposeKeyToolTip" xml:space="preserve">
+    <value>Roghnaigh an eochair ba cheart a bheith mar eochair Cum.</value>
+  </data>
+  <data name="ResetTimeout" xml:space="preserve">
+    <value>Athshocraigh teorainn ama</value>
+  </data>
+  <data name="UnicodeInput" xml:space="preserve">
+    <value>Ard-ionchur Unicode</value>
+  </data>
+  <data name="UnicodeInputToolTip" xml:space="preserve">
+    <value>Cumasaigh ionchur Unicode do gach carachtar, fiú iad siúd nach bhfuil aon seicheamh cumadóireachta sainithe. Mar shampla, aschuirfidh an seicheamh seo a leanas an carachtar U+1A3F: Cum U 1 A 3 F Iontráil</value>
+  </data>
+  <data name="InvalidSequences" xml:space="preserve">
+    <value>Ar sheichimh neamhbhailí</value>
+  </data>
+  <data name="CaseInsensitive" xml:space="preserve">
+    <value>Fill ar chluichí cás-neamhíogair</value>
+  </data>
+  <data name="CaseInsensitiveToolTip" xml:space="preserve">
+    <value>Mura bhfuil an seicheamh iontrála ann, ach go bhfuil ceann ann nach bhfuil éagsúil ach de réir cáis, ceartaigh go huathoibríoch é.</value>
+  </data>
+  <data name="DiscardOnInvalid" xml:space="preserve">
+    <value>Caith amach gach carachtar clóscríofa</value>
+  </data>
+  <data name="DiscardOnInvalidToolTip" xml:space="preserve">
+    <value>Mura bhfuil an seicheamh iontrála ann, caith amach na carachtair go léir a bhí clóscríofa. Is é an t-iompar réamhshocraithe ná na carachtair a aschur amhail is nár úsáideadh an eochair chumadóireachta.</value>
+  </data>
+  <data name="BeepOnInvalid" xml:space="preserve">
+    <value>Scaoil bíp</value>
+  </data>
+  <data name="BeepOnInvalidToolTip" xml:space="preserve">
+    <value>Mura bhfuil an seicheamh iontrála ann, scaoil fuaim chórais.</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Teanga an chomhéadain:</value>
+  </data>
+  <data name="LanguageToolTip" xml:space="preserve">
+    <value>Roghnaigh an teanga a úsáideann WinCompose don chomhéadan. De réir réamhshocraithe úsáidtear teanga an chórais oibriúcháin.</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Dún</value>
+  </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Cóipeáil chuig an ngearrthaisce</value>
+  </data>
+  <data name="Emoji" xml:space="preserve">
+    <value>Emoji</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>Cuir iarratas isteach</value>
+  </data>
+  <data name="KeepOriginalKey" xml:space="preserve">
+    <value>Coinnigh bun-iompraíocht bhunaidh</value>
+  </data>
+  <data name="KeepOriginalKeyToolTip" xml:space="preserve">
+    <value>Insíonn sé seo do WinCompose an iarracht is fearr a dhéanamh chun iompar na heochrach bunaidh a choinneáil. Mar shampla, oibreoidh an t-aicearra Alt-Tab fós fiú má úsáidtear Alt mar an eochair chumadóireachta.</value>
+  </data>
+  <data name="InsertZwsp" xml:space="preserve">
+    <value>Cuir isteach spásanna ar leithead nialasach in aipeanna Office</value>
+  </data>
+  <data name="InsertZwspToolTip" xml:space="preserve">
+    <value>Uaireanta athraíonn feidhmchláir Microsoft Office cló an doiciméid ar an eitilt agus carachtair Unicode áirithe á n-iontráil. Cuireann an ghné seo isteach carachtar dofheicthe tar éis an charachtair Unicode chun oibriú timpeall an fhabht.</value>
+  </data>
+  <data name="EmulateCapsLock" xml:space="preserve">
+    <value>Déan aithris ar Caps Lock ag baint úsáide as an dá eochair Shift</value>
+  </data>
+  <data name="EmulateCapsLockToolTip" xml:space="preserve">
+    <value>Má úsáidtear Caps Lock mar an eochair chumadóireachta, ní bheidh iompar bunaidh na heochrach ar fáil. Ligeann an ghné seo Caps Lock a chur ar siúl ach an dá eochair Shift a bhrú ag an am céanna.</value>
+  </data>
+  <data name="ShiftDisablesCapsLock" xml:space="preserve">
+    <value>Díchumasaíonn eochair Shift Caps Lock</value>
+  </data>
+  <data name="ShiftDisablesCapsLockToolTip" xml:space="preserve">
+    <value>Má úsáidtear Caps Lock mar an eochair chumadóireachta, ní bheidh iompar bunaidh na heochrach ar fáil. Ligeann an ghné seo Caps Lock a chasadh as ach an eochair Shift a bhrú.</value>
+  </data>
+  <data name="CapsLockCapitalizes" xml:space="preserve">
+    <value>Déanann Caps Lock caipitliú ar litreacha i gcónaí</value>
+  </data>
+  <data name="CapsLockCapitalizesToolTip" xml:space="preserve">
+    <value>Nuair a bhíonn Caps Lock ar siúl, beidh an litir chaipitlithe chomhfhreagrach aschuir i gcónaí nuair a chlóscríobhtar litir ghéaraithe ar nós “é”, sa chás seo “É”.</value>
+  </data>
+  <data name="Categories" xml:space="preserve">
+    <value>Catagóirí</value>
+  </data>
+  <data name="InSelectedCategories" xml:space="preserve">
+    <value>I gcatagóirí roghnaithe</value>
+  </data>
+  <data name="Options" xml:space="preserve">
+    <value>Roghanna - WinCompose</value>
+  </data>
+  <data name="ShowOptions" xml:space="preserve">
+    <value>Roghanna…</value>
+  </data>
+  <data name="TrayToolTip" xml:space="preserve">
+    <value>WinCompose v{2} ar {0} ({1} seicheamh)</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>Ginearálta</value>
+  </data>
+  <data name="Behavior" xml:space="preserve">
+    <value>Iompar</value>
+  </data>
+  <data name="WindowTitle" xml:space="preserve">
+    <value>Seichimh - WinCompose</value>
+  </data>
+  <data name="UserMacros" xml:space="preserve">
+    <value>Macraí atá sainithe ag an úsáideoir</value>
+  </data>
+  <data name="DisabledToolTip" xml:space="preserve">
+    <value>Tá WinCompose díchumasaithe</value>
+  </data>
+  <data name="KeyInsert" xml:space="preserve">
+    <value>Cuir isteach</value>
+  </data>
+  <data name="TestTyping" xml:space="preserve">
+    <value>Clóscríobh Tástáil</value>
+  </data>
+  <data name="Tweaks" xml:space="preserve">
+    <value>Mionathruithe</value>
+  </data>
+  <data name="DelaySeconds" xml:space="preserve">
+    <value>{0} soicind</value>
+  </data>
+  <data name="About" xml:space="preserve">
+    <value>Maidir</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>Íoslódáil WinCompose {0}</value>
+  </data>
+  <data name="AboutBoxTitle" xml:space="preserve">
+    <value>Maidir WinCompose</value>
+  </data>
+  <data name="Programming" xml:space="preserve">
+    <value>Ríomhchlárú</value>
+  </data>
+  <data name="Translators" xml:space="preserve">
+    <value>Aistriúchán</value>
+  </data>
+  <data name="Authors" xml:space="preserve">
+    <value>Údair</value>
+  </data>
+  <data name="License" xml:space="preserve">
+    <value>Ceadúnas</value>
+  </data>
+  <data name="NeedRestart" xml:space="preserve">
+    <value>Ní mór WinCompose a atosú le go dtiocfaidh roinnt athruithe i bhfeidhm.</value>
+  </data>
+  <data name="ReportBug" xml:space="preserve">
+    <value>Tuairiscigh fabht</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Cabhrú</value>
+  </data>
+  <data name="UpdatesToolTip" xml:space="preserve">
+    <value>Tá nuashonruithe ar fáil.</value>
+  </data>
+  <data name="UserDefinedSequences" xml:space="preserve">
+    <value>Seichimh úsáideora-shainithe</value>
+  </data>
+  <data name="UserDefinedSequencesEdit" xml:space="preserve">
+    <value>Cuir in eagar</value>
+  </data>
+  <data name="UserDefinedSequencesReload" xml:space="preserve">
+    <value>Athlódáil</value>
+  </data>
+  <data name="AllowInjected" xml:space="preserve">
+    <value>Ceadaigh Eochracha Instealladh</value>
+  </data>
+  <data name="AllowInjectedToolTip" xml:space="preserve">
+    <value>Ná déan neamhaird d'eochracha a sheolann bogearraí eile ar nós AutoHotkey nó Synergy</value>
+  </data>
+  <data name="KeyPrint" xml:space="preserve">
+    <value>Scáileán Priontála</value>
+  </data>
+  <data name="KeyDisabled" xml:space="preserve">
+    <value>Faoi mhíchumas</value>
+  </data>
+  <data name="CheckUpdates" xml:space="preserve">
+    <value>Seiceáil go huathoibríoch le haghaidh nuashonruithe</value>
+  </data>
+  <data name="CheckUpdatesToolTip" xml:space="preserve">
+    <value>Má tá sé cumasaithe, nascfaidh WinCompose leis an Idirlíon go tráthrialta chun seiceáil le haghaidh leaganacha nua. Ní shuiteáiltear nuashonruithe go huathoibríoch.</value>
+  </data>
+  <data name="KeepIconVisible" xml:space="preserve">
+    <value>Déan iarracht deilbhín an limistéir fhógra a choinneáil le feiceáil i gcónaí</value>
+  </data>
+  <data name="KeepIconVisibleToolTip" xml:space="preserve">
+    <value>De réir réamhshocraithe, bainfidh Windows an deilbhín as an limistéar fógra tar éis tamaill ghairid. Déanann an rogha seo iarracht é a choinneáil le feiceáil i gcónaí.</value>
+  </data>
+  <data name="ChangeComposeKey" xml:space="preserve">
+    <value>Athraigh…</value>
+  </data>
+  <data name="CaptureComposeKey" xml:space="preserve">
+    <value>Brúigh eochair le húsáid mar d'eochair cumadóireachta.</value>
+  </data>
+  <data name="AddToFavorites" xml:space="preserve">
+    <value>Cuir le ceanáin</value>
+  </data>
+  <data name="DisableIcon" xml:space="preserve">
+    <value>Díchumasaigh deilbhín an limistéir fhógra</value>
+  </data>
+  <data name="DisableIconToolTip" xml:space="preserve">
+    <value>Má tá sé cumasaithe, ní thaispeánfaidh WinCompose deilbhín sa limistéar fógra a thuilleadh. Is é an t-aon bhealach chun comhéadan WinCompose a oscailt ansin ná trí na hiontrálacha “WinCompose Settings” agus “WinCompose Sequences” sa roghchlár tosaithe.</value>
+  </data>
+  <data name="KeyHome" xml:space="preserve">
+    <value>Baile</value>
+  </data>
+  <data name="KeyEnd" xml:space="preserve">
+    <value>Deireadh</value>
+  </data>
+  <data name="KeyTab" xml:space="preserve">
+    <value>Cluaisín</value>
+  </data>
+  <data name="NoTimeout" xml:space="preserve">
+    <value>Gan teorainn ama</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>Casta</value>
+  </data>
+  <data name="IgnoreRegex" xml:space="preserve">
+    <value>Déan neamhaird de fhuinneoga a mheaitseálann an regex seo:</value>
+  </data>
+  <data name="IgnoreRegexToolTip" xml:space="preserve">
+    <value>Díchumasófar WinCompose go hiomlán nuair a mheaitseálann an rang fuinneoige reatha nó ainm na fuinneoige an slonn rialta seo.</value>
+  </data>
+  <data name="AlwaysCompose" xml:space="preserve">
+    <value>Tá eochair chum malartach i gcónaí Cum</value>
+  </data>
+  <data name="AlwaysComposeToolTip" xml:space="preserve">
+    <value>Má tá sé cumasaithe, déileálfar le gach eochair cumadóireachta mar Chumadóireacht i seicheamh. De réir réamhshocraithe, ní fheidhmeoidh ach an chéad eochair brúite mar Cum, agus coimeádfaidh eochracha cumadóireachta malartacha a ról bunaidh.</value>
+  </data>
+  <data name="SpecialThanks" xml:space="preserve">
+    <value>Buíochas Speisialta</value>
+  </data>
+  <data name="RemoveFromFavorites" xml:space="preserve">
+    <value>Bain ó cheanáin</value>
+  </data>
+  <data name="Favorites" xml:space="preserve">
+    <value>Ceanáin</value>
+  </data>
+  <data name="TimeoutToolTip" xml:space="preserve">
+    <value>Má tá sé socraithe, cuirfear aon seicheamh cumadóireachta ar ceal tar éis moille áirithe mura n-aimsítear aon ghníomhaíocht mhéarchláir.</value>
+  </data>
+  <data name="KeyboardLed" xml:space="preserve">
+    <value>Méarchlár LED</value>
+  </data>
+  <data name="KeyboardLedToolTip" xml:space="preserve">
+    <value>Má tá sé socraithe, déanfar an méarchlár LED comhfhreagrach a lasadh nuair a bhíonn seicheamh cumadóireachta ar siúl.</value>
+  </data>
+  <data name="KeyCompose" xml:space="preserve">
+    <value>Cum</value>
+  </data>
+  <data name="AutoLaunch" xml:space="preserve">
+    <value>Seoladh WinCompose ar logáil isteach</value>
+  </data>
+  <data name="AutoLaunchToolTip" xml:space="preserve">
+    <value>Má tá sé socraithe, cuirfear tús le WinCompose nuair a logálann an t-úsáideoir isteach.</value>
+  </data>
+  <data name="Accessibility" xml:space="preserve">
+    <value>Inrochtaineacht</value>
+  </data>
+  <data name="MustHoldCapsLock" xml:space="preserve">
+    <value>Ní bhíonn Caps Lock gníomhach ach amháin agus é á choinneáil síos</value>
+  </data>
+  <data name="MustHoldCapsLockToolTip" xml:space="preserve">
+    <value>Má scaoiltear an eochair Caps Lock díchumasófar í láithreach, in ionad an iompraíochta níos caighdeánaí a bhaineann le brú a chur air an dara huair.</value>
+  </data>
+  <data name="RunElevated" xml:space="preserve">
+    <value>Rith le pribhléidí ardaithe (molta)</value>
+  </data>
+  <data name="RunElevatedToolTip" xml:space="preserve">
+    <value>Ní oibreoidh comhdhéanamh i roinnt feidhmchlár mura ritheann WinCompose le pribhléidí ardaithe. Laghdaíonn na roghanna seo an seans go dtarlóidh sé seo.</value>
+  </data>
 </root>

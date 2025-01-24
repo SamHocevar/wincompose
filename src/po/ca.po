@@ -118,8 +118,8 @@ msgid ""
 "Use the 3,000 compose sequences from the Xorg project (http://www.x.org/). "
 "These are the sequences most commonly found on a standard Linux system."
 msgstr ""
-"Usa les 3.000 seqüències de composició del projecte Xorg (http://www.x."
-"org/). Són seqüències que habitualment es troben en el sistema Linux "
+"Usa les 3.000 seqüències de composició del projecte Xorg (http://"
+"www.x.org/). Són seqüències que habitualment es troben en el sistema Linux "
 "estàndard."
 
 #: language/i18n/Text.resx:201 ID:UseXComposeRules
@@ -718,7 +718,7 @@ msgstr ""
 "s'executa amb privilegis elevats. Aquesta opció redueix les possibilitats "
 "que això passi."
 
-#. Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
+#.  Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
 #: language/unicode/Category.resx:121 ID:Control
 msgid "Other, Control"
 msgstr "Altrs, control"

@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AutodetectLanguage" xml:space="preserve">
-    <value>Autodetecţie</value>
+    <value>Detecție automată</value>
   </data>
   <data name="KeyLMenu" xml:space="preserve">
     <value>Alt stânga</value>
@@ -145,102 +145,360 @@
     <value>Num Lock</value>
   </data>
   <data name="KeyPause" xml:space="preserve">
-    <value>Pause</value>
+    <value>Pause/Break</value>
   </data>
   <data name="KeyApps" xml:space="preserve">
-    <value>Menu</value>
+    <value>Meniu</value>
   </data>
   <data name="KeyEscape" xml:space="preserve">
     <value>Esc</value>
   </data>
   <data name="KeyConvert" xml:space="preserve">
-    <value>Convertire</value>
+    <value>Conversie</value>
   </data>
   <data name="KeyNonConvert" xml:space="preserve">
-    <value>Neconvertire</value>
+    <value>Non-conversie</value>
   </data>
   <data name="KeyScroll" xml:space="preserve">
     <value>Scroll Lock</value>
   </data>
   <data name="KeySpace" xml:space="preserve">
-    <value>Space</value>
+    <value>Spațiu</value>
   </data>
   <data name="KeyReturn" xml:space="preserve">
     <value>Return</value>
   </data>
   <data name="Composing" xml:space="preserve">
-    <value>Compositie</value>
+    <value>Compunere</value>
   </data>
   <data name="UseXorgRules" xml:space="preserve">
     <value>Folosește secvențe din proiectul Xorg</value>
   </data>
   <data name="UseXorgRulesToolTip" xml:space="preserve">
-    <value>Folosește cele 3.000 de secvențe din proiectul Xorg (http://www.x.org/). Aceste secvențe sunt cele mai comune pe un sistem standard Linux.</value>
+    <value>Folosește cele 3.000 de secvențe din proiectul Xorg (http://www.x.org/). Aceste secvențe se găsesc de obicei pe sistemele standard Linux.</value>
   </data>
   <data name="UseXComposeRules" xml:space="preserve">
-    <value>Folosește sectențe din proiectul XCompose</value>
+    <value>Folosește secvențe din proiectul XCompose</value>
   </data>
   <data name="UseXComposeRulesToolTip" xml:space="preserve">
-    <value>Folosește cele 1.000 de secvențe de compozitie din proiectul opensource XCompose (https://github.com/kragen/xcompose). Aceste secvențe pot uneori avea conflicte cu cele din Xorg.</value>
+    <value>Folosește cele 1.000 de secvențe de compunere din proiectul cu sursă deschisă XCompose (https://github.com/kragen/xcompose). Aceste secvențe pot uneori intra în conflict cu cele din Xorg.</value>
   </data>
   <data name="UseEmojiRules" xml:space="preserve">
-    <value>Folosește secventele emoji WinCompose</value>
+    <value>Folosește secvențele emoji ale WinCompose</value>
   </data>
   <data name="UseEmojiRulesToolTip" xml:space="preserve">
-    <value>Folosește secvențele de compoziție pentru Emoji prevăzute de catre autorii și contribuitorii WinCompose.</value>
+    <value>Folosește secvențele de compunere pentru Emoji prevăzute de către autorii și contribuitorii WinCompose.</value>
   </data>
   <data name="DebugWindow" xml:space="preserve">
-    <value>Fereastră Depanare</value>
+    <value>Fereastră depanare</value>
   </data>
   <data name="ShowSequences" xml:space="preserve">
-    <value>Arată secvenţe…</value>
+    <value>Arată secvențele…</value>
   </data>
   <data name="Disable" xml:space="preserve">
     <value>Dezactivează</value>
   </data>
   <data name="Restart" xml:space="preserve">
-    <value>Restartează</value>
+    <value>Repornește</value>
   </data>
   <data name="DonationPage" xml:space="preserve">
-    <value>Pagina de donații</value>
+    <value>Pagină de donații</value>
   </data>
   <data name="VisitWebsite" xml:space="preserve">
-    <value>Vizitează site</value>
+    <value>Vizitează site-ul</value>
   </data>
   <data name="Exit" xml:space="preserve">
-    <value>Ieşire</value>
+    <value>Ieșire</value>
   </data>
   <data name="UnicodeCharacters" xml:space="preserve">
     <value>Caractere Unicode</value>
   </data>
   <data name="Sequences" xml:space="preserve">
-    <value>Secvenţe</value>
+    <value>Secvențe</value>
   </data>
   <data name="SwapOnInvalid" xml:space="preserve">
-    <value>Încearcă să schimbi locul celor două taste</value>
+    <value>Încearcă să inversezi cele două taste</value>
   </data>
   <data name="SwapOnInvalidToolTip" xml:space="preserve">
-    <value>Încearcă să schimbe locul tastelor dintr-o secvență de două taste. Spre exemplu, dacă Compose E A nu e o secvență corectă, incearcă A E în schimb.</value>
+    <value>Încearcă să inversezi locul tastelor dintr-o secvență de două taste. Spre exemplu, dacă Compose E A nu este o secvență corectă, încearcă A E în schimb.</value>
   </data>
   <data name="Search" xml:space="preserve">
-    <value>Filtru căutare:</value>
+    <value>Filtru de căutare:</value>
   </data>
   <data name="ComposeKey" xml:space="preserve">
-    <value>Cheie Compose:</value>
+    <value>Tastă de compunere:</value>
   </data>
   <data name="ComposeKeyToolTip" xml:space="preserve">
-    <value>Selectați tasta corespunzătoare pentru Compose.</value>
+    <value>Alege tasta care va fi folosită pentru funcția de compunere.</value>
   </data>
   <data name="ResetTimeout" xml:space="preserve">
-    <value>Timpul de resetare</value>
+    <value>Timp până la anulare</value>
   </data>
   <data name="UnicodeInput" xml:space="preserve">
-    <value>Intrare Unicode Avansată</value>
+    <value>Intrare Unicode avansată</value>
   </data>
   <data name="UnicodeInputToolTip" xml:space="preserve">
-    <value>Activați intrarea Unicode pentru toate caracterele, chiar și cele care nu au o secvență de compoziție definită. Spre exemplu, următoarea secvență va produce caracterul U+1A3F: Compose U 1 A 3 F Enter</value>
+    <value>Activează intrarea Unicode pentru toate caracterele, chiar și pentru cele cărora nu le-a fost definită o secvență de compunere. Spre exemplu, următoarea secvență va produce caracterul U+1A3F: Compose U 1 A 3 F Enter</value>
   </data>
   <data name="InvalidSequences" xml:space="preserve">
-    <value>Pentru secvențe nevalide</value>
+    <value>În cazul unei secvențe nevalide</value>
+  </data>
+  <data name="CaseInsensitive" xml:space="preserve">
+    <value>Reîncearcă fără să ții cont de diferențe între majuscule și minuscule</value>
+  </data>
+  <data name="CaseInsensitiveToolTip" xml:space="preserve">
+    <value>În cazul în care secvența introdusă nu există, dar există una care diferă doar prin diferențe între majuscule/minuscule, folosește-o pe cea din urmă.</value>
+  </data>
+  <data name="DiscardOnInvalid" xml:space="preserve">
+    <value>Ignoră toate caracterele introduse</value>
+  </data>
+  <data name="DiscardOnInvalidToolTip" xml:space="preserve">
+    <value>Dacă secvența introdusă nu există, elimină toate caracterele care au fost tastate. Comportamentul implicit este de a afișa caracterele ca și cum tasta de compunere nu ar fi fost folosită.</value>
+  </data>
+  <data name="BeepOnInvalid" xml:space="preserve">
+    <value>Emite un sunet</value>
+  </data>
+  <data name="BeepOnInvalidToolTip" xml:space="preserve">
+    <value>Dacă secvența introdusă nu există, emite un sunet de sistem.</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Limba interfeței:</value>
+  </data>
+  <data name="LanguageToolTip" xml:space="preserve">
+    <value>Alege limba folosită de interfața WinCompose. În mod implicit se folosește limba sistemului de operare.</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Închide</value>
+  </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Copiază în clipboard</value>
+  </data>
+  <data name="Emoji" xml:space="preserve">
+    <value>Emoji</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>Aplică</value>
+  </data>
+  <data name="KeepOriginalKey" xml:space="preserve">
+    <value>Păstrează comportamentul original al tastei de compunere</value>
+  </data>
+  <data name="KeepOriginalKeyToolTip" xml:space="preserve">
+    <value>Acest lucru îi spune lui WinCompose să facă tot posibilul pentru a păstra comportamentul original al tastei folosite pentru compunere. De exemplu, comanda rapidă Alt-Tab va funcționa în continuare chiar dacă Alt este utilizată ca tastă de compunere.</value>
+  </data>
+  <data name="InsertZwsp" xml:space="preserve">
+    <value>Introdu spații cu lățime zero în aplicațiile Office</value>
+  </data>
+  <data name="InsertZwspToolTip" xml:space="preserve">
+    <value>Aplicațiile Microsoft Office modifică uneori din mers fontul documentului atunci când se introduc anumite caractere Unicode. Această caracteristică inserează un caracter invizibil după caracterul Unicode pentru a rezolva problema.</value>
+  </data>
+  <data name="EmulateCapsLock" xml:space="preserve">
+    <value>Emulează funcția Caps Lock folosind ambele taste Shift</value>
+  </data>
+  <data name="EmulateCapsLockToolTip" xml:space="preserve">
+    <value>În cazul în care Caps Lock este utilizată ca tastă de compunere, comportamentul original al tastei devine indisponibil. Această funcție permite activarea Caps Lock prin apăsarea simultană a ambelor taste Shift.</value>
+  </data>
+  <data name="ShiftDisablesCapsLock" xml:space="preserve">
+    <value>Tasta Shift dezactivează Caps Lock</value>
+  </data>
+  <data name="ShiftDisablesCapsLockToolTip" xml:space="preserve">
+    <value>În cazul în care Caps Lock este utilizată ca tastă de compunere, comportamentul original al tastei devine indisponibil. Această funcție permite dezactivarea Caps Lock prin apăsarea tastei Shift.</value>
+  </data>
+  <data name="CapsLockCapitalizes" xml:space="preserve">
+    <value>Caps Lock scrie întotdeauna literele cu majuscule</value>
+  </data>
+  <data name="CapsLockCapitalizesToolTip" xml:space="preserve">
+    <value>Atunci când Caps Lock este activat, când se tastează o literă accentuată, cum ar fi „é”, se va afișa întotdeauna majuscula corespunzătoare a acelei literei, în acest caz „É”.</value>
+  </data>
+  <data name="Categories" xml:space="preserve">
+    <value>Categorii</value>
+  </data>
+  <data name="InSelectedCategories" xml:space="preserve">
+    <value>În categoriile selectate</value>
+  </data>
+  <data name="Options" xml:space="preserve">
+    <value>Opțiuni — WinCompose</value>
+  </data>
+  <data name="ShowOptions" xml:space="preserve">
+    <value>Opțiuni…</value>
+  </data>
+  <data name="TrayToolTip" xml:space="preserve">
+    <value>WinCompose v{2} pe tasta {0} (număr de secvențe: {1})</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="Behavior" xml:space="preserve">
+    <value>Comportament</value>
+  </data>
+  <data name="WindowTitle" xml:space="preserve">
+    <value>Secvențe — WinCompose</value>
+  </data>
+  <data name="UserMacros" xml:space="preserve">
+    <value>Macrocomenzi definite de utilizator</value>
+  </data>
+  <data name="DisabledToolTip" xml:space="preserve">
+    <value>WinCompose este dezactivat</value>
+  </data>
+  <data name="KeyInsert" xml:space="preserve">
+    <value>Insert</value>
+  </data>
+  <data name="TestTyping" xml:space="preserve">
+    <value>Încearcă să tastezi aici</value>
+  </data>
+  <data name="Tweaks" xml:space="preserve">
+    <value>Ajustări</value>
+  </data>
+  <data name="DelaySeconds" xml:space="preserve">
+    <value>{0} sec.</value>
+  </data>
+  <data name="About" xml:space="preserve">
+    <value>Despre program</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>Descarcă WinCompose {0}</value>
+  </data>
+  <data name="AboutBoxTitle" xml:space="preserve">
+    <value>Despre WinCompose</value>
+  </data>
+  <data name="Programming" xml:space="preserve">
+    <value>Programatori</value>
+  </data>
+  <data name="Translators" xml:space="preserve">
+    <value>Traducători</value>
+  </data>
+  <data name="Authors" xml:space="preserve">
+    <value>Autori</value>
+  </data>
+  <data name="License" xml:space="preserve">
+    <value>Licență</value>
+  </data>
+  <data name="NeedRestart" xml:space="preserve">
+    <value>WinCompose trebuie să fie repornit pentru ca anumite modificări să fie aplicate.</value>
+  </data>
+  <data name="ReportBug" xml:space="preserve">
+    <value>Raportează o problemă</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Ajutor</value>
+  </data>
+  <data name="UpdatesToolTip" xml:space="preserve">
+    <value>Există actualizări disponibile.</value>
+  </data>
+  <data name="UserDefinedSequences" xml:space="preserve">
+    <value>Secvențe definite de utilizator</value>
+  </data>
+  <data name="UserDefinedSequencesEdit" xml:space="preserve">
+    <value>Modificare</value>
+  </data>
+  <data name="UserDefinedSequencesReload" xml:space="preserve">
+    <value>Reîncărcare</value>
+  </data>
+  <data name="AllowInjected" xml:space="preserve">
+    <value>Acceptă apăsări de tastă emulate</value>
+  </data>
+  <data name="AllowInjectedToolTip" xml:space="preserve">
+    <value>Nu ignora apăsările de tastă trimise de alte programe precum AutoHotkey sau Synergy</value>
+  </data>
+  <data name="KeyPrint" xml:space="preserve">
+    <value>Prt Scrn</value>
+  </data>
+  <data name="KeyDisabled" xml:space="preserve">
+    <value>Dezactivat</value>
+  </data>
+  <data name="CheckUpdates" xml:space="preserve">
+    <value>Verifică automat dacă există actualizări</value>
+  </data>
+  <data name="CheckUpdatesToolTip" xml:space="preserve">
+    <value>Dacă este activat, WinCompose se va conecta la Internet la intervale regulate pentru a verifica dacă există versiuni noi ale programului. Actualizările nu vor fi instalate automat.</value>
+  </data>
+  <data name="KeepIconVisible" xml:space="preserve">
+    <value>Încearcă să păstrezi pictograma din bara de activități mereu vizibilă</value>
+  </data>
+  <data name="KeepIconVisibleToolTip" xml:space="preserve">
+    <value>În mod implicit, Windows va elimina pictograma din bara de activități după o perioadă scurtă de timp. Această opțiune încearcă să o mențină mereu vizibilă.</value>
+  </data>
+  <data name="ChangeComposeKey" xml:space="preserve">
+    <value>Modifică…</value>
+  </data>
+  <data name="CaptureComposeKey" xml:space="preserve">
+    <value>Te rog să apeși pe o tastă pentru a o alege drept tastă de compunere.</value>
+  </data>
+  <data name="AddToFavorites" xml:space="preserve">
+    <value>Adaugă la favorite</value>
+  </data>
+  <data name="DisableIcon" xml:space="preserve">
+    <value>Dezactivează pictograma din bara de activități</value>
+  </data>
+  <data name="DisableIconToolTip" xml:space="preserve">
+    <value>Dacă este activat, WinCompose nu va mai afișa o pictogramă în bara de activități. În acel caz, singura modalitate de a deschide interfața WinCompose va fi prin intermediul elementelor „WinCompose Settings” și „WinCompose Sequences” din meniul Start.</value>
+  </data>
+  <data name="KeyHome" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="KeyEnd" xml:space="preserve">
+    <value>End</value>
+  </data>
+  <data name="KeyTab" xml:space="preserve">
+    <value>Tab</value>
+  </data>
+  <data name="NoTimeout" xml:space="preserve">
+    <value>Fără timp</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>Avansat</value>
+  </data>
+  <data name="IgnoreRegex" xml:space="preserve">
+    <value>Ignoră ferestrele care se potrivesc acestei expresii regulate (regex):</value>
+  </data>
+  <data name="IgnoreRegexToolTip" xml:space="preserve">
+    <value>WinCompose va fi complet dezactivat atunci când clasa sau numele ferestrei curente se potrivește cu această expresie regulată.</value>
+  </data>
+  <data name="AlwaysCompose" xml:space="preserve">
+    <value>Tasta alternativă de compunere funcționează mereu</value>
+  </data>
+  <data name="AlwaysComposeToolTip" xml:space="preserve">
+    <value>Dacă este activat, toate tastele de compunere vor fi tratate ca având funcția de compunere într-o secvență. În mod implicit, numai prima tastă apăsată va acționa drept compunere, iar tastele de compunere alternative își vor păstra rolul inițial.</value>
+  </data>
+  <data name="SpecialThanks" xml:space="preserve">
+    <value>Mulțumiri speciale</value>
+  </data>
+  <data name="RemoveFromFavorites" xml:space="preserve">
+    <value>Înlătură de la favorite</value>
+  </data>
+  <data name="Favorites" xml:space="preserve">
+    <value>Favorite</value>
+  </data>
+  <data name="TimeoutToolTip" xml:space="preserve">
+    <value>Dacă este setat, orice secvență de compunere va fi anulată după o anumită perioadă, dacă nu se detectează nicio activitate de la tastatură.</value>
+  </data>
+  <data name="KeyboardLed" xml:space="preserve">
+    <value>LED tastatură</value>
+  </data>
+  <data name="KeyboardLedToolTip" xml:space="preserve">
+    <value>Dacă este setat, LED-ul corespunzător al tastaturii se va aprinde atunci când este în desfășurare o secvență de compunere.</value>
+  </data>
+  <data name="KeyCompose" xml:space="preserve">
+    <value>Tastă de compunere</value>
+  </data>
+  <data name="AutoLaunch" xml:space="preserve">
+    <value>Execută WinCompose la conectare</value>
+  </data>
+  <data name="AutoLaunchToolTip" xml:space="preserve">
+    <value>Dacă este setat, WinCompose va fi pornit atunci când utilizatorul se conectează.</value>
+  </data>
+  <data name="Accessibility" xml:space="preserve">
+    <value>Accesibilitate</value>
+  </data>
+  <data name="MustHoldCapsLock" xml:space="preserve">
+    <value>Activează Caps Lock numai atunci când este ținut apăsat</value>
+  </data>
+  <data name="MustHoldCapsLockToolTip" xml:space="preserve">
+    <value>Eliberarea tastei Caps Lock o va dezactiva imediat, în locul comportamentului standard care presupune apăsarea acesteia a doua oară pentru dezactivare.</value>
+  </data>
+  <data name="RunElevated" xml:space="preserve">
+    <value>Rulează cu privilegii elevate (recomandat)</value>
+  </data>
+  <data name="RunElevatedToolTip" xml:space="preserve">
+    <value>Compunerea nu va funcționa în unele aplicații dacă WinCompose nu rulează cu privilegii elevate. Această opțiune reduce șansele ca acest lucru să se întâmple.</value>
   </data>
 </root>

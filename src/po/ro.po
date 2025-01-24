@@ -10,12 +10,14 @@ msgstr ""
 "POT-Creation-Date: 2015-03-23 15:27+0100\n"
 "PO-Revision-Date: 2024-05-16 11:01+0000\n"
 "Last-Translator: Tiberiu Frățilă <tiberiu.fratila@gmail.com>\n"
-"Language-Team: Romanian <https://hosted.weblate.org/projects/wincompose/master/ro/>\n"
+"Language-Team: Romanian <https://hosted.weblate.org/projects/wincompose/"
+"master/ro/>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2;\n"
 "X-Generator: Weblate 5.6-dev\n"
 
 #. The user can configure the application language and choose between English, French, etc. and Autodetect
@@ -116,7 +118,9 @@ msgstr "Folosește secvențe din proiectul Xorg"
 msgid ""
 "Use the 3,000 compose sequences from the Xorg project (http://www.x.org/). "
 "These are the sequences most commonly found on a standard Linux system."
-msgstr "Folosește cele 3.000 de secvențe din proiectul Xorg (http://www.x.org/). Aceste secvențe se găsesc de obicei pe sistemele standard Linux."
+msgstr ""
+"Folosește cele 3.000 de secvențe din proiectul Xorg (http://www.x.org/). "
+"Aceste secvențe se găsesc de obicei pe sistemele standard Linux."
 
 #: language/i18n/Text.resx:201 ID:UseXComposeRules
 msgid "Use sequences from the XCompose project"
@@ -127,7 +131,10 @@ msgid ""
 "Use the 1,000 compose sequences from the XCompose opensource project "
 "(https://github.com/kragen/xcompose). These sequences may sometimes conflict "
 "with the Xorg ones."
-msgstr "Folosește cele 1.000 de secvențe de compunere din proiectul cu sursă deschisă XCompose (https://github.com/kragen/xcompose). Aceste secvențe pot uneori intra în conflict cu cele din Xorg."
+msgstr ""
+"Folosește cele 1.000 de secvențe de compunere din proiectul cu sursă "
+"deschisă XCompose (https://github.com/kragen/xcompose). Aceste secvențe pot "
+"uneori intra în conflict cu cele din Xorg."
 
 #: language/i18n/Text.resx:209 ID:UseEmojiRules
 msgid "Use WinCompose emoji sequences"
@@ -137,7 +144,9 @@ msgstr "Folosește secvențele emoji ale WinCompose"
 msgid ""
 "Use the compose sequences for Emoji provided by the WinCompose author and "
 "contributors."
-msgstr "Folosește secvențele de compunere pentru Emoji prevăzute de către autorii și contribuitorii WinCompose."
+msgstr ""
+"Folosește secvențele de compunere pentru Emoji prevăzute de către autorii și "
+"contribuitorii WinCompose."
 
 #. Menu entry to show the debug window
 #: language/i18n/Text.resx:217 ID:DebugWindow
@@ -188,7 +197,9 @@ msgstr "Încearcă să inversezi cele două taste"
 msgid ""
 "Try to swap the keys of a two-key sequence. For instance, if Compose E A is "
 "not a valid sequence, try Compose A E instead."
-msgstr "Încearcă să inversezi locul tastelor dintr-o secvență de două taste. Spre exemplu, dacă Compose E A nu este o secvență corectă, încearcă A E în schimb."
+msgstr ""
+"Încearcă să inversezi locul tastelor dintr-o secvență de două taste. Spre "
+"exemplu, dacă Compose E A nu este o secvență corectă, încearcă A E în schimb."
 
 #: language/i18n/Text.resx:261 ID:Search
 msgid "Search Filter:"
@@ -216,7 +227,10 @@ msgid ""
 "Enable Unicode input for all characters, even those with no compose sequence "
 "defined. For instance, the following sequence will output character U+1A3F: "
 "Compose U 1 A 3 F Enter"
-msgstr "Activează intrarea Unicode pentru toate caracterele, chiar și pentru cele cărora nu le-a fost definită o secvență de compunere. Spre exemplu, următoarea secvență va produce caracterul U+1A3F: Compose U 1 A 3 F Enter"
+msgstr ""
+"Activează intrarea Unicode pentru toate caracterele, chiar și pentru cele "
+"cărora nu le-a fost definită o secvență de compunere. Spre exemplu, "
+"următoarea secvență va produce caracterul U+1A3F: Compose U 1 A 3 F Enter"
 
 #. This is the name of a category of settings about what happens when invalid sequences are typed
 #: language/i18n/Text.resx:285 ID:InvalidSequences
@@ -231,7 +245,9 @@ msgstr "Reîncearcă fără să ții cont de diferențe între majuscule și min
 msgid ""
 "If the entered sequence does not exist, but there is one that only differs "
 "by case, automatically correct it."
-msgstr "În cazul în care secvența introdusă nu există, dar există una care diferă doar prin diferențe între majuscule/minuscule, folosește-o pe cea din urmă."
+msgstr ""
+"În cazul în care secvența introdusă nu există, dar există una care diferă "
+"doar prin diferențe între majuscule/minuscule, folosește-o pe cea din urmă."
 
 #: language/i18n/Text.resx:297 ID:DiscardOnInvalid
 msgid "Discard all typed characters"
@@ -242,7 +258,10 @@ msgid ""
 "If the entered sequence does not exist, discard all the characters that were "
 "typed. The default behaviour is to output the characters as if the compose "
 "key had not been used."
-msgstr "Dacă secvența introdusă nu există, elimină toate caracterele care au fost tastate. Comportamentul implicit este de a afișa caracterele ca și cum tasta de compunere nu ar fi fost folosită."
+msgstr ""
+"Dacă secvența introdusă nu există, elimină toate caracterele care au fost "
+"tastate. Comportamentul implicit este de a afișa caracterele ca și cum tasta "
+"de compunere nu ar fi fost folosită."
 
 #: language/i18n/Text.resx:305 ID:BeepOnInvalid
 msgid "Emit a beep"
@@ -260,7 +279,9 @@ msgstr "Limba interfeței:"
 msgid ""
 "Select the language that WinCompose uses for the interface. By default the "
 "operating system language is used."
-msgstr "Alege limba folosită de interfața WinCompose. În mod implicit se folosește limba sistemului de operare."
+msgstr ""
+"Alege limba folosită de interfața WinCompose. În mod implicit se folosește "
+"limba sistemului de operare."
 
 #. Close the settings window
 #: language/i18n/Text.resx:321 ID:Close
@@ -292,7 +313,11 @@ msgid ""
 "This tells WinCompose to make a best effort to retain the original key’s "
 "behaviour. For instance, the Alt-Tab shortcut will still work even if Alt is "
 "used as the compose key."
-msgstr "Acest lucru îi spune lui WinCompose să facă tot posibilul pentru a păstra comportamentul original al tastei folosite pentru compunere. De exemplu, comanda rapidă Alt-Tab va funcționa în continuare chiar dacă Alt este utilizată ca tastă de compunere."
+msgstr ""
+"Acest lucru îi spune lui WinCompose să facă tot posibilul pentru a păstra "
+"comportamentul original al tastei folosite pentru compunere. De exemplu, "
+"comanda rapidă Alt-Tab va funcționa în continuare chiar dacă Alt este "
+"utilizată ca tastă de compunere."
 
 #: language/i18n/Text.resx:345 ID:InsertZwsp
 msgid "Insert zero-width spaces in Office apps"
@@ -303,7 +328,11 @@ msgid ""
 "Microsoft Office applications sometimes change the document font on the fly "
 "when entering certain Unicode characters. This feature inserts an invisible "
 "character after the Unicode character to work around the bug."
-msgstr "Aplicațiile Microsoft Office modifică uneori din mers fontul documentului atunci când se introduc anumite caractere Unicode. Această caracteristică inserează un caracter invizibil după caracterul Unicode pentru a rezolva problema."
+msgstr ""
+"Aplicațiile Microsoft Office modifică uneori din mers fontul documentului "
+"atunci când se introduc anumite caractere Unicode. Această caracteristică "
+"inserează un caracter invizibil după caracterul Unicode pentru a rezolva "
+"problema."
 
 #: language/i18n/Text.resx:353 ID:EmulateCapsLock
 msgid "Emulate Caps Lock using both Shift keys"
@@ -314,7 +343,10 @@ msgid ""
 "If Caps Lock is used as the compose key, the original behaviour of the key "
 "becomes unavailable. This feature allows to turn Caps Lock on by pressing "
 "both Shift keys simultaneously."
-msgstr "În cazul în care Caps Lock este utilizată ca tastă de compunere, comportamentul original al tastei devine indisponibil. Această funcție permite activarea Caps Lock prin apăsarea simultană a ambelor taste Shift."
+msgstr ""
+"În cazul în care Caps Lock este utilizată ca tastă de compunere, "
+"comportamentul original al tastei devine indisponibil. Această funcție "
+"permite activarea Caps Lock prin apăsarea simultană a ambelor taste Shift."
 
 #: language/i18n/Text.resx:361 ID:ShiftDisablesCapsLock
 msgid "Shift key disables Caps Lock"
@@ -325,7 +357,10 @@ msgid ""
 "If Caps Lock is used as the compose key, the original behaviour of the key "
 "becomes unavailable. This feature allows to turn Caps Lock off by pressing "
 "the Shift key."
-msgstr "În cazul în care Caps Lock este utilizată ca tastă de compunere, comportamentul original al tastei devine indisponibil. Această funcție permite dezactivarea Caps Lock prin apăsarea tastei Shift."
+msgstr ""
+"În cazul în care Caps Lock este utilizată ca tastă de compunere, "
+"comportamentul original al tastei devine indisponibil. Această funcție "
+"permite dezactivarea Caps Lock prin apăsarea tastei Shift."
 
 #: language/i18n/Text.resx:369 ID:CapsLockCapitalizes
 msgid "Caps Lock always capitalizes letters"
@@ -335,7 +370,10 @@ msgstr "Caps Lock scrie întotdeauna literele cu majuscule"
 msgid ""
 "When Caps Lock is on, typing an accented letter such as “é” will always "
 "output the corresponding capitalized letter, in this case “É”."
-msgstr "Atunci când Caps Lock este activat, când se tastează o literă accentuată, cum ar fi „é”, se va afișa întotdeauna majuscula corespunzătoare a acelei literei, în acest caz „É”."
+msgstr ""
+"Atunci când Caps Lock este activat, când se tastează o literă accentuată, "
+"cum ar fi „é”, se va afișa întotdeauna majuscula corespunzătoare a acelei "
+"literei, în acest caz „É”."
 
 #. Header for the list of Unicode character categories
 #: language/i18n/Text.resx:377 ID:Categories
@@ -442,7 +480,9 @@ msgstr "Licență"
 #. Warning message when the user changes the language in the settings window
 #: language/i18n/Text.resx:461 ID:NeedRestart
 msgid "WinCompose needs to be restarted for some changes to take effect."
-msgstr "WinCompose trebuie să fie repornit pentru ca anumite modificări să fie aplicate."
+msgstr ""
+"WinCompose trebuie să fie repornit pentru ca anumite modificări să fie "
+"aplicate."
 
 #. A button to report bugs (opens web browser)
 #: language/i18n/Text.resx:465 ID:ReportBug
@@ -479,7 +519,9 @@ msgstr "Acceptă apăsări de tastă emulate"
 
 #: language/i18n/Text.resx:493 ID:AllowInjectedToolTip
 msgid "Do not ignore keys sent by other software like AutoHotkey or Synergy"
-msgstr "Nu ignora apăsările de tastă trimise de alte programe precum AutoHotkey sau Synergy"
+msgstr ""
+"Nu ignora apăsările de tastă trimise de alte programe precum AutoHotkey sau "
+"Synergy"
 
 #. The name of the “Print Screen” key on the keyboard
 #: language/i18n/Text.resx:497 ID:KeyPrint
@@ -499,7 +541,10 @@ msgstr "Verifică automat dacă există actualizări"
 msgid ""
 "If enabled, WinCompose will connect to the Internet at regular intervals to "
 "check for new versions. Updates are not installed automatically."
-msgstr "Dacă este activat, WinCompose se va conecta la Internet la intervale regulate pentru a verifica dacă există versiuni noi ale programului. Actualizările nu vor fi instalate automat."
+msgstr ""
+"Dacă este activat, WinCompose se va conecta la Internet la intervale "
+"regulate pentru a verifica dacă există versiuni noi ale programului. "
+"Actualizările nu vor fi instalate automat."
 
 #: language/i18n/Text.resx:513 ID:KeepIconVisible
 msgid "Try to keep notification area icon always visible"
@@ -509,7 +554,10 @@ msgstr "Încearcă să păstrezi pictograma din bara de activități mereu vizib
 msgid ""
 "By default, Windows will remove the icon from the notification area after a "
 "short while. This option attempts to keep it always visible."
-msgstr "În mod implicit, Windows va elimina pictograma din bara de activități după o perioadă scurtă de timp. Această opțiune încearcă să o mențină mereu vizibilă."
+msgstr ""
+"În mod implicit, Windows va elimina pictograma din bara de activități după o "
+"perioadă scurtă de timp. Această opțiune încearcă să o mențină mereu "
+"vizibilă."
 
 #. The user can click on this button to change the current compose key.
 #: language/i18n/Text.resx:521 ID:ChangeComposeKey
@@ -534,7 +582,11 @@ msgid ""
 "If enabled, WinCompose will no longer display an icon in the notification "
 "area. The only way to open the WinCompose interface will then be through the "
 "“WinCompose Settings” and “WinCompose Sequences” entries in the startup menu."
-msgstr "Dacă este activat, WinCompose nu va mai afișa o pictogramă în bara de activități. În acel caz, singura modalitate de a deschide interfața WinCompose va fi prin intermediul elementelor „WinCompose Settings” și „WinCompose Sequences” din meniul Start."
+msgstr ""
+"Dacă este activat, WinCompose nu va mai afișa o pictogramă în bara de "
+"activități. În acel caz, singura modalitate de a deschide interfața "
+"WinCompose va fi prin intermediul elementelor „WinCompose Settings” și "
+"„WinCompose Sequences” din meniul Start."
 
 #. The name of the “Home” key on the keyboard
 #: language/i18n/Text.resx:541 ID:KeyHome
@@ -570,7 +622,9 @@ msgstr "Ignoră ferestrele care se potrivesc acestei expresii regulate (regex):"
 msgid ""
 "WinCompose will be completely disabled when the current window class or "
 "window name matches this regular expression."
-msgstr "WinCompose va fi complet dezactivat atunci când clasa sau numele ferestrei curente se potrivește cu această expresie regulată."
+msgstr ""
+"WinCompose va fi complet dezactivat atunci când clasa sau numele ferestrei "
+"curente se potrivește cu această expresie regulată."
 
 #: language/i18n/Text.resx:569 ID:AlwaysCompose
 msgid "Alternate compose key is always Compose"
@@ -581,7 +635,11 @@ msgid ""
 "If enabled, all compose keys will be treated as Compose in a sequence. By "
 "default, only the first pressed key will act as Compose, and alternate "
 "compose keys will keep their original role."
-msgstr "Dacă este activat, toate tastele de compunere vor fi tratate ca având funcția de compunere într-o secvență. În mod implicit, numai prima tastă apăsată va acționa drept compunere, iar tastele de compunere alternative își vor păstra rolul inițial."
+msgstr ""
+"Dacă este activat, toate tastele de compunere vor fi tratate ca având "
+"funcția de compunere într-o secvență. În mod implicit, numai prima tastă "
+"apăsată va acționa drept compunere, iar tastele de compunere alternative își "
+"vor păstra rolul inițial."
 
 #. The section for random contributors who aren’t programmers or translators. Might be empty.
 #: language/i18n/Text.resx:577 ID:SpecialThanks
@@ -602,7 +660,9 @@ msgstr "Favorite"
 msgid ""
 "If set, any compose sequence will be cancelled after a certain delay if no "
 "keyboard activity is detected."
-msgstr "Dacă este setat, orice secvență de compunere va fi anulată după o anumită perioadă, dacă nu se detectează nicio activitate de la tastatură."
+msgstr ""
+"Dacă este setat, orice secvență de compunere va fi anulată după o anumită "
+"perioadă, dacă nu se detectează nicio activitate de la tastatură."
 
 #: language/i18n/Text.resx:593 ID:KeyboardLed
 msgid "Keyboard LED"
@@ -612,7 +672,9 @@ msgstr "LED tastatură"
 msgid ""
 "If set, the corresponding keyboard LED will be lit when a compose sequence "
 "is in progress."
-msgstr "Dacă este setat, LED-ul corespunzător al tastaturii se va aprinde atunci când este în desfășurare o secvență de compunere."
+msgstr ""
+"Dacă este setat, LED-ul corespunzător al tastaturii se va aprinde atunci "
+"când este în desfășurare o secvență de compunere."
 
 #. The short name of the compose key
 #: language/i18n/Text.resx:601 ID:KeyCompose
@@ -625,7 +687,9 @@ msgstr "Execută WinCompose la conectare"
 
 #: language/i18n/Text.resx:609 ID:AutoLaunchToolTip
 msgid "If set, WinCompose will be started when the user logs in."
-msgstr "Dacă este setat, WinCompose va fi pornit atunci când utilizatorul se conectează."
+msgstr ""
+"Dacă este setat, WinCompose va fi pornit atunci când utilizatorul se "
+"conectează."
 
 #: language/i18n/Text.resx:613 ID:Accessibility
 msgid "Accessibility"
@@ -639,7 +703,10 @@ msgstr "Activează Caps Lock numai atunci când este ținut apăsat"
 msgid ""
 "Releasing the Caps Lock key will immediately disable it, instead of the more "
 "standard behaviour of having to press it a second time."
-msgstr "Eliberarea tastei Caps Lock o va dezactiva imediat, în locul comportamentului standard care presupune apăsarea acesteia a doua oară pentru dezactivare."
+msgstr ""
+"Eliberarea tastei Caps Lock o va dezactiva imediat, în locul "
+"comportamentului standard care presupune apăsarea acesteia a doua oară "
+"pentru dezactivare."
 
 #: language/i18n/Text.resx:625 ID:RunElevated
 msgid "Run with elevated privileges (recommended)"
@@ -650,9 +717,12 @@ msgid ""
 "Composition will not work in some applications if WinCompose does not run "
 "with elevated privileges. This options reduces the chances that this will "
 "happen."
-msgstr "Compunerea nu va funcționa în unele aplicații dacă WinCompose nu rulează cu privilegii elevate. Această opțiune reduce șansele ca acest lucru să se întâmple."
+msgstr ""
+"Compunerea nu va funcționa în unele aplicații dacă WinCompose nu rulează cu "
+"privilegii elevate. Această opțiune reduce șansele ca acest lucru să se "
+"întâmple."
 
-#. Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
+#.  Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
 #: language/unicode/Category.resx:121 ID:Control
 msgid "Other, Control"
 msgstr "Alta, control"
@@ -819,8 +889,10 @@ msgid ""
 "seem to be currently installed. The following action may help solve the "
 "problem:"
 msgstr ""
-"WinCompose are nevoie de .NET Framework, versiunea 4.0 sau ulterior, care nu\n"
-"pare să fie instalat în prezent. Următoarea acțiune poate ajuta la rezolvarea problemei:"
+"WinCompose are nevoie de .NET Framework, versiunea 4.0 sau ulterior, care "
+"nu\n"
+"pare să fie instalat în prezent. Următoarea acțiune poate ajuta la "
+"rezolvarea problemei:"
 
 #. This string appears in the installer, not in WinCompose.
 #: installer/installer.pas:184
