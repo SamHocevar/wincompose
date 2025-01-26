@@ -165,7 +165,7 @@ static class Composer
         {
             Key alt_key = KeyboardLayout.VkToKey(vk, sc, flags, has_shift, has_altgr, false);
 
-            if (alt_key.IsPrintable && alt_key.PrintableResult[0] > 0x7f)
+            if (alt_key.IsPrintable && alt_key.PrintableResult[0] > 0xbf)
             {
                 string str_upper = alt_key.PrintableResult.ToUpper();
                 string str_lower = alt_key.PrintableResult.ToLower();
