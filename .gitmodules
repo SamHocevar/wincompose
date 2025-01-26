@@ -41,3 +41,6 @@
 	url = ../../jrsoftware/issrc.git
 	branch = main
 	update = merge
+[submodule "src/3rdparty/unicodetools"]
+	path = src/3rdparty/unicodetools
+	url = https://github.com/unicode-org/unicodetools
