@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AutodetectLanguage" xml:space="preserve">
+    <value>ஆட்டோடெடெக்ட்</value>
+  </data>
+  <data name="KeyLMenu" xml:space="preserve">
+    <value>இடது ஆல்ட்</value>
+  </data>
+  <data name="KeyRMenu" xml:space="preserve">
+    <value>வலது ஆல்ட்</value>
+  </data>
+  <data name="KeyLControl" xml:space="preserve">
+    <value>இடது கட்டுப்பாடு</value>
+  </data>
+  <data name="KeyRControl" xml:space="preserve">
+    <value>சரியான கட்டுப்பாடு</value>
+  </data>
+  <data name="KeyLWin" xml:space="preserve">
+    <value>இடது சன்னல்கள்</value>
+  </data>
+  <data name="KeyRWin" xml:space="preserve">
+    <value>வலது சாளரங்கள்</value>
+  </data>
+  <data name="KeyCapital" xml:space="preserve">
+    <value>தொப்பிகள் பூட்டு</value>
+  </data>
+  <data name="KeyNumLock" xml:space="preserve">
+    <value>எண் பூட்டு</value>
+  </data>
+  <data name="KeyPause" xml:space="preserve">
+    <value>இடைநிறுத்தம்</value>
+  </data>
+  <data name="KeyApps" xml:space="preserve">
+    <value>பட்டியல்</value>
+  </data>
+  <data name="KeyEscape" xml:space="preserve">
+    <value>தப்பிக்கும்</value>
+  </data>
+  <data name="KeyConvert" xml:space="preserve">
+    <value>மாற்றம்</value>
+  </data>
+  <data name="KeyNonConvert" xml:space="preserve">
+    <value>மாற்றமற்ற</value>
+  </data>
+  <data name="KeyScroll" xml:space="preserve">
+    <value>உருள் பூட்டு</value>
+  </data>
+  <data name="KeySpace" xml:space="preserve">
+    <value>இடைவெளி</value>
+  </data>
+  <data name="KeyReturn" xml:space="preserve">
+    <value>திரும்ப</value>
+  </data>
+  <data name="Composing" xml:space="preserve">
+    <value>இசையமைத்தல்</value>
+  </data>
+  <data name="UseXorgRules" xml:space="preserve">
+    <value>Xorg திட்டத்திலிருந்து காட்சிகளைப் பயன்படுத்தவும்</value>
+  </data>
+  <data name="UseXorgRulesToolTip" xml:space="preserve">
+    <value>Xorg திட்டத்திலிருந்து (http://www.x.org/) 3,000 இசையமைப்புக் காட்சிகளைப் பயன்படுத்தவும். இது ஒரு நிலையான லினக்ச் அமைப்பில் பொதுவாகக் காணப்படும் காட்சிகள்.</value>
+  </data>
+  <data name="UseXComposeRules" xml:space="preserve">
+    <value>XCOPOSE திட்டத்திலிருந்து காட்சிகளைப் பயன்படுத்தவும்</value>
+  </data>
+  <data name="UseXComposeRulesToolTip" xml:space="preserve">
+    <value>XCOMPOSE OpenSource திட்டத்திலிருந்து (https://github.com/kragen/xcomopose) 1,000 இசையமைப்புக் காட்சிகளைப் பயன்படுத்தவும். இந்த காட்சிகள் சில நேரங்களில் Xorg உடன் முரண்படக்கூடும்.</value>
+  </data>
+  <data name="UseEmojiRules" xml:space="preserve">
+    <value>வின்கோம்போச் ஈமோசி காட்சிகளைப் பயன்படுத்தவும்</value>
+  </data>
+  <data name="UseEmojiRulesToolTip" xml:space="preserve">
+    <value>வின்கோம்போச் ஆசிரியர் மற்றும் பங்களிப்பாளர்களால் வழங்கப்பட்ட ஈமோசிக்கான இசையமைப்புக் காட்சிகளைப் பயன்படுத்தவும்.</value>
+  </data>
+  <data name="DebugWindow" xml:space="preserve">
+    <value>பிழைத்திருத்த சாளரம்</value>
+  </data>
+  <data name="ShowSequences" xml:space="preserve">
+    <value>காட்சிகளைக் காட்டு…</value>
+  </data>
+  <data name="Disable" xml:space="preserve">
+    <value>முடக்கு</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>மறுதொடக்கம்</value>
+  </data>
+  <data name="DonationPage" xml:space="preserve">
+    <value>நன்கொடை பக்கம்</value>
+  </data>
+  <data name="VisitWebsite" xml:space="preserve">
+    <value>வலைத்தளத்தைப் பார்வையிடவும்</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>வெளியேறு</value>
+  </data>
+  <data name="UnicodeCharacters" xml:space="preserve">
+    <value>யூனிகோட் எழுத்துக்கள்</value>
+  </data>
+  <data name="Sequences" xml:space="preserve">
+    <value>வரிசைகள்</value>
+  </data>
+  <data name="SwapOnInvalid" xml:space="preserve">
+    <value>இரண்டு விசைகளையும் மாற்ற முயற்சிக்கவும்</value>
+  </data>
+  <data name="SwapOnInvalidToolTip" xml:space="preserve">
+    <value>இரண்டு முக்கிய வரிசையின் சாவியை மாற்ற முயற்சிக்கவும். உதாரணமாக, இ A TRATILE வரிசை இல்லையென்றால், அதற்கு பதிலாக இ ஐ இசையமைக்க முயற்சிக்கவும்.</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>தேடல் வடிகட்டி:</value>
+  </data>
+  <data name="ComposeKey" xml:space="preserve">
+    <value>விசையை எழுதுங்கள்:</value>
+  </data>
+  <data name="ComposeKeyToolTip" xml:space="preserve">
+    <value>இசையமைப்பின் விசையாக செயல்பட வேண்டிய விசையைத் தேர்ந்தெடுக்கவும்.</value>
+  </data>
+  <data name="ResetTimeout" xml:space="preserve">
+    <value>நேரத்தை மீட்டமைக்கவும்</value>
+  </data>
+  <data name="UnicodeInput" xml:space="preserve">
+    <value>மேம்பட்ட யூனிகோட் உள்ளீடு</value>
+  </data>
+  <data name="UnicodeInputToolTip" xml:space="preserve">
+    <value>எல்லா எழுத்துகளுக்கும் யூனிகோட் உள்ளீட்டை இயக்கவும், எந்த இசையமைப்பும் இல்லாதவர்கள் கூட வரையறுக்கப்பட்டுள்ளனர். உதாரணமாக, பின்வரும் வரிசை எழுத்துக்குறி u+1a3f ஐ வெளியிடும்: உ 1 a 3 f என்ட்</value>
+  </data>
+  <data name="InvalidSequences" xml:space="preserve">
+    <value>தவறான காட்சிகளில்</value>
+  </data>
+  <data name="CaseInsensitive" xml:space="preserve">
+    <value>வழக்கு உணர்வற்ற போட்டிகளுக்கு மீண்டும் விழுங்கள்</value>
+  </data>
+  <data name="CaseInsensitiveToolTip" xml:space="preserve">
+    <value>உள்ளிட்ட வரிசை இல்லை என்றால், ஆனால் வழக்கால் மட்டுமே வேறுபடும் ஒன்று இருந்தால், அதை தானாகவே சரிசெய்கிறது.</value>
+  </data>
+  <data name="DiscardOnInvalid" xml:space="preserve">
+    <value>தட்டச்சு செய்த அனைத்து எழுத்துக்களையும் நிராகரிக்கவும்</value>
+  </data>
+  <data name="DiscardOnInvalidToolTip" xml:space="preserve">
+    <value>உள்ளிட்ட வரிசை இல்லை என்றால், தட்டச்சு செய்யப்பட்ட அனைத்து எழுத்துக்களையும் நிராகரிக்கவும். இயல்புநிலை நடத்தை, இசையமைப்பின் விசை பயன்படுத்தப்படாதது போல் எழுத்துக்களை வெளியிடுவதாகும்.</value>
+  </data>
+  <data name="BeepOnInvalid" xml:space="preserve">
+    <value>ஒரு பீப்பை வெளியிடுங்கள்</value>
+  </data>
+  <data name="BeepOnInvalidToolTip" xml:space="preserve">
+    <value>உள்ளிட்ட வரிசை இல்லை என்றால், கணினி ஒலியை வெளியிடுங்கள்.</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>இடைமுக மொழி:</value>
+  </data>
+  <data name="LanguageToolTip" xml:space="preserve">
+    <value>இடைமுகத்திற்கு Wincompose பயன்படுத்தும் மொழியைத் தேர்ந்தெடுக்கவும். இயல்பாக இயக்க முறைமை மொழி பயன்படுத்தப்படுகிறது.</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>மூடு</value>
+  </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>கிளிப்போர்டுக்கு நகலெடுக்கவும்</value>
+  </data>
+  <data name="Emoji" xml:space="preserve">
+    <value>ஈமோசி</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>இடு</value>
+  </data>
+  <data name="KeepOriginalKey" xml:space="preserve">
+    <value>அசல் இசையமைத்தல் முக்கிய நடத்தை பராமரிக்கவும்</value>
+  </data>
+  <data name="KeepOriginalKeyToolTip" xml:space="preserve">
+    <value>அசல் விசையின் நடத்தையைத் தக்கவைக்க சிறந்த முயற்சியை மேற்கொள்ள இது வின்கோம்போசைக் கூறுகிறது. உதாரணமாக, ALT-TAB குறுக்குவழி மாற்று இசையமைப்பின் விசையாகப் பயன்படுத்தப்பட்டாலும் இன்னும் செயல்படும்.</value>
+  </data>
+  <data name="InsertZwsp" xml:space="preserve">
+    <value>அலுவலக பயன்பாடுகளில் சுழிய அகல இடங்களைச் செருகவும்</value>
+  </data>
+  <data name="InsertZwspToolTip" xml:space="preserve">
+    <value>நுண்மென் ஆபிச் பயன்பாடுகள் சில யூனிகோட் எழுத்துக்களை உள்ளிடும்போது சில நேரங்களில் ஆவண எழுத்துருவைப் பறக்கின்றன. இந்த நற்பொருத்தம் பிழையைச் சுற்றி வேலை செய்ய யூனிகோட் எழுத்துக்குப் பிறகு கண்ணுக்குத் தெரியாத தன்மையைச் செருகும்.</value>
+  </data>
+  <data name="EmulateCapsLock" xml:space="preserve">
+    <value>இரண்டு சிப்ட் விசைகளையும் பயன்படுத்தி கேப்ச் பூட்டைப் பின்பற்றுங்கள்</value>
+  </data>
+  <data name="EmulateCapsLockToolTip" xml:space="preserve">
+    <value>கேப்ச் லாக் இசையமைப்பின் விசையாகப் பயன்படுத்தப்பட்டால், விசையின் அசல் நடத்தை கிடைக்காது. இந்த நற்பொருத்தம் இரண்டு சிப்ட் விசைகளையும் ஒரே நேரத்தில் அழுத்துவதன் மூலம் கேப்ச் பூட்டை இயக்க அனுமதிக்கிறது.</value>
+  </data>
+  <data name="ShiftDisablesCapsLock" xml:space="preserve">
+    <value>சிப்ட் விசை கேப்ச் பூட்டை முடக்குகிறது</value>
+  </data>
+  <data name="ShiftDisablesCapsLockToolTip" xml:space="preserve">
+    <value>கேப்ச் லாக் இசையமைப்பின் விசையாகப் பயன்படுத்தப்பட்டால், விசையின் அசல் நடத்தை கிடைக்காது. இந்த நற்பொருத்தம் சிப்ட் விசையை அழுத்துவதன் மூலம் கேப்ச் பூட்டை அணைக்க அனுமதிக்கிறது.</value>
+  </data>
+  <data name="CapsLockCapitalizes" xml:space="preserve">
+    <value>தொப்பிகள் பூட்டு எப்போதும் கடிதங்களை மூலதனமாக்குகிறது</value>
+  </data>
+  <data name="CapsLockCapitalizesToolTip" xml:space="preserve">
+    <value>கேப்ச் பூட்டு இயங்கும் போது, “é” போன்ற உச்சரிக்கப்பட்ட கடிதத்தைத் தட்டச்சு செய்வது எப்போதும் தொடர்புடைய மூலதன கடிதத்தை வெளியிடும், இந்த விசயத்தில் “é”.</value>
+  </data>
+  <data name="Categories" xml:space="preserve">
+    <value>வகைகள்</value>
+  </data>
+  <data name="InSelectedCategories" xml:space="preserve">
+    <value>தேர்ந்தெடுக்கப்பட்ட வகைகளில்</value>
+  </data>
+  <data name="Options" xml:space="preserve">
+    <value>விருப்பங்கள் - வின்கோம்போச்</value>
+  </data>
+  <data name="ShowOptions" xml:space="preserve">
+    <value>விருப்பங்கள்…</value>
+  </data>
+  <data name="TrayToolTip" xml:space="preserve">
+    <value>{1} ({0} வரிசைமுறைகளில்) V {2}</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>பொது</value>
+  </data>
+  <data name="Behavior" xml:space="preserve">
+    <value>நடத்தை</value>
+  </data>
+  <data name="WindowTitle" xml:space="preserve">
+    <value>காட்சிகள் - வின்கோம்போச்</value>
+  </data>
+  <data name="UserMacros" xml:space="preserve">
+    <value>பயனர் வரையறுக்கப்பட்ட மேக்ரோக்கள்</value>
+  </data>
+  <data name="DisabledToolTip" xml:space="preserve">
+    <value>வின்கோம்போச் முடக்கப்பட்டுள்ளது</value>
+  </data>
+  <data name="KeyInsert" xml:space="preserve">
+    <value>செருகவும்</value>
+  </data>
+  <data name="TestTyping" xml:space="preserve">
+    <value>சோதனை தட்டச்சு</value>
+  </data>
+  <data name="Tweaks" xml:space="preserve">
+    <value>மாற்றங்கள்</value>
+  </data>
+  <data name="DelaySeconds" xml:space="preserve">
+    <value>{0} விநாடிகள்</value>
+  </data>
+  <data name="About" xml:space="preserve">
+    <value>பற்றி</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>Wincompose {0} பதிவிறக்கவும்</value>
+  </data>
+  <data name="AboutBoxTitle" xml:space="preserve">
+    <value>வின்கோம்போச் பற்றி</value>
+  </data>
+  <data name="Programming" xml:space="preserve">
+    <value>நிரலாக்க</value>
+  </data>
+  <data name="Translators" xml:space="preserve">
+    <value>மொழிபெயர்ப்பு</value>
+  </data>
+  <data name="Authors" xml:space="preserve">
+    <value>ஆசிரியர்கள்</value>
+  </data>
+  <data name="License" xml:space="preserve">
+    <value>உரிமம்</value>
+  </data>
+  <data name="NeedRestart" xml:space="preserve">
+    <value>சில மாற்றங்கள் நடைமுறைக்கு வர வின்கோம்போச் மறுதொடக்கம் செய்யப்பட வேண்டும்.</value>
+  </data>
+  <data name="ReportBug" xml:space="preserve">
+    <value>ஒரு பிழையைப் புகாரளிக்கவும்</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>உதவி</value>
+  </data>
+  <data name="UpdatesToolTip" xml:space="preserve">
+    <value>புதுப்பிப்புகள் கிடைக்கின்றன.</value>
+  </data>
+  <data name="UserDefinedSequences" xml:space="preserve">
+    <value>பயனர் வரையறுக்கப்பட்ட காட்சிகள்</value>
+  </data>
+  <data name="UserDefinedSequencesEdit" xml:space="preserve">
+    <value>தொகு</value>
+  </data>
+  <data name="UserDefinedSequencesReload" xml:space="preserve">
+    <value>ஏற்றவும்</value>
+  </data>
+  <data name="AllowInjected" xml:space="preserve">
+    <value>செலுத்தப்பட்ட விசைகளை அனுமதிக்கவும்</value>
+  </data>
+  <data name="AllowInjectedToolTip" xml:space="preserve">
+    <value>ஆட்டோஓட்கி அல்லது சினெர்சி போன்ற பிற மென்பொருளால் அனுப்பப்பட்ட விசைகளை புறக்கணிக்காதீர்கள்</value>
+  </data>
+  <data name="KeyPrint" xml:space="preserve">
+    <value>Prt scrn</value>
+  </data>
+  <data name="KeyDisabled" xml:space="preserve">
+    <value>முடக்கப்பட்டது</value>
+  </data>
+  <data name="CheckUpdates" xml:space="preserve">
+    <value>புதுப்பிப்புகளை தானாக சரிபார்க்கவும்</value>
+  </data>
+  <data name="CheckUpdatesToolTip" xml:space="preserve">
+    <value>இயக்கப்பட்டால், புதிய பதிப்புகளைச் சரிபார்க்க வின்கோம்போச் சரியான இடைவெளியில் இணையத்துடன் இணைக்கும். புதுப்பிப்புகள் தானாக நிறுவப்படவில்லை.</value>
+  </data>
+  <data name="KeepIconVisible" xml:space="preserve">
+    <value>அறிவிப்பு பகுதி ஐகானை எப்போதும் காணக்கூடியதாக வைத்திருக்க முயற்சிக்கவும்</value>
+  </data>
+  <data name="KeepIconVisibleToolTip" xml:space="preserve">
+    <value>இயல்பாக, சாளரங்கள் சிறிது நேரத்திற்குப் பிறகு அறிவிப்பு பகுதியிலிருந்து ஐகானை அகற்றும். இந்த விருப்பம் எப்போதும் தெரியும்.</value>
+  </data>
+  <data name="ChangeComposeKey" xml:space="preserve">
+    <value>மாற்றம்…</value>
+  </data>
+  <data name="CaptureComposeKey" xml:space="preserve">
+    <value>உங்கள் இசையமைப்பின் விசையாகப் பயன்படுத்த ஒரு விசையை அழுத்தவும்.</value>
+  </data>
+  <data name="AddToFavorites" xml:space="preserve">
+    <value>பிடித்தவைகளில் சேர்க்கவும்</value>
+  </data>
+  <data name="DisableIcon" xml:space="preserve">
+    <value>அறிவிப்பு பகுதி ஐகானை முடக்கு</value>
+  </data>
+  <data name="DisableIconToolTip" xml:space="preserve">
+    <value>இயக்கப்பட்டால், வின்கோம்போச் இனி அறிவிப்பு பகுதியில் ஒரு ஐகானைக் காட்டாது. வின்கோம்போச் இடைமுகத்தைத் திறப்பதற்கான ஒரே வழி, தொடக்க பட்டியலில் “வின்காம்போச் அமைப்புகள்” மற்றும் “வின்காம்போச் காட்சிகள்” உள்ளீடுகள் மூலம் இருக்கும்.</value>
+  </data>
+  <data name="KeyHome" xml:space="preserve">
+    <value>வீடு</value>
+  </data>
+  <data name="KeyEnd" xml:space="preserve">
+    <value>முடிவு</value>
+  </data>
+  <data name="KeyTab" xml:space="preserve">
+    <value>தாவல்</value>
+  </data>
+  <data name="NoTimeout" xml:space="preserve">
+    <value>நேரம் முடிந்தது</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>மேம்பட்ட</value>
+  </data>
+  <data name="IgnoreRegex" xml:space="preserve">
+    <value>இந்த ரீசெக்சுடன் பொருந்தக்கூடிய சாளரங்களை புறக்கணிக்கவும்:</value>
+  </data>
+  <data name="IgnoreRegexToolTip" xml:space="preserve">
+    <value>தற்போதைய சாளர வகுப்பு அல்லது சாளர பெயர் இந்த வழக்கமான வெளிப்பாட்டுடன் பொருந்தும்போது வின்கோம்போச் முற்றிலும் முடக்கப்படும்.</value>
+  </data>
+  <data name="AlwaysCompose" xml:space="preserve">
+    <value>மாற்று இசையமைப்பின் விசை எப்போதும் இசையமைக்கப்படுகிறது</value>
+  </data>
+  <data name="AlwaysComposeToolTip" xml:space="preserve">
+    <value>இயக்கப்பட்டால், அனைத்து இசையமைப்பின் விசைகளும் ஒரு வரிசையில் இசையமைப்பாக கருதப்படும். இயல்பாக, முதல் அழுத்தப்பட்ட விசை மட்டுமே இசையமைப்பாக செயல்படும், மேலும் மாற்று இசையமை விசைகள் அவற்றின் அசல் பங்கைக் கொண்டிருக்கும்.</value>
+  </data>
+  <data name="SpecialThanks" xml:space="preserve">
+    <value>சிறப்பு நன்றி</value>
+  </data>
+  <data name="RemoveFromFavorites" xml:space="preserve">
+    <value>பிடித்தவைகளிலிருந்து அகற்று</value>
+  </data>
+  <data name="Favorites" xml:space="preserve">
+    <value>பிடித்தவை</value>
+  </data>
+  <data name="TimeoutToolTip" xml:space="preserve">
+    <value>அமைக்கப்பட்டால், விசைப்பலகை செயல்பாடு எதுவும் கண்டறியப்படாவிட்டால் ஒரு குறிப்பிட்ட தாமதத்திற்குப் பிறகு எந்த இசையமைப்புக் வரிசை ரத்து செய்யப்படும்.</value>
+  </data>
+  <data name="KeyboardLed" xml:space="preserve">
+    <value>விசைப்பலகை எல்.ஈ.டி</value>
+  </data>
+  <data name="KeyboardLedToolTip" xml:space="preserve">
+    <value>அமைக்கப்பட்டால், ஒரு இசையமைப்புக் வரிசை நடந்து கொண்டிருக்கும்போது தொடர்புடைய விசைப்பலகை எல்.ஈ.டி எரியும்.</value>
+  </data>
+  <data name="KeyCompose" xml:space="preserve">
+    <value>எழுதுங்கள்</value>
+  </data>
+  <data name="AutoLaunch" xml:space="preserve">
+    <value>உள்நுழைவில் வின்காம்போச் தொடங்கவும்</value>
+  </data>
+  <data name="AutoLaunchToolTip" xml:space="preserve">
+    <value>அமைக்கப்பட்டால், பயனர் உள்நுழையும்போது வின்கோம்போச் தொடங்கப்படும்.</value>
+  </data>
+  <data name="Accessibility" xml:space="preserve">
+    <value>அணுகல்</value>
+  </data>
+  <data name="MustHoldCapsLock" xml:space="preserve">
+    <value>தொப்பிகள் பூட்டு கீழே வைத்திருக்கும் போது மட்டுமே செயலில் உள்ளது</value>
+  </data>
+  <data name="MustHoldCapsLockToolTip" xml:space="preserve">
+    <value>கேப்ச் லாக் விசையை வெளியிடுவது உடனடியாக அதை முடக்கும், அதை இரண்டாவது முறையாக அழுத்த வேண்டியிருக்கும் நிலையான நடத்தைக்கு பதிலாக.</value>
+  </data>
+  <data name="RunElevated" xml:space="preserve">
+    <value>உயர்ந்த சலுகைகளுடன் இயக்கவும் (பரிந்துரைக்கப்படுகிறது)</value>
+  </data>
+  <data name="RunElevatedToolTip" xml:space="preserve">
+    <value>வின்கோம்போச் உயர்ந்த சலுகைகளுடன் இயங்கவில்லை என்றால் சில பயன்பாடுகளில் கலவை இயங்காது. இந்த விருப்பங்கள் இது நடக்கும் வாய்ப்புகளை குறைக்கிறது.</value>
+  </data>
+</root>

@@ -12,7 +12,7 @@
 
 using System.Threading;
 
-namespace WinCompose
+namespace WinCompose.misc
 {
     struct AtomicFlag
     {

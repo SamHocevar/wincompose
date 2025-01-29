@@ -489,4 +489,16 @@
   <data name="Accessibility" xml:space="preserve">
     <value>Toegankelijkheid</value>
   </data>
+  <data name="MustHoldCapsLock" xml:space="preserve">
+    <value>Caps Lock is alleen actief tijdens indrukken</value>
+  </data>
+  <data name="MustHoldCapsLockToolTip" xml:space="preserve">
+    <value>Laat Caps Lock los om direct uit te schakelen in plaats van deze een tweede keer te moeten indrukken.</value>
+  </data>
+  <data name="RunElevated" xml:space="preserve">
+    <value>Uitvoeren als administrator (aanbevolen)</value>
+  </data>
+  <data name="RunElevatedToolTip" xml:space="preserve">
+    <value>Opstellen werkt niet in sommige programma's als WinCompose niet als administrator wordt uitgevoerd. Deze opties verkleinen de kans op problemen.</value>
+  </data>
 </root>

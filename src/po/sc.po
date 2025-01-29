@@ -118,9 +118,9 @@ msgid ""
 "Use the 3,000 compose sequences from the Xorg project (http://www.x.org/). "
 "These are the sequences most commonly found on a standard Linux system."
 msgstr ""
-"Imprea sas 3'000 fileras de cumpositzione de su progetu Xorg (http://www.x."
-"org/). Custas sunt sas fileras agatadas prus a s'ispissu in unu sistema "
-"Linux istandard."
+"Imprea sas 3'000 fileras de cumpositzione de su progetu Xorg (http://"
+"www.x.org/). Custas sunt sas fileras agatadas prus a s'ispissu in unu "
+"sistema Linux istandard."
 
 #: language/i18n/Text.resx:201 ID:UseXComposeRules
 msgid "Use sequences from the XCompose project"
@@ -587,8 +587,8 @@ msgid ""
 msgstr ""
 "Si custu est abilitadu, WinCompose no at prus a ammustrare un'icona in "
 "s'àrea de notìfica. S'ùnica manera de abèrrere s'interfache de WinCompose at "
-"tando a èssere cussa de impreare sos elementos \"Impostatziones de WinCompose"
-"\" e \"Fileras de WinCompose\" in su menù de incumintzu."
+"tando a èssere cussa de impreare sos elementos \"Impostatziones de "
+"WinCompose\" e \"Fileras de WinCompose\" in su menù de incumintzu."
 
 #. The name of the “Home” key on the keyboard
 #: language/i18n/Text.resx:541 ID:KeyHome
@@ -724,7 +724,7 @@ msgstr ""
 "WinCompose non s'at a esecutare cun privilègios elevados. Custa optzione "
 "mìnimat sas possibilidades chi custu acontessat."
 
-#. Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
+#.  Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
 #: language/unicode/Category.resx:121 ID:Control
 msgid "Other, Control"
 msgstr "Àteru, controllu"

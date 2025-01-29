@@ -117,4 +117,94 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Control" xml:space="preserve">
+    <value>Alta, control</value>
+  </data>
+  <data name="Format" xml:space="preserve">
+    <value>Alta, formatare</value>
+  </data>
+  <data name="OtherNotAssigned" xml:space="preserve">
+    <value>Alta, neatribuită</value>
+  </data>
+  <data name="PrivateUse" xml:space="preserve">
+    <value>Alta, utilizare privată</value>
+  </data>
+  <data name="Surrogate" xml:space="preserve">
+    <value>Alta, surogat</value>
+  </data>
+  <data name="LowercaseLetter" xml:space="preserve">
+    <value>Literă, litere mici</value>
+  </data>
+  <data name="ModifierLetter" xml:space="preserve">
+    <value>Literă, modificator</value>
+  </data>
+  <data name="OtherLetter" xml:space="preserve">
+    <value>Literă, alta</value>
+  </data>
+  <data name="TitlecaseLetter" xml:space="preserve">
+    <value>Literă, majusculă de titlu</value>
+  </data>
+  <data name="UppercaseLetter" xml:space="preserve">
+    <value>Literă, majusculă</value>
+  </data>
+  <data name="SpacingCombiningMark" xml:space="preserve">
+    <value>Marcaj, spațiu combinat</value>
+  </data>
+  <data name="EnclosingMark" xml:space="preserve">
+    <value>Marcaj, înglobare</value>
+  </data>
+  <data name="NonSpacingMark" xml:space="preserve">
+    <value>Marcaj, nespațiat</value>
+  </data>
+  <data name="DecimalDigitNumber" xml:space="preserve">
+    <value>Număr, cifră zecimală</value>
+  </data>
+  <data name="LetterNumber" xml:space="preserve">
+    <value>Număr, literă</value>
+  </data>
+  <data name="OtherNumber" xml:space="preserve">
+    <value>Număr, alta</value>
+  </data>
+  <data name="ConnectorPunctuation" xml:space="preserve">
+    <value>Punctuație, conector</value>
+  </data>
+  <data name="DashPunctuation" xml:space="preserve">
+    <value>Punctuație, cratimă</value>
+  </data>
+  <data name="ClosePunctuation" xml:space="preserve">
+    <value>Punctuație, punct</value>
+  </data>
+  <data name="FinalQuotePunctuation" xml:space="preserve">
+    <value>Punctuație, apostrof închidere</value>
+  </data>
+  <data name="InitialQuotePunctuation" xml:space="preserve">
+    <value>Punctuație, apostrof deschidere</value>
+  </data>
+  <data name="OtherPunctuation" xml:space="preserve">
+    <value>Punctuație, alta</value>
+  </data>
+  <data name="OpenPunctuation" xml:space="preserve">
+    <value>Punctuație, deschidere</value>
+  </data>
+  <data name="CurrencySymbol" xml:space="preserve">
+    <value>Simbol, monedă</value>
+  </data>
+  <data name="ModifierSymbol" xml:space="preserve">
+    <value>Simbol, modificator</value>
+  </data>
+  <data name="MathSymbol" xml:space="preserve">
+    <value>Simbol, matematică</value>
+  </data>
+  <data name="OtherSymbol" xml:space="preserve">
+    <value>Simbol, alta</value>
+  </data>
+  <data name="LineSeparator" xml:space="preserve">
+    <value>Separator, linie</value>
+  </data>
+  <data name="ParagraphSeparator" xml:space="preserve">
+    <value>Separator, paragraf</value>
+  </data>
+  <data name="SpaceSeparator" xml:space="preserve">
+    <value>Separator, spațiu</value>
+  </data>
 </root>

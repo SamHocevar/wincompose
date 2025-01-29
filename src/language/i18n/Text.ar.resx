@@ -252,4 +252,7 @@
   <data name="Apply" xml:space="preserve">
     <value>تطبيق</value>
   </data>
+  <data name="KeyPrint" xml:space="preserve">
+    <value>Prt Scrn</value>
+  </data>
 </root>

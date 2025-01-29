@@ -720,7 +720,7 @@ msgstr ""
 "nicht mit erhöhten Rechten ausgeführt wird. Diese Optionen verringern die "
 "Wahrscheinlichkeit, dass dies geschieht."
 
-#. Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
+#.  Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
 #: language/unicode/Category.resx:121 ID:Control
 msgid "Other, Control"
 msgstr "Sonstige, Steuerung"
@@ -872,17 +872,17 @@ msgid "Separator, Space"
 msgstr "Trenner, Leerzeichen"
 
 #. This string appears in the installer, not in WinCompose.
-#: installer/installer.pas:175 installer.pas:175
+#: installer/installer.pas:175
 msgid "Prerequisites"
 msgstr "Voraussetzungen"
 
 #. This string appears in the installer, not in WinCompose.
-#: installer/installer.pas:176 installer.pas:176
+#: installer/installer.pas:176
 msgid "Software required by WinCompose"
 msgstr "Von WinCompose benötigte Software"
 
 #. This string appears in the installer, not in WinCompose.
-#: installer.pas:179
+#: installer/installer.pas:179
 msgid ""
 "WinCompose needs the .NET Framework, version 4.0 or later, which does not\n"
 "seem to be currently installed. The following action may help solve the "
@@ -893,12 +893,12 @@ msgstr ""
 "Problem zu lösen:"
 
 #. This string appears in the installer, not in WinCompose.
-#: installer.pas:184
+#: installer/installer.pas:184
 msgid "Download and install .NET Framework 4.0 Runtime"
 msgstr ".NET Framework 4.0 herunterladen und installieren"
 
 #. This string appears in the installer, not in WinCompose.
-#: installer/installer.pas:194 installer.pas:194
+#: installer/installer.pas:194
 msgid ""
 "Once this is done, you may return to this screen and proceed with the\n"
 "installation."
@@ -907,7 +907,7 @@ msgstr ""
 "und die Installation fortsetzen."
 
 #. This string appears in the installer, not in WinCompose.
-#: installer/installer.pas:285 installer.pas:285
+#: installer/installer.pas:285
 msgid "Administrator rights are required. Error: %d"
 msgstr "Administratorrechte erforderlich. Fehler: %d"
 

@@ -1,16 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26730.8
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wincompose", "wincompose\wincompose.csproj", "{E00DB4B7-3738-47F4-B430-B10EFFB36205}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35431.28
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wincompose", "wincompose\wincompose.csproj", "{E00DB4B7-3738-47F4-B430-B10EFFB36205}"
 	ProjectSection(ProjectDependencies) = postProject
+		{91D61EB7-36A9-449F-B8AE-D151928026DA} = {91D61EB7-36A9-449F-B8AE-D151928026DA}
 		{C037D608-57FD-4ACD-AAC1-BFAD1767B11B} = {C037D608-57FD-4ACD-AAC1-BFAD1767B11B}
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "installer", "installer\installer.csproj", "{55AF5191-E02C-4445-A578-D209A40C0AC7}"
 	ProjectSection(ProjectDependencies) = postProject
-		{BBA0B950-2B67-4660-BAD0-C359E99A733F} = {BBA0B950-2B67-4660-BAD0-C359E99A733F}
 		{91D61EB7-36A9-449F-B8AE-D151928026DA} = {91D61EB7-36A9-449F-B8AE-D151928026DA}
+		{BBA0B950-2B67-4660-BAD0-C359E99A733F} = {BBA0B950-2B67-4660-BAD0-C359E99A733F}
 		{E00DB4B7-3738-47F4-B430-B10EFFB36205} = {E00DB4B7-3738-47F4-B430-B10EFFB36205}
 	EndProjectSection
 EndProject
@@ -18,11 +20,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "installer-helper", "install
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wincompose-tests", "..\tests\wincompose-tests.csproj", "{7EF72322-8A15-49B1-9E92-777B16B84BD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "language", "language\language.csproj", "{BBA0B950-2B67-4660-BAD0-C359E99A733F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "language", "language\language.csproj", "{BBA0B950-2B67-4660-BAD0-C359E99A733F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "inserticons", "3rdparty\inserticons\inserticons.csproj", "{C037D608-57FD-4ACD-AAC1-BFAD1767B11B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotifyIconWpf", "3rdparty\wpf-notifyicon\src\NotifyIconWpf\NotifyIconWpf.csproj", "{7AC63864-7638-41C4-969C-D3197EF2BED9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotifyIconWpf", "3rdparty\wpf-notifyicon\src\NotifyIconWpf\NotifyIconWpf.csproj", "{7AC63864-7638-41C4-969C-D3197EF2BED9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
