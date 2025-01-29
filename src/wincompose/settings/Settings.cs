@@ -121,7 +121,6 @@ namespace WinCompose
         [EntryLocation("advanced", "ignore_regex")]
         public static SettingsEntry<string> IgnoreRegex { get; } = new SettingsEntry<string>("");
 
-        public static IEnumerable<Key> ValidComposeKeys => m_valid_compose_keys;
         public static Dictionary<string, string> ValidLanguages => m_valid_languages;
 
         public static IList<Key> ValidLedKeys { get; } = new List<Key>
@@ -162,9 +161,7 @@ namespace WinCompose
                 // but re-add it if there are no valid keys at all.
                 foreach (Key k in ComposeKeys.Value)
                 {
-                    bool is_valid = (k.VirtualKey >= VK.F1 && k.VirtualKey <= VK.F24)
-                                     || m_valid_compose_keys.Contains(k);
-                    if (is_valid && k.VirtualKey != VK.DISABLED && !compose_keys.Contains(k))
+                    if (k.VirtualKey != VK.DISABLED && !compose_keys.Contains(k))
                         compose_keys.Add(k);
                 }
 
@@ -358,32 +355,6 @@ namespace WinCompose
 
         // Tree of all known sequences
         private static SequenceTree m_sequences = new SequenceTree();
-
-        // FIXME: couldn't we accept any compose key?
-        private static readonly KeySequence m_valid_compose_keys = new KeySequence
-        {
-           new Key(VK.DISABLED),
-           new Key(VK.LMENU),
-           new Key(VK.RMENU),
-           new Key(VK.LCONTROL),
-           new Key(VK.RCONTROL),
-           new Key(VK.LWIN),
-           new Key(VK.RWIN),
-           new Key(VK.CAPITAL),
-           new Key(VK.NUMLOCK),
-           new Key(VK.PAUSE),
-           new Key(VK.APPS),
-           new Key(VK.ESCAPE),
-           new Key(VK.CONVERT),
-           new Key(VK.NONCONVERT),
-           new Key(VK.INSERT),
-           new Key(VK.SNAPSHOT),
-           new Key(VK.SCROLL),
-           new Key(VK.TAB),
-           new Key(VK.HOME),
-           new Key(VK.END),
-           new Key("`"),
-        };
 
         private static readonly Key m_default_compose_key = new Key(VK.RMENU);
 

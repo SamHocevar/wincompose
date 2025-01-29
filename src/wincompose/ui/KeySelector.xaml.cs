@@ -36,8 +36,8 @@ namespace WinCompose
 
         private void KeyCaptured(Key k)
         {
-            // Only accept non-printing keys for now, except Escape.
-            if (k.VirtualKey != VK.ESCAPE && !k.IsPrintable)
+            // Don't accept Escape as compose key.
+            if (k.VirtualKey != VK.ESCAPE)
             {
                 Key = k;
                 // Close window from the right thread. Performance is not a
