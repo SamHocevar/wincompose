@@ -22,13 +22,13 @@
 
 [submodule "src/3rdparty/libx11"]
 	path = src/3rdparty/libx11
-	url = ../../freedesktop/xorg-libX11.git
+	url = https://gitlab.freedesktop.org/xorg/lib/libx11
 	branch = master
 	update = merge
 
 [submodule "src/3rdparty/xorgproto"]
 	path = src/3rdparty/xorgproto
-	url = ../../freedesktop/xorg-xorgproto.git
+	url = https://gitlab.freedesktop.org/xorg/proto/xorgproto
 	branch = master
 	update = merge
 

@@ -134,7 +134,7 @@ Name: "fr"; MessagesFile: "compiler:Languages/French.isl"
 ; [???] ga (Gaelic)
 Name: "hi"; MessagesFile: "{#INNODIR}/Languages/Unofficial/Hindi.islu"
 Name: "hr"; MessagesFile: "{#INNODIR}/Languages/Unofficial/Croatian.isl"
-Name: "hu"; MessagesFile: "{#INNODIR}/Languages/Unofficial/Hungarian.isl"
+Name: "hu"; MessagesFile: "{#INNODIR}/Languages/Hungarian.isl"
 ; [ERR] Name: "id"; MessagesFile: "{#INNODIR}/Languages/Unofficial/Indonesian.isl"
 Name: "it"; MessagesFile: "compiler:Languages/Italian.isl"
 Name: "ja"; MessagesFile: "compiler:Languages/Japanese.isl"
