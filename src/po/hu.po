@@ -10,7 +10,8 @@ msgstr ""
 "POT-Creation-Date: 2015-03-23 15:27+0100\n"
 "PO-Revision-Date: 2023-10-09 13:01+0000\n"
 "Last-Translator: Fehér Titusz <titusz.feher@gmail.com>\n"
-"Language-Team: Hungarian <https://hosted.weblate.org/projects/wincompose/master/hu/>\n"
+"Language-Team: Hungarian <https://hosted.weblate.org/projects/wincompose/"
+"master/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -116,7 +117,9 @@ msgstr "Az Xorg projekt szekvenciáinak használata"
 msgid ""
 "Use the 3,000 compose sequences from the Xorg project (http://www.x.org/). "
 "These are the sequences most commonly found on a standard Linux system."
-msgstr "Használja az Xorg projekt (http://www.x.org/) 3000 komponáló szekvenciáját. Ezek a legtöbb standard Linux rendszeren megtalálható szekvenciák."
+msgstr ""
+"Használja az Xorg projekt (http://www.x.org/) 3000 komponáló szekvenciáját. "
+"Ezek a legtöbb standard Linux rendszeren megtalálható szekvenciák."
 
 #: language/i18n/Text.resx:201 ID:UseXComposeRules
 msgid "Use sequences from the XCompose project"
@@ -127,7 +130,10 @@ msgid ""
 "Use the 1,000 compose sequences from the XCompose opensource project "
 "(https://github.com/kragen/xcompose). These sequences may sometimes conflict "
 "with the Xorg ones."
-msgstr "Használja a szabad forrású XCompose projekt (https://github.com/kragen/xcompose) 1000 komponáló szekvenciáját. E szekvenciák némelyike ütközik az Xorg-éival."
+msgstr ""
+"Használja a szabad forrású XCompose projekt (https://github.com/kragen/"
+"xcompose) 1000 komponáló szekvenciáját. E szekvenciák némelyike ütközik az "
+"Xorg-éival."
 
 #: language/i18n/Text.resx:209 ID:UseEmojiRules
 msgid "Use WinCompose emoji sequences"
@@ -137,7 +143,9 @@ msgstr "Használja a WinCompose emoji szekvenciáit"
 msgid ""
 "Use the compose sequences for Emoji provided by the WinCompose author and "
 "contributors."
-msgstr "Használja azokat az emojikat komponáló szekvenciákat, amelyeket a WinCompose szerzője és a közreműködők készítettek."
+msgstr ""
+"Használja azokat az emojikat komponáló szekvenciákat, amelyeket a WinCompose "
+"szerzője és a közreműködők készítettek."
 
 #. Menu entry to show the debug window
 #: language/i18n/Text.resx:217 ID:DebugWindow
@@ -188,7 +196,9 @@ msgstr "Fordítva is megpróbálja a két billentyűt"
 msgid ""
 "Try to swap the keys of a two-key sequence. For instance, if Compose E A is "
 "not a valid sequence, try Compose A E instead."
-msgstr "Fordítva is megpróbálja a két-billentyűs szekvenciát. Pl. ha az E A nem valós szekvencia, megpróbálja az A E-t helyette."
+msgstr ""
+"Fordítva is megpróbálja a két-billentyűs szekvenciát. Pl. ha az E A nem "
+"valós szekvencia, megpróbálja az A E-t helyette."
 
 #: language/i18n/Text.resx:261 ID:Search
 msgid "Search Filter:"
@@ -216,7 +226,10 @@ msgid ""
 "Enable Unicode input for all characters, even those with no compose sequence "
 "defined. For instance, the following sequence will output character U+1A3F: "
 "Compose U 1 A 3 F Enter"
-msgstr "Minden Unicode karakter bevitelének engedélyezése, még ha nincs is hozzá definiált szekvencia. Például a \"Komponálás U 1 A 3 F Enter\" szekvencia az U+1A3F karaktert fogja adni"
+msgstr ""
+"Minden Unicode karakter bevitelének engedélyezése, még ha nincs is hozzá "
+"definiált szekvencia. Például a \"Komponálás U 1 A 3 F Enter\" szekvencia az "
+"U+1A3F karaktert fogja adni"
 
 #. This is the name of a category of settings about what happens when invalid sequences are typed
 #: language/i18n/Text.resx:285 ID:InvalidSequences
@@ -225,13 +238,16 @@ msgstr "Helytelen szekvenciák esetén"
 
 #: language/i18n/Text.resx:289 ID:CaseInsensitive
 msgid "Fall back to case insensitive matches"
-msgstr "Ha nem sikerül, próbálja meg a kis- és nagybetűk megkülönböztetése nélkül is"
+msgstr ""
+"Ha nem sikerül, próbálja meg a kis- és nagybetűk megkülönböztetése nélkül is"
 
 #: language/i18n/Text.resx:293 ID:CaseInsensitiveToolTip
 msgid ""
 "If the entered sequence does not exist, but there is one that only differs "
 "by case, automatically correct it."
-msgstr "Ha a bevitt szekvencia nem létezik, de kis- és nagybetűk cseréjével igen, akkor automatikusan javítsa."
+msgstr ""
+"Ha a bevitt szekvencia nem létezik, de kis- és nagybetűk cseréjével igen, "
+"akkor automatikusan javítsa."
 
 #: language/i18n/Text.resx:297 ID:DiscardOnInvalid
 msgid "Discard all typed characters"
@@ -242,7 +258,10 @@ msgid ""
 "If the entered sequence does not exist, discard all the characters that were "
 "typed. The default behaviour is to output the characters as if the compose "
 "key had not been used."
-msgstr "Ha a bevitt szekvencia nem létezik, minden karakter elvetése. Az alapértelmezés az összes karakter megjelenítése, mint ha a komponáló gombot meg sem nyomtuk volna."
+msgstr ""
+"Ha a bevitt szekvencia nem létezik, minden karakter elvetése. Az "
+"alapértelmezés az összes karakter megjelenítése, mint ha a komponáló gombot "
+"meg sem nyomtuk volna."
 
 #: language/i18n/Text.resx:305 ID:BeepOnInvalid
 msgid "Emit a beep"
@@ -260,7 +279,9 @@ msgstr "A kezelőfelület nyelve:"
 msgid ""
 "Select the language that WinCompose uses for the interface. By default the "
 "operating system language is used."
-msgstr "Válassza ki a WinCompose felhasználói felületének nyelvét. Alapértelmezés a rendszer nyelve."
+msgstr ""
+"Válassza ki a WinCompose felhasználói felületének nyelvét. Alapértelmezés a "
+"rendszer nyelve."
 
 #. Close the settings window
 #: language/i18n/Text.resx:321 ID:Close
@@ -292,7 +313,10 @@ msgid ""
 "This tells WinCompose to make a best effort to retain the original key’s "
 "behaviour. For instance, the Alt-Tab shortcut will still work even if Alt is "
 "used as the compose key."
-msgstr "Próbálja a WinCompose a lehető legjobban megőrizni a billentyű eredeti funkcióját. Például az Alt-Tab gyorsbillentyű működni fog akkor is, ha az Alt a komponáló billentyű."
+msgstr ""
+"Próbálja a WinCompose a lehető legjobban megőrizni a billentyű eredeti "
+"funkcióját. Például az Alt-Tab gyorsbillentyű működni fog akkor is, ha az "
+"Alt a komponáló billentyű."
 
 #: language/i18n/Text.resx:345 ID:InsertZwsp
 msgid "Insert zero-width spaces in Office apps"
@@ -303,7 +327,10 @@ msgid ""
 "Microsoft Office applications sometimes change the document font on the fly "
 "when entering certain Unicode characters. This feature inserts an invisible "
 "character after the Unicode character to work around the bug."
-msgstr "A Microsoft Office alkalmazások néha menet közben megváltoztatják a dokumentum betűtípusát bizonyos Unicode karakterek bevitelekor. Ez a funkció megelőzi ezt a hibát egy láthatatlan karakter beillesztésével."
+msgstr ""
+"A Microsoft Office alkalmazások néha menet közben megváltoztatják a "
+"dokumentum betűtípusát bizonyos Unicode karakterek bevitelekor. Ez a funkció "
+"megelőzi ezt a hibát egy láthatatlan karakter beillesztésével."
 
 #: language/i18n/Text.resx:353 ID:EmulateCapsLock
 msgid "Emulate Caps Lock using both Shift keys"
@@ -314,7 +341,10 @@ msgid ""
 "If Caps Lock is used as the compose key, the original behaviour of the key "
 "becomes unavailable. This feature allows to turn Caps Lock on by pressing "
 "both Shift keys simultaneously."
-msgstr "Ha a Caps Lockot használjuk komponáló billentyűként, az eredeti funkciója elérhetetlen lesz. Ezzel a beállítással a két Shift egyidejű megnyomása bekapcsolja a Caps Lockot."
+msgstr ""
+"Ha a Caps Lockot használjuk komponáló billentyűként, az eredeti funkciója "
+"elérhetetlen lesz. Ezzel a beállítással a két Shift egyidejű megnyomása "
+"bekapcsolja a Caps Lockot."
 
 #: language/i18n/Text.resx:361 ID:ShiftDisablesCapsLock
 msgid "Shift key disables Caps Lock"
@@ -325,7 +355,9 @@ msgid ""
 "If Caps Lock is used as the compose key, the original behaviour of the key "
 "becomes unavailable. This feature allows to turn Caps Lock off by pressing "
 "the Shift key."
-msgstr "Ha a Caps Lock van komponáló billentyűként beállítva, az eredeti funkciója elvész. Ezzel a beállítással a Shift billentyű kikapcsolja a Caps Lockot."
+msgstr ""
+"Ha a Caps Lock van komponáló billentyűként beállítva, az eredeti funkciója "
+"elvész. Ezzel a beállítással a Shift billentyű kikapcsolja a Caps Lockot."
 
 #: language/i18n/Text.resx:369 ID:CapsLockCapitalizes
 msgid "Caps Lock always capitalizes letters"
@@ -335,7 +367,9 @@ msgstr "A Caps Lock mindent nagybetűsít"
 msgid ""
 "When Caps Lock is on, typing an accented letter such as “é” will always "
 "output the corresponding capitalized letter, in this case “É”."
-msgstr "Ha a Caps Lock be van kapcsolva, az ékezetes betűk, mint pl. az „é” is nagybetűként fognak megjelenni, pl. „É”."
+msgstr ""
+"Ha a Caps Lock be van kapcsolva, az ékezetes betűk, mint pl. az „é” is "
+"nagybetűként fognak megjelenni, pl. „É”."
 
 #. Header for the list of Unicode character categories
 #: language/i18n/Text.resx:377 ID:Categories
@@ -479,7 +513,9 @@ msgstr "Leütések szimulációja"
 
 #: language/i18n/Text.resx:493 ID:AllowInjectedToolTip
 msgid "Do not ignore keys sent by other software like AutoHotkey or Synergy"
-msgstr "Ne vesse el a más szoftverek (pl. AutoHotkey, Synergy) által küldött billentyűket"
+msgstr ""
+"Ne vesse el a más szoftverek (pl. AutoHotkey, Synergy) által küldött "
+"billentyűket"
 
 #. The name of the “Print Screen” key on the keyboard
 #: language/i18n/Text.resx:497 ID:KeyPrint
@@ -499,7 +535,9 @@ msgstr "Automatikusan keresse a frissítéseket"
 msgid ""
 "If enabled, WinCompose will connect to the Internet at regular intervals to "
 "check for new versions. Updates are not installed automatically."
-msgstr "Engedélyezés esetén a WinCompose rendszeresen újabb verziókat fog keresni az Interneten. A frissítések nem települnek automatikusan."
+msgstr ""
+"Engedélyezés esetén a WinCompose rendszeresen újabb verziókat fog keresni az "
+"Interneten. A frissítések nem települnek automatikusan."
 
 #: language/i18n/Text.resx:513 ID:KeepIconVisible
 msgid "Try to keep notification area icon always visible"
@@ -509,7 +547,9 @@ msgstr "Próbálja az értesítési ikont mindig látható helyen tartani"
 msgid ""
 "By default, Windows will remove the icon from the notification area after a "
 "short while. This option attempts to keep it always visible."
-msgstr "Alapértelmezésben a Windows rövid időn belül eltünteti az ikont az értesítési területről. Ez az opció megpróbálja látható helyen tartani."
+msgstr ""
+"Alapértelmezésben a Windows rövid időn belül eltünteti az ikont az "
+"értesítési területről. Ez az opció megpróbálja látható helyen tartani."
 
 #. The user can click on this button to change the current compose key.
 #: language/i18n/Text.resx:521 ID:ChangeComposeKey
@@ -534,7 +574,11 @@ msgid ""
 "If enabled, WinCompose will no longer display an icon in the notification "
 "area. The only way to open the WinCompose interface will then be through the "
 "“WinCompose Settings” and “WinCompose Sequences” entries in the startup menu."
-msgstr "Kiválasztás esetén a WinCompose nem fogja az értesítési területen megjeleníteni az ikonját. A WinCompose felület megnyitására lehetőségként a Start menüben található \"WinCompose Beállítások\" és \"WinCompose Szekvenciák\" pontok maradnak."
+msgstr ""
+"Kiválasztás esetén a WinCompose nem fogja az értesítési területen "
+"megjeleníteni az ikonját. A WinCompose felület megnyitására lehetőségként a "
+"Start menüben található \"WinCompose Beállítások\" és \"WinCompose "
+"Szekvenciák\" pontok maradnak."
 
 #. The name of the “Home” key on the keyboard
 #: language/i18n/Text.resx:541 ID:KeyHome
@@ -570,7 +614,9 @@ msgstr "Az ennek a regexnek megfelelő ablakok kihagyása:"
 msgid ""
 "WinCompose will be completely disabled when the current window class or "
 "window name matches this regular expression."
-msgstr "A WinCompose nem fog működni, amikor az aktuális ablak osztályára vagy nevére illeszkedik ez a regular expression."
+msgstr ""
+"A WinCompose nem fog működni, amikor az aktuális ablak osztályára vagy "
+"nevére illeszkedik ez a regular expression."
 
 #: language/i18n/Text.resx:569 ID:AlwaysCompose
 msgid "Alternate compose key is always Compose"
@@ -581,7 +627,11 @@ msgid ""
 "If enabled, all compose keys will be treated as Compose in a sequence. By "
 "default, only the first pressed key will act as Compose, and alternate "
 "compose keys will keep their original role."
-msgstr "Bekapcsolás esetén minden komponáló billentyű Compose-ként lesz értelmezve egy-egy szekvenciában. Alapértelmezésben csak az első leütés lesz komponálásként értelmezve, és minden más komponáló billentyű megőrzi az eredeti funkcióját."
+msgstr ""
+"Bekapcsolás esetén minden komponáló billentyű Compose-ként lesz értelmezve "
+"egy-egy szekvenciában. Alapértelmezésben csak az első leütés lesz "
+"komponálásként értelmezve, és minden más komponáló billentyű megőrzi az "
+"eredeti funkcióját."
 
 #. The section for random contributors who aren’t programmers or translators. Might be empty.
 #: language/i18n/Text.resx:577 ID:SpecialThanks
@@ -602,7 +652,9 @@ msgstr "Kedvencek"
 msgid ""
 "If set, any compose sequence will be cancelled after a certain delay if no "
 "keyboard activity is detected."
-msgstr "Ha be van állítva, az elkezdett komponáló szekvencia törlésre kerül a megadott idő után, ha nem érzékelhető billentyűzetaktivitás."
+msgstr ""
+"Ha be van állítva, az elkezdett komponáló szekvencia törlésre kerül a "
+"megadott idő után, ha nem érzékelhető billentyűzetaktivitás."
 
 #: language/i18n/Text.resx:593 ID:KeyboardLed
 msgid "Keyboard LED"
@@ -612,7 +664,9 @@ msgstr "Billentyűzet LED"
 msgid ""
 "If set, the corresponding keyboard LED will be lit when a compose sequence "
 "is in progress."
-msgstr "Beállítás esetén a megfelelő billentyűzet LED világítani fog, amíg a komponáló szekvencia tart."
+msgstr ""
+"Beállítás esetén a megfelelő billentyűzet LED világítani fog, amíg a "
+"komponáló szekvencia tart."
 
 #. The short name of the compose key
 #: language/i18n/Text.resx:601 ID:KeyCompose
@@ -639,7 +693,9 @@ msgstr "A Caps Lock csak lenyomás közben aktív"
 msgid ""
 "Releasing the Caps Lock key will immediately disable it, instead of the more "
 "standard behaviour of having to press it a second time."
-msgstr "A Caps Lock felengedése azt azonnal lekapcsolja a szokásos viselkedés helyett, amikor az ismételt megnyomás kapcsolja le."
+msgstr ""
+"A Caps Lock felengedése azt azonnal lekapcsolja a szokásos viselkedés "
+"helyett, amikor az ismételt megnyomás kapcsolja le."
 
 #: language/i18n/Text.resx:625 ID:RunElevated
 msgid "Run with elevated privileges (recommended)"
@@ -650,9 +706,12 @@ msgid ""
 "Composition will not work in some applications if WinCompose does not run "
 "with elevated privileges. This options reduces the chances that this will "
 "happen."
-msgstr "A komponálás néhány alkalmazásban nem működik, ha a WinCompose nem emelt jogosultságokkal fut. Ez az opció csökkenti ennek előfordulási valószínűségét."
+msgstr ""
+"A komponálás néhány alkalmazásban nem működik, ha a WinCompose nem emelt "
+"jogosultságokkal fut. Ez az opció csökkenti ennek előfordulási "
+"valószínűségét."
 
-#. Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
+#.  Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
 #: language/unicode/Category.resx:121 ID:Control
 msgid "Other, Control"
 msgstr "Más, kontrol kód"

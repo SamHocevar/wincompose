@@ -5,7 +5,8 @@ msgstr ""
 "POT-Creation-Date: 2015-03-23 15:27+0100\n"
 "PO-Revision-Date: 2023-12-26 18:07+0000\n"
 "Last-Translator: QuarkUp <QuarkUpParticle@hotmail.com>\n"
-"Language-Team: French <https://hosted.weblate.org/projects/wincompose/master/fr/>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/wincompose/master/"
+"fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -112,9 +113,9 @@ msgid ""
 "Use the 3,000 compose sequences from the Xorg project (http://www.x.org/). "
 "These are the sequences most commonly found on a standard Linux system."
 msgstr ""
-"Utiliser les 3000 séquences de composition du projet XOrg (http://www.x."
-"org). Ce sont les séquences les plus couramment présentes sur un système "
-"Linux."
+"Utiliser les 3000 séquences de composition du projet XOrg (http://"
+"www.x.org). Ce sont les séquences les plus couramment présentes sur un "
+"système Linux."
 
 #: language/i18n/Text.resx:201 ID:UseXComposeRules
 msgid "Use sequences from the XCompose project"
@@ -191,7 +192,9 @@ msgstr "Tenter en inversant les touches"
 msgid ""
 "Try to swap the keys of a two-key sequence. For instance, if Compose E A is "
 "not a valid sequence, try Compose A E instead."
-msgstr "Tente d’inverser les touches d’une séquence de deux touches. Par exemple, si Compose E A n’est pas une séquence valide, essaye Compose A E à la place."
+msgstr ""
+"Tente d’inverser les touches d’une séquence de deux touches. Par exemple, si "
+"Compose E A n’est pas une séquence valide, essaye Compose A E à la place."
 
 #: language/i18n/Text.resx:261 ID:Search
 msgid "Search Filter:"
@@ -678,7 +681,9 @@ msgstr "Lancer WinCompose au démarrage"
 
 #: language/i18n/Text.resx:609 ID:AutoLaunchToolTip
 msgid "If set, WinCompose will be started when the user logs in."
-msgstr "Si activé, WinCompose va démarrer quand l'utilisateur se connectera à sa session."
+msgstr ""
+"Si activé, WinCompose va démarrer quand l'utilisateur se connectera à sa "
+"session."
 
 #: language/i18n/Text.resx:613 ID:Accessibility
 msgid "Accessibility"
@@ -692,7 +697,9 @@ msgstr "Verr. Maj. est seulement actif quand maintenu appuyé"
 msgid ""
 "Releasing the Caps Lock key will immediately disable it, instead of the more "
 "standard behaviour of having to press it a second time."
-msgstr "Relâcher la touche Verr. Maj. va immédiatement la désactiver, au lieu du comportement habituel de devoirs la presser une seconde fois."
+msgstr ""
+"Relâcher la touche Verr. Maj. va immédiatement la désactiver, au lieu du "
+"comportement habituel de devoirs la presser une seconde fois."
 
 #: language/i18n/Text.resx:625 ID:RunElevated
 msgid "Run with elevated privileges (recommended)"
@@ -703,9 +710,12 @@ msgid ""
 "Composition will not work in some applications if WinCompose does not run "
 "with elevated privileges. This options reduces the chances that this will "
 "happen."
-msgstr "La composition ne fonctionnera pas dans certaines applications si WinCompose ne se lance pas en tant qu'administrateur. Cette option réduit les chances d'un tel événement."
+msgstr ""
+"La composition ne fonctionnera pas dans certaines applications si WinCompose "
+"ne se lance pas en tant qu'administrateur. Cette option réduit les chances "
+"d'un tel événement."
 
-#. Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
+#.  Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
 #: language/unicode/Category.resx:121 ID:Control
 msgid "Other, Control"
 msgstr "Autre, commande"

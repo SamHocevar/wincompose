@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AutodetectLanguage" xml:space="preserve">
+    <value>자동 감지</value>
+  </data>
+  <data name="KeyLMenu" xml:space="preserve">
+    <value>왼쪽 Alt</value>
+  </data>
+  <data name="KeyRMenu" xml:space="preserve">
+    <value>오른쪽 Alt</value>
+  </data>
+  <data name="KeyLControl" xml:space="preserve">
+    <value>왼쪽 Ctrl</value>
+  </data>
+  <data name="KeyRControl" xml:space="preserve">
+    <value>오른쪽 Ctrl</value>
+  </data>
+  <data name="KeyLWin" xml:space="preserve">
+    <value>왼쪽 윈도우 키</value>
+  </data>
+  <data name="KeyRWin" xml:space="preserve">
+    <value>오른쪽 윈도우 키</value>
+  </data>
+  <data name="KeyCapital" xml:space="preserve">
+    <value>Caps Lock</value>
+  </data>
+  <data name="KeyNumLock" xml:space="preserve">
+    <value>Num Lock</value>
+  </data>
+  <data name="KeyPause" xml:space="preserve">
+    <value>Pause</value>
+  </data>
+  <data name="KeyApps" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="KeyEscape" xml:space="preserve">
+    <value>Escape</value>
+  </data>
+  <data name="KeyConvert" xml:space="preserve">
+    <value>변환</value>
+  </data>
+  <data name="KeyNonConvert" xml:space="preserve">
+    <value>무변환</value>
+  </data>
+  <data name="KeyScroll" xml:space="preserve">
+    <value>Scroll Lock</value>
+  </data>
+  <data name="KeySpace" xml:space="preserve">
+    <value>스페이스</value>
+  </data>
+  <data name="KeyReturn" xml:space="preserve">
+    <value>엔터</value>
+  </data>
+  <data name="Composing" xml:space="preserve">
+    <value>합성 규칙</value>
+  </data>
+  <data name="UseXorgRules" xml:space="preserve">
+    <value>Xorg 프로젝트의 시퀀스를 사용</value>
+  </data>
+  <data name="UseXorgRulesToolTip" xml:space="preserve">
+    <value>Xorg 프로젝트(http://www.x.org/)에서 제공한 합성 시퀀스 3,000개를 사용합니다. 이들은 표준적인 리눅스 시스템에서 가장 많이 사용됩니다.</value>
+  </data>
+  <data name="UseXComposeRules" xml:space="preserve">
+    <value>XCompose 프로젝트의 시퀀스를 사용</value>
+  </data>
+  <data name="UseXComposeRulesToolTip" xml:space="preserve">
+    <value>XCompose 오픈 소스 프로젝트(https://github.com/kragen/xcompose)에서 제공한 합성 시퀀스 1,000개를 사용합니다. 이 시퀀스는 Xorg의 시퀀스와 충돌할 수도 있습니다.</value>
+  </data>
+  <data name="UseEmojiRules" xml:space="preserve">
+    <value>WinCompose 이모지 시퀀스를 사용</value>
+  </data>
+  <data name="UseEmojiRulesToolTip" xml:space="preserve">
+    <value>WinCompose 개발자와 기여자가 제공한 이모지 합성 시퀀스를 사용합니다.</value>
+  </data>
+  <data name="DebugWindow" xml:space="preserve">
+    <value>디버그 창</value>
+  </data>
+  <data name="ShowSequences" xml:space="preserve">
+    <value>시퀀스를 표시…</value>
+  </data>
+  <data name="Disable" xml:space="preserve">
+    <value>비활성화</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>다시 시작</value>
+  </data>
+  <data name="DonationPage" xml:space="preserve">
+    <value>기부 페이지</value>
+  </data>
+  <data name="VisitWebsite" xml:space="preserve">
+    <value>웹사이트 방문</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>나가기</value>
+  </data>
+  <data name="UnicodeCharacters" xml:space="preserve">
+    <value>유니코드 문자</value>
+  </data>
+  <data name="Sequences" xml:space="preserve">
+    <value>시퀀스</value>
+  </data>
+  <data name="SwapOnInvalid" xml:space="preserve">
+    <value>키의 순서 교환을 시도</value>
+  </data>
+  <data name="SwapOnInvalidToolTip" xml:space="preserve">
+    <value>키 2개로 구성된 시퀀스에서 위치를 교체하는 것을 시도합니다. 예를 들어, Compose E A가 올바른 시퀀스가 아닐 경우, 대신 Compose A E를 시도합니다.</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>검색 필터:</value>
+  </data>
+  <data name="ComposeKey" xml:space="preserve">
+    <value>Compose 키:</value>
+  </data>
+  <data name="ComposeKeyToolTip" xml:space="preserve">
+    <value>Compose 키의 기능을 할 키를 선택하세요.</value>
+  </data>
+  <data name="ResetTimeout" xml:space="preserve">
+    <value>유휴 시간 제한</value>
+  </data>
+  <data name="UnicodeInput" xml:space="preserve">
+    <value>고급 유니코드 입력</value>
+  </data>
+  <data name="UnicodeInputToolTip" xml:space="preserve">
+    <value>합성 시퀀스가 지정되지 않은 유니코드 문자도 입력할 수 있도록 합니다. 예를 들어, U+1A3F를 출력하려면 Compose U 1 A 3 F를 입력합니다</value>
+  </data>
+  <data name="InvalidSequences" xml:space="preserve">
+    <value>잘못된 시퀀스가 입력될 때</value>
+  </data>
+  <data name="CaseInsensitive" xml:space="preserve">
+    <value>대소문자만 다른 것이 있는 경우 사용</value>
+  </data>
+  <data name="CaseInsensitiveToolTip" xml:space="preserve">
+    <value>입력된 시퀀스가 존재하지 않지만 대소문자만 다른 것이 있다면 자동으로 정정합니다.</value>
+  </data>
+  <data name="DiscardOnInvalid" xml:space="preserve">
+    <value>입력된 문자를 버리기</value>
+  </data>
+  <data name="DiscardOnInvalidToolTip" xml:space="preserve">
+    <value>입력된 시퀀스가 없는 경우, 입력된 문자를 모두 버립니다. 기본적으로는 Compose 키가 입력되지 않았을 때처럼 문자를 출력합니다.</value>
+  </data>
+  <data name="BeepOnInvalid" xml:space="preserve">
+    <value>비프음을 출력</value>
+  </data>
+  <data name="BeepOnInvalidToolTip" xml:space="preserve">
+    <value>입력된 시퀀스가 존재하지 않는 경우, 시스템 사운드를 출력합니다.</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>표시 언어:</value>
+  </data>
+  <data name="LanguageToolTip" xml:space="preserve">
+    <value>WinCompose의 인터페이스가 표시되는 언어를 선택하세요. 기본적으로 시스템 언어를 사용합니다.</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>닫기</value>
+  </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>클립보드에 복사</value>
+  </data>
+  <data name="Emoji" xml:space="preserve">
+    <value>이모지</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>적용</value>
+  </data>
+  <data name="KeepOriginalKey" xml:space="preserve">
+    <value>원래 Compose 키의 동작을 유지</value>
+  </data>
+  <data name="KeepOriginalKeyToolTip" xml:space="preserve">
+    <value>WinCompose에서 키의 원래 동작을 유지하려고 합니다. 예를 들어, Alt가 Compose 키로 사용되는 경우에도 Alt-Tab 단축키가 작동합니다.</value>
+  </data>
+  <data name="InsertZwsp" xml:space="preserve">
+    <value>Office 앱에서 폭 없는 공백을 삽입</value>
+  </data>
+  <data name="InsertZwspToolTip" xml:space="preserve">
+    <value>Microsoft Office 앱은 특정 유니코드 문자를 입력할 때 폰트가 바뀌는 버그가 있습니다. 이 기능은 유니코드 문자 다음에 보이지 않는 문자를 삽입하여 버그를 해결합니다.</value>
+  </data>
+  <data name="EmulateCapsLock" xml:space="preserve">
+    <value>양쪽 Shift 키를 누르는 것으로 Caps Lock을 대체</value>
+  </data>
+  <data name="EmulateCapsLockToolTip" xml:space="preserve">
+    <value>Caps Lock이 합성 키로 사용되면, 키의 원래 기능은 비활성화됩니다. 이 기능은 Shift 키 2개를 동시에 눌러 Caps Lock을 켤 수 있도록 합니다.</value>
+  </data>
+  <data name="ShiftDisablesCapsLock" xml:space="preserve">
+    <value>Shift Key를 눌러 Caps Lock 끄기</value>
+  </data>
+  <data name="ShiftDisablesCapsLockToolTip" xml:space="preserve">
+    <value>Caps Lock이 합성 키로 사용되면, 키의 원래 기능은 비활성화됩니다. 이 기능은 Shift 키를 눌러 Caps Lock을 끌 수 있도록 합니다.</value>
+  </data>
+  <data name="CapsLockCapitalizes" xml:space="preserve">
+    <value>Caps Lock이 켜져 있으면 항상 대문자로 입력</value>
+  </data>
+  <data name="CapsLockCapitalizesToolTip" xml:space="preserve">
+    <value>Caps Lock이 켜져 있을 때, “é”와 같이 악센트가 붙은 글자는 항상 대문자(이 경우 “É”)로 출력됩니다.</value>
+  </data>
+  <data name="Categories" xml:space="preserve">
+    <value>분류</value>
+  </data>
+  <data name="InSelectedCategories" xml:space="preserve">
+    <value>선택된 분류에서 선택</value>
+  </data>
+  <data name="Options" xml:space="preserve">
+    <value>설정 — WinCompose</value>
+  </data>
+  <data name="ShowOptions" xml:space="preserve">
+    <value>설정…</value>
+  </data>
+  <data name="TrayToolTip" xml:space="preserve">
+    <value>WinCompose v{2} on {0} (시퀀스 {1}개)</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>일반</value>
+  </data>
+  <data name="Behavior" xml:space="preserve">
+    <value>동작</value>
+  </data>
+  <data name="WindowTitle" xml:space="preserve">
+    <value>시퀀스 — WinCompose</value>
+  </data>
+  <data name="UserMacros" xml:space="preserve">
+    <value>사용자 정의 매크로</value>
+  </data>
+  <data name="DisabledToolTip" xml:space="preserve">
+    <value>WinCompose가 비활성화되었습니다</value>
+  </data>
+  <data name="KeyInsert" xml:space="preserve">
+    <value>Insert</value>
+  </data>
+  <data name="TestTyping" xml:space="preserve">
+    <value>입력 테스트</value>
+  </data>
+  <data name="Tweaks" xml:space="preserve">
+    <value>상세 설정</value>
+  </data>
+  <data name="DelaySeconds" xml:space="preserve">
+    <value>{0}초</value>
+  </data>
+  <data name="About" xml:space="preserve">
+    <value>WinCompose에 대해</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>WinCompose {0} 다운로드</value>
+  </data>
+  <data name="AboutBoxTitle" xml:space="preserve">
+    <value>WinCompose에 대해</value>
+  </data>
+  <data name="Programming" xml:space="preserve">
+    <value>프로그래밍</value>
+  </data>
+  <data name="Translators" xml:space="preserve">
+    <value>번역</value>
+  </data>
+  <data name="Authors" xml:space="preserve">
+    <value>개발자</value>
+  </data>
+  <data name="License" xml:space="preserve">
+    <value>라이선스</value>
+  </data>
+  <data name="NeedRestart" xml:space="preserve">
+    <value>변경 사항을 적용하려면 WinCompose를 재시작해야 합니다.</value>
+  </data>
+  <data name="ReportBug" xml:space="preserve">
+    <value>버그 신고</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>도움말</value>
+  </data>
+  <data name="UpdatesToolTip" xml:space="preserve">
+    <value>업데이트가 없습니다.</value>
+  </data>
+  <data name="UserDefinedSequences" xml:space="preserve">
+    <value>사용자 정의 시퀀스</value>
+  </data>
+  <data name="UserDefinedSequencesEdit" xml:space="preserve">
+    <value>편집</value>
+  </data>
+  <data name="UserDefinedSequencesReload" xml:space="preserve">
+    <value>새로고침</value>
+  </data>
+  <data name="AllowInjected" xml:space="preserve">
+    <value>키 삽입을 허용</value>
+  </data>
+  <data name="AllowInjectedToolTip" xml:space="preserve">
+    <value>AutoHotKey 또는 Synergy와 같은 다른 소프트웨어에서 입력된 키를 무시하지 않기</value>
+  </data>
+  <data name="KeyPrint" xml:space="preserve">
+    <value>Prt Scrn</value>
+  </data>
+  <data name="KeyDisabled" xml:space="preserve">
+    <value>미지정</value>
+  </data>
+  <data name="CheckUpdates" xml:space="preserve">
+    <value>자동으로 업데이트를 확인</value>
+  </data>
+  <data name="CheckUpdatesToolTip" xml:space="preserve">
+    <value>활성화하면, WinCompose가 일정 주기로 인터넷에 접속하여 새 버전을 확인합니다. 업데이트가 자동으로 설치되지는 않습니다.</value>
+  </data>
+  <data name="KeepIconVisible" xml:space="preserve">
+    <value>알림 영역에 아이콘을 항상 표시</value>
+  </data>
+  <data name="KeepIconVisibleToolTip" xml:space="preserve">
+    <value>Windows는 알림 영역의 아이콘을 일정 시간 후 자동으로 삭제합니다. 이 설정을 활성화화면 아이콘이 항상 표시되도록 합니다.</value>
+  </data>
+  <data name="ChangeComposeKey" xml:space="preserve">
+    <value>변경…</value>
+  </data>
+  <data name="CaptureComposeKey" xml:space="preserve">
+    <value>Compose 키로 사용할 키를 눌러 주세요.</value>
+  </data>
+  <data name="AddToFavorites" xml:space="preserve">
+    <value>즐겨찾기에 추가</value>
+  </data>
+  <data name="DisableIcon" xml:space="preserve">
+    <value>알림 영역의 아이콘을 비활성화</value>
+  </data>
+  <data name="DisableIconToolTip" xml:space="preserve">
+    <value>활성화화면 WinCompose는 더 이상 알림 영역에 아이콘을 표시하지 않습니다. 이때 WinCompose 인터페이스를 열려면 시작 메뉴에서 &quot;WinCompose Setting&quot;과 &quot;WinCompose Sequence&quot;를 사용해야 합니다.</value>
+  </data>
+  <data name="KeyHome" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="KeyEnd" xml:space="preserve">
+    <value>End</value>
+  </data>
+  <data name="KeyTab" xml:space="preserve">
+    <value>Tab</value>
+  </data>
+  <data name="NoTimeout" xml:space="preserve">
+    <value>시간 제한 없음</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>고급</value>
+  </data>
+  <data name="IgnoreRegex" xml:space="preserve">
+    <value>다음 정규표현식과 일치하는 창에서는 무시:</value>
+  </data>
+  <data name="IgnoreRegexToolTip" xml:space="preserve">
+    <value>현재 창의 창 클래스나 창 이름이 정규표현식에 일치되는 경우에는 WinCompose가 완전히 비활성화됩니다.</value>
+  </data>
+  <data name="AlwaysCompose" xml:space="preserve">
+    <value>Compose 키를 대체한 키를 항상 Compose로 취급</value>
+  </data>
+  <data name="AlwaysComposeToolTip" xml:space="preserve">
+    <value>활성화하면 시퀀스의 모든 합성 키가 Compose 키로 취급됩니다. 기본적으로는, 가장 먼저 눌린 키만 Compose 키로 작동하고 나머지 합성 키들은 원래 기능을 유지합니다.</value>
+  </data>
+  <data name="SpecialThanks" xml:space="preserve">
+    <value>도움을 주신 분들</value>
+  </data>
+  <data name="RemoveFromFavorites" xml:space="preserve">
+    <value>즐겨찾기에서 제거</value>
+  </data>
+  <data name="Favorites" xml:space="preserve">
+    <value>즐겨찾기</value>
+  </data>
+  <data name="TimeoutToolTip" xml:space="preserve">
+    <value>설정하면, 일정 시간 동안 키보드 입력이 감지되지 않을 때 합성 시퀀스를 취소합니다.</value>
+  </data>
+  <data name="KeyboardLed" xml:space="preserve">
+    <value>키보드 LED</value>
+  </data>
+  <data name="KeyboardLedToolTip" xml:space="preserve">
+    <value>설정하면, 합성 시퀀스를 입력할 때 해당하는 키보드 LED가 켜집니다.</value>
+  </data>
+  <data name="KeyCompose" xml:space="preserve">
+    <value>Compose</value>
+  </data>
+  <data name="AutoLaunch" xml:space="preserve">
+    <value>로그인할 때 WinCompose 실행</value>
+  </data>
+  <data name="AutoLaunchToolTip" xml:space="preserve">
+    <value>현재 창의 창 클래스나 창 이름이 정규표현식에 일치되는 경우에는 WinCompose가 완전히 비활성화됩니다.</value>
+  </data>
+  <data name="Accessibility" xml:space="preserve">
+    <value>접근성</value>
+  </data>
+  <data name="MustHoldCapsLock" xml:space="preserve">
+    <value>Caps Lock이 눌려 있을 때만 작동</value>
+  </data>
+  <data name="MustHoldCapsLockToolTip" xml:space="preserve">
+    <value>Caps Lock을 한 번 더 눌러야 비활성화되는 대신, 떼는 즉시 비활성화됩니다.</value>
+  </data>
+  <data name="RunElevated" xml:space="preserve">
+    <value>관리자 권한으로 실행 (권장됨)</value>
+  </data>
+  <data name="RunElevatedToolTip" xml:space="preserve">
+    <value>WinCompose가 관리자 권한으로 실행되지 않으면 일부 앱에서 합성이 동작하지 않을 수 있습니다. 이 설정은 그러한 현상이 발생할 가능성을 줄입니다.</value>
+  </data>
+</root>

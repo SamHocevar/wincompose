@@ -10,12 +10,14 @@ msgstr ""
 "POT-Creation-Date: 2015-03-23 15:27+0100\n"
 "PO-Revision-Date: 2024-01-02 11:10+0000\n"
 "Last-Translator: Сергій <sergiy.goncharuk.1@gmail.com>\n"
-"Language-Team: Ukrainian <https://hosted.weblate.org/projects/wincompose/master/uk/>\n"
+"Language-Team: Ukrainian <https://hosted.weblate.org/projects/wincompose/"
+"master/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 5.4-dev\n"
 
 #. The user can configure the application language and choose between English, French, etc. and Autodetect
@@ -116,7 +118,9 @@ msgstr "Використати комбінації з проєкту Xorg"
 msgid ""
 "Use the 3,000 compose sequences from the Xorg project (http://www.x.org/). "
 "These are the sequences most commonly found on a standard Linux system."
-msgstr "Використати 3000 комбінацій з проєкту Xorg (http://www.x.org/). Вони зазвичай встановлені в Лінуксі."
+msgstr ""
+"Використати 3000 комбінацій з проєкту Xorg (http://www.x.org/). Вони "
+"зазвичай встановлені в Лінуксі."
 
 #: language/i18n/Text.resx:201 ID:UseXComposeRules
 msgid "Use sequences from the XCompose project"
@@ -127,7 +131,9 @@ msgid ""
 "Use the 1,000 compose sequences from the XCompose opensource project "
 "(https://github.com/kragen/xcompose). These sequences may sometimes conflict "
 "with the Xorg ones."
-msgstr "Використати 1000 комбінацій з проєкту XCompose (https://github.com/kragen/xcompose). Ці комбінації можуть подекуди конфліктувати з комбінаціями Xorg."
+msgstr ""
+"Використати 1000 комбінацій з проєкту XCompose (https://github.com/kragen/"
+"xcompose). Ці комбінації можуть подекуди конфліктувати з комбінаціями Xorg."
 
 #: language/i18n/Text.resx:209 ID:UseEmojiRules
 msgid "Use WinCompose emoji sequences"
@@ -137,7 +143,8 @@ msgstr "Використати комбінації Emoji від WinCompose"
 msgid ""
 "Use the compose sequences for Emoji provided by the WinCompose author and "
 "contributors."
-msgstr "Використовувати комбінації для Emoji від авторів і учасників WinCompose."
+msgstr ""
+"Використовувати комбінації для Emoji від авторів і учасників WinCompose."
 
 #. Menu entry to show the debug window
 #: language/i18n/Text.resx:217 ID:DebugWindow
@@ -188,7 +195,9 @@ msgstr "Спробувати поміняти місцями дві клавіш
 msgid ""
 "Try to swap the keys of a two-key sequence. For instance, if Compose E A is "
 "not a valid sequence, try Compose A E instead."
-msgstr "Спробувати поміняти місцями дві клавіші у комбінації. Наприклад, якщо комбінація Compose E A є недопустимою, то спробувати замість неї Compose A E."
+msgstr ""
+"Спробувати поміняти місцями дві клавіші у комбінації. Наприклад, якщо "
+"комбінація Compose E A є недопустимою, то спробувати замість неї Compose A E."
 
 #: language/i18n/Text.resx:261 ID:Search
 msgid "Search Filter:"
@@ -216,7 +225,10 @@ msgid ""
 "Enable Unicode input for all characters, even those with no compose sequence "
 "defined. For instance, the following sequence will output character U+1A3F: "
 "Compose U 1 A 3 F Enter"
-msgstr "Увімкнути введення Unicode для всіх символів, навіть тих, для яких не визначено комбінацій Compose. Наприклад, наступна комбінація введе символ U+1A3F: Compose U 1 A 3 F Enter"
+msgstr ""
+"Увімкнути введення Unicode для всіх символів, навіть тих, для яких не "
+"визначено комбінацій Compose. Наприклад, наступна комбінація введе символ "
+"U+1A3F: Compose U 1 A 3 F Enter"
 
 #. This is the name of a category of settings about what happens when invalid sequences are typed
 #: language/i18n/Text.resx:285 ID:InvalidSequences
@@ -231,7 +243,9 @@ msgstr "Повернутися до нечутливих до регістру �
 msgid ""
 "If the entered sequence does not exist, but there is one that only differs "
 "by case, automatically correct it."
-msgstr "Якщо введеної комбінації не існує, але є комбінація, яка відрізняється лише регістром, автоматично виправити її."
+msgstr ""
+"Якщо введеної комбінації не існує, але є комбінація, яка відрізняється лише "
+"регістром, автоматично виправити її."
 
 #: language/i18n/Text.resx:297 ID:DiscardOnInvalid
 msgid "Discard all typed characters"
@@ -242,7 +256,10 @@ msgid ""
 "If the entered sequence does not exist, discard all the characters that were "
 "typed. The default behaviour is to output the characters as if the compose "
 "key had not been used."
-msgstr "Якщо введеної комбінації не існує, відкинути всі введені символи. За замовчуванням символи буде виведено так, ніби клавішу Compose не було використано."
+msgstr ""
+"Якщо введеної комбінації не існує, відкинути всі введені символи. За "
+"замовчуванням символи буде виведено так, ніби клавішу Compose не було "
+"використано."
 
 #: language/i18n/Text.resx:305 ID:BeepOnInvalid
 msgid "Emit a beep"
@@ -260,7 +277,9 @@ msgstr "Мова інтерфейсу:"
 msgid ""
 "Select the language that WinCompose uses for the interface. By default the "
 "operating system language is used."
-msgstr "Виберіть мову інтерфейсу WinCompose. За замовчуванням використовується мова операційної системи."
+msgstr ""
+"Виберіть мову інтерфейсу WinCompose. За замовчуванням використовується мова "
+"операційної системи."
 
 #. Close the settings window
 #: language/i18n/Text.resx:321 ID:Close
@@ -292,7 +311,10 @@ msgid ""
 "This tells WinCompose to make a best effort to retain the original key’s "
 "behaviour. For instance, the Alt-Tab shortcut will still work even if Alt is "
 "used as the compose key."
-msgstr "Це вказує WinCompose докласти максимум зусиль, щоб зберегти оригінальну поведінку клавіш. Наприклад, комбінація клавіш Alt-Tab працюватиме, навіть якщо як клавішу Compose буде використано Alt."
+msgstr ""
+"Це вказує WinCompose докласти максимум зусиль, щоб зберегти оригінальну "
+"поведінку клавіш. Наприклад, комбінація клавіш Alt-Tab працюватиме, навіть "
+"якщо як клавішу Compose буде використано Alt."
 
 #: language/i18n/Text.resx:345 ID:InsertZwsp
 msgid "Insert zero-width spaces in Office apps"
@@ -303,7 +325,10 @@ msgid ""
 "Microsoft Office applications sometimes change the document font on the fly "
 "when entering certain Unicode characters. This feature inserts an invisible "
 "character after the Unicode character to work around the bug."
-msgstr "Програми Microsoft Office іноді змінюють шрифт документа на льоту при введенні певних символів Unicode. Ця функція вставляє пробіл нульової ширини після символу Unicode, щоб обійти цю помилку."
+msgstr ""
+"Програми Microsoft Office іноді змінюють шрифт документа на льоту при "
+"введенні певних символів Unicode. Ця функція вставляє пробіл нульової ширини "
+"після символу Unicode, щоб обійти цю помилку."
 
 #: language/i18n/Text.resx:353 ID:EmulateCapsLock
 msgid "Emulate Caps Lock using both Shift keys"
@@ -314,7 +339,10 @@ msgid ""
 "If Caps Lock is used as the compose key, the original behaviour of the key "
 "becomes unavailable. This feature allows to turn Caps Lock on by pressing "
 "both Shift keys simultaneously."
-msgstr "Якщо Caps Lock використовується як клавіша Compose, початкова поведінка клавіші стає недоступною. Ця функція дозволяє увімкнути Caps Lock одночасним натисканням обох клавіш Shift."
+msgstr ""
+"Якщо Caps Lock використовується як клавіша Compose, початкова поведінка "
+"клавіші стає недоступною. Ця функція дозволяє увімкнути Caps Lock одночасним "
+"натисканням обох клавіш Shift."
 
 #: language/i18n/Text.resx:361 ID:ShiftDisablesCapsLock
 msgid "Shift key disables Caps Lock"
@@ -325,7 +353,10 @@ msgid ""
 "If Caps Lock is used as the compose key, the original behaviour of the key "
 "becomes unavailable. This feature allows to turn Caps Lock off by pressing "
 "the Shift key."
-msgstr "Якщо Caps Lock використовується як клавіша Compose, початкова поведінка клавіші стає недоступною. Ця функція дозволяє вимкнути Caps Lock, натиснувши клавішу Shift."
+msgstr ""
+"Якщо Caps Lock використовується як клавіша Compose, початкова поведінка "
+"клавіші стає недоступною. Ця функція дозволяє вимкнути Caps Lock, натиснувши "
+"клавішу Shift."
 
 #: language/i18n/Text.resx:369 ID:CapsLockCapitalizes
 msgid "Caps Lock always capitalizes letters"
@@ -335,7 +366,9 @@ msgstr "Caps Lock завжди робить літери великими"
 msgid ""
 "When Caps Lock is on, typing an accented letter such as “é” will always "
 "output the corresponding capitalized letter, in this case “É”."
-msgstr "Якщо увімкнено Caps Lock, при введенні наголошеної літери, наприклад, \"é\", завжди буде виведено відповідну велику літеру, в даному випадку \"É\"."
+msgstr ""
+"Якщо увімкнено Caps Lock, при введенні наголошеної літери, наприклад, \"é\", "
+"завжди буде виведено відповідну велику літеру, в даному випадку \"É\"."
 
 #. Header for the list of Unicode character categories
 #: language/i18n/Text.resx:377 ID:Categories
@@ -479,7 +512,9 @@ msgstr "Дозволити комбінації від інших програм
 
 #: language/i18n/Text.resx:493 ID:AllowInjectedToolTip
 msgid "Do not ignore keys sent by other software like AutoHotkey or Synergy"
-msgstr "Не ігнорувати натискання клавіш, надіслані іншими програмами, такими як AutoHotkey або Synergy"
+msgstr ""
+"Не ігнорувати натискання клавіш, надіслані іншими програмами, такими як "
+"AutoHotkey або Synergy"
 
 #. The name of the “Print Screen” key on the keyboard
 #: language/i18n/Text.resx:497 ID:KeyPrint
@@ -499,7 +534,10 @@ msgstr "Автоматично перевіряти оновлення"
 msgid ""
 "If enabled, WinCompose will connect to the Internet at regular intervals to "
 "check for new versions. Updates are not installed automatically."
-msgstr "Якщо увімкнено, WinCompose через певні проміжки часу підключатиметься до Інтернету для перевірки наявності нових версій. Оновлення не встановлюються автоматично."
+msgstr ""
+"Якщо увімкнено, WinCompose через певні проміжки часу підключатиметься до "
+"Інтернету для перевірки наявності нових версій. Оновлення не встановлюються "
+"автоматично."
 
 #: language/i18n/Text.resx:513 ID:KeepIconVisible
 msgid "Try to keep notification area icon always visible"
@@ -509,7 +547,9 @@ msgstr "Намагатися тримати іконку в області сп�
 msgid ""
 "By default, Windows will remove the icon from the notification area after a "
 "short while. This option attempts to keep it always visible."
-msgstr "За замовчуванням Windows прибирає іконку з області сповіщень через деякий час. Цей параметр намагається залишати її завжди видимою."
+msgstr ""
+"За замовчуванням Windows прибирає іконку з області сповіщень через деякий "
+"час. Цей параметр намагається залишати її завжди видимою."
 
 #. The user can click on this button to change the current compose key.
 #: language/i18n/Text.resx:521 ID:ChangeComposeKey
@@ -518,7 +558,9 @@ msgstr "Змінити…"
 
 #: language/i18n/Text.resx:525 ID:CaptureComposeKey
 msgid "Please press a key to use as your compose key."
-msgstr "Будь ласка, натисніть клавішу, яку ви хочете використовувати як клавішу Compose."
+msgstr ""
+"Будь ласка, натисніть клавішу, яку ви хочете використовувати як клавішу "
+"Compose."
 
 #. Add sequence to the list of favorites.
 #: language/i18n/Text.resx:529 ID:AddToFavorites
@@ -534,7 +576,11 @@ msgid ""
 "If enabled, WinCompose will no longer display an icon in the notification "
 "area. The only way to open the WinCompose interface will then be through the "
 "“WinCompose Settings” and “WinCompose Sequences” entries in the startup menu."
-msgstr "Якщо увімкнено, WinCompose більше не відображатиме іконку в області сповіщень. Єдиним способом відкрити інтерфейс WinCompose буде за допомогою пунктів \"Налаштування WinCompose\" і \"Комбінації WinCompose\" у меню \"Пуск\"."
+msgstr ""
+"Якщо увімкнено, WinCompose більше не відображатиме іконку в області "
+"сповіщень. Єдиним способом відкрити інтерфейс WinCompose буде за допомогою "
+"пунктів \"Налаштування WinCompose\" і \"Комбінації WinCompose\" у меню "
+"\"Пуск\"."
 
 #. The name of the “Home” key on the keyboard
 #: language/i18n/Text.resx:541 ID:KeyHome
@@ -570,7 +616,9 @@ msgstr "Ігнорувати вікна, що відповідають цьом�
 msgid ""
 "WinCompose will be completely disabled when the current window class or "
 "window name matches this regular expression."
-msgstr "WinCompose буде повністю вимкнено, якщо клас або назва поточного вікна відповідає цьому регулярному виразу."
+msgstr ""
+"WinCompose буде повністю вимкнено, якщо клас або назва поточного вікна "
+"відповідає цьому регулярному виразу."
 
 #: language/i18n/Text.resx:569 ID:AlwaysCompose
 msgid "Alternate compose key is always Compose"
@@ -581,7 +629,11 @@ msgid ""
 "If enabled, all compose keys will be treated as Compose in a sequence. By "
 "default, only the first pressed key will act as Compose, and alternate "
 "compose keys will keep their original role."
-msgstr "Якщо увімкнено, всі комбінаційні клавіші вважатимуться клавішами Compose у комбінації. За замовчуванням, лише перша натиснута клавіша діятиме як Compose, а альтернативні клавіші компонування зберігатимуть своє початкове призначення."
+msgstr ""
+"Якщо увімкнено, всі комбінаційні клавіші вважатимуться клавішами Compose у "
+"комбінації. За замовчуванням, лише перша натиснута клавіша діятиме як "
+"Compose, а альтернативні клавіші компонування зберігатимуть своє початкове "
+"призначення."
 
 #. The section for random contributors who aren’t programmers or translators. Might be empty.
 #: language/i18n/Text.resx:577 ID:SpecialThanks
@@ -602,7 +654,9 @@ msgstr "Обране"
 msgid ""
 "If set, any compose sequence will be cancelled after a certain delay if no "
 "keyboard activity is detected."
-msgstr "Якщо увімкнено, будь-яку комбінацію буде скасовано після певної затримки, якщо не буде виявлено жодної активності клавіатури."
+msgstr ""
+"Якщо увімкнено, будь-яку комбінацію буде скасовано після певної затримки, "
+"якщо не буде виявлено жодної активності клавіатури."
 
 #: language/i18n/Text.resx:593 ID:KeyboardLed
 msgid "Keyboard LED"
@@ -612,7 +666,9 @@ msgstr "Вмикати світлодіод на клавіатурі"
 msgid ""
 "If set, the corresponding keyboard LED will be lit when a compose sequence "
 "is in progress."
-msgstr "Якщо увімкнено, відповідний світлодіод клавіатури світитиметься під час виконання комбінації."
+msgstr ""
+"Якщо увімкнено, відповідний світлодіод клавіатури світитиметься під час "
+"виконання комбінації."
 
 #. The short name of the compose key
 #: language/i18n/Text.resx:601 ID:KeyCompose
@@ -653,9 +709,12 @@ msgid ""
 "Composition will not work in some applications if WinCompose does not run "
 "with elevated privileges. This options reduces the chances that this will "
 "happen."
-msgstr "Комбінування не працюватиме в деяких програмах, якщо WinCompose запускається без підвищених привілеїв. Цей параметр зменшує ймовірність того, що це станеться."
+msgstr ""
+"Комбінування не працюватиме в деяких програмах, якщо WinCompose запускається "
+"без підвищених привілеїв. Цей параметр зменшує ймовірність того, що це "
+"станеться."
 
-#. Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
+#.  Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
 #: language/unicode/Category.resx:121 ID:Control
 msgid "Other, Control"
 msgstr "Інші, управляючі"

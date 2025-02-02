@@ -10,12 +10,14 @@ msgstr ""
 "POT-Creation-Date: 2015-03-23 15:27+0100\n"
 "PO-Revision-Date: 2024-01-09 21:06+0000\n"
 "Last-Translator: Krzysztof Wolicki <1kwolicki@gmail.com>\n"
-"Language-Team: Polish <https://hosted.weblate.org/projects/wincompose/master/pl/>\n"
+"Language-Team: Polish <https://hosted.weblate.org/projects/wincompose/master/"
+"pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 5.4-dev\n"
 
 #. The user can configure the application language and choose between English, French, etc. and Autodetect
@@ -116,7 +118,9 @@ msgstr "Użyj sekwencji z projektu Xorg"
 msgid ""
 "Use the 3,000 compose sequences from the Xorg project (http://www.x.org/). "
 "These are the sequences most commonly found on a standard Linux system."
-msgstr "Użyj ponad 3000 sekwencji komponowania z projektu Xorg (http://www.x.org/). To sekwencje, które występują najczęściej na systemach Linux."
+msgstr ""
+"Użyj ponad 3000 sekwencji komponowania z projektu Xorg (http://www.x.org/). "
+"To sekwencje, które występują najczęściej na systemach Linux."
 
 #: language/i18n/Text.resx:201 ID:UseXComposeRules
 msgid "Use sequences from the XCompose project"
@@ -127,7 +131,10 @@ msgid ""
 "Use the 1,000 compose sequences from the XCompose opensource project "
 "(https://github.com/kragen/xcompose). These sequences may sometimes conflict "
 "with the Xorg ones."
-msgstr "Użyj ponad 1000 sekwencji komponowania z opensource'owego projektu XCompose (https://github.com/kragen/xcompose). Te sekwencje mogą czasem kolidować z sekwencjami projektu Xorg."
+msgstr ""
+"Użyj ponad 1000 sekwencji komponowania z opensource'owego projektu XCompose "
+"(https://github.com/kragen/xcompose). Te sekwencje mogą czasem kolidować z "
+"sekwencjami projektu Xorg."
 
 #: language/i18n/Text.resx:209 ID:UseEmojiRules
 msgid "Use WinCompose emoji sequences"
@@ -137,7 +144,9 @@ msgstr "Użyj sekwencji emoji z WinCompose"
 msgid ""
 "Use the compose sequences for Emoji provided by the WinCompose author and "
 "contributors."
-msgstr "Użyj sekwencji komponowania dla emoji dostarczonych przez autora i inne osoby pracujące nad WinCompose."
+msgstr ""
+"Użyj sekwencji komponowania dla emoji dostarczonych przez autora i inne "
+"osoby pracujące nad WinCompose."
 
 #. Menu entry to show the debug window
 #: language/i18n/Text.resx:217 ID:DebugWindow
@@ -220,8 +229,8 @@ msgid ""
 "Compose U 1 A 3 F Enter"
 msgstr ""
 "Włącz wprowadzanie tekstu Unicode dla wszystkich symboli, nawet tych bez "
-"zdefiniowanej sekwencji Compose. Na przykład, ta sekwencja wytworzy symbol U"
-"+1A3F: Compose U 1 A 3 F Enter"
+"zdefiniowanej sekwencji Compose. Na przykład, ta sekwencja wytworzy symbol "
+"U+1A3F: Compose U 1 A 3 F Enter"
 
 #. This is the name of a category of settings about what happens when invalid sequences are typed
 #: language/i18n/Text.resx:285 ID:InvalidSequences
@@ -236,7 +245,9 @@ msgstr "Znajdź dopasowania ignorując wielkość liter"
 msgid ""
 "If the entered sequence does not exist, but there is one that only differs "
 "by case, automatically correct it."
-msgstr "Jeżeli wprowadzona sekwencja nie istnieje, ale jest taka, która różni się wielkością liter, zostanie ona poprawiona."
+msgstr ""
+"Jeżeli wprowadzona sekwencja nie istnieje, ale jest taka, która różni się "
+"wielkością liter, zostanie ona poprawiona."
 
 #: language/i18n/Text.resx:297 ID:DiscardOnInvalid
 msgid "Discard all typed characters"
@@ -247,7 +258,10 @@ msgid ""
 "If the entered sequence does not exist, discard all the characters that were "
 "typed. The default behaviour is to output the characters as if the compose "
 "key had not been used."
-msgstr "Jeżeli wprowadzona sekwencja nie istnieje, odrzucone zostaną wszystkie symbole, które zostały wprowadzone. Domyślnym zachowaniem jest wypisanie znaków tak, jak gdyby klawisz Compose nie został użyty."
+msgstr ""
+"Jeżeli wprowadzona sekwencja nie istnieje, odrzucone zostaną wszystkie "
+"symbole, które zostały wprowadzone. Domyślnym zachowaniem jest wypisanie "
+"znaków tak, jak gdyby klawisz Compose nie został użyty."
 
 #: language/i18n/Text.resx:305 ID:BeepOnInvalid
 msgid "Emit a beep"
@@ -255,7 +269,8 @@ msgstr "Wydaj sygnał dźwiękowy"
 
 #: language/i18n/Text.resx:309 ID:BeepOnInvalidToolTip
 msgid "If the entered sequence does not exist, emit a system sound."
-msgstr "Jeżeli wprowadzona sekwencja nie istnieje, wydany zostanie dźwięk systemowy."
+msgstr ""
+"Jeżeli wprowadzona sekwencja nie istnieje, wydany zostanie dźwięk systemowy."
 
 #: language/i18n/Text.resx:313 ID:Language
 msgid "Interface language:"
@@ -299,7 +314,10 @@ msgid ""
 "This tells WinCompose to make a best effort to retain the original key’s "
 "behaviour. For instance, the Alt-Tab shortcut will still work even if Alt is "
 "used as the compose key."
-msgstr "Instruuje WinCompose, aby postarał się jak najbardziej zachować oryginalną funkcję klawisza. Na przykład: skrót Alt + Tab będzie wciąż działać, nawet gdy Alt będzie ustawiony jako klawisz Compose."
+msgstr ""
+"Instruuje WinCompose, aby postarał się jak najbardziej zachować oryginalną "
+"funkcję klawisza. Na przykład: skrót Alt + Tab będzie wciąż działać, nawet "
+"gdy Alt będzie ustawiony jako klawisz Compose."
 
 #: language/i18n/Text.resx:345 ID:InsertZwsp
 msgid "Insert zero-width spaces in Office apps"
@@ -310,7 +328,10 @@ msgid ""
 "Microsoft Office applications sometimes change the document font on the fly "
 "when entering certain Unicode characters. This feature inserts an invisible "
 "character after the Unicode character to work around the bug."
-msgstr "Aplikacje Microsoft Office czasami na bieżąco zmieniają czcionkę dokumentu podczas wprowadzania niektórych znaków Unicode. Ta funkcja wstawia niewidoczny znak po znaku Unicode, aby obejść błąd."
+msgstr ""
+"Aplikacje Microsoft Office czasami na bieżąco zmieniają czcionkę dokumentu "
+"podczas wprowadzania niektórych znaków Unicode. Ta funkcja wstawia "
+"niewidoczny znak po znaku Unicode, aby obejść błąd."
 
 #: language/i18n/Text.resx:353 ID:EmulateCapsLock
 msgid "Emulate Caps Lock using both Shift keys"
@@ -321,7 +342,10 @@ msgid ""
 "If Caps Lock is used as the compose key, the original behaviour of the key "
 "becomes unavailable. This feature allows to turn Caps Lock on by pressing "
 "both Shift keys simultaneously."
-msgstr "Jeśli Caps Lock jest używany jako klawisz Compose, oryginalne zachowanie klawisza staje się niedostępne. Ta funkcja pozwala włączyć Caps Lock poprzez jednoczesne wciśnięcie obu klawiszy Shift."
+msgstr ""
+"Jeśli Caps Lock jest używany jako klawisz Compose, oryginalne zachowanie "
+"klawisza staje się niedostępne. Ta funkcja pozwala włączyć Caps Lock poprzez "
+"jednoczesne wciśnięcie obu klawiszy Shift."
 
 #: language/i18n/Text.resx:361 ID:ShiftDisablesCapsLock
 msgid "Shift key disables Caps Lock"
@@ -332,7 +356,10 @@ msgid ""
 "If Caps Lock is used as the compose key, the original behaviour of the key "
 "becomes unavailable. This feature allows to turn Caps Lock off by pressing "
 "the Shift key."
-msgstr "Jeśli Caps Lock jest używany jako klawisz Compose, oryginalne zachowanie klawisza staje się niedostępne. Ta funkcja umożliwia wyłączenie funkcji Caps Lock poprzez naciśnięcie klawisza Shift."
+msgstr ""
+"Jeśli Caps Lock jest używany jako klawisz Compose, oryginalne zachowanie "
+"klawisza staje się niedostępne. Ta funkcja umożliwia wyłączenie funkcji Caps "
+"Lock poprzez naciśnięcie klawisza Shift."
 
 #: language/i18n/Text.resx:369 ID:CapsLockCapitalizes
 msgid "Caps Lock always capitalizes letters"
@@ -342,7 +369,9 @@ msgstr "Caps Lock zawsze używa wielkich liter"
 msgid ""
 "When Caps Lock is on, typing an accented letter such as “é” will always "
 "output the corresponding capitalized letter, in this case “É”."
-msgstr "Gdy Caps Lock jest włączony, wpisanie akcentowanej litery, takiej jak \"é\", zawsze spowoduje wyświetlenie wielkiego odpowiednika, w tym przypadku \"É\"."
+msgstr ""
+"Gdy Caps Lock jest włączony, wpisanie akcentowanej litery, takiej jak \"é\", "
+"zawsze spowoduje wyświetlenie wielkiego odpowiednika, w tym przypadku \"É\"."
 
 #. Header for the list of Unicode character categories
 #: language/i18n/Text.resx:377 ID:Categories
@@ -486,7 +515,9 @@ msgstr "Zezwól na klawisze ze stron trzecich"
 
 #: language/i18n/Text.resx:493 ID:AllowInjectedToolTip
 msgid "Do not ignore keys sent by other software like AutoHotkey or Synergy"
-msgstr "Nie ignoruj kluczy wysłanych przez inne oprogramowanie, takie jak AutoHotkey czy Synergy"
+msgstr ""
+"Nie ignoruj kluczy wysłanych przez inne oprogramowanie, takie jak AutoHotkey "
+"czy Synergy"
 
 #. The name of the “Print Screen” key on the keyboard
 #: language/i18n/Text.resx:497 ID:KeyPrint
@@ -682,7 +713,7 @@ msgid ""
 "happen."
 msgstr ""
 
-#. Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
+#.  Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
 #: language/unicode/Category.resx:121 ID:Control
 msgid "Other, Control"
 msgstr "Inne, kontrola"

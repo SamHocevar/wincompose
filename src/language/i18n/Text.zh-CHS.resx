@@ -489,4 +489,16 @@
   <data name="Accessibility" xml:space="preserve">
     <value>无障碍功能</value>
   </data>
+  <data name="MustHoldCapsLock" xml:space="preserve">
+    <value>只在按住大写锁定键时启用大写锁定</value>
+  </data>
+  <data name="MustHoldCapsLockToolTip" xml:space="preserve">
+    <value>松开大写锁定键会立即关闭大写锁定，而不像标准行为：再按一次关闭大写锁定。</value>
+  </data>
+  <data name="RunElevated" xml:space="preserve">
+    <value>提权运行（推荐）</value>
+  </data>
+  <data name="RunElevatedToolTip" xml:space="preserve">
+    <value>若不提权运行WinCompose，组合键会在某些应用程序中失效。本选项减小失效的可能。</value>
+  </data>
 </root>

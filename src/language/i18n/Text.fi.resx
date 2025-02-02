@@ -139,10 +139,10 @@
     <value>Oikea Windows-näppäin</value>
   </data>
   <data name="KeyCapital" xml:space="preserve">
-    <value>Caps Lock</value>
+    <value>CapsLock</value>
   </data>
   <data name="KeyNumLock" xml:space="preserve">
-    <value>Num Lock</value>
+    <value>NumLock</value>
   </data>
   <data name="KeyPause" xml:space="preserve">
     <value>Pause / Break</value>
@@ -166,25 +166,34 @@
     <value>Välilyönti</value>
   </data>
   <data name="KeyReturn" xml:space="preserve">
-    <value>Askelpalautin</value>
+    <value>Enter</value>
+  </data>
+  <data name="Composing" xml:space="preserve">
+    <value>Compose</value>
   </data>
   <data name="UseXorgRules" xml:space="preserve">
-    <value>Käytä Xorg projektin merkkisarjoja</value>
+    <value>Käytä Xorg-projektin merkkiyhdistelmiä</value>
   </data>
   <data name="UseXorgRulesToolTip" xml:space="preserve">
-    <value>Käytä 3,000 merkkisarjaa Xorg projektista (http://www.x.org/). Nämä ovat yleisimpiä standardista Linux-järjestelmästä löytyviä merkkisarjoja.</value>
+    <value>Käytä 3 000 Xorg-projektin (http://www.x.org/) merkkiyhdistelmää. Nämä ovat yleisessä käytössä standardi-Linux-järjestelmissä.</value>
   </data>
   <data name="UseXComposeRules" xml:space="preserve">
-    <value>Käytä XCompose projektin merkkisarjoja</value>
+    <value>Käytä XCompose-projektin merkkiyhdistelmiä</value>
   </data>
   <data name="UseXComposeRulesToolTip" xml:space="preserve">
-    <value>Käytä 1,000 merkkisarjaa XCompose projektista (https://github.com/kragen/xcompose). Nämä merkkisarjat saattavat joskus olla ristiriidassa Xorg:n vastaavien kanssa.</value>
+    <value>Käytä 1 000 XCompose-projektin merkkiyhdistelmää (https://github.com/kragen/xcompose). Nämä voivat joskus olla ristiriidassa Xorg-projektin merkkiyhdistelmien kanssa.</value>
+  </data>
+  <data name="UseEmojiRules" xml:space="preserve">
+    <value>Käytä WinComposen emoji-näppäinyhdistelmiä</value>
   </data>
   <data name="UseEmojiRulesToolTip" xml:space="preserve">
-    <value>Käytä WinCompose kehittäjien ja avustajien luomia Emoji merkkisarjoja.</value>
+    <value>Käytä WinComposen kehittäjän ja avustajien luomia Emoji-merkkiyhdistelmiä.</value>
+  </data>
+  <data name="DebugWindow" xml:space="preserve">
+    <value>Virheenkorjausikkuna</value>
   </data>
   <data name="ShowSequences" xml:space="preserve">
-    <value>Näytä merkkisarjat…</value>
+    <value>Näytä merkkiyhdistelmät…</value>
   </data>
   <data name="Disable" xml:space="preserve">
     <value>Poista käytöstä</value>
@@ -196,19 +205,22 @@
     <value>Lahjoitussivu</value>
   </data>
   <data name="VisitWebsite" xml:space="preserve">
-    <value>Käy verkkosivuilla</value>
+    <value>Käy verkkosivustolla</value>
   </data>
   <data name="Exit" xml:space="preserve">
     <value>Poistu</value>
   </data>
+  <data name="UnicodeCharacters" xml:space="preserve">
+    <value>Unicode-merkit</value>
+  </data>
   <data name="Sequences" xml:space="preserve">
-    <value>Merkkisarjat</value>
+    <value>Merkkiyhdistelmät</value>
   </data>
   <data name="SwapOnInvalid" xml:space="preserve">
     <value>Yritä vaihtaa näppäimiä keskenään</value>
   </data>
   <data name="SwapOnInvalidToolTip" xml:space="preserve">
-    <value>Kokeile vaihtaa kaksinäppäimisen merkkisarjan näppäimet toisinpäin. Esimerkiksi jos näppäinyhdistelmä E A ei ole sallittu, niin kokeile A E yhdistelmää.</value>
+    <value>Kokeile vaihtaa merkkien järjestystä. Esimerkiksi jos näppäinyhdistelmä E A ei ole määritelty, niin kokeile yhdistelmää A E.</value>
   </data>
   <data name="Search" xml:space="preserve">
     <value>Hakusuodatin:</value>
@@ -217,7 +229,7 @@
     <value>Compose-näppäin:</value>
   </data>
   <data name="ComposeKeyToolTip" xml:space="preserve">
-    <value>Valitse Compose-näppäimenä toimiva näppäin.</value>
+    <value>Valitse haluamasi Compose-näppäin.</value>
   </data>
   <data name="ResetTimeout" xml:space="preserve">
     <value>Palautuksen aikakatkaisu</value>
@@ -225,29 +237,77 @@
   <data name="UnicodeInput" xml:space="preserve">
     <value>Edistynyt Unicode-syöttö</value>
   </data>
+  <data name="UnicodeInputToolTip" xml:space="preserve">
+    <value>Salli kaikkien merkkien syöttö Unicode-koodin avulla, vaikka niillä ei ole valmista Compose-näppäinyhdistelmää. Tällöin esimerkiksi merkin U+1A3F voi syöttää kirjoittamalla: &lt;Compose&gt; U 1 A 3 F &lt;Enter&gt;</value>
+  </data>
   <data name="InvalidSequences" xml:space="preserve">
-    <value>Virheellisissä sarjoissa</value>
+    <value>Kun näppäinyhdistelmää ei ole määritelty</value>
+  </data>
+  <data name="CaseInsensitive" xml:space="preserve">
+    <value>Sisällytä tuloksettomaan hakuun merkkikoosta riippumattomat tulokset</value>
+  </data>
+  <data name="CaseInsensitiveToolTip" xml:space="preserve">
+    <value>Mikäli syötettyä yhdistelmää ei löydy, mutta vain merkkikooltaan eroava yhdistelmä löytyy, korjaa se automaattisesti.</value>
+  </data>
+  <data name="DiscardOnInvalid" xml:space="preserve">
+    <value>Jätä pois kaikki syötetyt merkit</value>
+  </data>
+  <data name="DiscardOnInvalidToolTip" xml:space="preserve">
+    <value>Mikäli syötettyä yhdistelmää ei ole olemassa, jätä pois kaikki syötetyt merkit. Oletusarvoisesti merkit tulostetaan ikään kuin compose-näppäintä ei olisi käytetty.</value>
+  </data>
+  <data name="BeepOnInvalid" xml:space="preserve">
+    <value>Soita ääni</value>
+  </data>
+  <data name="BeepOnInvalidToolTip" xml:space="preserve">
+    <value>Mikäli syötettyä yhdistelmää ei ole olemassa, soita järjestelmän ääni.</value>
   </data>
   <data name="Language" xml:space="preserve">
     <value>Käyttöliittymän kieli:</value>
   </data>
+  <data name="LanguageToolTip" xml:space="preserve">
+    <value>Valitse WinCompose-käyttöliittymän kieli. Oletuksena käytetään käyttöjärjestelmän kieltä.</value>
+  </data>
   <data name="Close" xml:space="preserve">
     <value>Sulje</value>
+  </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Kopioi leikepöydälle</value>
+  </data>
+  <data name="Emoji" xml:space="preserve">
+    <value>Emojit</value>
   </data>
   <data name="Apply" xml:space="preserve">
     <value>Käytä</value>
   </data>
   <data name="KeepOriginalKey" xml:space="preserve">
-    <value>Säilytä Compose-näppäimen käyttäytyminen</value>
+    <value>Säilytä Compose-näppäimen alkuperäinen käyttäytyminen</value>
+  </data>
+  <data name="KeepOriginalKeyToolTip" xml:space="preserve">
+    <value>Tämä kehottaa WinComposea pyrkimään parhaansa mukaan säilyttämään alkuperäisen näppäimen toiminnallisuuden. Tällöin esimerkiksi Alt-Tab -pikanäppäin toimii edelleen, vaikka Alt-näppäintä käytetään compose-näppäimenä.</value>
   </data>
   <data name="InsertZwsp" xml:space="preserve">
-    <value>Lisää olemattoman levyisiä välilyöntejä Office-ohjelmiin</value>
+    <value>Lisää näkymättömiä välilyöntejä Office-sovelluksissa</value>
+  </data>
+  <data name="InsertZwspToolTip" xml:space="preserve">
+    <value>Microsoft Office -sovellukset muuttavat toisinaan asiakirjan fonttia lennossa syöttäessäsi tiettyjä Unicode-merkkejä. Tämä ominaisuus lisää näkymätön merkin Unicode-merkin perään vian kiertämiseksi.</value>
   </data>
   <data name="EmulateCapsLock" xml:space="preserve">
-    <value>Jäljittele Caps Lockkia kummallakin Shift-näppäimellä</value>
+    <value>Jäljittele CapsLockia kummallakin Shift-näppäimellä</value>
+  </data>
+  <data name="EmulateCapsLockToolTip" xml:space="preserve">
+    <value>Jos Caps Lock -näppäintä käytetään kirjoitusnäppäimenä, sen alkuperäinen toiminnallisuus lakkaa. Tämä ominaisuus mahdollistaa Caps Lock -toiminnon painamalla molempia Shift-näppäimiä samanaikaisesti.</value>
   </data>
   <data name="ShiftDisablesCapsLock" xml:space="preserve">
-    <value>Shift-näppäin kytkee Caps Lockin pois</value>
+    <value>Vaihto- eli Shift-näppäin kytkee CapsLockin pois</value>
+  </data>
+  <data name="ShiftDisablesCapsLockToolTip" xml:space="preserve">
+    <value>Jos Caps Lock -näppäintä käytetään kirjoitusnäppäimenä, sen alkuperäinen toiminnallisuus lakkaa. Tämä ominaisuus mahdollistaa Caps Lockin poistamisen käytöstä painamalla Shift-näppäintä.</value>
+  </data>
+  <data name="CapsLockCapitalizes" xml:space="preserve">
+    <value>Caps Lock tuottaa aina isoja kirjaimia</value>
+  </data>
+  <data name="CapsLockCapitalizesToolTip" xml:space="preserve">
+    <value>Kun Caps Lock on päällä, aksentoitujen kirjainten, kuten é:n, kirjoittaminen tuottaa aina vastaavan ison kirjaimen, tässä esimerkissä É:n.</value>
   </data>
   <data name="Categories" xml:space="preserve">
     <value>Luokat</value>
@@ -262,25 +322,34 @@
     <value>Asetukset…</value>
   </data>
   <data name="TrayToolTip" xml:space="preserve">
-    <value>WinCompose v{2}, näppäin {0} ({1} merkkisarjaa)</value>
+    <value>WinCompose v{2}, näppäin {0} ({1} merkkiyhdistelmää)</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>Yleistä</value>
+  </data>
+  <data name="Behavior" xml:space="preserve">
+    <value>Toiminta</value>
   </data>
   <data name="WindowTitle" xml:space="preserve">
-    <value>Merkkisarjat — WinCompose</value>
+    <value>Merkkiyhdistelmät — WinCompose</value>
   </data>
   <data name="UserMacros" xml:space="preserve">
     <value>Käyttäjän makrot</value>
   </data>
   <data name="DisabledToolTip" xml:space="preserve">
-    <value>Compose-näppäin on pois käytöstä</value>
+    <value>WinCompose on pois käytöstä</value>
   </data>
   <data name="KeyInsert" xml:space="preserve">
     <value>Syötä</value>
   </data>
   <data name="TestTyping" xml:space="preserve">
-    <value>Kokeile</value>
+    <value>Syötön kokeilu</value>
   </data>
   <data name="Tweaks" xml:space="preserve">
     <value>Parannukset</value>
+  </data>
+  <data name="DelaySeconds" xml:space="preserve">
+    <value>[0} sekuntia</value>
   </data>
   <data name="About" xml:space="preserve">
     <value>Tietoja</value>
@@ -297,19 +366,139 @@
   <data name="Translators" xml:space="preserve">
     <value>Käännös</value>
   </data>
+  <data name="Authors" xml:space="preserve">
+    <value>Kehittäjät</value>
+  </data>
   <data name="License" xml:space="preserve">
     <value>Lisenssi</value>
   </data>
   <data name="NeedRestart" xml:space="preserve">
-    <value>WinCompose joudutaan käynnistämään uudelleen muutosten toimeenpanemiseksi.</value>
+    <value>WinCompose täytyy käynnistää uudelleen, jotta muutokset tulevat voimaan.</value>
   </data>
   <data name="ReportBug" xml:space="preserve">
-    <value>Ilmoita viasta</value>
+    <value>Ilmoita virheestä</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Ohje</value>
+  </data>
+  <data name="UpdatesToolTip" xml:space="preserve">
+    <value>Päivityksiä on saatavilla.</value>
   </data>
   <data name="UserDefinedSequences" xml:space="preserve">
     <value>Käyttäjän makrot</value>
   </data>
+  <data name="UserDefinedSequencesEdit" xml:space="preserve">
+    <value>Muokkaa</value>
+  </data>
+  <data name="UserDefinedSequencesReload" xml:space="preserve">
+    <value>Lataa uudelleen</value>
+  </data>
+  <data name="AllowInjected" xml:space="preserve">
+    <value>Salli syötetyt näppäimet</value>
+  </data>
+  <data name="AllowInjectedToolTip" xml:space="preserve">
+    <value>Älä jätä huomiotta muiden ohjelmistojen, kuten AutoHotkeyn tai Synergyn, lähettämiä näppäimiä</value>
+  </data>
+  <data name="KeyPrint" xml:space="preserve">
+    <value>Prt Scrn</value>
+  </data>
+  <data name="KeyDisabled" xml:space="preserve">
+    <value>Ei käytössä</value>
+  </data>
+  <data name="CheckUpdates" xml:space="preserve">
+    <value>Tarkista päivitykset automaattisesti</value>
+  </data>
+  <data name="CheckUpdatesToolTip" xml:space="preserve">
+    <value>Kun asetus on päällä, WinCompose tarkistaa säännöllisesti saatavilla olevat päivitykset internetistä. Päivityksiä ei asenneta automaattisesti.</value>
+  </data>
+  <data name="KeepIconVisible" xml:space="preserve">
+    <value>Yritä pitää ilmaisinalueen kuvake aina näkyvissä</value>
+  </data>
+  <data name="KeepIconVisibleToolTip" xml:space="preserve">
+    <value>Windows piilottaa ilmaisinalueella näkyvän kuvakkeen oletusarvoisesti jonkin ajan kuluttua. Tämä asetus yrittää pitää kuvakkeen aina näkyvissä.</value>
+  </data>
+  <data name="ChangeComposeKey" xml:space="preserve">
+    <value>Muuta…</value>
+  </data>
+  <data name="CaptureComposeKey" xml:space="preserve">
+    <value>Paina näppäintä jota haluat käyttää Compose-näppäimenä.</value>
+  </data>
+  <data name="AddToFavorites" xml:space="preserve">
+    <value>Lisää suosikkeihin</value>
+  </data>
+  <data name="DisableIcon" xml:space="preserve">
+    <value>Poista ilmaisinalueen kuvake käytöstä</value>
+  </data>
+  <data name="DisableIconToolTip" xml:space="preserve">
+    <value>Jos käytössä, WinCompose ei enää näytä kuvaketta ilmaisinalueella. Ainoa tapa avata WinCompose-käyttöliittymä on sitten käynnistysvalikon &quot;WinCompose-asetukset&quot;- ja &quot;WinCompose-yhdistelmät&quot;-merkintöjen kautta.</value>
+  </data>
+  <data name="KeyHome" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="KeyEnd" xml:space="preserve">
+    <value>End</value>
+  </data>
+  <data name="KeyTab" xml:space="preserve">
+    <value>Sarkain</value>
+  </data>
+  <data name="NoTimeout" xml:space="preserve">
+    <value>Ei odotusaikaa</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>Edistynyt</value>
+  </data>
+  <data name="IgnoreRegex" xml:space="preserve">
+    <value>Älä käytä ikkunoissa, jotka vastaavat tätä säännöllistä lauseketta:</value>
+  </data>
+  <data name="IgnoreRegexToolTip" xml:space="preserve">
+    <value>WinCompose poistetaan kokonaan käytöstä, kun nykyinen ikkunaluokka tai ikkunan nimi vastaa tätä säännöllistä lauseketta.</value>
+  </data>
+  <data name="AlwaysCompose" xml:space="preserve">
+    <value>Vaihtoehtoinen kirjoitusnäppäin on aina Compose</value>
+  </data>
+  <data name="AlwaysComposeToolTip" xml:space="preserve">
+    <value>Jos käytössä, kaikkia kirjoitusnäppäimiä käsitellään Composena yhdistelmässä. Oletuksena vain ensimmäinen painettu näppäin toimii Composena, ja vaihtoehtoiset kirjoitusnäppäimet säilyttävät alkuperäisen roolinsa.</value>
+  </data>
   <data name="SpecialThanks" xml:space="preserve">
     <value>Erikoiskiitokset</value>
+  </data>
+  <data name="RemoveFromFavorites" xml:space="preserve">
+    <value>Poista suosikeista</value>
+  </data>
+  <data name="Favorites" xml:space="preserve">
+    <value>Suosikit</value>
+  </data>
+  <data name="TimeoutToolTip" xml:space="preserve">
+    <value>Jos asetettu, kaikki kirjoitusjaksot peruuntuvat tietyn viiveen jälkeen jos mitään näppäimistön toimintaa ei havaita.</value>
+  </data>
+  <data name="KeyboardLed" xml:space="preserve">
+    <value>Näppäimistön LED</value>
+  </data>
+  <data name="KeyboardLedToolTip" xml:space="preserve">
+    <value>Jos asetettu, vastaava näppäimistön LED syttyy, kun kirjoitusjakso on käynnissä.</value>
+  </data>
+  <data name="KeyCompose" xml:space="preserve">
+    <value>Compose</value>
+  </data>
+  <data name="AutoLaunch" xml:space="preserve">
+    <value>Käynnistä WinCompose kirjautuessa</value>
+  </data>
+  <data name="AutoLaunchToolTip" xml:space="preserve">
+    <value>Jos asetettu, WinCompose käynnistetään, kun käyttäjä kirjautuu sisään.</value>
+  </data>
+  <data name="Accessibility" xml:space="preserve">
+    <value>Esteettömyys</value>
+  </data>
+  <data name="MustHoldCapsLock" xml:space="preserve">
+    <value>Caps Lock on aktiivinen vain, kun sitä pidetään painettuna</value>
+  </data>
+  <data name="MustHoldCapsLockToolTip" xml:space="preserve">
+    <value>Caps Lock -näppäimen vapauttaminen poistaa sen käytöstä välittömästi normaalimman toiminnan sijaan, että sitä joutuisi painamaan toisen kerran.</value>
+  </data>
+  <data name="RunElevated" xml:space="preserve">
+    <value>Suorita korotetuilla käyttöoikeuksilla (suositellaan)</value>
+  </data>
+  <data name="RunElevatedToolTip" xml:space="preserve">
+    <value>Kirjoitus ei toimi joissakin sovelluksissa, jos WinComposea ei suoriteta korotetuilla oikeuksilla. Tämä vaihtoehto vähentää mahdollisuuksia, että näin tapahtuu.</value>
   </data>
 </root>

@@ -120,8 +120,9 @@ msgid ""
 "Use the 3,000 compose sequences from the Xorg project (http://www.x.org/). "
 "These are the sequences most commonly found on a standard Linux system."
 msgstr ""
-"Bruk de 3000 sammenfattingssekvensene fra Xorg-prosjektet (https://www.x."
-"org/). Dette er sekvensene som oftest er å finne på et vanlig Linux-system."
+"Bruk de 3000 sammenfattingssekvensene fra Xorg-prosjektet (https://"
+"www.x.org/). Dette er sekvensene som oftest er å finne på et vanlig Linux-"
+"system."
 
 #: language/i18n/Text.resx:201 ID:UseXComposeRules
 msgid "Use sequences from the XCompose project"
@@ -232,8 +233,8 @@ msgid ""
 "Compose U 1 A 3 F Enter"
 msgstr ""
 "Skru på Unicode-inndata for alle tegn, selv dem uten definert "
-"sammenfattingssekvens. For eksempel, vil følgende sekvens skrive ut tegnet U"
-"+1A3F: Sammenfattingstast U 1 A 3 F"
+"sammenfattingssekvens. For eksempel, vil følgende sekvens skrive ut tegnet "
+"U+1A3F: Sammenfattingstast U 1 A 3 F"
 
 #. This is the name of a category of settings about what happens when invalid sequences are typed
 #: language/i18n/Text.resx:285 ID:InvalidSequences
@@ -719,7 +720,7 @@ msgid ""
 "happen."
 msgstr ""
 
-#. Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
+#.  Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
 #: language/unicode/Category.resx:121 ID:Control
 #, fuzzy
 msgid "Other, Control"

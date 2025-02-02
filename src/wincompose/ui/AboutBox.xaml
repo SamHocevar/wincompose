@@ -22,7 +22,10 @@
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize"
         Icon="/WinCompose;component/res/key_compose.png"
-        Height="500" Width="500">
+        Height="500" Width="500"
+    xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+    WindowCornerPreference="Round"
+        ExtendsContentIntoTitleBar="True">
 
     <Window.CommandBindings>
         <CommandBinding Command="ApplicationCommands.Close"
@@ -32,24 +35,30 @@
     <Window.InputBindings>
         <KeyBinding Key="Escape" Command="ApplicationCommands.Close"/>
     </Window.InputBindings>
+    
 
     <StackPanel Orientation="Vertical">
+        <ui:TitleBar Title="{x:Static i18n:Text.AboutBoxTitle}" Grid.Row="0" Grid.ColumnSpan="3" FontSize="14" ShowMaximize="False" ShowMinimize="False" Height="38" Margin="0 4">
+            <ui:TitleBar.Icon>
+                <ui:ImageIcon Source="/WinCompose;component/res/key_compose.png" />
+            </ui:TitleBar.Icon>
+        </ui:TitleBar>
         <TabControl Margin="10">
 
-            <TabItem Header="{x:Static i18n:Text.About}">
+            <TabItem Header="{x:Static i18n:Text.About}" Width="149">
                 <DockPanel Margin="8">
-                    <Label DockPanel.Dock="Top" HorizontalAlignment="Center" FontSize="18" Content="Wincompose"/>
-                    <Label DockPanel.Dock="Top" HorizontalAlignment="Center" FontSize="18" Content="{Binding Version}"/>
-                    <Button DockPanel.Dock="Bottom" Margin="4" Content="{x:Static i18n:Text.ReportBug}" Command="{Binding OpenReportBugCommand}"/>
-                    <Button DockPanel.Dock="Bottom" Margin="4" Content="{x:Static i18n:Text.VisitWebsite}" Command="{Binding OpenWebsiteCommand}"/>
+                    <TextBlock DockPanel.Dock="Top" HorizontalAlignment="Center" Text="Wincompose" FontSize="20" />
+                    <TextBlock DockPanel.Dock="Top" HorizontalAlignment="Center" FontSize="20"  Text="{Binding Version}"/>
+                    <Button DockPanel.Dock="Bottom" Margin="4" Content="{x:Static i18n:Text.ReportBug}" Command="{Binding OpenReportBugCommand}" Width="200" HorizontalAlignment="Center"/>
+                    <Button DockPanel.Dock="Bottom" Margin="4" Content="{x:Static i18n:Text.VisitWebsite}" Command="{Binding OpenWebsiteCommand}" Width="200" HorizontalAlignment="Center"/>
                 </DockPanel>
             </TabItem>
 
-            <TabItem Header="{x:Static i18n:Text.Authors}">
+            <TabItem Header="{x:Static i18n:Text.Authors}" Width="149">
                 <WebBrowser Margin="8" wc:AboutBox.WebContent="{Binding AuthorsDocument}" Height="400" />
             </TabItem>
 
-            <TabItem Header="{x:Static i18n:Text.License}">
+            <TabItem Header="{x:Static i18n:Text.License}" Width="149">
                 <WebBrowser Margin="8" wc:AboutBox.WebContent="{Binding LicenseDocument}" Height="400" />
             </TabItem>
 

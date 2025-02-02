@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AutodetectLanguage" xml:space="preserve">
-    <value>Аўтавызначэньне</value>
+    <value>Аўтавызначэнне</value>
   </data>
   <data name="KeyLMenu" xml:space="preserve">
     <value>Левы Alt</value>
@@ -154,136 +154,175 @@
     <value>Escape</value>
   </data>
   <data name="KeyConvert" xml:space="preserve">
-    <value>Канвертаваць</value>
+    <value>Хэнкан</value>
   </data>
   <data name="KeyNonConvert" xml:space="preserve">
-    <value>Не канвертаваць</value>
+    <value>Му Хэнкан</value>
   </data>
   <data name="KeyScroll" xml:space="preserve">
     <value>Scroll Lock</value>
   </data>
   <data name="KeySpace" xml:space="preserve">
-    <value>Прагал</value>
+    <value>Прабел</value>
   </data>
   <data name="KeyReturn" xml:space="preserve">
     <value>Return</value>
+  </data>
+  <data name="Composing" xml:space="preserve">
+    <value>Камбінаванне</value>
+  </data>
+  <data name="UseXorgRules" xml:space="preserve">
+    <value>Выкарыстоўваць паслядоўнасці з Xorg</value>
+  </data>
+  <data name="UseXorgRulesToolTip" xml:space="preserve">
+    <value>Выкарыстоўваць 3 000 паслядоўнасцей з Xorg (http://x.org/). Гэтыя камбінацыі часцей сустракаюцца ў Linux-сістэмах.</value>
+  </data>
+  <data name="UseXComposeRules" xml:space="preserve">
+    <value>Выкарыстоўваць паслядоўнасці з XCompose</value>
+  </data>
+  <data name="UseXComposeRulesToolTip" xml:space="preserve">
+    <value>Выкарыстоўваць 1 000 паслядоўнасцей з XCompose (https://github.com/kragen/xcompose). Некаторыя камбінацыі могуць канфліктаваць з камбінацыямі Xorg.</value>
+  </data>
+  <data name="UseEmojiRules" xml:space="preserve">
+    <value>Выкарыстоўваць паслядоўнасці WinCompose для эмодзі</value>
+  </data>
+  <data name="UseEmojiRulesToolTip" xml:space="preserve">
+    <value>Выкарыстоўваць паслядоўнасці для эмодзі ад аўтараў WinCompose.</value>
   </data>
   <data name="DebugWindow" xml:space="preserve">
     <value>Акно адладкі</value>
   </data>
   <data name="ShowSequences" xml:space="preserve">
-    <value>Паказаць пасьлядоўнасьці…</value>
+    <value>Паказаць пасьлядоўнасці…</value>
   </data>
   <data name="Disable" xml:space="preserve">
-    <value>Вымкнуць</value>
+    <value>Выключыць</value>
   </data>
   <data name="Restart" xml:space="preserve">
     <value>Перазапуск</value>
   </data>
+  <data name="DonationPage" xml:space="preserve">
+    <value>Ахвяраваць</value>
+  </data>
   <data name="VisitWebsite" xml:space="preserve">
-    <value>Наведаць вэбсайт</value>
+    <value>Наведаць вэб-сайт</value>
   </data>
   <data name="Exit" xml:space="preserve">
     <value>Выйсці</value>
   </data>
   <data name="UnicodeCharacters" xml:space="preserve">
-    <value>Сымбалі Юнікоду</value>
+    <value>Сімвалы Юнікоду</value>
   </data>
   <data name="Sequences" xml:space="preserve">
-    <value>Пасьлядоўнасьці</value>
+    <value>Паслядоўнасці</value>
+  </data>
+  <data name="SwapOnInvalid" xml:space="preserve">
+    <value>Спрабаваць дзве клавішы ў адваротным парадку</value>
+  </data>
+  <data name="SwapOnInvalidToolTip" xml:space="preserve">
+    <value>Спрабаваць паслядоўнасці з дзвух клавіш у адваротным парадку. Напрыклад, калі паслядоўнасці E A не існуе, спрабаваць паслядоўнасць A E.</value>
   </data>
   <data name="Search" xml:space="preserve">
-    <value>Фільтар пошуку:</value>
+    <value>Фільтр пошуку:</value>
   </data>
   <data name="ComposeKey" xml:space="preserve">
-    <value>Кампанавальная клавіша:</value>
+    <value>Клавіша compose:</value>
   </data>
   <data name="ComposeKeyToolTip" xml:space="preserve">
-    <value>Выбяры клавішу, якая стане Кампанавальнай.</value>
+    <value>Выбярыце клавішу, якая будзе працаваць compose.</value>
+  </data>
+  <data name="ResetTimeout" xml:space="preserve">
+    <value>Час да адмены ўвода паслядоўнасці</value>
   </data>
   <data name="UnicodeInput" xml:space="preserve">
-    <value>Прасунуты ўвод Унікоду</value>
+    <value>Прасунуты ўвод Юнікоду</value>
+  </data>
+  <data name="UnicodeInputToolTip" xml:space="preserve">
+    <value>Уключыць увод Юнікоду для ўсіх сімвалаў, у тым ліку для тых, што не маюць уласнай паслядоўнасці. Напрыклад паслядоўнасць Compose U 1 A 3 F Enter увядзе сімвал Юнікоду U+1A3F</value>
   </data>
   <data name="InvalidSequences" xml:space="preserve">
-    <value>Пры няправільных пасьлядоўнасьцях</value>
+    <value>Пры няправільных паслядоўнасцях</value>
   </data>
   <data name="CaseInsensitive" xml:space="preserve">
-    <value>Адступаць да раґістранечутлівых супадзеньняў</value>
+    <value>Выкарыстоўваць паслядоўнасці без уліку рэгістра</value>
   </data>
   <data name="CaseInsensitiveToolTip" xml:space="preserve">
-    <value>Калі ўведзеная пасьлядоўнасьць не існуе, але ёсьць та, што адрозьніваецца толькі рэґістрам, то аўтаматычна выпраўляць яе.</value>
+    <value>Калі ўведзеная паслядоўнасць не існуе, але ёсць іншая, што адрозніваецца толькі рэгістрам, аўтаматычна выкарыстоўваць яе.</value>
   </data>
   <data name="DiscardOnInvalid" xml:space="preserve">
-    <value>Скасаваць усе набраныя сымбалі</value>
+    <value>Забыць усе надрукаваныя сімвалы</value>
   </data>
   <data name="DiscardOnInvalidToolTip" xml:space="preserve">
-    <value>Калі ўведзеная пасьлядоўнасьць не існуе, то скасаваць усе набраныя сымбалі. Агадана яны выводзяцца так, бы кампанавальная клавіша не націскалась.</value>
+    <value>Калі ўведзеная паслядоўнасць не існуе, забыць усе надрукаваныя сімвалы. Па змаўчанні ўсе сімвалы друкуюцца так, нібы яны былі набраныя без compose.</value>
   </data>
   <data name="BeepOnInvalid" xml:space="preserve">
-    <value>Выдаваць гудок</value>
+    <value>Утвараць гук</value>
   </data>
   <data name="BeepOnInvalidToolTip" xml:space="preserve">
-    <value>Калі ўведзеная пасьлядоўнасьць не існуе, то выдаць сыстэмны гук.</value>
+    <value>Утвараць сістэмны гук, калі паслядоўнасці не існуе.</value>
   </data>
   <data name="Language" xml:space="preserve">
-    <value>Мова інтарфэйсу:</value>
+    <value>Мова інтэрфейса:</value>
   </data>
   <data name="LanguageToolTip" xml:space="preserve">
-    <value>Выбяры мову інтарфэйсу WinCompose. Агадана выкарыстоўваецца мова аперацыйнай сыстэмы.</value>
+    <value>Выбярыце мову, які будзе выкарыстоўвацца WinCompose для перакладу інтэрфейса. Па змаўчанні выкарыстоўваецца мова сістэмы.</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Зачыніць</value>
+    <value>Закрыць</value>
+  </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Скапіяваць у буфер абмену</value>
   </data>
   <data name="Emoji" xml:space="preserve">
-    <value>Эмоджы</value>
+    <value>Эмодзі</value>
   </data>
   <data name="Apply" xml:space="preserve">
-    <value>Ужыць</value>
+    <value>Прымяніць</value>
   </data>
   <data name="KeepOriginalKey" xml:space="preserve">
-    <value>Захаваць зыходныя паводзіны клавішы</value>
+    <value>Захаваць першапачатковыя паводзіны клавішы compose</value>
   </data>
   <data name="KeepOriginalKeyToolTip" xml:space="preserve">
-    <value>Гэта наказвае WinCompose мкнуцца захаваць першасныя паводзіны клавішаў. Напрыклад, спалука Alt+Tab працавацьме па-ранейшаму нават, калі Alt выкарыстана як кампанавальная клавіша.</value>
+    <value>Старацца захоўваць першапачатковыя паводзіны клавіш. Напрыклад, Alt + Tab будзе спрацоўваць як і раней, нават калі Alt вызначаны як клавіша compose.</value>
   </data>
   <data name="InsertZwsp" xml:space="preserve">
-    <value>Устаўляць прагалы нулявой шырыні ў офісных праграмах</value>
+    <value>Устаўляць пустыя прабелы ў праграмах Office</value>
   </data>
   <data name="InsertZwspToolTip" xml:space="preserve">
-    <value>Дадаткі Microsoft Office часам мяняюць шрыфт дакумента на ляту пад час уводу некаторых унікодавых сымбаляў. Гэтая опцыя ўстаўляе нябачны сымбаль пасьля ўнікодавага, кабы справіцца з гэнай прыкрасьцю.</value>
+    <value>Праграмы Microsoft Office часам змяняюць шрыфт дакумента, калі былі ўведзены пэўныя сімвалы Unicode. Гэтая налада дазваляе ўстаўляць нябачны прабел перад такімі сімваламі, каб прадухіліць гэтыя паводзіны.</value>
   </data>
   <data name="EmulateCapsLock" xml:space="preserve">
-    <value>Эмуляваць Caps Lock выкарыстоўваючы абедзве клавішы Shift</value>
+    <value>Эмуляваць Caps Lock выкарыстоўваючы абодва Shift</value>
   </data>
   <data name="EmulateCapsLockToolTip" xml:space="preserve">
-    <value>Калі Caps Lock ужываецца як кампанавальная клавіша, першапачатковыя паводзіны клавішы стаюць недаступнымі. Гэтая опцыя дазваляе ўвамкнуць Caps Lock націсканьнем абедзьвюх клавішаў Shift адначасова.</value>
+    <value>Калі Caps Lock выкарыстоўваць як клавішу compose, першапачатковыя паводзіны клавішы будуць недаступнымі. Гэтая опцыя дазваляе уключаць Caps Lock націсканнем абодвух Shift адначасова.</value>
   </data>
   <data name="ShiftDisablesCapsLock" xml:space="preserve">
-    <value>Клавіша Shift выключае Caps Lock</value>
+    <value>Shift выключае Caps Lock</value>
   </data>
   <data name="ShiftDisablesCapsLockToolTip" xml:space="preserve">
-    <value>Калі Caps Lock ужываецца як кампанавальная клавіша, першапачатковыя паводзіны клавішы стаюць недаступнымі. Гэтая опцыя дазваляе вымкнуць Caps Lock націсканьнем клавішы Shift.</value>
+    <value>Калі Caps Lock выкарыстоўваць як клавішу compose, першапачатковыя паводзіны клавішы будуць недаступнымі. Гэтая опцыя дазваляе уключаць Caps Lock націсканнем Shift.</value>
   </data>
   <data name="CapsLockCapitalizes" xml:space="preserve">
-    <value>Caps Lock заўсёды робіць вялікімі літары</value>
+    <value>Caps Lock заўсёды робіць літары вялікімі</value>
   </data>
   <data name="CapsLockCapitalizesToolTip" xml:space="preserve">
-    <value>Калі Caps Lock увамкнёна, набіраньне дыякрытызаванай літары, такой як «ź», заўсёды вывядзе адпаведную вялікую літару, ў гэтым выпадку «Ź».</value>
+    <value>Пры наборы складаных літар, такіх як «é» будзе ўлічвацца стан Caps Lock: калі ён уключаны, замест звычайнага «é» будзе «É».</value>
   </data>
   <data name="Categories" xml:space="preserve">
     <value>Катэгорыі</value>
   </data>
   <data name="InSelectedCategories" xml:space="preserve">
-    <value>У абраных катэгорыях</value>
+    <value>У выбраных катэгорыях</value>
   </data>
   <data name="Options" xml:space="preserve">
-    <value>Опцыї — WinCompose</value>
+    <value>Параметры — WinCompose</value>
   </data>
   <data name="ShowOptions" xml:space="preserve">
-    <value>Опцыї…</value>
+    <value>Параметры…</value>
   </data>
   <data name="TrayToolTip" xml:space="preserve">
-    <value>WinCompose v{2} на {0} ({1} пасьлядоўнасьцяў)</value>
+    <value>WinCompose v{2} на {0} ({1} паслядоўнасцяў)</value>
   </data>
   <data name="General" xml:space="preserve">
     <value>Асноўныя</value>
@@ -309,11 +348,14 @@
   <data name="Tweaks" xml:space="preserve">
     <value>Паляпшэнні</value>
   </data>
+  <data name="DelaySeconds" xml:space="preserve">
+    <value>10 секунд</value>
+  </data>
   <data name="About" xml:space="preserve">
-    <value>Пра праґраму</value>
+    <value>Пра праграму</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>Спампаваці WinCompose {0}</value>
+    <value>Спампаваць WinCompose {0}</value>
   </data>
   <data name="AboutBoxTitle" xml:space="preserve">
     <value>Пра WinCompose</value>
@@ -323,6 +365,9 @@
   </data>
   <data name="Translators" xml:space="preserve">
     <value>Пераклад</value>
+  </data>
+  <data name="Authors" xml:space="preserve">
+    <value>Аўтары</value>
   </data>
   <data name="License" xml:space="preserve">
     <value>Ліцэнзія</value>
@@ -337,30 +382,123 @@
     <value>Дапамога</value>
   </data>
   <data name="UpdatesToolTip" xml:space="preserve">
-    <value>Абнаўленьні наяўныя.</value>
+    <value>Даступныя абнаўленні.</value>
   </data>
   <data name="UserDefinedSequences" xml:space="preserve">
     <value>Паслядоўнасці карыстальніка</value>
   </data>
   <data name="UserDefinedSequencesEdit" xml:space="preserve">
-    <value>Правіць</value>
+    <value>Рэдагаванне</value>
   </data>
   <data name="UserDefinedSequencesReload" xml:space="preserve">
     <value>Перачытаць</value>
   </data>
   <data name="AllowInjected" xml:space="preserve">
-    <value>Дазволіць управаджаныя клавішы</value>
+    <value>Апрацоўваць націсканні клавіш ад іншых праграм</value>
   </data>
   <data name="AllowInjectedToolTip" xml:space="preserve">
-    <value>Не іґнараваці клавішы дасланыя іншымі праґрамамі, як AutoHotkey ці Synergy</value>
+    <value>Не ігнараваць націсканні клавіш, створаныя праграмамі накшталт AutoHotKey ці Synergy</value>
   </data>
   <data name="KeyPrint" xml:space="preserve">
-    <value>«Print Screen»</value>
+    <value>Print Screen</value>
   </data>
   <data name="KeyDisabled" xml:space="preserve">
-    <value>Вымкнутая</value>
+    <value>Выключана</value>
+  </data>
+  <data name="CheckUpdates" xml:space="preserve">
+    <value>Правяраць абнаўленні аўтаматычна</value>
+  </data>
+  <data name="CheckUpdatesToolTip" xml:space="preserve">
+    <value>Калі ўключана, WinCompose будзе час ад часу правяраць у інтэрнэце наяўнасць новых версій. Абнаўленні не ўсталёўваюцца аўтаматычна.</value>
+  </data>
+  <data name="KeepIconVisible" xml:space="preserve">
+    <value>Па магчымасці пакідаць бачным значок у вобласці паведамленняў</value>
+  </data>
+  <data name="KeepIconVisibleToolTip" xml:space="preserve">
+    <value>Па змаўчанні, Windows будзе хаваць значок з вобласці паведамленняў праз некаторы час. Гэты параметр паспрабуе зрабіць значок заўсёды бачным.</value>
+  </data>
+  <data name="ChangeComposeKey" xml:space="preserve">
+    <value>Змяніць…</value>
+  </data>
+  <data name="CaptureComposeKey" xml:space="preserve">
+    <value>Націсніце на клавішу, каб вызначыць яе як клавішу compose.</value>
+  </data>
+  <data name="AddToFavorites" xml:space="preserve">
+    <value>Дадаць у абранае</value>
+  </data>
+  <data name="DisableIcon" xml:space="preserve">
+    <value>Выключыць значок у вобласці паведамленняў</value>
+  </data>
+  <data name="DisableIconToolTip" xml:space="preserve">
+    <value>Калі ўключана, WinCompose больш не будзе паказваць значок у вобласці паведамленняў. Адзіным спосабам адкрыць інтэрфейс WinCompose застанецца — праз «WinCompose Settings» ці «WinCompose Sequences» у меню «Пуск».</value>
+  </data>
+  <data name="KeyHome" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="KeyEnd" xml:space="preserve">
+    <value>End</value>
+  </data>
+  <data name="KeyTab" xml:space="preserve">
+    <value>Tab</value>
+  </data>
+  <data name="NoTimeout" xml:space="preserve">
+    <value>Без скідвання</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>Пашыраныя налады</value>
+  </data>
+  <data name="IgnoreRegex" xml:space="preserve">
+    <value>Ігнараваць вокны, якія адпавядаюць рэгулярнаму выразу:</value>
+  </data>
+  <data name="IgnoreRegexToolTip" xml:space="preserve">
+    <value>WinCompose будзе цалкам адключана, калі клас бягучага акна будзе адпавядаць рэгулярнаму выразу.</value>
+  </data>
+  <data name="AlwaysCompose" xml:space="preserve">
+    <value>Альтэрнатыўныя клавішы compose заўсёды імі застаюцца</value>
+  </data>
+  <data name="AlwaysComposeToolTip" xml:space="preserve">
+    <value>Калі ўключана, усе клавішы compose у паслядоўнасці будуць лічыцца гэтакімі. Па змаўчанні, клавішай compose лічыцца толькі тая, з якой паслядоўнасць пачалася, а астатнія выконваюць сваю першапачатковую функцыю.</value>
   </data>
   <data name="SpecialThanks" xml:space="preserve">
-    <value>Падзякі</value>
+    <value>Асаблівыя падзякі</value>
+  </data>
+  <data name="RemoveFromFavorites" xml:space="preserve">
+    <value>Выдаліць з абраных</value>
+  </data>
+  <data name="Favorites" xml:space="preserve">
+    <value>Абраныя</value>
+  </data>
+  <data name="TimeoutToolTip" xml:space="preserve">
+    <value>Калі ўключана, любая паслядоўнасць будзе скінута пры адсутнасці актыўнасці клавіятуры ў пэўны тэрмін.</value>
+  </data>
+  <data name="KeyboardLed" xml:space="preserve">
+    <value>Уключаць святлодыёд на клавіятуры</value>
+  </data>
+  <data name="KeyboardLedToolTip" xml:space="preserve">
+    <value>Калі ўключана, на клавіятуры будзе загарацца адпаведны святлодыёд падчас уводу паслядоўнасці.</value>
+  </data>
+  <data name="KeyCompose" xml:space="preserve">
+    <value>Compose</value>
+  </data>
+  <data name="AutoLaunch" xml:space="preserve">
+    <value>Запускаць WinCompose пры ўваходзе</value>
+  </data>
+  <data name="AutoLaunchToolTip" xml:space="preserve">
+    <value>Калі ўключана, WinCompose будзе запускацца пры ўваходзе ў сістэму.</value>
+  </data>
+  <data name="Accessibility" xml:space="preserve">
+    <value>Даступнасць</value>
+  </data>
+  <data name="MustHoldCapsLock" xml:space="preserve">
+    <value>Caps lock актыўны толькі пры ўтрыманні</value>
+  </data>
+  <data name="MustHoldCapsLockToolTip" xml:space="preserve">
+    <value>Caps Lock будзе аўтаматычна выключаны пры адпусканні клавішы, замест таго, каб націскаць яго паўторна.</value>
+  </data>
+  <data name="RunElevated" xml:space="preserve">
+    <value>Запускаць з павышанымі правамі (рэкамендуецца)</value>
+  </data>
+  <data name="RunElevatedToolTip" xml:space="preserve">
+    <value>Камбінаванне не будзе працаваць у некаторых праграмах, калі WinCompose будзе запушчаны без павышаных праў. Гэты параметр памяншае верагоднасць такіх выпадкаў.</value>
   </data>
 </root>

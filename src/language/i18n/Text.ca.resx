@@ -486,4 +486,19 @@
   <data name="AutoLaunchToolTip" xml:space="preserve">
     <value>Si es marca, s'iniciarà el WinCompose en iniciar una sessió d'usuari.</value>
   </data>
+  <data name="Accessibility" xml:space="preserve">
+    <value>Accessibilitat</value>
+  </data>
+  <data name="MustHoldCapsLock" xml:space="preserve">
+    <value>El Bloqueig de Majúscules només està actiu mentre es manté premut</value>
+  </data>
+  <data name="MustHoldCapsLockToolTip" xml:space="preserve">
+    <value>En deixar anar la tecla de Bloqueig de Majúscules, es desactivarà immediatament, en lloc del comportament més estàndard d’haver de prémer-la per segona vegada.</value>
+  </data>
+  <data name="RunElevated" xml:space="preserve">
+    <value>Executa amb privilegis elevats (recomanat)</value>
+  </data>
+  <data name="RunElevatedToolTip" xml:space="preserve">
+    <value>La composició no funcionarà en algunes aplicacions si WinCompose no s'executa amb privilegis elevats. Aquesta opció redueix les possibilitats que això passi.</value>
+  </data>
 </root>

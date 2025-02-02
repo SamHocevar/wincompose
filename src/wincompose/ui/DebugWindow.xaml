@@ -28,8 +28,6 @@
         Icon="/WinCompose;component/res/key_compose.png"
         ShowInTaskbar="False"
         Topmost="True"
-        Background="White"
-        BorderBrush="Black"
         Width="800" Height="800">
 
     <x:Code>

@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AutodetectLanguage" xml:space="preserve">
+    <value>شناسایی خوتکار</value>
+  </data>
+  <data name="KeyLMenu" xml:space="preserve">
+    <value>Alt چپ</value>
+  </data>
+  <data name="KeyRMenu" xml:space="preserve">
+    <value>Alt راست</value>
+  </data>
+  <data name="KeyLControl" xml:space="preserve">
+    <value>Control چپ</value>
+  </data>
+  <data name="KeyRControl" xml:space="preserve">
+    <value>Control راست</value>
+  </data>
+  <data name="KeyLWin" xml:space="preserve">
+    <value>Left Windows</value>
+  </data>
+  <data name="KeyRWin" xml:space="preserve">
+    <value>Right Windows</value>
+  </data>
+  <data name="KeyCapital" xml:space="preserve">
+    <value>Caps Lock</value>
+  </data>
+  <data name="KeyNumLock" xml:space="preserve">
+    <value>Num Lock</value>
+  </data>
+  <data name="KeyPause" xml:space="preserve">
+    <value>Pause</value>
+  </data>
+  <data name="KeyApps" xml:space="preserve">
+    <value>nomga</value>
+  </data>
+  <data name="KeyEscape" xml:space="preserve">
+    <value>Escape</value>
+  </data>
+  <data name="KeyConvert" xml:space="preserve">
+    <value>tabdil</value>
+  </data>
+  <data name="KeyNonConvert" xml:space="preserve">
+    <value>bî tabdil</value>
+  </data>
+  <data name="KeyScroll" xml:space="preserve">
+    <value>Scroll Lock</value>
+  </data>
+  <data name="KeySpace" xml:space="preserve">
+    <value>Space</value>
+  </data>
+  <data name="KeyReturn" xml:space="preserve">
+    <value>vorgaštên</value>
+  </data>
+  <data name="Composing" xml:space="preserve">
+    <value>vorkêl kerdên</value>
+  </data>
+  <data name="UseXorgRules" xml:space="preserve">
+    <value>dindāyalê porožê Xorg nê vê kār bêgêr</value>
+  </data>
+  <data name="UseEmojiRules" xml:space="preserve">
+    <value>zê dindāyale imoji WinCompose êstêfāďe ko</value>
+  </data>
+  <data name="DebugWindow" xml:space="preserve">
+    <value>nimdari êškāl vordâri</value>
+  </data>
+  <data name="ShowSequences" xml:space="preserve">
+    <value>nêšow dāďên dindāyal…</value>
+  </data>
+  <data name="Disable" xml:space="preserve">
+    <value>qêyrê faāl</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>zê nu ra' vandên</value>
+  </data>
+  <data name="DonationPage" xml:space="preserve">
+    <value>balgê lādêrâri</value>
+  </data>
+  <data name="VisitWebsite" xml:space="preserve">
+    <value>raw sāytê sêyl ko</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>vêdar zêyďên</value>
+  </data>
+  <data name="UnicodeCharacters" xml:space="preserve">
+    <value>kārāktêrā yunikod</value>
+  </data>
+  <data name="Sequences" xml:space="preserve">
+    <value>dindāyal</value>
+  </data>
+  <data name="SwapOnInvalid" xml:space="preserve">
+    <value>ar do tā kilitê ālêšt kuni bîďare</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>filtêrê pitiniďên:</value>
+  </data>
+  <data name="ComposeKey" xml:space="preserve">
+    <value>kilitê hîl kerdên:</value>
+  </data>
+  <data name="ComposeKeyToolTip" xml:space="preserve">
+    <value>kiliti ke vā si hîl kerdên bu nê,pêsand ko.</value>
+  </data>
+  <data name="ResetTimeout" xml:space="preserve">
+    <value>vorgandênê mo'latê zamuvi</value>
+  </data>
+  <data name="UnicodeInput" xml:space="preserve">
+    <value>vuruďi pîš ra'ďê yunikoď</value>
+  </data>
+  <data name="InvalidSequences" xml:space="preserve">
+    <value>mênê dindāyalî ke zêbāl nîn</value>
+  </data>
+  <data name="DiscardOnInvalid" xml:space="preserve">
+    <value>poy kārāktêrā tāyp biďênê vel ko vo raw</value>
+  </data>
+  <data name="BeepOnInvalid" xml:space="preserve">
+    <value>ya buq pêšk ko</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>zowê rābêtê mêntori:</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>bastên</value>
+  </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>lefgiri mênê virga</value>
+  </data>
+  <data name="Emoji" xml:space="preserve">
+    <value>imoji</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>ê'māl kerdên</value>
+  </data>
+  <data name="KeepOriginalKey" xml:space="preserve">
+    <value>raftāre nêvêštêne kilitê asli nê zaft boko</value>
+  </data>
+  <data name="ShiftDisablesCapsLock" xml:space="preserve">
+    <value>kilitê Shift, Caps Lock nê qêyre faāl êkone</value>
+  </data>
+  <data name="CapsLockCapitalizes" xml:space="preserve">
+    <value>Caps Lock hamiša hurufênê gap êkone</value>
+  </data>
+  <data name="Categories" xml:space="preserve">
+    <value>kêtên bandiyal</value>
+  </data>
+  <data name="InSelectedCategories" xml:space="preserve">
+    <value>mênê kêtên bandiyal pêsand biďa</value>
+  </data>
+  <data name="Options" xml:space="preserve">
+    <value>guzinêyal — WinCompose</value>
+  </data>
+  <data name="ShowOptions" xml:space="preserve">
+    <value>guzinêyal…</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>poy volâti</value>
+  </data>
+  <data name="Behavior" xml:space="preserve">
+    <value>raftār</value>
+  </data>
+  <data name="WindowTitle" xml:space="preserve">
+    <value>dindāyal — WinCompose</value>
+  </data>
+  <data name="DisabledToolTip" xml:space="preserve">
+    <value>WinCompose qêyre faāl hêď</value>
+  </data>
+  <data name="TestTyping" xml:space="preserve">
+    <value>āzmāyêšê si tāyp kerdên</value>
+  </data>
+  <data name="Tweaks" xml:space="preserve">
+    <value>tarfandā</value>
+  </data>
+  <data name="DelaySeconds" xml:space="preserve">
+    <value>{0} sâniya</value>
+  </data>
+  <data name="About" xml:space="preserve">
+    <value>zêbār</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>dānlodê WinCompose {0}</value>
+  </data>
+  <data name="AboutBoxTitle" xml:space="preserve">
+    <value>zêbārê WinCompose</value>
+  </data>
+  <data name="Programming" xml:space="preserve">
+    <value>barnome nêvisi</value>
+  </data>
+  <data name="Translators" xml:space="preserve">
+    <value>vêlêrniďên</value>
+  </data>
+  <data name="Authors" xml:space="preserve">
+    <value>hîl konow</value>
+  </data>
+  <data name="License" xml:space="preserve">
+    <value>lāysêns</value>
+  </data>
+  <data name="ReportBug" xml:space="preserve">
+    <value>gozārêše ya bāg</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>hayâri</value>
+  </data>
+  <data name="UpdatesToolTip" xml:space="preserve">
+    <value>vêru kerdên mênê dasras hêď.</value>
+  </data>
+  <data name="UserDefinedSequencesEdit" xml:space="preserve">
+    <value>ālêšt</value>
+  </data>
+  <data name="UserDefinedSequencesReload" xml:space="preserve">
+    <value>bārvaniye dovāra</value>
+  </data>
+  <data name="AllowInjected" xml:space="preserve">
+    <value>kilitā tazriq biďêne mojāz ko</value>
+  </data>
+  <data name="KeyPrint" xml:space="preserve">
+    <value>Prt Scrn</value>
+  </data>
+  <data name="KeyDisabled" xml:space="preserve">
+    <value>qêyre faāl</value>
+  </data>
+  <data name="CheckUpdates" xml:space="preserve">
+    <value>čêk kerdên xotkār si nosxê nu</value>
+  </data>
+  <data name="ChangeComposeKey" xml:space="preserve">
+    <value>ālêšt…</value>
+  </data>
+  <data name="AddToFavorites" xml:space="preserve">
+    <value>êzāf kerdên vê mowrêdê alāqêyal</value>
+  </data>
+  <data name="KeyHome" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="KeyEnd" xml:space="preserve">
+    <value>End</value>
+  </data>
+  <data name="KeyTab" xml:space="preserve">
+    <value>Tab</value>
+  </data>
+  <data name="NoTimeout" xml:space="preserve">
+    <value>bî tāym owt</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>pîš ra'ďa</value>
+  </data>
+  <data name="SpecialThanks" xml:space="preserve">
+    <value>vā tašakor viža</value>
+  </data>
+  <data name="RemoveFromFavorites" xml:space="preserve">
+    <value>pāk kerdên zê alāqe mandiyal</value>
+  </data>
+  <data name="Favorites" xml:space="preserve">
+    <value>alāqe mandiyal</value>
+  </data>
+</root>

@@ -11,18 +11,144 @@
    - See http://www.wtfpl.net/ for more details.
   -->
 
-<wc:BaseWindow
+<wc:BaseWindow x:Class="WinCompose.SequenceWindow"      
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:wc="clr-namespace:WinCompose"
+        xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+        mc:Ignorable="d"
         xmlns:i18n="clr-namespace:WinCompose.i18n;assembly=language"
         xmlns:emoji="clr-namespace:Emoji.Wpf;assembly=Emoji.Wpf"
-        mc:Ignorable="d" x:Class="WinCompose.SequenceWindow"
-        Title="{x:Static i18n:Text.WindowTitle}" Width="1024" Height="600"
+        Width="1024" Height="600"
+        WindowCornerPreference="Round" ResizeMode="NoResize"
+        ExtendsContentIntoTitleBar="True"
+        Title="{x:Static i18n:Text.WindowTitle}"
         Icon="/WinCompose;component/res/icon_sequences.png">
 
+    <Window.Resources>
+        <ResourceDictionary>
+            <Image Height="14" x:Key="CopyIcon"       emoji:Image.Source="📋"/>
+            <Image Height="14" x:Key="FavoriteIcon"   emoji:Image.Source="❤️"/>
+            <Image Height="14" x:Key="UnfavoriteIcon" emoji:Image.Source="💔"/>
+            <Image Height="14" x:Key="DisableIcon"    emoji:Image.Source="❌"/>
+
+            <!--
+           - Style for TextBlock that renders text at a slightly smaller size
+          -->
+            <Style x:Key="SmallTextBlock" BasedOn="{StaticResource {x:Type TextBlock}}"
+               TargetType="{x:Type TextBlock}">
+                <Setter Property="LayoutTransform">
+                    <Setter.Value>
+                        <ScaleTransform ScaleX="0.8" ScaleY="0.8"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <!--
+           - DataTemplate containing a TextBox and a "clear text" button that can be
+           - used for the Search text input
+          -->
+            <DataTemplate x:Key="SearchTextTemplate">
+                <Grid>
+                    <emoji:RichTextBox x:Name="SearchBox" Padding="4" Width="240" Style="{DynamicResource DefaultRichTextBoxStyle}"
+                    Text="{Binding SearchText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                    <DockPanel>
+                        <Button DockPanel.Dock="Right" Click="ClearSearch_Click" Margin="4,0">
+                            <Button.Template>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="Transparent">
+                                        <ContentPresenter Content="{TemplateBinding Content}"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                            <TextBlock FontSize="10" VerticalAlignment="Center" Text="✖"
+                                   FontFamily="{x:Static wc:Constants.PreferredFontFamily}"/>
+                        </Button>
+                        <TextBlock x:Name="Watermark" Text="{x:Static i18n:Text.Search}" VerticalAlignment="Center"
+                               Margin="8,0" Visibility="Collapsed" IsHitTestVisible="False"
+                               FontStyle="Italic" Foreground="DarkGray"/>
+                    </DockPanel>
+                </Grid>
+                <DataTemplate.Triggers>
+                    <!-- If search box is empty and unfocused, show the watermark -->
+                    <MultiTrigger>
+                        <MultiTrigger.Conditions>
+                            <Condition Property="IsFocused" Value="False" SourceName="SearchBox"/>
+                            <Condition Property="Text" Value="" SourceName="SearchBox"/>
+                        </MultiTrigger.Conditions>
+                        <Setter Property="Visibility" Value="Visible" TargetName="Watermark"/>
+                    </MultiTrigger>
+                </DataTemplate.Triggers>
+            </DataTemplate>
+
+            <!--
+           - ControlTemplate for a ContentControl that renders a key sequence using
+           - fancy keycap images.
+          -->
+            <ControlTemplate x:Key="SequenceView" TargetType="ContentControl">
+                <StackPanel Orientation="Horizontal" Margin="4,0">
+                    <ItemsControl ItemsSource="{Binding FullSequence}">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <StackPanel Orientation="Horizontal"/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Border x:Name="KeyBorder" Width="28" Height="28" Margin="2" CornerRadius="4">
+                                    <Border.Background>
+                                        <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                                            <GradientStop Color="#d2ad8e" Offset="0.0" />
+                                            <GradientStop Color="#f6ebdb" Offset="1.0" />
+                                        </LinearGradientBrush>
+                                    </Border.Background>
+                                    <Border CornerRadius="2" BorderThickness="1" Margin="3">
+                                        <Border.BorderBrush>
+                                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                                                <GradientStop Color="#eed7bb" Offset="0.0" />
+                                                <GradientStop Color="#f9f2e7" Offset="1.0" />
+                                            </LinearGradientBrush>
+                                        </Border.BorderBrush>
+                                        <Border.Background>
+                                            <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                                                <GradientStop Color="#eed8bb" Offset="0.0" />
+                                                <GradientStop Color="#faf3e8" Offset="1.0" />
+                                            </LinearGradientBrush>
+                                        </Border.Background>
+                                        <Viewbox>
+                                            <!-- We use MinWidth in case the label is a combining character,
+                                           - otherwise nothing will be rendered. -->
+                                            <TextBlock Text="{Binding KeyLabel}" Foreground="#310" FontWeight="Bold"
+                                                   FontFamily="Consolas, Segoe UI Symbol, Arial"
+                                                   HorizontalAlignment="Center" MinWidth="10"/>
+                                        </Viewbox>
+                                    </Border>
+                                </Border>
+                                <DataTemplate.Triggers>
+                                    <!-- Change the key size when the value matches the space key -->
+                                    <DataTrigger Binding="{Binding}" Value="{x:Static wc:SequenceViewModel.SpaceKey}">
+                                        <Setter TargetName="KeyBorder" Property="Width" Value="60"/>
+                                    </DataTrigger>
+                                </DataTemplate.Triggers>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </StackPanel>
+            </ControlTemplate>
+
+            <ContextMenu x:Key="ContextMenu">
+                <MenuItem Header="{x:Static i18n:Text.CopyToClipboard}" Icon="{StaticResource CopyIcon}"
+                      Command="ApplicationCommands.Copy"/>
+                <MenuItem Header="{x:Static i18n:Text.AddToFavorites}" Icon="{StaticResource FavoriteIcon}"
+                      Click="ToggleFavorite_Click" Visibility="{Binding AddToFavoritesVisibility}"/>
+                <MenuItem Header="{x:Static i18n:Text.RemoveFromFavorites}" Icon="{StaticResource UnfavoriteIcon}"
+                      Click="ToggleFavorite_Click" Visibility="{Binding RemoveFromFavoritesVisibility}"/>
+            </ContextMenu>
+
+        </ResourceDictionary>
+    </Window.Resources>
     <Window.CommandBindings>
         <CommandBinding Command="ApplicationCommands.Close"
                         Executed="OnCloseCommandExecuted"/>
@@ -34,141 +160,29 @@
         <KeyBinding Key="Escape" Command="ApplicationCommands.Close"/>
     </Window.InputBindings>
 
-    <Window.Resources>
-        <Image Height="14" x:Key="CopyIcon"       emoji:Image.Source="📋"/>
-        <Image Height="14" x:Key="FavoriteIcon"   emoji:Image.Source="❤️"/>
-        <Image Height="14" x:Key="UnfavoriteIcon" emoji:Image.Source="💔"/>
-        <Image Height="14" x:Key="DisableIcon"    emoji:Image.Source="❌"/>
+    <Grid>
 
-        <!--
-           - Style for TextBlock that renders text at a slightly smaller size
-          -->
-        <Style x:Key="SmallTextBlock" BasedOn="{StaticResource {x:Type TextBlock}}"
-               TargetType="{x:Type TextBlock}">
-            <Setter Property="LayoutTransform">
-                <Setter.Value>
-                    <ScaleTransform ScaleX="0.8" ScaleY="0.8"/>
-                </Setter.Value>
-            </Setter>
-        </Style>
-
-        <!--
-           - DataTemplate containing a TextBox and a "clear text" button that can be
-           - used for the Search text input
-          -->
-        <DataTemplate x:Key="SearchTextTemplate">
-            <Grid>
-                <emoji:RichTextBox x:Name="SearchBox" Padding="4" Width="240"
-                    Text="{Binding SearchText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-                <DockPanel>
-                    <Button DockPanel.Dock="Right" Click="ClearSearch_Click" Margin="4,0">
-                        <Button.Template>
-                            <ControlTemplate TargetType="{x:Type Button}">
-                                <Border Background="Transparent">
-                                    <ContentPresenter Content="{TemplateBinding Content}"/>
-                                </Border>
-                            </ControlTemplate>
-                        </Button.Template>
-                        <TextBlock FontSize="10" VerticalAlignment="Center" Text="✖"
-                                   FontFamily="{x:Static wc:Constants.PreferredFontFamily}"/>
-                    </Button>
-                    <TextBlock x:Name="Watermark" Text="{x:Static i18n:Text.Search}" VerticalAlignment="Center"
-                               Margin="8,0" Visibility="Collapsed" IsHitTestVisible="False"
-                               FontStyle="Italic" Foreground="DarkGray"/>
-                </DockPanel>
-            </Grid>
-            <DataTemplate.Triggers>
-                <!-- If search box is empty and unfocused, show the watermark -->
-                <MultiTrigger>
-                    <MultiTrigger.Conditions>
-                        <Condition Property="IsFocused" Value="False" SourceName="SearchBox"/>
-                        <Condition Property="Text" Value="" SourceName="SearchBox"/>
-                    </MultiTrigger.Conditions>
-                    <Setter Property="Visibility" Value="Visible" TargetName="Watermark"/>
-                </MultiTrigger>
-            </DataTemplate.Triggers>
-        </DataTemplate>
-
-        <!--
-           - ControlTemplate for a ContentControl that renders a key sequence using
-           - fancy keycap images.
-          -->
-        <ControlTemplate x:Key="SequenceView" TargetType="ContentControl">
-            <StackPanel Orientation="Horizontal" Margin="4,0">
-                <ItemsControl ItemsSource="{Binding FullSequence}">
-                    <ItemsControl.ItemsPanel>
-                        <ItemsPanelTemplate>
-                            <StackPanel Orientation="Horizontal"/>
-                        </ItemsPanelTemplate>
-                    </ItemsControl.ItemsPanel>
-                    <ItemsControl.ItemTemplate>
-                        <DataTemplate>
-                            <Border x:Name="KeyBorder" Width="28" Height="28" Margin="2" CornerRadius="4">
-                                <Border.Background>
-                                    <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
-                                        <GradientStop Color="#d2ad8e" Offset="0.0" />
-                                        <GradientStop Color="#f6ebdb" Offset="1.0" />
-                                    </LinearGradientBrush>
-                                </Border.Background>
-                                <Border CornerRadius="2" BorderThickness="1" Margin="3">
-                                    <Border.BorderBrush>
-                                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                                            <GradientStop Color="#eed7bb" Offset="0.0" />
-                                            <GradientStop Color="#f9f2e7" Offset="1.0" />
-                                        </LinearGradientBrush>
-                                    </Border.BorderBrush>
-                                    <Border.Background>
-                                        <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
-                                            <GradientStop Color="#eed8bb" Offset="0.0" />
-                                            <GradientStop Color="#faf3e8" Offset="1.0" />
-                                        </LinearGradientBrush>
-                                    </Border.Background>
-                                    <Viewbox>
-                                        <!-- We use MinWidth in case the label is a combining character,
-                                           - otherwise nothing will be rendered. -->
-                                        <TextBlock Text="{Binding KeyLabel}" Foreground="#310" FontWeight="Bold"
-                                                   FontFamily="Consolas, Segoe UI Symbol, Arial"
-                                                   HorizontalAlignment="Center" MinWidth="10"/>
-                                    </Viewbox>
-                                </Border>
-                            </Border>
-                            <DataTemplate.Triggers>
-                                <!-- Change the key size when the value matches the space key -->
-                                <DataTrigger Binding="{Binding}" Value="{x:Static wc:SequenceViewModel.SpaceKey}">
-                                    <Setter TargetName="KeyBorder" Property="Width" Value="60"/>
-                                </DataTrigger>
-                            </DataTemplate.Triggers>
-                        </DataTemplate>
-                    </ItemsControl.ItemTemplate>
-                </ItemsControl>
-            </StackPanel>
-        </ControlTemplate>
-
-        <ContextMenu x:Key="ContextMenu">
-            <MenuItem Header="{x:Static i18n:Text.CopyToClipboard}" Icon="{StaticResource CopyIcon}"
-                      Command="ApplicationCommands.Copy"/>
-            <MenuItem Header="{x:Static i18n:Text.AddToFavorites}" Icon="{StaticResource FavoriteIcon}"
-                      Click="ToggleFavorite_Click" Visibility="{Binding AddToFavoritesVisibility}"/>
-            <MenuItem Header="{x:Static i18n:Text.RemoveFromFavorites}" Icon="{StaticResource UnfavoriteIcon}"
-                      Click="ToggleFavorite_Click" Visibility="{Binding RemoveFromFavoritesVisibility}"/>
-        </ContextMenu>
-    </Window.Resources>
-
-    <Grid Margin="8">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="2*"/>
-            <ColumnDefinition Width="5"/>
             <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="286*"/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="728*"/>
         </Grid.ColumnDefinitions>
-
-        <DockPanel Grid.Column="0" LastChildFill="True">
-            <StackPanel Margin="4" Orientation="Horizontal" DockPanel.Dock="Top" VerticalAlignment="Top">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="540"/>
+        </Grid.RowDefinitions>
+        <ui:TitleBar Title="{x:Static i18n:Text.WindowTitle}" Grid.Row="0" Grid.ColumnSpan="4" FontSize="14" ShowMaximize="False" ShowMinimize="False" Height="38" Margin="0,0,0,4">
+            <ui:TitleBar.Icon>
+                <ui:ImageIcon Source="/WinCompose;component/res/icon_sequences.png" />
+            </ui:TitleBar.Icon>
+        </ui:TitleBar>
+        <DockPanel Grid.Column="0" Grid.Row="1" LastChildFill="True" Grid.ColumnSpan="2">
+            <StackPanel Margin="10 4" Orientation="Horizontal" DockPanel.Dock="Top" VerticalAlignment="Top">
                 <ContentPresenter x:Name="SearchWidget" Content="{Binding}"
                                   ContentTemplate="{StaticResource SearchTextTemplate}"/>
             </StackPanel>
-
-            <GroupBox DockPanel.Dock="Bottom" Margin="4"
-                      Header="{x:Static i18n:Text.UserDefinedSequences}">
+            <GroupBox DockPanel.Dock="Bottom" Margin="10 4 0 0" Header="{x:Static i18n:Text.UserDefinedSequences}">
                 <StackPanel Orientation="Horizontal" DockPanel.Dock="Top">
                     <Button x:Name="EditUserDefinedSequences" MinWidth="80" Margin="8,4"
                             Content="{x:Static i18n:Text.UserDefinedSequencesEdit}"
@@ -178,21 +192,20 @@
                             Click="ReloadUserDefinedSequences_Click" />
                 </StackPanel>
             </GroupBox>
-
-            <wc:TreeView Margin="4" ItemsSource="{Binding Categories}"
+            <wc:TreeView Margin="10 4 0 4" ItemsSource="{Binding Categories}" BorderThickness="1" BorderBrush="LightGray"
                          ScrollViewer.HorizontalScrollBarVisibility="Disabled">
                 <wc:TreeView.ItemContainerStyle>
-                    <Style TargetType="{x:Type TreeViewItem}" BasedOn="{StaticResource {x:Type TreeViewItem}}">
+                    <Style TargetType="{x:Type TreeViewItem}" BasedOn="{StaticResource {x:Type TreeViewItem}}" >
                         <Setter Property="Padding" Value="4"/>
-                        <Setter Property="Visibility" Value="{Binding Visibility}" d:DataContext="{d:DesignInstance IsDesignTimeCreatable=True, wc:CategoryViewModel}"/>
-                        <Setter Property="IsSelected" Value="{Binding IsSelected}" d:DataContext="{d:DesignInstance IsDesignTimeCreatable=True, wc:CategoryViewModel}"/>
+                        <Setter Property="Visibility" Value="{Binding Visibility}" />
+                        <Setter Property="IsSelected" Value="{Binding IsSelected}" />
                         <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
                     </Style>
                 </wc:TreeView.ItemContainerStyle>
-                <wc:TreeView.ItemTemplate>
-                    <HierarchicalDataTemplate DataType="{x:Type wc:CategoryViewModel}" ItemsSource="{Binding Children}">
+                <wc:TreeView.ItemTemplate >
+                    <HierarchicalDataTemplate DataType="{x:Type wc:CategoryViewModel}" ItemsSource="{Binding Children}"  >
                         <StackPanel Orientation="Horizontal">
-                            <emoji:TextBlock Text="{Binding RichName}" HorizontalAlignment="Left" TextWrapping="Wrap"/>
+                            <emoji:TextBlock Text="{Binding RichName}" HorizontalAlignment="Left" TextWrapping="Wrap" />
                             <!--<emoji:TextBlock Text="{Binding Icon}" Margin="4,0,0,0"/>-->
                             <!-- TODO: make this a tooltip instead? -->
                             <!--
@@ -209,21 +222,22 @@
         </DockPanel>
 
         <GridSplitter Grid.Column="1" ResizeBehavior="PreviousAndNext" Background="Transparent"
-                      HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                      HorizontalAlignment="Stretch" Grid.ColumnSpan="2" Margin="286,0,0,0"/>
 
-        <DockPanel Grid.Column="2">
-            <TextBlock DockPanel.Dock="Top" Text="{x:Static i18n:Text.Sequences}" Margin="8"/>
-            <ListBox Margin="4" ItemsSource="{Binding Sequences}" Name="ListBox" AlternationCount="2"
-                     ScrollViewer.HorizontalScrollBarVisibility="Disabled"
-                     VirtualizingStackPanel.VirtualizationMode="Recycling"
-                     emoji:Behaviors.SmoothScrolling="True">
+        <DockPanel Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="2" Margin="5,0,0,0">
+            <TextBlock DockPanel.Dock="Top" Text="{x:Static i18n:Text.Sequences}" Margin="8 2 8 2"/>
+            <ListBox Margin="8 4 10 1" ItemsSource="{Binding Sequences}" Name="ListBox" AlternationCount="2" 
+                     ScrollViewer.HorizontalScrollBarVisibility="Disabled" Style="{DynamicResource DefaultListBoxStyle}"
+                     VirtualizingStackPanel.VirtualizationMode="Recycling" BorderThickness="1"
+                     emoji:Behaviors.SmoothScrolling="True"  BorderBrush="LightGray">
+
                 <ListBox.ItemsPanel>
                     <ItemsPanelTemplate>
                         <VirtualizingStackPanel emoji:Behaviors.SmoothScrolling="True"/>
                     </ItemsPanelTemplate>
                 </ListBox.ItemsPanel>
                 <ListBox.ItemContainerStyle>
-                    <Style TargetType="{x:Type ListBoxItem}" BasedOn="{StaticResource {x:Type ListBoxItem}}">
+                    <Style TargetType="{x:Type ListBoxItem}" >
                         <Style.Triggers>
                             <Trigger Property="ItemsControl.AlternationIndex" Value="0">
                                 <Setter Property="Background" Value="#0cf39611"></Setter>
@@ -234,19 +248,19 @@
                         </Style.Triggers>
                         <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
                         <Setter Property="ContextMenu" Value="{StaticResource ContextMenu}"/>
+                        <Setter Property="BorderThickness" Value="0" />
                     </Style>
                 </ListBox.ItemContainerStyle>
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <DockPanel Margin="0,2">
-
+                        <DockPanel Margin="0,0">
                             <!-- The small character box and its large tooltip -->
-                            <Border BorderThickness="1" BorderBrush="DarkGray" CornerRadius="4"
-                                    Background="White" Margin="2,0,4,0" SnapsToDevicePixels="True">
-                                <Viewbox Height="32" DockPanel.Dock="Left" StretchDirection="UpOnly"
+                            <Border CornerRadius="4"
+                                    Background="White" Margin="2,6,4,4" SnapsToDevicePixels="True">
+                                <Viewbox Height="34" DockPanel.Dock="Left" StretchDirection="UpOnly"
                                          ToolTipService.InitialShowDelay="0" ToolTipService.BetweenShowDelay="0">
                                     <emoji:TextBlock Text="{Binding Result}" Background="Transparent"
-                                                     Height="32" Margin="4,0,4,0" FontSize="24"
+                                                     Height="32" Margin="4,0,4,0" FontSize="24" Foreground="Black"
                                                      FontFamily="{x:Static wc:Constants.PreferredFontFamily}"/>
                                 </Viewbox>
                                 <Border.ToolTip>
@@ -260,23 +274,21 @@
                             <ContentControl Template="{StaticResource ResourceKey=SequenceView}"
                                             DockPanel.Dock="Right"/>
 
-                            <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal">
-                                <StackPanel.RenderTransform>
-                                    <ScaleTransform ScaleX="0.9" ScaleY="0.9" />
-                                </StackPanel.RenderTransform>
+                            <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" Height="20">
+
                                 <TextBlock Text="{Binding CodePoint, Mode=OneTime}"
-                                           Foreground="DarkMagenta"/>
+                                           Foreground="CornflowerBlue" FontSize="12"/>
                                 <TextBlock Text="{Binding UnicodeCategory, Converter={wc:UnicodeCategoryConverter}, Mode=OneTime}"
-                                           Foreground="DarkCyan" FontStyle="Italic" HorizontalAlignment="Right" Margin="10,0"/>
+                                           Foreground="DarkCyan" FontStyle="Italic" HorizontalAlignment="Right" Margin="10,0" FontSize="12"/>
                             </StackPanel>
-                            <emoji:TextBlock Text="{Binding RichDescription, Mode=OneWay}" TextTrimming="WordEllipsis"/>
+                            <emoji:TextBlock Text="{Binding RichDescription, Mode=OneWay}" TextTrimming="WordEllipsis" Margin="0 4 0 2" />
                         </DockPanel>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
 
             </ListBox>
         </DockPanel>
-        <Frame x:Name="MainFrame">
+        <Frame x:Name="MainFrame" IsHitTestVisible="False" Grid.Column="3" Margin="238,194,191,300" Grid.Row="1">
             <Frame.Template>
                 <ControlTemplate TargetType="Frame">
                     <Border BorderThickness="{TemplateBinding Border.BorderThickness}"

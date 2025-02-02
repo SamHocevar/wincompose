@@ -144,8 +144,8 @@ msgid ""
 "Use the compose sequences for Emoji provided by the WinCompose author and "
 "contributors."
 msgstr ""
-"Gebruik de sequenties voor Emoji voorzien door de WinCompose-auteur en -"
-"medewerkers."
+"Gebruik de sequenties voor Emoji voorzien door de WinCompose-auteur en "
+"-medewerkers."
 
 #. Menu entry to show the debug window
 #: language/i18n/Text.resx:217 ID:DebugWindow
@@ -579,8 +579,8 @@ msgid ""
 "“WinCompose Settings” and “WinCompose Sequences” entries in the startup menu."
 msgstr ""
 "Schakel in om het WinCompose-pictogram niet meer te tonen in het systeemvak. "
-"De enige manier om WinCompose dan te openen is via \"WinCompose-instellingen"
-"\" en \"WinCompose-sequenties\" in het opstartmenu."
+"De enige manier om WinCompose dan te openen is via \"WinCompose-"
+"instellingen\" en \"WinCompose-sequenties\" in het opstartmenu."
 
 #. The name of the “Home” key on the keyboard
 #: language/i18n/Text.resx:541 ID:KeyHome
@@ -617,8 +617,8 @@ msgid ""
 "WinCompose will be completely disabled when the current window class or "
 "window name matches this regular expression."
 msgstr ""
-"WinCompose wordt volledig uitgeschakeld als de huidige vensterklasse of -"
-"naam overeenkomt met deze reguliere uitdrukking."
+"WinCompose wordt volledig uitgeschakeld als de huidige vensterklasse of "
+"-naam overeenkomt met deze reguliere uitdrukking."
 
 #: language/i18n/Text.resx:569 ID:AlwaysCompose
 msgid "Alternate compose key is always Compose"
@@ -712,7 +712,7 @@ msgstr ""
 "Opstellen werkt niet in sommige programma's als WinCompose niet als "
 "administrator wordt uitgevoerd. Deze opties verkleinen de kans op problemen."
 
-#. Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
+#.  Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
 #: language/unicode/Category.resx:121 ID:Control
 msgid "Other, Control"
 msgstr "Overig, Besturing"

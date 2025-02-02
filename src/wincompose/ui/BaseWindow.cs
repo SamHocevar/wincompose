@@ -14,7 +14,7 @@ using System.Windows;
 
 namespace WinCompose
 {
-    public class BaseWindow : Window
+    public class BaseWindow : Wpf.Ui.Controls.FluentWindow
     {
         static BaseWindow()
         {
