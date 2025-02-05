@@ -24,6 +24,7 @@ namespace WinCompose
         private DelegateCommand m_close_command;
         private DelegateCommand m_edit_command;
         private KeySelector m_key_selector;
+        private string m_theme_mode;
         private string m_selected_language;
         private string m_close_button_text;
         private Visibility m_warn_message_visibility;
@@ -33,6 +34,7 @@ namespace WinCompose
             m_close_command = new DelegateCommand(OnCloseCommandExecuted);
             m_edit_command = new DelegateCommand(OnEditCommandExecuted);
             m_selected_language = Settings.Language.Value;
+            m_theme_mode = Settings.ThemeMode.Value;
             m_close_button_text = Text.Close;
             m_warn_message_visibility = Visibility.Collapsed;
         }
@@ -53,6 +55,11 @@ namespace WinCompose
         {
             get => m_selected_language;
             set => SetValue(ref m_selected_language, value, nameof(SelectedLanguage));
+        }
+        public string SelectedTheme
+        {
+            get => m_theme_mode;
+            set => SetValue(ref m_theme_mode , value , nameof(SelectedTheme));
         }
 
         public Key SelectedLedKey
@@ -130,6 +137,10 @@ namespace WinCompose
                 WarnMessageVisibility   = Visibility.Visible;
                 CloseButtonText         = Text.Restart;
                 CloseButtonCommand      = new DelegateCommand(OnRestartCommandExecuted);
+            }
+            if (propertyName == nameof(SelectedTheme))
+            {
+                Settings.ThemeMode.Value = SelectedTheme;
             }
         }
 

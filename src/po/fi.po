@@ -10,7 +10,8 @@ msgstr ""
 "POT-Creation-Date: 2015-03-23 15:27+0100\n"
 "PO-Revision-Date: 2024-11-29 10:00+0000\n"
 "Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
-"Language-Team: Finnish <https://hosted.weblate.org/projects/wincompose/master/fi/>\n"
+"Language-Team: Finnish <https://hosted.weblate.org/projects/wincompose/"
+"master/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -116,7 +117,9 @@ msgstr "Käytä Xorg-projektin merkkiyhdistelmiä"
 msgid ""
 "Use the 3,000 compose sequences from the Xorg project (http://www.x.org/). "
 "These are the sequences most commonly found on a standard Linux system."
-msgstr "Käytä 3 000 Xorg-projektin (http://www.x.org/) merkkiyhdistelmää. Nämä ovat yleisessä käytössä standardi-Linux-järjestelmissä."
+msgstr ""
+"Käytä 3 000 Xorg-projektin (http://www.x.org/) merkkiyhdistelmää. Nämä ovat "
+"yleisessä käytössä standardi-Linux-järjestelmissä."
 
 #: language/i18n/Text.resx:201 ID:UseXComposeRules
 msgid "Use sequences from the XCompose project"
@@ -127,7 +130,10 @@ msgid ""
 "Use the 1,000 compose sequences from the XCompose opensource project "
 "(https://github.com/kragen/xcompose). These sequences may sometimes conflict "
 "with the Xorg ones."
-msgstr "Käytä 1 000 XCompose-projektin merkkiyhdistelmää (https://github.com/kragen/xcompose). Nämä voivat joskus olla ristiriidassa Xorg-projektin merkkiyhdistelmien kanssa."
+msgstr ""
+"Käytä 1 000 XCompose-projektin merkkiyhdistelmää (https://github.com/kragen/"
+"xcompose). Nämä voivat joskus olla ristiriidassa Xorg-projektin "
+"merkkiyhdistelmien kanssa."
 
 #: language/i18n/Text.resx:209 ID:UseEmojiRules
 msgid "Use WinCompose emoji sequences"
@@ -137,7 +143,8 @@ msgstr "Käytä WinComposen emoji-näppäinyhdistelmiä"
 msgid ""
 "Use the compose sequences for Emoji provided by the WinCompose author and "
 "contributors."
-msgstr "Käytä WinComposen kehittäjän ja avustajien luomia Emoji-merkkiyhdistelmiä."
+msgstr ""
+"Käytä WinComposen kehittäjän ja avustajien luomia Emoji-merkkiyhdistelmiä."
 
 #. Menu entry to show the debug window
 #: language/i18n/Text.resx:217 ID:DebugWindow
@@ -188,7 +195,9 @@ msgstr "Yritä vaihtaa näppäimiä keskenään"
 msgid ""
 "Try to swap the keys of a two-key sequence. For instance, if Compose E A is "
 "not a valid sequence, try Compose A E instead."
-msgstr "Kokeile vaihtaa merkkien järjestystä. Esimerkiksi jos näppäinyhdistelmä E A ei ole määritelty, niin kokeile yhdistelmää A E."
+msgstr ""
+"Kokeile vaihtaa merkkien järjestystä. Esimerkiksi jos näppäinyhdistelmä E A "
+"ei ole määritelty, niin kokeile yhdistelmää A E."
 
 #: language/i18n/Text.resx:261 ID:Search
 msgid "Search Filter:"
@@ -216,7 +225,10 @@ msgid ""
 "Enable Unicode input for all characters, even those with no compose sequence "
 "defined. For instance, the following sequence will output character U+1A3F: "
 "Compose U 1 A 3 F Enter"
-msgstr "Salli kaikkien merkkien syöttö Unicode-koodin avulla, vaikka niillä ei ole valmista Compose-näppäinyhdistelmää. Tällöin esimerkiksi merkin U+1A3F voi syöttää kirjoittamalla: <Compose> U 1 A 3 F <Enter>"
+msgstr ""
+"Salli kaikkien merkkien syöttö Unicode-koodin avulla, vaikka niillä ei ole "
+"valmista Compose-näppäinyhdistelmää. Tällöin esimerkiksi merkin U+1A3F voi "
+"syöttää kirjoittamalla: <Compose> U 1 A 3 F <Enter>"
 
 #. This is the name of a category of settings about what happens when invalid sequences are typed
 #: language/i18n/Text.resx:285 ID:InvalidSequences
@@ -231,7 +243,9 @@ msgstr "Sisällytä tuloksettomaan hakuun merkkikoosta riippumattomat tulokset"
 msgid ""
 "If the entered sequence does not exist, but there is one that only differs "
 "by case, automatically correct it."
-msgstr "Mikäli syötettyä yhdistelmää ei löydy, mutta vain merkkikooltaan eroava yhdistelmä löytyy, korjaa se automaattisesti."
+msgstr ""
+"Mikäli syötettyä yhdistelmää ei löydy, mutta vain merkkikooltaan eroava "
+"yhdistelmä löytyy, korjaa se automaattisesti."
 
 #: language/i18n/Text.resx:297 ID:DiscardOnInvalid
 msgid "Discard all typed characters"
@@ -242,7 +256,10 @@ msgid ""
 "If the entered sequence does not exist, discard all the characters that were "
 "typed. The default behaviour is to output the characters as if the compose "
 "key had not been used."
-msgstr "Mikäli syötettyä yhdistelmää ei ole olemassa, jätä pois kaikki syötetyt merkit. Oletusarvoisesti merkit tulostetaan ikään kuin compose-näppäintä ei olisi käytetty."
+msgstr ""
+"Mikäli syötettyä yhdistelmää ei ole olemassa, jätä pois kaikki syötetyt "
+"merkit. Oletusarvoisesti merkit tulostetaan ikään kuin compose-näppäintä ei "
+"olisi käytetty."
 
 #: language/i18n/Text.resx:305 ID:BeepOnInvalid
 msgid "Emit a beep"
@@ -260,7 +277,9 @@ msgstr "Käyttöliittymän kieli:"
 msgid ""
 "Select the language that WinCompose uses for the interface. By default the "
 "operating system language is used."
-msgstr "Valitse WinCompose-käyttöliittymän kieli. Oletuksena käytetään käyttöjärjestelmän kieltä."
+msgstr ""
+"Valitse WinCompose-käyttöliittymän kieli. Oletuksena käytetään "
+"käyttöjärjestelmän kieltä."
 
 #. Close the settings window
 #: language/i18n/Text.resx:321 ID:Close
@@ -292,7 +311,11 @@ msgid ""
 "This tells WinCompose to make a best effort to retain the original key’s "
 "behaviour. For instance, the Alt-Tab shortcut will still work even if Alt is "
 "used as the compose key."
-msgstr "Tämä kehottaa WinComposea pyrkimään parhaansa mukaan säilyttämään alkuperäisen näppäimen toiminnallisuuden. Tällöin esimerkiksi Alt-Tab -pikanäppäin toimii edelleen, vaikka Alt-näppäintä käytetään compose-näppäimenä."
+msgstr ""
+"Tämä kehottaa WinComposea pyrkimään parhaansa mukaan säilyttämään "
+"alkuperäisen näppäimen toiminnallisuuden. Tällöin esimerkiksi Alt-Tab "
+"-pikanäppäin toimii edelleen, vaikka Alt-näppäintä käytetään compose-"
+"näppäimenä."
 
 #: language/i18n/Text.resx:345 ID:InsertZwsp
 msgid "Insert zero-width spaces in Office apps"
@@ -303,7 +326,10 @@ msgid ""
 "Microsoft Office applications sometimes change the document font on the fly "
 "when entering certain Unicode characters. This feature inserts an invisible "
 "character after the Unicode character to work around the bug."
-msgstr "Microsoft Office -sovellukset muuttavat toisinaan asiakirjan fonttia lennossa syöttäessäsi tiettyjä Unicode-merkkejä. Tämä ominaisuus lisää näkymätön merkin Unicode-merkin perään vian kiertämiseksi."
+msgstr ""
+"Microsoft Office -sovellukset muuttavat toisinaan asiakirjan fonttia "
+"lennossa syöttäessäsi tiettyjä Unicode-merkkejä. Tämä ominaisuus lisää "
+"näkymätön merkin Unicode-merkin perään vian kiertämiseksi."
 
 #: language/i18n/Text.resx:353 ID:EmulateCapsLock
 msgid "Emulate Caps Lock using both Shift keys"
@@ -314,7 +340,10 @@ msgid ""
 "If Caps Lock is used as the compose key, the original behaviour of the key "
 "becomes unavailable. This feature allows to turn Caps Lock on by pressing "
 "both Shift keys simultaneously."
-msgstr "Jos Caps Lock -näppäintä käytetään kirjoitusnäppäimenä, sen alkuperäinen toiminnallisuus lakkaa. Tämä ominaisuus mahdollistaa Caps Lock -toiminnon painamalla molempia Shift-näppäimiä samanaikaisesti."
+msgstr ""
+"Jos Caps Lock -näppäintä käytetään kirjoitusnäppäimenä, sen alkuperäinen "
+"toiminnallisuus lakkaa. Tämä ominaisuus mahdollistaa Caps Lock -toiminnon "
+"painamalla molempia Shift-näppäimiä samanaikaisesti."
 
 #: language/i18n/Text.resx:361 ID:ShiftDisablesCapsLock
 msgid "Shift key disables Caps Lock"
@@ -325,7 +354,10 @@ msgid ""
 "If Caps Lock is used as the compose key, the original behaviour of the key "
 "becomes unavailable. This feature allows to turn Caps Lock off by pressing "
 "the Shift key."
-msgstr "Jos Caps Lock -näppäintä käytetään kirjoitusnäppäimenä, sen alkuperäinen toiminnallisuus lakkaa. Tämä ominaisuus mahdollistaa Caps Lockin poistamisen käytöstä painamalla Shift-näppäintä."
+msgstr ""
+"Jos Caps Lock -näppäintä käytetään kirjoitusnäppäimenä, sen alkuperäinen "
+"toiminnallisuus lakkaa. Tämä ominaisuus mahdollistaa Caps Lockin poistamisen "
+"käytöstä painamalla Shift-näppäintä."
 
 #: language/i18n/Text.resx:369 ID:CapsLockCapitalizes
 msgid "Caps Lock always capitalizes letters"
@@ -335,7 +367,9 @@ msgstr "Caps Lock tuottaa aina isoja kirjaimia"
 msgid ""
 "When Caps Lock is on, typing an accented letter such as “é” will always "
 "output the corresponding capitalized letter, in this case “É”."
-msgstr "Kun Caps Lock on päällä, aksentoitujen kirjainten, kuten é:n, kirjoittaminen tuottaa aina vastaavan ison kirjaimen, tässä esimerkissä É:n."
+msgstr ""
+"Kun Caps Lock on päällä, aksentoitujen kirjainten, kuten é:n, kirjoittaminen "
+"tuottaa aina vastaavan ison kirjaimen, tässä esimerkissä É:n."
 
 #. Header for the list of Unicode character categories
 #: language/i18n/Text.resx:377 ID:Categories
@@ -442,7 +476,8 @@ msgstr "Lisenssi"
 #. Warning message when the user changes the language in the settings window
 #: language/i18n/Text.resx:461 ID:NeedRestart
 msgid "WinCompose needs to be restarted for some changes to take effect."
-msgstr "WinCompose täytyy käynnistää uudelleen, jotta muutokset tulevat voimaan."
+msgstr ""
+"WinCompose täytyy käynnistää uudelleen, jotta muutokset tulevat voimaan."
 
 #. A button to report bugs (opens web browser)
 #: language/i18n/Text.resx:465 ID:ReportBug
@@ -479,7 +514,9 @@ msgstr "Salli syötetyt näppäimet"
 
 #: language/i18n/Text.resx:493 ID:AllowInjectedToolTip
 msgid "Do not ignore keys sent by other software like AutoHotkey or Synergy"
-msgstr "Älä jätä huomiotta muiden ohjelmistojen, kuten AutoHotkeyn tai Synergyn, lähettämiä näppäimiä"
+msgstr ""
+"Älä jätä huomiotta muiden ohjelmistojen, kuten AutoHotkeyn tai Synergyn, "
+"lähettämiä näppäimiä"
 
 #. The name of the “Print Screen” key on the keyboard
 #: language/i18n/Text.resx:497 ID:KeyPrint
@@ -499,7 +536,9 @@ msgstr "Tarkista päivitykset automaattisesti"
 msgid ""
 "If enabled, WinCompose will connect to the Internet at regular intervals to "
 "check for new versions. Updates are not installed automatically."
-msgstr "Kun asetus on päällä, WinCompose tarkistaa säännöllisesti saatavilla olevat päivitykset internetistä. Päivityksiä ei asenneta automaattisesti."
+msgstr ""
+"Kun asetus on päällä, WinCompose tarkistaa säännöllisesti saatavilla olevat "
+"päivitykset internetistä. Päivityksiä ei asenneta automaattisesti."
 
 #: language/i18n/Text.resx:513 ID:KeepIconVisible
 msgid "Try to keep notification area icon always visible"
@@ -509,7 +548,9 @@ msgstr "Yritä pitää ilmaisinalueen kuvake aina näkyvissä"
 msgid ""
 "By default, Windows will remove the icon from the notification area after a "
 "short while. This option attempts to keep it always visible."
-msgstr "Windows piilottaa ilmaisinalueella näkyvän kuvakkeen oletusarvoisesti jonkin ajan kuluttua. Tämä asetus yrittää pitää kuvakkeen aina näkyvissä."
+msgstr ""
+"Windows piilottaa ilmaisinalueella näkyvän kuvakkeen oletusarvoisesti jonkin "
+"ajan kuluttua. Tämä asetus yrittää pitää kuvakkeen aina näkyvissä."
 
 #. The user can click on this button to change the current compose key.
 #: language/i18n/Text.resx:521 ID:ChangeComposeKey
@@ -534,7 +575,10 @@ msgid ""
 "If enabled, WinCompose will no longer display an icon in the notification "
 "area. The only way to open the WinCompose interface will then be through the "
 "“WinCompose Settings” and “WinCompose Sequences” entries in the startup menu."
-msgstr "Jos käytössä, WinCompose ei enää näytä kuvaketta ilmaisinalueella. Ainoa tapa avata WinCompose-käyttöliittymä on sitten käynnistysvalikon \"WinCompose-asetukset\"- ja \"WinCompose-yhdistelmät\"-merkintöjen kautta."
+msgstr ""
+"Jos käytössä, WinCompose ei enää näytä kuvaketta ilmaisinalueella. Ainoa "
+"tapa avata WinCompose-käyttöliittymä on sitten käynnistysvalikon "
+"\"WinCompose-asetukset\"- ja \"WinCompose-yhdistelmät\"-merkintöjen kautta."
 
 #. The name of the “Home” key on the keyboard
 #: language/i18n/Text.resx:541 ID:KeyHome
@@ -570,7 +614,9 @@ msgstr "Älä käytä ikkunoissa, jotka vastaavat tätä säännöllistä lausek
 msgid ""
 "WinCompose will be completely disabled when the current window class or "
 "window name matches this regular expression."
-msgstr "WinCompose poistetaan kokonaan käytöstä, kun nykyinen ikkunaluokka tai ikkunan nimi vastaa tätä säännöllistä lauseketta."
+msgstr ""
+"WinCompose poistetaan kokonaan käytöstä, kun nykyinen ikkunaluokka tai "
+"ikkunan nimi vastaa tätä säännöllistä lauseketta."
 
 #: language/i18n/Text.resx:569 ID:AlwaysCompose
 msgid "Alternate compose key is always Compose"
@@ -581,7 +627,11 @@ msgid ""
 "If enabled, all compose keys will be treated as Compose in a sequence. By "
 "default, only the first pressed key will act as Compose, and alternate "
 "compose keys will keep their original role."
-msgstr "Jos käytössä, kaikkia kirjoitusnäppäimiä käsitellään Composena yhdistelmässä. Oletuksena vain ensimmäinen painettu näppäin toimii Composena, ja vaihtoehtoiset kirjoitusnäppäimet säilyttävät alkuperäisen roolinsa."
+msgstr ""
+"Jos käytössä, kaikkia kirjoitusnäppäimiä käsitellään Composena "
+"yhdistelmässä. Oletuksena vain ensimmäinen painettu näppäin toimii "
+"Composena, ja vaihtoehtoiset kirjoitusnäppäimet säilyttävät alkuperäisen "
+"roolinsa."
 
 #. The section for random contributors who aren’t programmers or translators. Might be empty.
 #: language/i18n/Text.resx:577 ID:SpecialThanks
@@ -602,7 +652,9 @@ msgstr "Suosikit"
 msgid ""
 "If set, any compose sequence will be cancelled after a certain delay if no "
 "keyboard activity is detected."
-msgstr "Jos asetettu, kaikki kirjoitusjaksot peruuntuvat tietyn viiveen jälkeen jos mitään näppäimistön toimintaa ei havaita."
+msgstr ""
+"Jos asetettu, kaikki kirjoitusjaksot peruuntuvat tietyn viiveen jälkeen jos "
+"mitään näppäimistön toimintaa ei havaita."
 
 #: language/i18n/Text.resx:593 ID:KeyboardLed
 msgid "Keyboard LED"
@@ -612,7 +664,9 @@ msgstr "Näppäimistön LED"
 msgid ""
 "If set, the corresponding keyboard LED will be lit when a compose sequence "
 "is in progress."
-msgstr "Jos asetettu, vastaava näppäimistön LED syttyy, kun kirjoitusjakso on käynnissä."
+msgstr ""
+"Jos asetettu, vastaava näppäimistön LED syttyy, kun kirjoitusjakso on "
+"käynnissä."
 
 #. The short name of the compose key
 #: language/i18n/Text.resx:601 ID:KeyCompose
@@ -639,7 +693,9 @@ msgstr "Caps Lock on aktiivinen vain, kun sitä pidetään painettuna"
 msgid ""
 "Releasing the Caps Lock key will immediately disable it, instead of the more "
 "standard behaviour of having to press it a second time."
-msgstr "Caps Lock -näppäimen vapauttaminen poistaa sen käytöstä välittömästi normaalimman toiminnan sijaan, että sitä joutuisi painamaan toisen kerran."
+msgstr ""
+"Caps Lock -näppäimen vapauttaminen poistaa sen käytöstä välittömästi "
+"normaalimman toiminnan sijaan, että sitä joutuisi painamaan toisen kerran."
 
 #: language/i18n/Text.resx:625 ID:RunElevated
 msgid "Run with elevated privileges (recommended)"
@@ -650,9 +706,12 @@ msgid ""
 "Composition will not work in some applications if WinCompose does not run "
 "with elevated privileges. This options reduces the chances that this will "
 "happen."
-msgstr "Kirjoitus ei toimi joissakin sovelluksissa, jos WinComposea ei suoriteta korotetuilla oikeuksilla. Tämä vaihtoehto vähentää mahdollisuuksia, että näin tapahtuu."
+msgstr ""
+"Kirjoitus ei toimi joissakin sovelluksissa, jos WinComposea ei suoriteta "
+"korotetuilla oikeuksilla. Tämä vaihtoehto vähentää mahdollisuuksia, että "
+"näin tapahtuu."
 
-#. Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
+#.  Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
 #: language/unicode/Category.resx:121 ID:Control
 msgid "Other, Control"
 msgstr "Muut, hallinta"

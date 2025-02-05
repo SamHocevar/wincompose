@@ -480,4 +480,25 @@
   <data name="KeyCompose" xml:space="preserve">
     <value>Комбинирование</value>
   </data>
+  <data name="AutoLaunch" xml:space="preserve">
+    <value>Автоматически запускать WinCompose при запуске системы</value>
+  </data>
+  <data name="AutoLaunchToolTip" xml:space="preserve">
+    <value>Если включено, WinCompose будет запущен, когда пользователь войдет в систему.</value>
+  </data>
+  <data name="Accessibility" xml:space="preserve">
+    <value>Доступность</value>
+  </data>
+  <data name="MustHoldCapsLock" xml:space="preserve">
+    <value>Клавиша Caps Lock активна только когда на неё нажимают</value>
+  </data>
+  <data name="MustHoldCapsLockToolTip" xml:space="preserve">
+    <value>Отпустив клавишу Caps Lock, она сразу же отключится, вместо стандартного поведения, которое требует для её отключения повторное нажатие.</value>
+  </data>
+  <data name="RunElevated" xml:space="preserve">
+    <value>Запустить с повышенными привилегиями (рекомендовано)</value>
+  </data>
+  <data name="RunElevatedToolTip" xml:space="preserve">
+    <value>Комбинирование может не сработать в некоторых приложениях если WinCompose не будет запущен с повышенными привилегиями. Эта опция уменьшает шансы того, что это случится.</value>
+  </data>
 </root>

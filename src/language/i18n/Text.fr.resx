@@ -220,7 +220,7 @@
     <value>Tenter en inversant les touches</value>
   </data>
   <data name="SwapOnInvalidToolTip" xml:space="preserve">
-    <value>Tente d’inverser les touches d’une séquence de deux touches. Par exemple, si Compose E A n’est pas une séquence valide, essayer Compose A E à la place.</value>
+    <value>Tente d’inverser les touches d’une séquence de deux touches. Par exemple, si Compose E A n’est pas une séquence valide, essaye Compose A E à la place.</value>
   </data>
   <data name="Search" xml:space="preserve">
     <value>Filtre de recherche :</value>
@@ -479,5 +479,26 @@
   </data>
   <data name="KeyCompose" xml:space="preserve">
     <value>Composition</value>
+  </data>
+  <data name="AutoLaunch" xml:space="preserve">
+    <value>Lancer WinCompose au démarrage</value>
+  </data>
+  <data name="AutoLaunchToolTip" xml:space="preserve">
+    <value>Si activé, WinCompose va démarrer quand l'utilisateur se connectera à sa session.</value>
+  </data>
+  <data name="Accessibility" xml:space="preserve">
+    <value>Accessibilité</value>
+  </data>
+  <data name="MustHoldCapsLock" xml:space="preserve">
+    <value>Verr. Maj. est seulement actif quand maintenu appuyé</value>
+  </data>
+  <data name="MustHoldCapsLockToolTip" xml:space="preserve">
+    <value>Relâcher la touche Verr. Maj. va immédiatement la désactiver, au lieu du comportement habituel de devoirs la presser une seconde fois.</value>
+  </data>
+  <data name="RunElevated" xml:space="preserve">
+    <value>Exécuter en tant qu'administrateur (recommandé)</value>
+  </data>
+  <data name="RunElevatedToolTip" xml:space="preserve">
+    <value>La composition ne fonctionnera pas dans certaines applications si WinCompose ne se lance pas en tant qu'administrateur. Cette option réduit les chances d'un tel événement.</value>
   </data>
 </root>

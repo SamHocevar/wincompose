@@ -11,53 +11,55 @@
    - See http://www.wtfpl.net/ for more details.
   -->
 
-<wc:BaseWindow
+<wc:BaseWindow x:Class="WinCompose.SettingsWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
         xmlns:wc="clr-namespace:WinCompose"
         xmlns:i18n="clr-namespace:WinCompose.i18n;assembly=language"
         xmlns:emoji="clr-namespace:Emoji.Wpf;assembly=Emoji.Wpf"
-        mc:Ignorable="d" x:Class="WinCompose.SettingsWindow"
-        Title="{x:Static i18n:Text.Options}" Width="400" Height="500"
-        Icon="/WinCompose;component/res/icon_settings.png"
-        WindowStyle="ToolWindow"
-        ResizeMode="NoResize"
-        WindowStartupLocation="CenterScreen"
-        SizeToContent="Height">
+        xmlns:system="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d" 
+        Width="400" Height="500" Title="{x:Static i18n:Text.Options}"
+        Icon="/WinCompose;component/res/icon_settings.png" ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen" SizeToContent="Height" WindowCornerPreference="Round"
+        ExtendsContentIntoTitleBar="True">
 
     <Window.Resources>
+        <ResourceDictionary>
+            <DrawingImage emoji:Image.Source="🎛" x:Key="ProgramBehaviorIcon"/>
+            <DrawingImage emoji:Image.Source="🌐" x:Key="LanguageIcon"/>
+            <DrawingImage emoji:Image.Source="🆎" x:Key="TestTypingIcon"/>
+            <DrawingImage emoji:Image.Source="⚙️" x:Key="BehaviorIcon"/>
+            <DrawingImage emoji:Image.Source="💬" x:Key="SequencesIcon"/>
+            <DrawingImage emoji:Image.Source="❌" x:Key="InvalidSequencesIcon"/>
+            <DrawingImage emoji:Image.Source="♿" x:Key="AccessibilityIcon"/>
+            <DrawingImage emoji:Image.Source="🚀" x:Key="AdvancedIcon"/>
 
-        <DrawingImage emoji:Image.Source="🎛" x:Key="ProgramBehaviorIcon"/>
-        <DrawingImage emoji:Image.Source="🌐" x:Key="LanguageIcon"/>
-        <DrawingImage emoji:Image.Source="🆎" x:Key="TestTypingIcon"/>
-        <DrawingImage emoji:Image.Source="⚙️" x:Key="BehaviorIcon"/>
-        <DrawingImage emoji:Image.Source="💬" x:Key="SequencesIcon"/>
-        <DrawingImage emoji:Image.Source="❌" x:Key="InvalidSequencesIcon"/>
-        <DrawingImage emoji:Image.Source="♿" x:Key="AccessibilityIcon"/>
-        <DrawingImage emoji:Image.Source="🚀" x:Key="AdvancedIcon"/>
+            <!-- display tooltips for 30 seconds; they’re supposed to be helpful -->
+            <Style TargetType="TextBlock">
+                <Setter Property="ToolTipService.ShowDuration" Value="30000"/>
+            </Style>
+           <Style TargetType="CheckBox" BasedOn="{StaticResource {x:Type CheckBox}}" >
+                <Setter Property="ToolTipService.ShowDuration" Value="30000"/>
+                
+            </Style>
 
-        <!-- display tooltips for 30 seconds; they’re supposed to be helpful -->
-        <Style TargetType="TextBlock">
-            <Setter Property="ToolTipService.ShowDuration" Value="30000"/>
-        </Style>
-        <Style TargetType="CheckBox">
-            <Setter Property="ToolTipService.ShowDuration" Value="30000"/>
-        </Style>
-
-        <!-- wrap tooltips at 350 pixels width -->
-        <Style TargetType="ToolTip">
-            <Setter Property="ContentTemplate">
-                <Setter.Value>
-                    <DataTemplate>
-                        <StackPanel>
-                            <TextBlock Text="{Binding}" MaxWidth="350" TextWrapping="Wrap"/>
-                        </StackPanel>
-                    </DataTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
+            <!-- wrap tooltips at 350 pixels width -->
+            <Style TargetType="ToolTip">
+                <Setter Property="ContentTemplate">
+                    <Setter.Value>
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock Text="{Binding}" MaxWidth="350" TextWrapping="Wrap"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </ResourceDictionary>
     </Window.Resources>
 
     <Window.CommandBindings>
@@ -69,337 +71,344 @@
         <KeyBinding Key="Escape" Command="ApplicationCommands.Close"/>
     </Window.InputBindings>
 
-    <StackPanel Orientation="Vertical">
 
-      <TabControl Margin="10">
+    <StackPanel Orientation="Vertical" >
+        <ui:TitleBar Title="{x:Static i18n:Text.Options}" CanMaximize="False" ShowMaximize="False" ShowMinimize="False" FontSize="14" Height="38">
+            <ui:TitleBar.Icon>
+                <ui:ImageIcon Source="/WinCompose;component/res/icon_settings.png"/>
+            </ui:TitleBar.Icon></ui:TitleBar>
+        <TabControl Margin="6" >
 
-        <!-- The Settings group -->
-        <TabItem Header="{x:Static i18n:Text.General}">
-            <DockPanel Margin="8">
-            <!--<DockPanel Margin="8" Height="{Binding ElementName=MasterPanel, Path=ActualHeight}">-->
-                <GroupBox DockPanel.Dock="Top" Padding="0,4,0,0">
-                    <GroupBox.Header>
-                        <StackPanel Orientation="Horizontal">
-                            <Image Source="{StaticResource ProgramBehaviorIcon}" Height="16" Margin="0 0 4 0"/>
-                            <TextBlock Text="{x:Static i18n:Text.Behavior}"/>
-                        </StackPanel>
-                    </GroupBox.Header>
-                    <Grid VerticalAlignment="Top">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="Auto"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                        </Grid.RowDefinitions>
+            <!-- The Settings group -->
+            <TabItem Header="{x:Static i18n:Text.General}" MinWidth="125" Width="149">
+                <DockPanel Margin="2">
+                    <!--<DockPanel Margin="8" Height="{Binding ElementName=MasterPanel, Path=ActualHeight}">-->
+                    <GroupBox DockPanel.Dock="Top" >
+                        <GroupBox.Header>
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="{StaticResource ProgramBehaviorIcon}" Height="16" Margin="0 0 4 0"/>
+                                <TextBlock Text="{x:Static i18n:Text.Behavior}" />
+                            </StackPanel>
+                        </GroupBox.Header>
+                        <Grid VerticalAlignment="Top">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
 
-                        <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal"
+                            <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal" 
                                     Margin="8,4" VerticalAlignment="Center"
                                     ToolTipService.ToolTip="{x:Static i18n:Text.LanguageToolTip}">
-                            <Image Source="{StaticResource LanguageIcon}" Height="16" Margin="0 0 4 0"/>
-                            <TextBlock Text="{x:Static i18n:Text.Language}"/>
-                        </StackPanel>
+                                <Image Source="{StaticResource LanguageIcon}" Height="16" Margin="0 0 4 0"/>
+                                <TextBlock Text="{x:Static i18n:Text.Language}"/>
+                            </StackPanel>
 
-                        <ComboBox Grid.Row="0" Grid.Column="1" Margin="8,4" VerticalAlignment="Center"
+                            <ComboBox Grid.Row="0" Grid.Column="1" Margin="8,4" VerticalAlignment="Center" 
                                   ItemsSource="{x:Static wc:Settings.ValidLanguages}"
                                   SelectedValue="{Binding SelectedLanguage}"
                                   SelectedValuePath="Key" DisplayMemberPath="Value"/>
 
-                        <CheckBox Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
-                                  Margin="8,4" VerticalAlignment="Center"
+                            <CheckBox Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
+                                  Margin="8,0" VerticalAlignment="Center" 
                                   IsChecked="{Binding Value, Source={x:Static wc:Settings.AutoLaunch}}"
-                                  ToolTipService.ToolTip="{x:Static i18n:Text.AutoLaunchToolTip}">
-                            <TextBlock Text="{x:Static i18n:Text.AutoLaunch}" TextWrapping="Wrap"/>
-                        </CheckBox>
+                                  ToolTipService.ToolTip="{x:Static i18n:Text.AutoLaunchToolTip}" >
+                                <TextBlock Text="{x:Static i18n:Text.AutoLaunch}" TextWrapping="Wrap"/>
+                            </CheckBox>
 
-                        <CheckBox Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
-                                  Margin="8,4" VerticalAlignment="Center"
+                            <CheckBox Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
+                                  Margin="8,0" VerticalAlignment="Center" 
                                   IsChecked="{Binding Value, Source={x:Static wc:Settings.RunElevated}}"
                                   ToolTipService.ToolTip="{x:Static i18n:Text.RunElevatedToolTip}">
-                            <TextBlock Text="{x:Static i18n:Text.RunElevated}" TextWrapping="Wrap"/>
-                        </CheckBox>
+                                <TextBlock Text="{x:Static i18n:Text.RunElevated}" TextWrapping="Wrap"/>
+                            </CheckBox>
 
-                        <CheckBox Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"
-                                  Margin="8,4" VerticalAlignment="Center"
+                            <CheckBox Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"
+                                  Margin="8,0" VerticalAlignment="Center" 
                                   IsChecked="{Binding Value, Source={x:Static wc:Settings.CheckUpdates}}"
                                   ToolTipService.ToolTip="{x:Static i18n:Text.CheckUpdatesToolTip}">
-                            <TextBlock Text="{x:Static i18n:Text.CheckUpdates}" TextWrapping="Wrap"/>
-                        </CheckBox>
+                                <TextBlock Text="{x:Static i18n:Text.CheckUpdates}" TextWrapping="Wrap"/>
+                            </CheckBox>
+                            <CheckBox Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"
+                                      Margin="8,0" VerticalAlignment="Center"
+                                      IsChecked="{Binding Value, Source={x:Static wc:Settings.DisableIcon}}"
+                                      ToolTipService.ToolTip="{x:Static i18n:Text.DisableIconToolTip}">
+                                <TextBlock Text="{x:Static i18n:Text.DisableIcon}" TextWrapping="Wrap"/>
+                            </CheckBox>
+                            <StackPanel Grid.Row="5" Grid.Column="0" Orientation="Horizontal"
+                                        Margin="8,4" VerticalAlignment="Center"
+                                        ToolTipService.ToolTip="{x:Static i18n:Text.LanguageToolTip}">
+                                <TextBlock Text="{x:Static i18n:Text.Language}"/>
+                            </StackPanel>
 
-                        <CheckBox Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"
-                                  Margin="8,4" VerticalAlignment="Center"
-                                  IsChecked="{Binding Value, Source={x:Static wc:Settings.KeepIconVisible}}"
-                                  ToolTipService.ToolTip="{x:Static i18n:Text.KeepIconVisibleToolTip}">
-                            <TextBlock Text="{x:Static i18n:Text.KeepIconVisible}" TextWrapping="Wrap"/>
-                        </CheckBox>
+                            <ComboBox Grid.Row="5" Grid.Column="1" Margin="8,4" VerticalAlignment="Center" IsEditable="False" IsReadOnly="True"
+                                      ItemsSource="{x:Static wc:Settings.Themes}"
+                                      SelectedItem="{Binding SelectedTheme, UpdateSourceTrigger=PropertyChanged}"/>
+                        </Grid>
+                    </GroupBox>
 
-                        <CheckBox Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"
-                                  Margin="8,4" VerticalAlignment="Center"
-                                  IsChecked="{Binding Value, Source={x:Static wc:Settings.DisableIcon}}"
-                                  ToolTipService.ToolTip="{x:Static i18n:Text.DisableIconToolTip}">
-                            <TextBlock Text="{x:Static i18n:Text.DisableIcon}" TextWrapping="Wrap"/>
-                        </CheckBox>
-                    </Grid>
-                </GroupBox>
-
-                <GroupBox DockPanel.Dock="Top" Margin="0,4,0,0" Padding="0,4,0,0">
-                    <GroupBox.Header>
-                        <StackPanel Orientation="Horizontal">
-                            <Image Source="{StaticResource TestTypingIcon}" Height="16" Margin="0 0 4 0"/>
-                            <TextBlock Text="{x:Static i18n:Text.TestTyping}"/>
-                        </StackPanel>
-                    </GroupBox.Header>
-                    <emoji:RichTextBox Margin="8" Width="Auto" Height="90" MaxHeight="90"
+                    <GroupBox DockPanel.Dock="Top" >
+                        <GroupBox.Header>
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="{StaticResource TestTypingIcon}" Height="16" Margin="0 0 4 0"/>
+                                <TextBlock Text="{x:Static i18n:Text.TestTyping}"/>
+                            </StackPanel>
+                        </GroupBox.Header>
+                        <emoji:RichTextBox x:Name="richTextBox" Margin="6" Width="Auto" Height="90" MaxHeight="90"
                                        FontSize="20" AcceptsReturn="True"
                                        FontWeight="SemiBold" FontFamily="{x:Static wc:Constants.PreferredFontFamily}"
                                        SnapsToDevicePixels="True"
-                                       Foreground="#545" Background="#fff" ForceCursor="True">
-                         <FlowDocument><Paragraph>ÅḄ₡Đ🐹🏠♥…&#13;&#13;</Paragraph></FlowDocument>
-                    </emoji:RichTextBox>
-                </GroupBox>
+                                       ForceCursor="True" Style="{DynamicResource DefaultRichTextBoxStyle}">
+                            <FlowDocument>
+                                <Paragraph>
+                                    <Run Text="ÅḄ₡Đ🐹🏠♥…"/>
+                                </Paragraph>
+                            </FlowDocument>
+                        </emoji:RichTextBox>
 
-            </DockPanel>
-        </TabItem>
+                    </GroupBox>
 
-        <!-- The Composing tab -->
-        <TabItem Header="{x:Static i18n:Text.Composing}">
-            <DockPanel Margin="8" Name="MasterPanel">
+                </DockPanel>
+            </TabItem>
 
-                <GroupBox DockPanel.Dock="Top" Padding="0,4,0,0">
-                    <GroupBox.Header>
-                        <StackPanel Orientation="Horizontal">
-                            <Image Source="{StaticResource BehaviorIcon}" Height="16" Margin="0 0 4 0"/>
-                            <TextBlock Text="{x:Static i18n:Text.Behavior}"/>
-                        </StackPanel>
-                    </GroupBox.Header>
-                    <Grid VerticalAlignment="Top">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="Auto"/>
-                            <ColumnDefinition Width="3*"/>
-                            <ColumnDefinition Width="2*"/>
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                        </Grid.RowDefinitions>
+            <!-- The Composing tab -->
+            <TabItem Header="{x:Static i18n:Text.Composing}" MinWidth="125" Width="149">
+                <DockPanel Margin="2" x:Name="MasterPanel">
 
-                        <Border Margin="0" ToolTipService.ToolTip="{x:Static i18n:Text.ComposeKeyToolTip}">
-                            <emoji:TextBlock Grid.Row="0" Grid.Column="0"
-                                             Text="{Binding StringFormat='⌨️ {0}', Source={x:Static i18n:Text.ComposeKey}, Path=.}"
-                                             Margin="8,4" TextAlignment="Right" VerticalAlignment="Center"/>
-                        </Border>
-                        <TextBlock Grid.Row="0" Grid.Column="1" Margin="8,4" VerticalAlignment="Center"
+                    <GroupBox DockPanel.Dock="Top" Padding="0,0,0,0">
+                        <GroupBox.Header>
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="{StaticResource BehaviorIcon}" Height="16" Margin="0 0 4 0"/>
+                                <TextBlock Text="{x:Static i18n:Text.Behavior}"/>
+                            </StackPanel>
+                        </GroupBox.Header>
+                        <Grid VerticalAlignment="Top">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+
+                            <Border Margin="0" ToolTipService.ToolTip="{x:Static i18n:Text.ComposeKeyToolTip}">
+                                <emoji:TextBlock Grid.Row="0" Grid.Column="0"
+                                             Text="{Binding ., StringFormat=⌨️ \{0\}, Source={x:Static i18n:Text.ComposeKey}}"
+                                             Margin="4,4" TextAlignment="Right" VerticalAlignment="Center"/>
+                            </Border>
+                            <TextBlock Grid.Row="0" Grid.Column="1" Margin="8,2" VerticalAlignment="Center"
                                    DataContext="{Binding ComposeKey0}" Text="{Binding FriendlyName}" FontWeight="Bold"/>
-                        <Button Grid.Row="0" Grid.Column="2" Margin="8,4" VerticalAlignment="Center"
+                            <Button Grid.Row="0" Grid.Column="2" Margin="2,4" VerticalAlignment="Center"
                                 Content="{x:Static i18n:Text.ChangeComposeKey}"
                                 Command="{Binding EditButtonCommand}" CommandParameter="0"/>
 
-                        <TextBlock Grid.Row="1" Grid.Column="1" Margin="8,4" VerticalAlignment="Center"
+                            <TextBlock Grid.Row="1" Grid.Column="1" Margin="4,2" VerticalAlignment="Center"
                                    DataContext="{Binding ComposeKey1}" Text="{Binding FriendlyName}" FontWeight="Bold"/>
-                        <Button Grid.Row="1" Grid.Column="2" Margin="8,4" VerticalAlignment="Center"
+                            <Button Grid.Row="1" Grid.Column="2" Margin="2,4" VerticalAlignment="Center"
                                 Content="{x:Static i18n:Text.ChangeComposeKey}"
                                 Command="{Binding EditButtonCommand}" CommandParameter="1"/>
 
-                        <StackPanel Margin="4,8" Orientation="Horizontal" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3">
-                            <Border Margin="0" ToolTipService.ToolTip="{x:Static i18n:Text.TimeoutToolTip}">
-                                <emoji:TextBlock Text="{Binding StringFormat='⏳ {0}', Source={x:Static i18n:Text.ResetTimeout}, Path=.}"
+                            <Border Grid.Row="2" Grid.Column="0" Margin="0" ToolTipService.ToolTip="{x:Static i18n:Text.TimeoutToolTip}">
+                                <emoji:TextBlock Text="{Binding ., StringFormat=⏳ \{0\}, Source={x:Static i18n:Text.ResetTimeout}}"
                                                  Margin="8,4" VerticalAlignment="Center"/>
                             </Border>
-                            <Slider Width="150" Value="{Binding DelayTicks}" VerticalAlignment="Center"
+                            <Slider Grid.Row="2" Grid.Column="1" Width="150" Value="{Binding DelayTicks}" VerticalAlignment="Center"
                                     Minimum="0" Maximum="12" TickFrequency="1" IsSnapToTickEnabled="True"/>
-                            <TextBlock Margin="8,4" Text="{Binding DelayText}"/>
-                        </StackPanel>
+                            <TextBlock Grid.Row="2" Grid.Column="2" Margin="8,4" Text="{Binding DelayText}"/>
 
-                        <StackPanel Margin="4,8" Orientation="Horizontal" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3">
-                            <Border Margin="0" ToolTipService.ToolTip="{x:Static i18n:Text.KeyboardLedToolTip}">
-                                <emoji:TextBlock Text="{Binding StringFormat='💡 {0}', Source={x:Static i18n:Text.KeyboardLed}, Path=.}"
-                                                 Margin="8,0" VerticalAlignment="Center"/>
+                            <Border Grid.Row="3" Grid.Column="0" Margin="0" ToolTipService.ToolTip="{x:Static i18n:Text.KeyboardLedToolTip}">
+                                <emoji:TextBlock Text="{Binding ., StringFormat=💡 \{0\}, Source={x:Static i18n:Text.KeyboardLed}}"
+                                                 Margin="8,4" VerticalAlignment="Center" Padding="0,8,0,8"/>
                             </Border>
-                            <ComboBox Grid.Row="0" Grid.Column="1" Margin="8,0" VerticalAlignment="Center"
+                            <ComboBox Grid.Row="3" Grid.Column="1" Margin="8,8" VerticalAlignment="Center"
                                       ItemsSource="{x:Static wc:Settings.ValidLedKeys}"
                                       SelectedValue="{Binding SelectedLedKey}"
                                       DisplayMemberPath="FriendlyName"/>
-                        </StackPanel>
+                            
 
-                        <CheckBox Grid.Row="4" Grid.ColumnSpan="3" Margin="8,4" VerticalAlignment="Center"
+                            <CheckBox Grid.Row="4" Grid.ColumnSpan="3" Margin="8,0" VerticalAlignment="Center"
                                 IsChecked="{Binding Value, Source={x:Static wc:Settings.KeepOriginalKey}}"
                                 ToolTipService.ToolTip="{x:Static i18n:Text.KeepOriginalKeyToolTip}">
-                            <TextBlock Text="{x:Static i18n:Text.KeepOriginalKey}" TextWrapping="Wrap"/>
-                        </CheckBox>
+                                <TextBlock Text="{x:Static i18n:Text.KeepOriginalKey}" TextWrapping="Wrap"/>
+                            </CheckBox>
 
-                        <CheckBox Grid.Row="5" Grid.ColumnSpan="3" Margin="8,4" VerticalAlignment="Center"
+                            <CheckBox Grid.Row="5" Grid.ColumnSpan="3" Margin="8,0" VerticalAlignment="Center"
                                 IsChecked="{Binding Value, Source={x:Static wc:Settings.AlwaysCompose}}"
                                 ToolTipService.ToolTip="{x:Static i18n:Text.AlwaysComposeToolTip}">
-                            <TextBlock Text="{x:Static i18n:Text.AlwaysCompose}" TextWrapping="Wrap"/>
-                        </CheckBox>
+                                <TextBlock Text="{x:Static i18n:Text.AlwaysCompose}" TextWrapping="Wrap"/>
+                            </CheckBox>
 
-                        <CheckBox Grid.Row="6" Grid.ColumnSpan="3" Margin="8,4" VerticalAlignment="Center"
+                            <CheckBox Grid.Row="6" Grid.ColumnSpan="3" Margin="8,0" VerticalAlignment="Center"
                                 IsChecked="{Binding Value, Source={x:Static wc:Settings.UnicodeInput}}"
                                 ToolTipService.ToolTip="{x:Static i18n:Text.UnicodeInputToolTip}">
-                            <TextBlock Text="{x:Static i18n:Text.UnicodeInput}" TextWrapping="Wrap"/>
-                        </CheckBox>
-                    </Grid>
-                </GroupBox>
+                                <TextBlock Text="{x:Static i18n:Text.UnicodeInput}" TextWrapping="Wrap"/>
+                            </CheckBox>
+                        </Grid>
+                    </GroupBox>
 
-                <GroupBox DockPanel.Dock="Top" Margin="0,4,0,0" Padding="0,4,0,0">
-                    <GroupBox.Header>
-                        <StackPanel Orientation="Horizontal">
-                            <Image Source="{StaticResource SequencesIcon}" Height="16" Margin="0 0 4 0"/>
-                            <TextBlock Text="{x:Static i18n:Text.Sequences}"/>
-                        </StackPanel>
-                    </GroupBox.Header>
-                    <StackPanel Orientation="Vertical">
-                        <CheckBox Grid.Row="4" Grid.ColumnSpan="2" Margin="8,4" VerticalAlignment="Center"
+                    <GroupBox DockPanel.Dock="Top" Margin="0,2,0,0" Padding="0,2,0,0">
+                        <GroupBox.Header>
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="{StaticResource SequencesIcon}" Height="16" Margin="0 0 4 0"/>
+                                <TextBlock Text="{x:Static i18n:Text.Sequences}"/>
+                            </StackPanel>
+                        </GroupBox.Header>
+                        <StackPanel Orientation="Vertical">
+                            <CheckBox Grid.Row="4" Grid.ColumnSpan="2" Margin="8,0" VerticalAlignment="Center"
                                 IsChecked="{Binding Value, Source={x:Static wc:Settings.UseXorgRules}}"
                                 ToolTipService.ToolTip="{x:Static i18n:Text.UseXorgRulesToolTip}">
-                            <TextBlock Text="{x:Static i18n:Text.UseXorgRules}" TextWrapping="Wrap"/>
-                        </CheckBox>
+                                <TextBlock Text="{x:Static i18n:Text.UseXorgRules}" TextWrapping="Wrap"/>
+                            </CheckBox>
 
-                        <CheckBox Grid.Row="5" Grid.ColumnSpan="2" Margin="8,4" VerticalAlignment="Center"
+                            <CheckBox Grid.Row="5" Grid.ColumnSpan="2" Margin="8,0" VerticalAlignment="Center"
                                 IsChecked="{Binding Value, Source={x:Static wc:Settings.UseXComposeRules}}"
                                 ToolTipService.ToolTip="{x:Static i18n:Text.UseXComposeRulesToolTip}">
-                            <TextBlock Text="{x:Static i18n:Text.UseXComposeRules}" TextWrapping="Wrap"/>
-                        </CheckBox>
+                                <TextBlock Text="{x:Static i18n:Text.UseXComposeRules}" TextWrapping="Wrap"/>
+                            </CheckBox>
 
-                        <CheckBox Grid.Row="6" Grid.ColumnSpan="2" Margin="8,4" VerticalAlignment="Center"
+                            <CheckBox Grid.Row="6" Grid.ColumnSpan="2" Margin="8,0" VerticalAlignment="Center"
                                 IsChecked="{Binding Value, Source={x:Static wc:Settings.UseEmojiRules}}"
                                 ToolTipService.ToolTip="{x:Static i18n:Text.UseEmojiRulesToolTip}">
-                            <TextBlock Text="{x:Static i18n:Text.UseEmojiRules}" TextWrapping="Wrap"/>
-                        </CheckBox>
-                    </StackPanel>
-                </GroupBox>
-            </DockPanel>
-        </TabItem>
-
-        <!-- The Tweaks tab -->
-        <TabItem Header="{x:Static i18n:Text.Tweaks}">
-            <DockPanel Margin="8">
-
-                <!-- The Invalid Sequences group -->
-                <GroupBox DockPanel.Dock="Top" Padding="0,4,0,0">
-                    <GroupBox.Header>
-                        <StackPanel Orientation="Horizontal">
-                            <Image Source="{StaticResource InvalidSequencesIcon}" Height="16" Margin="0 0 4 0"/>
-                            <TextBlock Text="{x:Static i18n:Text.InvalidSequences}"/>
+                                <TextBlock Text="{x:Static i18n:Text.UseEmojiRules}" TextWrapping="Wrap"/>
+                            </CheckBox>
                         </StackPanel>
-                    </GroupBox.Header>
-                    <StackPanel VerticalAlignment="Center">
+                    </GroupBox>
+                </DockPanel>
+            </TabItem>
 
-                        <CheckBox Margin="8,4" VerticalAlignment="Center"
+            <!-- The Tweaks tab -->
+            <TabItem Header="{x:Static i18n:Text.Tweaks}" MinWidth="125" Width="149">
+                <DockPanel Margin="2">
+
+                    <!-- The Invalid Sequences group -->
+                    <GroupBox DockPanel.Dock="Top" Padding="0,0,0,0">
+                        <GroupBox.Header>
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="{StaticResource InvalidSequencesIcon}" Height="16" Margin="0 0 4 0"/>
+                                <TextBlock Text="{x:Static i18n:Text.InvalidSequences}"/>
+                            </StackPanel>
+                        </GroupBox.Header>
+                        <StackPanel VerticalAlignment="Center">
+
+                            <CheckBox Margin="8,0" VerticalAlignment="Center"
                                   IsChecked="{Binding Value, Source={x:Static wc:Settings.CaseInsensitive}}"
                                   ToolTipService.ToolTip="{x:Static i18n:Text.CaseInsensitiveToolTip}">
-                            <emoji:TextBlock Text="{Binding StringFormat='{}{0} 🔡', Source={x:Static i18n:Text.CaseInsensitive}, Path=.}"
+                                <emoji:TextBlock Text="{Binding ., StringFormat=\{0\} 🔡, Source={x:Static i18n:Text.CaseInsensitive}}"
                                              TextWrapping="Wrap"/>
-                        </CheckBox>
+                            </CheckBox>
 
-                        <CheckBox Margin="8,4" VerticalAlignment="Center"
+                            <CheckBox Margin="8,0" VerticalAlignment="Center"
                                   IsChecked="{Binding Value, Source={x:Static wc:Settings.SwapOnInvalid}}"
                                   ToolTipService.ToolTip="{x:Static i18n:Text.SwapOnInvalidToolTip}">
-                            <emoji:TextBlock Text="{Binding StringFormat='{}{0} ↔️', Source={x:Static i18n:Text.SwapOnInvalid}, Path=.}"
+                                <emoji:TextBlock Text="{Binding ., StringFormat=\{0\} ↔️, Source={x:Static i18n:Text.SwapOnInvalid}}"
                                              TextWrapping="Wrap"/>
-                        </CheckBox>
+                            </CheckBox>
 
-                        <CheckBox Margin="8,4" VerticalAlignment="Center"
+                            <CheckBox Margin="8,0" VerticalAlignment="Center"
                                   IsChecked="{Binding Value, Source={x:Static wc:Settings.DiscardOnInvalid}}"
                                   ToolTipService.ToolTip="{x:Static i18n:Text.DiscardOnInvalidToolTip}">
-                            <emoji:TextBlock Text="{Binding StringFormat='{}{0} 🚫', Source={x:Static i18n:Text.DiscardOnInvalid}, Path=.}"
+                                <emoji:TextBlock Text="{Binding ., StringFormat=\{0\} 🚫, Source={x:Static i18n:Text.DiscardOnInvalid}}"
                                              TextWrapping="Wrap"/>
-                        </CheckBox>
+                            </CheckBox>
 
-                        <CheckBox Margin="8,4" VerticalAlignment="Center"
+                            <CheckBox Margin="8,0" VerticalAlignment="Center"
                                   IsChecked="{Binding Value, Source={x:Static wc:Settings.BeepOnInvalid}}"
                                   ToolTipService.ToolTip="{x:Static i18n:Text.BeepOnInvalidToolTip}">
-                            <emoji:TextBlock Text="{Binding StringFormat='{}{0} 🎵', Source={x:Static i18n:Text.BeepOnInvalid}, Path=.}"
+                                <emoji:TextBlock Text="{Binding ., StringFormat=\{0\} 🎵, Source={x:Static i18n:Text.BeepOnInvalid}}"
                                              TextWrapping="Wrap"/>
-                        </CheckBox>
+                            </CheckBox>
 
-                    </StackPanel>
-                </GroupBox>
-
-                <GroupBox DockPanel.Dock="Top" Margin="0,4,0,0" Padding="0,4,0,0">
-                    <GroupBox.Header>
-                        <StackPanel Orientation="Horizontal">
-                            <Image Source="{StaticResource AccessibilityIcon}" Height="16" Margin="0 0 4 0"/>
-                            <TextBlock Text="{x:Static i18n:Text.Accessibility}"/>
                         </StackPanel>
-                    </GroupBox.Header>
-                    <StackPanel>
-                        <CheckBox Margin="8,4" VerticalAlignment="Center"
+                    </GroupBox>
+
+                    <GroupBox DockPanel.Dock="Top" Margin="0,2,0,0" Padding="0,0,0,0">
+                        <GroupBox.Header>
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="{StaticResource AccessibilityIcon}" Height="16" Margin="0 0 4 0"/>
+                                <TextBlock Text="{x:Static i18n:Text.Accessibility}"/>
+                            </StackPanel>
+                        </GroupBox.Header>
+                        <StackPanel>
+                            <CheckBox Margin="8,0" VerticalAlignment="Center"
                                 IsChecked="{Binding Value, Source={x:Static wc:Settings.CapsLockCapitalizes}}"
                                 ToolTipService.ToolTip="{x:Static i18n:Text.CapsLockCapitalizesToolTip}">
-                            <TextBlock Text="{x:Static i18n:Text.CapsLockCapitalizes}" TextWrapping="Wrap"/>
-                        </CheckBox>
+                                <TextBlock Text="{x:Static i18n:Text.CapsLockCapitalizes}" TextWrapping="Wrap"/>
+                            </CheckBox>
 
-                        <CheckBox Margin="8,4" VerticalAlignment="Center"
+                            <CheckBox Margin="8,0" VerticalAlignment="Center"
                                 IsChecked="{Binding Value, Source={x:Static wc:Settings.EmulateCapsLock}}"
                                 ToolTipService.ToolTip="{x:Static i18n:Text.EmulateCapsLockToolTip}">
-                            <TextBlock Text="{x:Static i18n:Text.EmulateCapsLock}" TextWrapping="Wrap"/>
-                        </CheckBox>
+                                <TextBlock Text="{x:Static i18n:Text.EmulateCapsLock}" TextWrapping="Wrap"/>
+                            </CheckBox>
 
-                        <CheckBox Margin="8,4" VerticalAlignment="Center"
+                            <CheckBox Margin="8,0" VerticalAlignment="Center"
                                 IsChecked="{Binding Value, Source={x:Static wc:Settings.MustHoldCapsLock}}"
                                 ToolTipService.ToolTip="{x:Static i18n:Text.MustHoldCapsLockToolTip}">
-                            <TextBlock Text="{x:Static i18n:Text.MustHoldCapsLock}" TextWrapping="Wrap"/>
-                        </CheckBox>
+                                <TextBlock Text="{x:Static i18n:Text.MustHoldCapsLock}" TextWrapping="Wrap"/>
+                            </CheckBox>
 
-                        <CheckBox Margin="8,4" VerticalAlignment="Center"
+                            <CheckBox Margin="8,0" VerticalAlignment="Center"
                                 IsChecked="{Binding Value, Source={x:Static wc:Settings.ShiftDisablesCapsLock}}"
                                 ToolTipService.ToolTip="{x:Static i18n:Text.ShiftDisablesCapsLockToolTip}">
-                            <TextBlock Text="{x:Static i18n:Text.ShiftDisablesCapsLock}" TextWrapping="Wrap"/>
-                        </CheckBox>
-                    </StackPanel>
-                </GroupBox>
-
-                <!-- The Advanced group -->
-                <GroupBox DockPanel.Dock="Top" Margin="0,4,0,0" Padding="0,4,0,0">
-                    <GroupBox.Header>
-                        <StackPanel Orientation="Horizontal">
-                            <Image Source="{StaticResource AdvancedIcon}" Height="16" Margin="0 0 4 0"/>
-                            <TextBlock Text="{x:Static i18n:Text.Advanced}"/>
+                                <TextBlock Text="{x:Static i18n:Text.ShiftDisablesCapsLock}" TextWrapping="Wrap"/>
+                            </CheckBox>
                         </StackPanel>
-                    </GroupBox.Header>
-                    <StackPanel>
-                        <CheckBox Margin="8,4" VerticalAlignment="Center"
+                    </GroupBox>
+
+                    <!-- The Advanced group -->
+                    <GroupBox DockPanel.Dock="Top" Margin="0,2,0,0" Padding="0,0,0,0">
+                        <GroupBox.Header>
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="{StaticResource AdvancedIcon}" Height="16" Margin="0 0 4 0"/>
+                                <TextBlock Text="{x:Static i18n:Text.Advanced}"/>
+                            </StackPanel>
+                        </GroupBox.Header>
+                        <StackPanel>
+                            <CheckBox Margin="8,2" VerticalAlignment="Center"
                                 IsChecked="{Binding Value, Source={x:Static wc:Settings.InsertZwsp}}"
                                 ToolTipService.ToolTip="{x:Static i18n:Text.InsertZwspToolTip}">
-                            <TextBlock Text="{x:Static i18n:Text.InsertZwsp}" TextWrapping="Wrap"/>
-                        </CheckBox>
+                                <TextBlock Text="{x:Static i18n:Text.InsertZwsp}" TextWrapping="Wrap"/>
+                            </CheckBox>
 
-                        <CheckBox Margin="8,4" VerticalAlignment="Center"
+                            <CheckBox Margin="8,2" VerticalAlignment="Center"
                                 IsChecked="{Binding Value, Source={x:Static wc:Settings.AllowInjected}}"
                                 ToolTipService.ToolTip="{x:Static i18n:Text.AllowInjectedToolTip}">
-                            <TextBlock Text="{x:Static i18n:Text.AllowInjected}" TextWrapping="Wrap"/>
-                        </CheckBox>
+                                <TextBlock Text="{x:Static i18n:Text.AllowInjected}" TextWrapping="Wrap"/>
+                            </CheckBox>
 
-                        <StackPanel VerticalAlignment="Center">
-                            <TextBlock Text="{x:Static i18n:Text.IgnoreRegex}"
+                            <StackPanel VerticalAlignment="Center">
+                                <TextBlock Text="{x:Static i18n:Text.IgnoreRegex}"
                                        ToolTipService.ToolTip="{x:Static i18n:Text.IgnoreRegexToolTip}"
-                                       TextWrapping="Wrap" Margin="8,4,8,0"/>
-                            <TextBox Margin="8,4" VerticalAlignment="Center" TextWrapping="WrapWithOverflow"
+                                       TextWrapping="Wrap" Margin="8,0,8,0"/>
+                                <TextBox Margin="4,2" VerticalAlignment="Center" TextWrapping="WrapWithOverflow"
                                      FontFamily="{x:Static wc:Constants.FixedFontFamily}" Padding="4"
                                      Text="{Binding Value, Source={x:Static wc:Settings.IgnoreRegex}}"/>
+                            </StackPanel>
                         </StackPanel>
-                    </StackPanel>
-                </GroupBox>
-            </DockPanel>
-        </TabItem>
+                    </GroupBox>
+                </DockPanel>
+            </TabItem>
 
-      </TabControl>
+        </TabControl>
 
-      <!-- The Close button and the restart warning message -->
-      <TextBlock Foreground="Red" Text="{x:Static i18n:Text.NeedRestart}" HorizontalAlignment="Left"
+        <!-- The Close button and the restart warning message -->
+        <TextBlock Foreground="Red" Text="{x:Static i18n:Text.NeedRestart}" HorizontalAlignment="Left"
                  Margin="0, 0, 0, 4" Visibility="{Binding WarnMessageVisibility}" TextWrapping="Wrap"/>
-      <Button DockPanel.Dock="Bottom" HorizontalAlignment="Right" VerticalAlignment="Bottom" MinWidth="80"
+        <Button DockPanel.Dock="Bottom" HorizontalAlignment="Right" VerticalAlignment="Bottom" MinWidth="80"
               Margin="10,0,10,10" Content="{Binding CloseButtonText}" Command="{Binding CloseButtonCommand}"
               CommandParameter="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}}"/>
 

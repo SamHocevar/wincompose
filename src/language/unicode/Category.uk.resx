@@ -118,93 +118,93 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Control" xml:space="preserve">
-    <value>Инші, керівні</value>
+    <value>Інші, управляючі</value>
   </data>
   <data name="Format" xml:space="preserve">
-    <value>Инші, формат</value>
+    <value>Інші, форматуючі</value>
   </data>
   <data name="OtherNotAssigned" xml:space="preserve">
-    <value>Инші, не призначено</value>
+    <value>Інші, не призначені</value>
   </data>
   <data name="PrivateUse" xml:space="preserve">
-    <value>Инші, особистий вжив</value>
+    <value>Інші, особисті</value>
   </data>
   <data name="Surrogate" xml:space="preserve">
-    <value>Инші, замінники</value>
+    <value>Інші, замінники</value>
   </data>
   <data name="LowercaseLetter" xml:space="preserve">
-    <value>Мала буква</value>
+    <value>Літери, нижній регістр</value>
   </data>
   <data name="ModifierLetter" xml:space="preserve">
-    <value>Буква зміни</value>
+    <value>Літери, модифікатори</value>
   </data>
   <data name="OtherLetter" xml:space="preserve">
-    <value>Буква, инше</value>
+    <value>Літери, інші</value>
   </data>
   <data name="TitlecaseLetter" xml:space="preserve">
-    <value>Буква заголову</value>
+    <value>Літери, заголовний регістр</value>
   </data>
   <data name="UppercaseLetter" xml:space="preserve">
-    <value>Велика буква</value>
+    <value>Літери, верхній регістр</value>
   </data>
   <data name="SpacingCombiningMark" xml:space="preserve">
-    <value>Знак, сполуки пропуску</value>
+    <value>Відмітки, комбінування інтервалів</value>
   </data>
   <data name="EnclosingMark" xml:space="preserve">
-    <value>Огороджний знак</value>
+    <value>Відмітки, закриваючі</value>
   </data>
   <data name="NonSpacingMark" xml:space="preserve">
-    <value>Непропускний знак</value>
+    <value>Відмітки, нерозривні</value>
   </data>
   <data name="DecimalDigitNumber" xml:space="preserve">
-    <value>Число, десяткова цифра</value>
+    <value>Числа, десяткові цифри</value>
   </data>
   <data name="LetterNumber" xml:space="preserve">
-    <value>Число, буква</value>
+    <value>Числа, букви</value>
   </data>
   <data name="OtherNumber" xml:space="preserve">
-    <value>Число, инше</value>
+    <value>Числа, інше</value>
   </data>
   <data name="ConnectorPunctuation" xml:space="preserve">
-    <value>Знакорозділ, знак сполуки</value>
+    <value>Розділові знаки, з'єднувачі</value>
   </data>
   <data name="DashPunctuation" xml:space="preserve">
-    <value>Знакорозділ, тире</value>
+    <value>Розділові знаки, тире</value>
   </data>
   <data name="ClosePunctuation" xml:space="preserve">
-    <value>Знакорозділ, закривний знак</value>
+    <value>Розділові знаки, закриваючі</value>
   </data>
   <data name="FinalQuotePunctuation" xml:space="preserve">
-    <value>Знакорозділ, закривна лапка</value>
+    <value>Розділові знаки, кінцеві лапки</value>
   </data>
   <data name="InitialQuotePunctuation" xml:space="preserve">
-    <value>Знакорозділ, відкривна лапка</value>
+    <value>Розділові знаки, початкові лапки</value>
   </data>
   <data name="OtherPunctuation" xml:space="preserve">
-    <value>Знакорозділ, инше</value>
+    <value>Розділові знаки, інше</value>
   </data>
   <data name="OpenPunctuation" xml:space="preserve">
-    <value>Знакорозділ, початкові знаки</value>
+    <value>Розділові знаки, відкриваючі</value>
   </data>
   <data name="CurrencySymbol" xml:space="preserve">
-    <value>Знамено гроша</value>
+    <value>Символи, валюта</value>
   </data>
   <data name="ModifierSymbol" xml:space="preserve">
-    <value>Знамено, змінник</value>
+    <value>Символи, модифікатори</value>
   </data>
   <data name="MathSymbol" xml:space="preserve">
-    <value>Знамено, математика</value>
+    <value>Символи, математичні</value>
   </data>
   <data name="OtherSymbol" xml:space="preserve">
-    <value>Знамено, инше</value>
+    <value>Символи, інше</value>
   </data>
   <data name="LineSeparator" xml:space="preserve">
-    <value>Роздільник рядка</value>
+    <value>Відокремлення, рядок</value>
   </data>
   <data name="ParagraphSeparator" xml:space="preserve">
-    <value>Роздільник уступу</value>
+    <value>Відокремлення, параграф</value>
   </data>
   <data name="SpaceSeparator" xml:space="preserve">
-    <value>Роздільник, пробіл</value>
+    <value>Відокремлення, пробіл</value>
   </data>
 </root>

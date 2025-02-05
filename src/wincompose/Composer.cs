@@ -50,9 +50,11 @@ class InputSequence : List<INPUT>
 
     private void AddInput(EventType type, KEYBDINPUT ki)
     {
-        INPUT tmp = new INPUT();
-        tmp.type = EINPUT.KEYBOARD;
-        tmp.U.ki = ki;
+            INPUT tmp = new INPUT
+            {
+                type = EINPUT.KEYBOARD
+            };
+            tmp.U.ki = ki;
 
         if (type != EventType.KeyUp)
             Add(tmp);
@@ -165,7 +167,7 @@ static class Composer
         {
             Key alt_key = KeyboardLayout.VkToKey(vk, sc, flags, has_shift, has_altgr, false);
 
-            if (alt_key.IsPrintable && alt_key.PrintableResult[0] > 0x7f)
+            if (alt_key.IsPrintable && alt_key.PrintableResult[0] > 0xbf)
             {
                 string str_upper = alt_key.PrintableResult.ToUpper();
                 string str_lower = alt_key.PrintableResult.ToLower();
@@ -469,7 +471,7 @@ exit_forward_key:
     /// </summary>
     private static bool AddToSequence(Key key)
     {
-        KeySequence old_sequence = new KeySequence(m_sequence);
+        //KeySequence old_sequence = new KeySequence(m_sequence);
         m_sequence.Add(key);
 
         // We try the following, in this order:
@@ -708,14 +710,14 @@ exit_forward_key:
     /// <summary>
     /// The list of keys we have seen pressed and not yet released
     /// </summary>
-    private static HashSet<Key> m_pressed = new HashSet<Key>();
+    //private static HashSet<Key> m_pressed = new HashSet<Key>();
 
     private static Key m_last_key;
     private static DateTime m_last_key_time = DateTime.Now;
 
     private static DispatcherTimer m_timeout;
 
-    private static readonly TimeSpan NEVER = TimeSpan.FromMilliseconds(-1);
+    //private static readonly TimeSpan NEVER = TimeSpan.FromMilliseconds(-1);
 
     /// <summary>
     /// How many times we pressed and released compose.

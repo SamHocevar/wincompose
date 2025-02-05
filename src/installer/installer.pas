@@ -99,13 +99,13 @@ begin
 end;
 
 {
-{ Download .NET Framework 3.5 SP1
+{ Download .NET Framework 4.8.1
 }
 procedure download_dotnet(sender: tobject);
 var
     ret: integer;
 begin
-    shellexec('open', 'https://dotnet.microsoft.com/download/dotnet-framework/net40',
+    shellexec('open', 'https://dotnet.microsoft.com/en-us/download/dotnet-framework/net481',
               '', '', sw_show, ewnowait, ret);
 end;
 
@@ -176,12 +176,12 @@ begin
                                     _('Software required by WinCompose'));
 
     warning := tnewstatictext.create(dotnet_page);
-    warning.caption := _('WinCompose needs the .NET Framework, version 4.0 or later, which does not\n'
+    warning.caption := _('WinCompose needs the .NET Framework, version 4.8.1 or later, which does not\n'
                        + 'seem to be currently installed. The following action may help solve the problem:');
     warning.parent := dotnet_page.surface;
 
     action := tnewstatictext.create(dotnet_page);
-    action.caption := _('Download and install .NET Framework 4.0 Runtime');
+    action.caption := _('Download and install .NET Framework 4.8.1 Runtime');
     action.parent := dotnet_page.surface;
     action.cursor := crhand;
     action.onclick := @download_dotnet;
@@ -220,7 +220,7 @@ procedure refresh_dotnet_page(sender: tobject; var key: word; shift: tshiftstate
 begin
     if wizardform.curpageid = dotnet_page.id then
     begin
-        if (get_dotnet_state() < 0) then begin
+        if not IsDotNetInstalled(net462, 0) then begin
             wizardform.nextbutton.enabled := false;
             action.visible := true;
             hint.visible := true;
@@ -264,7 +264,7 @@ begin
     { If this is the .NET page, only show it on run 1 and if the
     { prerequisites are not yet installed. }
     if page_id = dotnet_page.id then begin
-        result := (state <> s_run_1) or (get_dotnet_state() = 0);
+        result := (state <> s_run_1) or (IsDotNetInstalled(net462, 0));
         exit;
     end;
 

@@ -486,4 +486,19 @@
   <data name="AutoLaunchToolTip" xml:space="preserve">
     <value>Valitult käivitatakse WinCompose kasutaja sisselogimisel.</value>
   </data>
+  <data name="Accessibility" xml:space="preserve">
+    <value>Hõlbustus</value>
+  </data>
+  <data name="MustHoldCapsLock" xml:space="preserve">
+    <value>Caps Lock on aktiivne ainult alla vajutatult</value>
+  </data>
+  <data name="MustHoldCapsLockToolTip" xml:space="preserve">
+    <value>Caps Locki vabastamine lülitab ta koheselt välja nii, et tema välja lülitamiseks ei pea klahvi teist korda vajutama.</value>
+  </data>
+  <data name="RunElevated" xml:space="preserve">
+    <value>Käivita kõrgendatud õigustega (soovitatav)</value>
+  </data>
+  <data name="RunElevatedToolTip" xml:space="preserve">
+    <value>Kobineerimine ei tööta mõnedes rakendustes, kui WinCompose ei tööta kõrgendatud õigustega. See suvand vähendab võimalusi mittetöötamine kogemiseks.</value>
+  </data>
 </root>

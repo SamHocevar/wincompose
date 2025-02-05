@@ -118,93 +118,93 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Control" xml:space="preserve">
-    <value>Άλλο. Ελέγχου</value>
+    <value>Άλλο, Ελέγχου</value>
   </data>
   <data name="Format" xml:space="preserve">
-    <value>Άλλο. Μορφοποίησης</value>
+    <value>Άλλο, Μορφοποίησης</value>
   </data>
   <data name="OtherNotAssigned" xml:space="preserve">
-    <value>Άλλο. Μη εκχωρημένο</value>
+    <value>Άλλο, Μη καταχωρημένο</value>
   </data>
   <data name="PrivateUse" xml:space="preserve">
-    <value>Άλλο. Ιδιωτικής χρήσης</value>
+    <value>Άλλο, Ιδιωτικής χρήσης</value>
   </data>
   <data name="Surrogate" xml:space="preserve">
-    <value>Άλλο. Αντικατάστασης</value>
+    <value>Άλλο, Υποκατάστατο</value>
   </data>
   <data name="LowercaseLetter" xml:space="preserve">
-    <value>Γράμμα. Πεζά</value>
+    <value>Γράμμα, Πεζά</value>
   </data>
   <data name="ModifierLetter" xml:space="preserve">
-    <value>Γράμμα. Τροποποίησης</value>
+    <value>Γράμμα, Τροποποίησης</value>
   </data>
   <data name="OtherLetter" xml:space="preserve">
-    <value>Γράμμα. Άλλο</value>
+    <value>Γράμμα, Άλλο</value>
   </data>
   <data name="TitlecaseLetter" xml:space="preserve">
-    <value>Γράμμα. Γράμματα Τίτλου</value>
+    <value>Γράμμα, Γράμματα Τίτλου</value>
   </data>
   <data name="UppercaseLetter" xml:space="preserve">
-    <value>Γράμμα. Κεφαλαία</value>
+    <value>Γράμμα, Κεφαλαία</value>
   </data>
   <data name="SpacingCombiningMark" xml:space="preserve">
-    <value>Σημάδι. Συνδυάσιμο διάκενο</value>
+    <value>Σημάδι, Συνδυάσιμο διάκενο</value>
   </data>
   <data name="EnclosingMark" xml:space="preserve">
-    <value>Σημάδι. Περίκλεισης</value>
+    <value>Σημάδι, Περίκλεισης</value>
   </data>
   <data name="NonSpacingMark" xml:space="preserve">
-    <value>Σημάδι. Δεν καταλαμβάνει χώρο</value>
+    <value>Σημάδι, Δεν καταλαμβάνει χώρο</value>
   </data>
   <data name="DecimalDigitNumber" xml:space="preserve">
-    <value>Αριθμός. Δεκαδικό ψηφίο</value>
+    <value>Αριθμός, Δεκαδικό ψηφίο</value>
   </data>
   <data name="LetterNumber" xml:space="preserve">
-    <value>Αριθμός. Γράμμα</value>
+    <value>Αριθμός, Γράμμα</value>
   </data>
   <data name="OtherNumber" xml:space="preserve">
-    <value>Αριθμός. Άλλο</value>
+    <value>Αριθμός, Άλλο</value>
   </data>
   <data name="ConnectorPunctuation" xml:space="preserve">
-    <value>Σημείo στίξης. Ενωτικό</value>
+    <value>Σημείo στίξης, Ενωτικό</value>
   </data>
   <data name="DashPunctuation" xml:space="preserve">
-    <value>Σημείo στίξης. Παύλα</value>
+    <value>Σημείo στίξης, Παύλα</value>
   </data>
   <data name="ClosePunctuation" xml:space="preserve">
-    <value>Σημείo στίξης. Κλείσιμο</value>
+    <value>Σημείo στίξης, Κλείσιμο</value>
   </data>
   <data name="FinalQuotePunctuation" xml:space="preserve">
-    <value>Σημείo στίξης. Κλείσιμο εισαγωγικών</value>
+    <value>Σημείo στίξης, Κλείσιμο εισαγωγικών</value>
   </data>
   <data name="InitialQuotePunctuation" xml:space="preserve">
-    <value>Σημείo στίξης. Άνοιγμα εισαγωγικών</value>
+    <value>Σημείo στίξης, Άνοιγμα εισαγωγικών</value>
   </data>
   <data name="OtherPunctuation" xml:space="preserve">
-    <value>Σημείo στίξης. Άλλο</value>
+    <value>Σημείo στίξης, Άλλο</value>
   </data>
   <data name="OpenPunctuation" xml:space="preserve">
-    <value>Σημείo στίξης. Άνοιγμα</value>
+    <value>Σημείo στίξης, Άνοιγμα</value>
   </data>
   <data name="CurrencySymbol" xml:space="preserve">
-    <value>Σύμβολο. Νόμισμα</value>
+    <value>Σύμβολο, Νόμισμα</value>
   </data>
   <data name="ModifierSymbol" xml:space="preserve">
-    <value>Σύμβολο. Τροποποίησης</value>
+    <value>Σύμβολο, Τροποποίησης</value>
   </data>
   <data name="MathSymbol" xml:space="preserve">
-    <value>Σύμβολο. Μαθηματικό</value>
+    <value>Σύμβολο, Μαθηματικό</value>
   </data>
   <data name="OtherSymbol" xml:space="preserve">
-    <value>Σύμβολο. Άλλο</value>
+    <value>Σύμβολο, Άλλο</value>
   </data>
   <data name="LineSeparator" xml:space="preserve">
-    <value>Διαχωριστικό. Γραμμή</value>
+    <value>Διαχωριστικό, Γραμμή</value>
   </data>
   <data name="ParagraphSeparator" xml:space="preserve">
-    <value>Διαχωριστικό. Παράγραφος</value>
+    <value>Διαχωριστικό, Παράγραφος</value>
   </data>
   <data name="SpaceSeparator" xml:space="preserve">
-    <value>Διαχωριστικό. Κενό</value>
+    <value>Διαχωριστικό, Κενό</value>
   </data>
 </root>

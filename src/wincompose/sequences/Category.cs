@@ -1,4 +1,4 @@
-﻿//
+﻿﻿//
 //  WinCompose — a compose key for Windows — http://wincompose.info/
 //
 //  Copyright © 2013—2021 Sam Hocevar <sam@hocevar.net>
@@ -96,17 +96,19 @@ namespace WinCompose
         {
             var list = new List<CodepointCategory>();
 
-            const BindingFlags flags = BindingFlags.Static | BindingFlags.Public;
-            Regex r = new Regex(@"^U([a-fA-F0-9]*)_U([a-fA-F0-9]*)$");
-            foreach (var property in typeof(unicode.Block).GetProperties(flags))
+            using (var reader = new GZipResourceStream("Blocks.txt.gz"))
             {
-                Match m = r.Match(property.Name);
-                if (m.Success)
+                Regex r = new Regex(@"^([a-fA-F0-9]*)\.\.([a-fA-F0-9]*); ([A-Za-z0-9 \-]*)$");
+                for (string l = reader.ReadLine(); l != null; l = reader.ReadLine())
                 {
-                    var name = (string)property.GetValue(null, null);
-                    var start = Convert.ToInt32(m.Groups[1].Value, 16);
-                    var end = Convert.ToInt32(m.Groups[2].Value, 16);
-                    list.Add(new CodepointCategory() { Name = name, RangeStart = start, RangeEnd = end });
+                    Match m = r.Match(l);
+                    if (m.Success)
+                    {
+                        var start = Convert.ToInt32(m.Groups[1].Value, 16);
+                        var end = Convert.ToInt32(m.Groups[2].Value, 16);
+                        var name = (string)m.Groups[3].Value;
+                        list.Add(new CodepointCategory() { Name = name, RangeStart = start, RangeEnd = end });
+                    }
                 }
             }
 

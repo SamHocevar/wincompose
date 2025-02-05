@@ -688,7 +688,7 @@ msgid ""
 "happen."
 msgstr ""
 
-#. Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
+#.  Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
 #: language/unicode/Category.resx:121 ID:Control
 msgid "Other, Control"
 msgstr "Jiné, řídicí"

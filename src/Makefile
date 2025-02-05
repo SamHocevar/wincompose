@@ -7,8 +7,8 @@
 #  - Visual Studio (ensure vswhere.exe is in %PATH%)
 #  - gettext (mingw-get install msys-gettext)
 
-VERSION = $(shell gitversion -showvariable MajorMinorPatch)
-FRAMEWORK = net40
+VERSION = $(shell dotnet-gitversion -showvariable MajorMinorPatch)
+FRAMEWORK = net472
 CONFIG = Release
 
 SRCDIR = wincompose

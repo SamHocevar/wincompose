@@ -41,8 +41,6 @@
 <Multi_key> <l> <f> : "( ͡° ͜ʖ ͡°)"        # Lenny face
 <Multi_key> <s> <f> : "¯\\_(ツ)_/¯"     # Shrug face
 
-<Multi_key> <h> <w> : "Hello World"
-
 <Multi_key> <b> <z> <h>             : "🏴󠁦󠁲󠁢󠁲󠁥󠁿" # Bretagne flag (gwenn-ha-du)
 <Multi_key> <Multi_key> <b> <z> <h> : "🏴󠁦󠁲󠁢󠁲󠁥󠁿" # Bretagne flag (gwenn-ha-du)
 <Multi_key> <Multi_key> <s> <e> <n> <y> <e> <r> <a> : "🏴󠁥󠁳󠁣󠁴󠁿" # Catalogne flag (senyera)

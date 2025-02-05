@@ -8,14 +8,13 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>WinCompose</RootNamespace>
     <StartupObject>WinCompose.Program</StartupObject>
-    <TargetFrameworks>net40</TargetFrameworks>
-    <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
-    <GenerateAssemblyInformationalVersionAttribute>false</GenerateAssemblyInformationalVersionAttribute>
-    <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+	<TargetFrameworks>net481</TargetFrameworks>
     <UseWPF>true</UseWPF>
     <DefaultItemExcludes>
         $(DefaultItemExcludes);gitversion.json;**\*.swp;**\*~;
     </DefaultItemExcludes>
+    <AssemblyVersion>0.9.14.0</AssemblyVersion>
+    <FileVersion>0.9.14.0</FileVersion>
   </PropertyGroup>
 
   <UsingTask TaskName="GZipTask" TaskFactory="RoslynCodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">
@@ -34,26 +33,30 @@
       ]]></Code>
     </Task>
   </UsingTask>
-  <Target Name="CompressResources"
-          BeforeTargets="BeforeBuild"
-          Inputs="..\3rdparty\xorgproto\include\X11\keysymdef.h&#xD;&#xA;
-                  ..\3rdparty\libx11\nls\en_US.UTF-8\Compose.pre&#xD;&#xA;
-                  ..\3rdparty\xcompose\dotXCompose&#xD;&#xA;
-                  ..\3rdparty\unicode-emoji\emoji-test.txt"
-          Outputs="$(OutputPath)\keysymdef.h.gz&#xD;&#xA;
-                   $(OutputPath)\xorg.rules.gz&#xD;&#xA;
-                   $(OutputPath)\xcompose.rules.gz&#xD;&#xA;
-                   $(OutputPath)\emoji-test.txt.gz">
+  <Target Name="CompressResources" 
+  BeforeTargets="BeforeBuild" 
+          Inputs="..\3rdparty\xorgproto\include\X11\keysymdef.h&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;
+                  ..\3rdparty\libx11\nls\en_US.UTF-8\Compose.pre&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;
+                  ..\3rdparty\xcompose\dotXCompose&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;
+                  ..\3rdparty\unicode-emoji\emoji-test.txt&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;
+		  ..\3rdparty\unicodetools\unicodetools\data\ucd\16.0.0\Blocks.txt" 
+          Outputs="$(OutputPath)\keysymdef.h.gz&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;
+                   $(OutputPath)\xorg.rules.gz&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;
+                   $(OutputPath)\xcompose.rules.gz&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;
+                   $(OutputPath)\emoji-test.txt.gz&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;
+				   $(OutputPath)\Blocks.txt.gz">
     <GZipTask InputFile="..\3rdparty\xorgproto\include\X11\keysymdef.h" OutputFile="$(OutputPath)\keysymdef.h.gz" />
     <GZipTask InputFile="..\3rdparty\libx11\nls\en_US.UTF-8\Compose.pre" OutputFile="$(OutputPath)\xorg.rules.gz" />
     <GZipTask InputFile="..\3rdparty\xcompose\dotXCompose" OutputFile="$(OutputPath)\xcompose.rules.gz" />
     <GZipTask InputFile="..\3rdparty\unicode-emoji\emoji-test.txt" OutputFile="$(OutputPath)\emoji-test.txt.gz" />
+	<GZipTask InputFile="..\3rdparty\unicodetools\unicodetools\data\ucd\16.0.0\Blocks.txt" OutputFile="$(OutputPath)\Blocks.txt.gz"/>
   </Target>
   <ItemGroup>
     <Item Include="..\3rdparty\xorgproto\include\X11\keysymdef.h" />
     <Item Include="..\3rdparty\libx11\nls\en_US.UTF-8\Compose.pre" />
     <Item Include="..\3rdparty\xcompose\dotXCompose" />
     <Item Include="..\3rdparty\unicode-emoji\emoji-test.txt" />
+	<Item Include="..\3rdparty\unicodetools\unicodetools\data\ucd\16.0.0\Blocks.txt" />
   </ItemGroup>
 
   <ItemGroup>
@@ -61,6 +64,11 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <EmbeddedResource Update="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -86,6 +94,10 @@
       <Visible>false</Visible>
       <LogicalName>emoji-test.txt.gz</LogicalName>
     </EmbeddedResource>
+	<EmbeddedResource Include="$(OutputPath)\Blocks.txt.gz">
+	  <Visible>false</Visible>
+	  <LogicalName>Blocks.txt.gz</LogicalName>
+	</EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
@@ -100,6 +112,7 @@
     <Resource Include="res\key_compose.png" />
     <Resource Include="res\key_empty.png" />
     <Resource Include="res\key_compose_big.png" />
+    <Resource Include="ui\key_compose.png" />
   </ItemGroup>
   <ItemGroup>
     <Item Include="rules\DefaultUserSequences.txt" />
@@ -113,16 +126,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="res\icon_normal.ico" />
+    <PackageReference Include="Emoji.Wpf" Version="0.3.3" />
+    <PackageReference Include="NLog" Version="4.7.10" />
+    <PackageReference Include="Stfu" Version="0.1.5" />
+    <PackageReference Include="WPF-UI" Version="3.0.5" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Emoji.Wpf" Version="0.3.3" />
-    <PackageReference Include="GitVersion.MsBuild" Version="5.6.10" PrivateAssets="all">
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="NLog" Version="4.7.10" />
-    <PackageReference Include="Stfu" Version="0.1.5" />
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
 
   <Target Name="InsertIcons" AfterTargets="AfterBuild">

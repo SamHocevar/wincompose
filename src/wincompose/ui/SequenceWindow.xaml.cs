@@ -18,6 +18,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
+using Wpf.Ui.Appearance;
 
 namespace WinCompose
 {
@@ -32,6 +33,7 @@ namespace WinCompose
             DataContext = new RootViewModel();
             Activated += OnActivated;
             Loaded += OnLoaded;
+            Settings.ThemeMode.ValueChanged += UpdateBackground;
         }
 
         private void OnActivated(object sender, EventArgs e)
@@ -59,6 +61,10 @@ namespace WinCompose
                 var grid = VisualTreeHelper.GetChild(SearchWidget, 0) as Grid;
                 return VisualTreeHelper.GetChild(grid, 0) as RichTextBox;
             }
+        }
+        private void UpdateBackground()
+        {
+            WindowBackgroundManager.UpdateBackground(this , ApplicationThemeManager.GetAppTheme() , Wpf.Ui.Controls.WindowBackdropType.None);
         }
 
         protected virtual void OnPropertyChanged(params string[] propertyNames)

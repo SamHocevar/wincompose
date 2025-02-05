@@ -184,10 +184,10 @@
     <value>Usa las 1000 secuencias de composición del proyecto XCompose (https://github.com/kragen/xcompose). Estas secuencias pueden entrar en conflicto con las de Xorg.</value>
   </data>
   <data name="UseEmojiRules" xml:space="preserve">
-    <value>Usar secuencias de emoyi de WinCompose</value>
+    <value>Usar secuencias de emoji de WinCompose</value>
   </data>
   <data name="UseEmojiRulesToolTip" xml:space="preserve">
-    <value>Utilizar las secuencias de composición de emoyis provistas por los creadores de WinCompose.</value>
+    <value>Utilizar las secuencias de composición de emojis provistas por los creadores de WinCompose.</value>
   </data>
   <data name="DebugWindow" xml:space="preserve">
     <value>Ventana de depuración</value>
@@ -238,7 +238,7 @@
     <value>Inserción avanzada de Unicode</value>
   </data>
   <data name="UnicodeInputToolTip" xml:space="preserve">
-    <value>Activar el ingreso de cualesquier caracteres Unicode, incluidos aquellos que carecen de secuencia de composición. Por ejemplo, la secuencia Componer + 1 A 3 F + Intro insertará el carácter U+1A3F.</value>
+    <value>Habilite la entrada Unicode para todos los caracteres, incluso aquellos que no tengan una secuencia de composición definida. Por ejemplo, la siguiente secuencia generará el carácter U+1A3F: Componer U 1 A 3 F Entrar</value>
   </data>
   <data name="InvalidSequences" xml:space="preserve">
     <value>Al digitar secuencias no válidas</value>
@@ -274,7 +274,7 @@
     <value>Copiar en el portapapeles</value>
   </data>
   <data name="Emoji" xml:space="preserve">
-    <value>Emoyis</value>
+    <value>Emoji</value>
   </data>
   <data name="Apply" xml:space="preserve">
     <value>Aplicar</value>
@@ -391,7 +391,7 @@
     <value>Editar</value>
   </data>
   <data name="UserDefinedSequencesReload" xml:space="preserve">
-    <value>Cargar de nuevo</value>
+    <value>Recargar</value>
   </data>
   <data name="AllowInjected" xml:space="preserve">
     <value>Permitir teclas inyectadas</value>
@@ -485,5 +485,20 @@
   </data>
   <data name="AutoLaunchToolTip" xml:space="preserve">
     <value>Si se activa, WinCompose se ejecutará al iniciar una sesión el usuario.</value>
+  </data>
+  <data name="Accessibility" xml:space="preserve">
+    <value>Accesibilidad</value>
+  </data>
+  <data name="MustHoldCapsLock" xml:space="preserve">
+    <value>Bloque de Mayúsculas solo está activo mientras esté pulsado</value>
+  </data>
+  <data name="MustHoldCapsLockToolTip" xml:space="preserve">
+    <value>Soltar la tecla Bloqueo Mayúsculas la desactivará inmediatamente, en vez del comportamiento habitual de que se desactive al pulsarla por segunda vez.</value>
+  </data>
+  <data name="RunElevated" xml:space="preserve">
+    <value>Ejecutarse con privilegios elevados (recomendado)</value>
+  </data>
+  <data name="RunElevatedToolTip" xml:space="preserve">
+    <value>La composición no funcionará en algunas aplicaciones si WinCompose no se ejecuta con privilegios elevados. Esta opción reduce las posibilidades de que eso pase.</value>
   </data>
 </root>

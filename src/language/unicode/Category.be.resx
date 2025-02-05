@@ -118,93 +118,93 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Control" xml:space="preserve">
-    <value>Іншае, кіроўныя знакі</value>
+    <value>Іншыя, для кіравання</value>
   </data>
   <data name="Format" xml:space="preserve">
-    <value>Іншае, знакі фарматавання</value>
+    <value>Іншыя, для фарматавання</value>
   </data>
   <data name="OtherNotAssigned" xml:space="preserve">
-    <value>Іншае, не прызначана</value>
+    <value>Іншыя, не прызначаныя</value>
   </data>
   <data name="PrivateUse" xml:space="preserve">
-    <value>Іншае, для асабістага выкарыстання</value>
+    <value>Іншыя, карыстальніцкія</value>
   </data>
   <data name="Surrogate" xml:space="preserve">
-    <value>Іншае, сурагат</value>
+    <value>Іншае, заменнікі</value>
   </data>
   <data name="LowercaseLetter" xml:space="preserve">
-    <value>Літара, ніжні рэгістр</value>
+    <value>Літары, ніжні рэгістр</value>
   </data>
   <data name="ModifierLetter" xml:space="preserve">
-    <value>Літара, мадыфікатар</value>
+    <value>Літары, мадыфікатары</value>
   </data>
   <data name="OtherLetter" xml:space="preserve">
-    <value>Літара, іншае</value>
+    <value>Літары, іншыя</value>
   </data>
   <data name="TitlecaseLetter" xml:space="preserve">
-    <value>Літара, загаловак</value>
+    <value>Літары, для загалоўкаў</value>
   </data>
   <data name="UppercaseLetter" xml:space="preserve">
-    <value>Літара, верхні рэгістр</value>
+    <value>Літары, верхні рэгістр</value>
   </data>
   <data name="SpacingCombiningMark" xml:space="preserve">
-    <value>Значок, спалучальны, патрабуе дадатковага месца ў радку</value>
+    <value>Адзнакі, спалучэнні прабелаў</value>
   </data>
   <data name="EnclosingMark" xml:space="preserve">
-    <value>Значок, які ўпісвае папярэдні знак</value>
+    <value>Адзнакі, канцавыя</value>
   </data>
   <data name="NonSpacingMark" xml:space="preserve">
-    <value>Значок, не патрабуе дадатковага месца ў радку</value>
+    <value>Адзнакі, без прабелаў</value>
   </data>
   <data name="DecimalDigitNumber" xml:space="preserve">
-    <value>Лічба, Дзесятковая сістэма злічэння</value>
+    <value>Лічбы, дзесятковыя лікі</value>
   </data>
   <data name="LetterNumber" xml:space="preserve">
-    <value>Лічба, літара</value>
+    <value>Лічбы, літары</value>
   </data>
   <data name="OtherNumber" xml:space="preserve">
-    <value>Лічба, іншае</value>
+    <value>Лічбы, іншае</value>
   </data>
   <data name="ConnectorPunctuation" xml:space="preserve">
-    <value>Пунктуацыя, якая спалучае часткі слова</value>
+    <value>Знакі прыпынку, злучнікі</value>
   </data>
   <data name="DashPunctuation" xml:space="preserve">
-    <value>Пунктуацыя, злучкі і працяжнікі</value>
+    <value>Знакі прыпынку, працяжнікі</value>
   </data>
   <data name="ClosePunctuation" xml:space="preserve">
-    <value>Пунктуацыя, закрывальны знак</value>
+    <value>Знакі прыпынку, канцавыя</value>
   </data>
   <data name="FinalQuotePunctuation" xml:space="preserve">
-    <value>Пунктуацыя, закрывальны знак двукосся</value>
+    <value>Знакі прыпанку, канцавыя двукоссі</value>
   </data>
   <data name="InitialQuotePunctuation" xml:space="preserve">
-    <value>Пунктуацыя, пачатковы знак двукосся</value>
+    <value>Пунктуацыя, пачатковыя двукоссі</value>
   </data>
   <data name="OtherPunctuation" xml:space="preserve">
     <value>Пунктуацыя, іншае</value>
   </data>
   <data name="OpenPunctuation" xml:space="preserve">
-    <value>Пунктуацыя, адкрывальны знак</value>
+    <value>Пунктуацыя, пачатковыя знакі</value>
   </data>
   <data name="CurrencySymbol" xml:space="preserve">
-    <value>Сімвал, валюта</value>
+    <value>Сімвалы, валюты</value>
   </data>
   <data name="ModifierSymbol" xml:space="preserve">
-    <value>Сімвал, мадыфікатар</value>
+    <value>Сімвалы, мадыфікатары</value>
   </data>
   <data name="MathSymbol" xml:space="preserve">
-    <value>Сімвал, матэматыка</value>
+    <value>Сімвалы, матэматыка</value>
   </data>
   <data name="OtherSymbol" xml:space="preserve">
-    <value>Сімвал, іншае</value>
+    <value>Сімвалы, іншае</value>
   </data>
   <data name="LineSeparator" xml:space="preserve">
-    <value>Падзяляльнік, падзел радкоў</value>
+    <value>Раздзяляльнікі, радкі</value>
   </data>
   <data name="ParagraphSeparator" xml:space="preserve">
-    <value>Падзяляльнік, падзел абзацаў</value>
+    <value>Раздзяляльнікі, абзацы</value>
   </data>
   <data name="SpaceSeparator" xml:space="preserve">
-    <value>Падзяляльнік, прабелы</value>
+    <value>Раздзяляльнікі, прабелы</value>
   </data>
 </root>

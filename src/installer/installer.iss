@@ -16,7 +16,7 @@
 #ifndef CONFIG
 #   define CONFIG GetEnv('CONFIG')
 #endif
-#define FRAMEWORK "net40"
+#define FRAMEWORK "net481"
 
 #define SRCDIR "../wincompose"
 #define BINDIR "../wincompose/bin/" + CONFIG + "/" + FRAMEWORK
@@ -58,6 +58,7 @@ Source: "{#BINDIR}\{#EXE}.config"; DestDir: "{app}"; Flags: ignoreversion
 Source: "{#BINDIR}\language.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "{#BINDIR}\Emoji.Wpf.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "{#BINDIR}\Hardcodet.NotifyIcon.Wpf.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#BINDIR}\Wpf.Ui.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "{#BINDIR}\NLog.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "{#BINDIR}\System.ValueTuple.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "{#BINDIR}\stfu.dll"; DestDir: "{app}"; Flags: ignoreversion
@@ -134,7 +135,7 @@ Name: "fr"; MessagesFile: "compiler:Languages/French.isl"
 ; [???] ga (Gaelic)
 Name: "hi"; MessagesFile: "{#INNODIR}/Languages/Unofficial/Hindi.islu"
 Name: "hr"; MessagesFile: "{#INNODIR}/Languages/Unofficial/Croatian.isl"
-Name: "hu"; MessagesFile: "{#INNODIR}/Languages/Unofficial/Hungarian.isl"
+Name: "hu"; MessagesFile: "{#INNODIR}/Languages/Hungarian.isl"
 ; [ERR] Name: "id"; MessagesFile: "{#INNODIR}/Languages/Unofficial/Indonesian.isl"
 Name: "it"; MessagesFile: "compiler:Languages/Italian.isl"
 Name: "ja"; MessagesFile: "compiler:Languages/Japanese.isl"
@@ -151,7 +152,7 @@ Name: "sk"; MessagesFile: "compiler:Languages/Slovak.isl"
 Name: "sl"; MessagesFile: "compiler:Languages/Slovenian.isl"
 ; [ERR] sq / Albanian.isl
 Name: "sr"; MessagesFile: "{#INNODIR}/Languages/Unofficial/SerbianCyrillic.isl"
-Name: "sv"; MessagesFile: "{#INNODIR}/Languages/Unofficial/Swedish.isl"
+Name: "sv"; MessagesFile: "{#INNODIR}/Languages/Swedish.isl"
 Name: "uk"; MessagesFile: "compiler:Languages/Ukrainian.isl"
 Name: "zh"; MessagesFile: "{#INNODIR}/Languages/Unofficial/ChineseSimplified.isl"
 ; [ERR] Name: "zh_Hant"; MessagesFile: "{#INNODIR}/Languages/Unofficial/ChineseTraditional.isl"

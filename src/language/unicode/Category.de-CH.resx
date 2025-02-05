@@ -124,10 +124,10 @@
     <value>Aliaj, aranĝaj</value>
   </data>
   <data name="OtherNotAssigned" xml:space="preserve">
-    <value>Aliaj, Neniu kategorio</value>
+    <value>Aliaj, senkategoriaj</value>
   </data>
   <data name="PrivateUse" xml:space="preserve">
-    <value>Aliaj, uzo nepublika</value>
+    <value>Aliaj, privatuzaj</value>
   </data>
   <data name="Surrogate" xml:space="preserve">
     <value>Aliaj, anstataŭaj</value>
@@ -142,22 +142,22 @@
     <value>Litero, alia</value>
   </data>
   <data name="TitlecaseLetter" xml:space="preserve">
-    <value>Litero, titol'-uskleca</value>
+    <value>Litero, titoluskleca</value>
   </data>
   <data name="UppercaseLetter" xml:space="preserve">
     <value>Litero, majuskla</value>
   </data>
   <data name="SpacingCombiningMark" xml:space="preserve">
-    <value>Signo, spaciga kunliga</value>
+    <value>Signo, spackombina</value>
   </data>
   <data name="EnclosingMark" xml:space="preserve">
     <value>Signo, enfermiga</value>
   </data>
   <data name="NonSpacingMark" xml:space="preserve">
-    <value>Signo, ne spaciga</value>
+    <value>Signo, nespaca</value>
   </data>
   <data name="DecimalDigitNumber" xml:space="preserve">
-    <value>Nombro, decimala cifero</value>
+    <value>Nombro, decimalcifera</value>
   </data>
   <data name="LetterNumber" xml:space="preserve">
     <value>Nombro, litero</value>
@@ -166,10 +166,10 @@
     <value>Nombro, alia</value>
   </data>
   <data name="ConnectorPunctuation" xml:space="preserve">
-    <value>Interpunkcio, konektilo</value>
+    <value>Interpunkcio, konekta</value>
   </data>
   <data name="DashPunctuation" xml:space="preserve">
-    <value>Interpunkcio, streko</value>
+    <value>Interpunkcio, streka</value>
   </data>
   <data name="ClosePunctuation" xml:space="preserve">
     <value>Interpunkcio, ferma</value>
@@ -187,24 +187,24 @@
     <value>Interpunkcio, komenca</value>
   </data>
   <data name="CurrencySymbol" xml:space="preserve">
-    <value>Simbolo, valuto</value>
+    <value>Simbolo, monunua</value>
   </data>
   <data name="ModifierSymbol" xml:space="preserve">
-    <value>Simbolo, modifilo</value>
+    <value>Simbolo, modifa</value>
   </data>
   <data name="MathSymbol" xml:space="preserve">
-    <value>Simbolo, matematiko</value>
+    <value>Simbolo, matematika</value>
   </data>
   <data name="OtherSymbol" xml:space="preserve">
     <value>Simbolo, alia</value>
   </data>
   <data name="LineSeparator" xml:space="preserve">
-    <value>Apartigilo, linio</value>
+    <value>Apartigilo, linia</value>
   </data>
   <data name="ParagraphSeparator" xml:space="preserve">
-    <value>Apartigilo, alineo</value>
+    <value>Apartigilo, alinea</value>
   </data>
   <data name="SpaceSeparator" xml:space="preserve">
-    <value>Apartigilo, spaceto</value>
+    <value>Apartigilo, spaceta</value>
   </data>
 </root>

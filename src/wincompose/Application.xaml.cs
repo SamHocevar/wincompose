@@ -25,6 +25,7 @@ namespace WinCompose
             try
             {
                 InitializeComponent();
+                Settings.SetTheme();
             }
             catch (Exception ex)
             {

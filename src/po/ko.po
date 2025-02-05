@@ -10,7 +10,8 @@ msgstr ""
 "POT-Creation-Date: 2015-03-23 15:27+0100\n"
 "PO-Revision-Date: 2024-06-16 02:09+0000\n"
 "Last-Translator: RdxxeR <rdxxer@pm.me>\n"
-"Language-Team: Korean <https://hosted.weblate.org/projects/wincompose/master/ko/>\n"
+"Language-Team: Korean <https://hosted.weblate.org/projects/wincompose/master/"
+"ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -113,23 +114,35 @@ msgid "Use sequences from the Xorg project"
 msgstr "Xorg 프로젝트의 시퀀스를 사용"
 
 #: language/i18n/Text.resx:197 ID:UseXorgRulesToolTip
-msgid "Use the 3,000 compose sequences from the Xorg project (http://www.x.org/). These are the sequences most commonly found on a standard Linux system."
-msgstr "Xorg 프로젝트(http://www.x.org/)에서 제공한 합성 시퀀스 3,000개를 사용합니다. 이들은 표준적인 리눅스 시스템에서 가장 많이 사용됩니다."
+msgid ""
+"Use the 3,000 compose sequences from the Xorg project (http://www.x.org/). "
+"These are the sequences most commonly found on a standard Linux system."
+msgstr ""
+"Xorg 프로젝트(http://www.x.org/)에서 제공한 합성 시퀀스 3,000개를 사용합니"
+"다. 이들은 표준적인 리눅스 시스템에서 가장 많이 사용됩니다."
 
 #: language/i18n/Text.resx:201 ID:UseXComposeRules
 msgid "Use sequences from the XCompose project"
 msgstr "XCompose 프로젝트의 시퀀스를 사용"
 
 #: language/i18n/Text.resx:205 ID:UseXComposeRulesToolTip
-msgid "Use the 1,000 compose sequences from the XCompose opensource project (https://github.com/kragen/xcompose). These sequences may sometimes conflict with the Xorg ones."
-msgstr "XCompose 오픈 소스 프로젝트(https://github.com/kragen/xcompose)에서 제공한 합성 시퀀스 1,000개를 사용합니다. 이 시퀀스는 Xorg의 시퀀스와 충돌할 수도 있습니다."
+msgid ""
+"Use the 1,000 compose sequences from the XCompose opensource project "
+"(https://github.com/kragen/xcompose). These sequences may sometimes conflict "
+"with the Xorg ones."
+msgstr ""
+"XCompose 오픈 소스 프로젝트(https://github.com/kragen/xcompose)에서 제공한 합"
+"성 시퀀스 1,000개를 사용합니다. 이 시퀀스는 Xorg의 시퀀스와 충돌할 수도 있습"
+"니다."
 
 #: language/i18n/Text.resx:209 ID:UseEmojiRules
 msgid "Use WinCompose emoji sequences"
 msgstr "WinCompose 이모지 시퀀스를 사용"
 
 #: language/i18n/Text.resx:213 ID:UseEmojiRulesToolTip
-msgid "Use the compose sequences for Emoji provided by the WinCompose author and contributors."
+msgid ""
+"Use the compose sequences for Emoji provided by the WinCompose author and "
+"contributors."
 msgstr "WinCompose 개발자와 기여자가 제공한 이모지 합성 시퀀스를 사용합니다."
 
 #. Menu entry to show the debug window
@@ -178,8 +191,12 @@ msgid "Try to swap the two keys"
 msgstr "키의 순서 교환을 시도"
 
 #: language/i18n/Text.resx:257 ID:SwapOnInvalidToolTip
-msgid "Try to swap the keys of a two-key sequence. For instance, if Compose E A is not a valid sequence, try Compose A E instead."
-msgstr "키 2개로 구성된 시퀀스에서 위치를 교체하는 것을 시도합니다. 예를 들어, Compose E A가 올바른 시퀀스가 아닐 경우, 대신 Compose A E를 시도합니다."
+msgid ""
+"Try to swap the keys of a two-key sequence. For instance, if Compose E A is "
+"not a valid sequence, try Compose A E instead."
+msgstr ""
+"키 2개로 구성된 시퀀스에서 위치를 교체하는 것을 시도합니다. 예를 들어, "
+"Compose E A가 올바른 시퀀스가 아닐 경우, 대신 Compose A E를 시도합니다."
 
 #: language/i18n/Text.resx:261 ID:Search
 msgid "Search Filter:"
@@ -203,8 +220,13 @@ msgid "Advanced Unicode input"
 msgstr "고급 유니코드 입력"
 
 #: language/i18n/Text.resx:281 ID:UnicodeInputToolTip
-msgid "Enable Unicode input for all characters, even those with no compose sequence defined. For instance, the following sequence will output character U+1A3F: Compose U 1 A 3 F Enter"
-msgstr "합성 시퀀스가 지정되지 않은 유니코드 문자도 입력할 수 있도록 합니다. 예를 들어, U+1A3F를 출력하려면 Compose U 1 A 3 F를 입력합니다"
+msgid ""
+"Enable Unicode input for all characters, even those with no compose sequence "
+"defined. For instance, the following sequence will output character U+1A3F: "
+"Compose U 1 A 3 F Enter"
+msgstr ""
+"합성 시퀀스가 지정되지 않은 유니코드 문자도 입력할 수 있도록 합니다. 예를 들"
+"어, U+1A3F를 출력하려면 Compose U 1 A 3 F를 입력합니다"
 
 #. This is the name of a category of settings about what happens when invalid sequences are typed
 #: language/i18n/Text.resx:285 ID:InvalidSequences
@@ -216,16 +238,25 @@ msgid "Fall back to case insensitive matches"
 msgstr "대소문자만 다른 것이 있는 경우 사용"
 
 #: language/i18n/Text.resx:293 ID:CaseInsensitiveToolTip
-msgid "If the entered sequence does not exist, but there is one that only differs by case, automatically correct it."
-msgstr "입력된 시퀀스가 존재하지 않지만 대소문자만 다른 것이 있다면 자동으로 정정합니다."
+msgid ""
+"If the entered sequence does not exist, but there is one that only differs "
+"by case, automatically correct it."
+msgstr ""
+"입력된 시퀀스가 존재하지 않지만 대소문자만 다른 것이 있다면 자동으로 정정합니"
+"다."
 
 #: language/i18n/Text.resx:297 ID:DiscardOnInvalid
 msgid "Discard all typed characters"
 msgstr "입력된 문자를 버리기"
 
 #: language/i18n/Text.resx:301 ID:DiscardOnInvalidToolTip
-msgid "If the entered sequence does not exist, discard all the characters that were typed. The default behaviour is to output the characters as if the compose key had not been used."
-msgstr "입력된 시퀀스가 없는 경우, 입력된 문자를 모두 버립니다. 기본적으로는 Compose 키가 입력되지 않았을 때처럼 문자를 출력합니다."
+msgid ""
+"If the entered sequence does not exist, discard all the characters that were "
+"typed. The default behaviour is to output the characters as if the compose "
+"key had not been used."
+msgstr ""
+"입력된 시퀀스가 없는 경우, 입력된 문자를 모두 버립니다. 기본적으로는 Compose "
+"키가 입력되지 않았을 때처럼 문자를 출력합니다."
 
 #: language/i18n/Text.resx:305 ID:BeepOnInvalid
 msgid "Emit a beep"
@@ -240,8 +271,12 @@ msgid "Interface language:"
 msgstr "표시 언어:"
 
 #: language/i18n/Text.resx:317 ID:LanguageToolTip
-msgid "Select the language that WinCompose uses for the interface. By default the operating system language is used."
-msgstr "WinCompose의 인터페이스가 표시되는 언어를 선택하세요. 기본적으로 시스템 언어를 사용합니다."
+msgid ""
+"Select the language that WinCompose uses for the interface. By default the "
+"operating system language is used."
+msgstr ""
+"WinCompose의 인터페이스가 표시되는 언어를 선택하세요. 기본적으로 시스템 언어"
+"를 사용합니다."
 
 #. Close the settings window
 #: language/i18n/Text.resx:321 ID:Close
@@ -269,40 +304,65 @@ msgid "Maintain original compose key behaviour"
 msgstr "원래 Compose 키의 동작을 유지"
 
 #: language/i18n/Text.resx:341 ID:KeepOriginalKeyToolTip
-msgid "This tells WinCompose to make a best effort to retain the original key’s behaviour. For instance, the Alt-Tab shortcut will still work even if Alt is used as the compose key."
-msgstr "WinCompose에서 키의 원래 동작을 유지하려고 합니다. 예를 들어, Alt가 Compose 키로 사용되는 경우에도 Alt-Tab 단축키가 작동합니다."
+msgid ""
+"This tells WinCompose to make a best effort to retain the original key’s "
+"behaviour. For instance, the Alt-Tab shortcut will still work even if Alt is "
+"used as the compose key."
+msgstr ""
+"WinCompose에서 키의 원래 동작을 유지하려고 합니다. 예를 들어, Alt가 Compose "
+"키로 사용되는 경우에도 Alt-Tab 단축키가 작동합니다."
 
 #: language/i18n/Text.resx:345 ID:InsertZwsp
 msgid "Insert zero-width spaces in Office apps"
 msgstr "Office 앱에서 폭 없는 공백을 삽입"
 
 #: language/i18n/Text.resx:349 ID:InsertZwspToolTip
-msgid "Microsoft Office applications sometimes change the document font on the fly when entering certain Unicode characters. This feature inserts an invisible character after the Unicode character to work around the bug."
-msgstr "Microsoft Office 앱은 특정 유니코드 문자를 입력할 때 폰트가 바뀌는 버그가 있습니다. 이 기능은 유니코드 문자 다음에 보이지 않는 문자를 삽입하여 버그를 해결합니다."
+msgid ""
+"Microsoft Office applications sometimes change the document font on the fly "
+"when entering certain Unicode characters. This feature inserts an invisible "
+"character after the Unicode character to work around the bug."
+msgstr ""
+"Microsoft Office 앱은 특정 유니코드 문자를 입력할 때 폰트가 바뀌는 버그가 있"
+"습니다. 이 기능은 유니코드 문자 다음에 보이지 않는 문자를 삽입하여 버그를 해"
+"결합니다."
 
 #: language/i18n/Text.resx:353 ID:EmulateCapsLock
 msgid "Emulate Caps Lock using both Shift keys"
 msgstr "양쪽 Shift 키를 누르는 것으로 Caps Lock을 대체"
 
 #: language/i18n/Text.resx:357 ID:EmulateCapsLockToolTip
-msgid "If Caps Lock is used as the compose key, the original behaviour of the key becomes unavailable. This feature allows to turn Caps Lock on by pressing both Shift keys simultaneously."
-msgstr "Caps Lock이 합성 키로 사용되면, 키의 원래 기능은 비활성화됩니다. 이 기능은 Shift 키 2개를 동시에 눌러 Caps Lock을 켤 수 있도록 합니다."
+msgid ""
+"If Caps Lock is used as the compose key, the original behaviour of the key "
+"becomes unavailable. This feature allows to turn Caps Lock on by pressing "
+"both Shift keys simultaneously."
+msgstr ""
+"Caps Lock이 합성 키로 사용되면, 키의 원래 기능은 비활성화됩니다. 이 기능은 "
+"Shift 키 2개를 동시에 눌러 Caps Lock을 켤 수 있도록 합니다."
 
 #: language/i18n/Text.resx:361 ID:ShiftDisablesCapsLock
 msgid "Shift key disables Caps Lock"
 msgstr "Shift Key를 눌러 Caps Lock 끄기"
 
 #: language/i18n/Text.resx:365 ID:ShiftDisablesCapsLockToolTip
-msgid "If Caps Lock is used as the compose key, the original behaviour of the key becomes unavailable. This feature allows to turn Caps Lock off by pressing the Shift key."
-msgstr "Caps Lock이 합성 키로 사용되면, 키의 원래 기능은 비활성화됩니다. 이 기능은 Shift 키를 눌러 Caps Lock을 끌 수 있도록 합니다."
+msgid ""
+"If Caps Lock is used as the compose key, the original behaviour of the key "
+"becomes unavailable. This feature allows to turn Caps Lock off by pressing "
+"the Shift key."
+msgstr ""
+"Caps Lock이 합성 키로 사용되면, 키의 원래 기능은 비활성화됩니다. 이 기능은 "
+"Shift 키를 눌러 Caps Lock을 끌 수 있도록 합니다."
 
 #: language/i18n/Text.resx:369 ID:CapsLockCapitalizes
 msgid "Caps Lock always capitalizes letters"
 msgstr "Caps Lock이 켜져 있으면 항상 대문자로 입력"
 
 #: language/i18n/Text.resx:373 ID:CapsLockCapitalizesToolTip
-msgid "When Caps Lock is on, typing an accented letter such as “é” will always output the corresponding capitalized letter, in this case “É”."
-msgstr "Caps Lock이 켜져 있을 때, “é”와 같이 악센트가 붙은 글자는 항상 대문자(이 경우 “É”)로 출력됩니다."
+msgid ""
+"When Caps Lock is on, typing an accented letter such as “é” will always "
+"output the corresponding capitalized letter, in this case “É”."
+msgstr ""
+"Caps Lock이 켜져 있을 때, “é”와 같이 악센트가 붙은 글자는 항상 대문자(이 경"
+"우 “É”)로 출력됩니다."
 
 #. Header for the list of Unicode character categories
 #: language/i18n/Text.resx:377 ID:Categories
@@ -446,7 +506,8 @@ msgstr "키 삽입을 허용"
 
 #: language/i18n/Text.resx:493 ID:AllowInjectedToolTip
 msgid "Do not ignore keys sent by other software like AutoHotkey or Synergy"
-msgstr "AutoHotKey 또는 Synergy와 같은 다른 소프트웨어에서 입력된 키를 무시하지 않기"
+msgstr ""
+"AutoHotKey 또는 Synergy와 같은 다른 소프트웨어에서 입력된 키를 무시하지 않기"
 
 #. The name of the “Print Screen” key on the keyboard
 #: language/i18n/Text.resx:497 ID:KeyPrint
@@ -463,16 +524,24 @@ msgid "Automatically check for updates"
 msgstr "자동으로 업데이트를 확인"
 
 #: language/i18n/Text.resx:509 ID:CheckUpdatesToolTip
-msgid "If enabled, WinCompose will connect to the Internet at regular intervals to check for new versions. Updates are not installed automatically."
-msgstr "활성화하면, WinCompose가 일정 주기로 인터넷에 접속하여 새 버전을 확인합니다. 업데이트가 자동으로 설치되지는 않습니다."
+msgid ""
+"If enabled, WinCompose will connect to the Internet at regular intervals to "
+"check for new versions. Updates are not installed automatically."
+msgstr ""
+"활성화하면, WinCompose가 일정 주기로 인터넷에 접속하여 새 버전을 확인합니다. "
+"업데이트가 자동으로 설치되지는 않습니다."
 
 #: language/i18n/Text.resx:513 ID:KeepIconVisible
 msgid "Try to keep notification area icon always visible"
 msgstr "알림 영역에 아이콘을 항상 표시"
 
 #: language/i18n/Text.resx:517 ID:KeepIconVisibleToolTip
-msgid "By default, Windows will remove the icon from the notification area after a short while. This option attempts to keep it always visible."
-msgstr "Windows는 알림 영역의 아이콘을 일정 시간 후 자동으로 삭제합니다. 이 설정을 활성화화면 아이콘이 항상 표시되도록 합니다."
+msgid ""
+"By default, Windows will remove the icon from the notification area after a "
+"short while. This option attempts to keep it always visible."
+msgstr ""
+"Windows는 알림 영역의 아이콘을 일정 시간 후 자동으로 삭제합니다. 이 설정을 활"
+"성화화면 아이콘이 항상 표시되도록 합니다."
 
 #. The user can click on this button to change the current compose key.
 #: language/i18n/Text.resx:521 ID:ChangeComposeKey
@@ -493,8 +562,14 @@ msgid "Disable notification area icon"
 msgstr "알림 영역의 아이콘을 비활성화"
 
 #: language/i18n/Text.resx:537 ID:DisableIconToolTip
-msgid "If enabled, WinCompose will no longer display an icon in the notification area. The only way to open the WinCompose interface will then be through the “WinCompose Settings” and “WinCompose Sequences” entries in the startup menu."
-msgstr "활성화화면 WinCompose는 더 이상 알림 영역에 아이콘을 표시하지 않습니다. 이때 WinCompose 인터페이스를 열려면 시작 메뉴에서 \"WinCompose Setting\"과 \"WinCompose Sequence\"를 사용해야 합니다."
+msgid ""
+"If enabled, WinCompose will no longer display an icon in the notification "
+"area. The only way to open the WinCompose interface will then be through the "
+"“WinCompose Settings” and “WinCompose Sequences” entries in the startup menu."
+msgstr ""
+"활성화화면 WinCompose는 더 이상 알림 영역에 아이콘을 표시하지 않습니다. 이때 "
+"WinCompose 인터페이스를 열려면 시작 메뉴에서 \"WinCompose Setting\"과 "
+"\"WinCompose Sequence\"를 사용해야 합니다."
 
 #. The name of the “Home” key on the keyboard
 #: language/i18n/Text.resx:541 ID:KeyHome
@@ -527,16 +602,26 @@ msgid "Ignore windows matching this regex:"
 msgstr "다음 정규표현식과 일치하는 창에서는 무시:"
 
 #: language/i18n/Text.resx:565 ID:IgnoreRegexToolTip
-msgid "WinCompose will be completely disabled when the current window class or window name matches this regular expression."
-msgstr "현재 창의 창 클래스나 창 이름이 정규표현식에 일치되는 경우에는 WinCompose가 완전히 비활성화됩니다."
+msgid ""
+"WinCompose will be completely disabled when the current window class or "
+"window name matches this regular expression."
+msgstr ""
+"현재 창의 창 클래스나 창 이름이 정규표현식에 일치되는 경우에는 WinCompose가 "
+"완전히 비활성화됩니다."
 
 #: language/i18n/Text.resx:569 ID:AlwaysCompose
 msgid "Alternate compose key is always Compose"
 msgstr "Compose 키를 대체한 키를 항상 Compose로 취급"
 
 #: language/i18n/Text.resx:573 ID:AlwaysComposeToolTip
-msgid "If enabled, all compose keys will be treated as Compose in a sequence. By default, only the first pressed key will act as Compose, and alternate compose keys will keep their original role."
-msgstr "활성화하면 시퀀스의 모든 합성 키가 Compose 키로 취급됩니다. 기본적으로는, 가장 먼저 눌린 키만 Compose 키로 작동하고 나머지 합성 키들은 원래 기능을 유지합니다."
+msgid ""
+"If enabled, all compose keys will be treated as Compose in a sequence. By "
+"default, only the first pressed key will act as Compose, and alternate "
+"compose keys will keep their original role."
+msgstr ""
+"활성화하면 시퀀스의 모든 합성 키가 Compose 키로 취급됩니다. 기본적으로는, 가"
+"장 먼저 눌린 키만 Compose 키로 작동하고 나머지 합성 키들은 원래 기능을 유지합"
+"니다."
 
 #. The section for random contributors who aren’t programmers or translators. Might be empty.
 #: language/i18n/Text.resx:577 ID:SpecialThanks
@@ -554,15 +639,21 @@ msgid "Favorites"
 msgstr "즐겨찾기"
 
 #: language/i18n/Text.resx:589 ID:TimeoutToolTip
-msgid "If set, any compose sequence will be cancelled after a certain delay if no keyboard activity is detected."
-msgstr "설정하면, 일정 시간 동안 키보드 입력이 감지되지 않을 때 합성 시퀀스를 취소합니다."
+msgid ""
+"If set, any compose sequence will be cancelled after a certain delay if no "
+"keyboard activity is detected."
+msgstr ""
+"설정하면, 일정 시간 동안 키보드 입력이 감지되지 않을 때 합성 시퀀스를 취소합"
+"니다."
 
 #: language/i18n/Text.resx:593 ID:KeyboardLed
 msgid "Keyboard LED"
 msgstr "키보드 LED"
 
 #: language/i18n/Text.resx:597 ID:KeyboardLedToolTip
-msgid "If set, the corresponding keyboard LED will be lit when a compose sequence is in progress."
+msgid ""
+"If set, the corresponding keyboard LED will be lit when a compose sequence "
+"is in progress."
 msgstr "설정하면, 합성 시퀀스를 입력할 때 해당하는 키보드 LED가 켜집니다."
 
 #. The short name of the compose key
@@ -576,7 +667,9 @@ msgstr "로그인할 때 WinCompose 실행"
 
 #: language/i18n/Text.resx:609 ID:AutoLaunchToolTip
 msgid "If set, WinCompose will be started when the user logs in."
-msgstr "현재 창의 창 클래스나 창 이름이 정규표현식에 일치되는 경우에는 WinCompose가 완전히 비활성화됩니다."
+msgstr ""
+"현재 창의 창 클래스나 창 이름이 정규표현식에 일치되는 경우에는 WinCompose가 "
+"완전히 비활성화됩니다."
 
 #: language/i18n/Text.resx:613 ID:Accessibility
 msgid "Accessibility"
@@ -587,18 +680,26 @@ msgid "Caps Lock is only active while being held down"
 msgstr "Caps Lock이 눌려 있을 때만 작동"
 
 #: language/i18n/Text.resx:621 ID:MustHoldCapsLockToolTip
-msgid "Releasing the Caps Lock key will immediately disable it, instead of the more standard behaviour of having to press it a second time."
-msgstr "Caps Lock을 한 번 더 눌러야 비활성화되는 대신, 떼는 즉시 비활성화됩니다."
+msgid ""
+"Releasing the Caps Lock key will immediately disable it, instead of the more "
+"standard behaviour of having to press it a second time."
+msgstr ""
+"Caps Lock을 한 번 더 눌러야 비활성화되는 대신, 떼는 즉시 비활성화됩니다."
 
 #: language/i18n/Text.resx:625 ID:RunElevated
 msgid "Run with elevated privileges (recommended)"
 msgstr "관리자 권한으로 실행 (권장됨)"
 
 #: language/i18n/Text.resx:629 ID:RunElevatedToolTip
-msgid "Composition will not work in some applications if WinCompose does not run with elevated privileges. This options reduces the chances that this will happen."
-msgstr "WinCompose가 관리자 권한으로 실행되지 않으면 일부 앱에서 합성이 동작하지 않을 수 있습니다. 이 설정은 그러한 현상이 발생할 가능성을 줄입니다."
+msgid ""
+"Composition will not work in some applications if WinCompose does not run "
+"with elevated privileges. This options reduces the chances that this will "
+"happen."
+msgstr ""
+"WinCompose가 관리자 권한으로 실행되지 않으면 일부 앱에서 합성이 동작하지 않"
+"을 수 있습니다. 이 설정은 그러한 현상이 발생할 가능성을 줄입니다."
 
-#. Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
+#.  Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
 #: language/unicode/Category.resx:121 ID:Control
 msgid "Other, Control"
 msgstr "기타, 제어문자"
@@ -760,7 +861,10 @@ msgstr "WinCompose에 필요한 소프트웨어"
 
 #. This string appears in the installer, not in WinCompose.
 #: installer/installer.pas:179
-msgid "WinCompose needs the .NET Framework, version 4.0 or later, which does not\nseem to be currently installed. The following action may help solve the problem:"
+msgid ""
+"WinCompose needs the .NET Framework, version 4.0 or later, which does not\n"
+"seem to be currently installed. The following action may help solve the "
+"problem:"
 msgstr ""
 "WinCompose에 필요한 버전 4.0 이상의 .NET 프레임워크가 이 컴퓨터에 \n"
 "설치되지 않은 것 같습니다. 다음 조치가 문제 해결에 도움을 줄 수 있습니다:"
@@ -772,7 +876,9 @@ msgstr ".NET Framework 4.0 런타임을 다운로드하고 설치"
 
 #. This string appears in the installer, not in WinCompose.
 #: installer/installer.pas:194
-msgid "Once this is done, you may return to this screen and proceed with the\ninstallation."
+msgid ""
+"Once this is done, you may return to this screen and proceed with the\n"
+"installation."
 msgstr "완료 후에는 화면으로 돌아가 설치를 계속할 수 있습니다."
 
 #. This string appears in the installer, not in WinCompose.

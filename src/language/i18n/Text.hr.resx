@@ -489,4 +489,16 @@
   <data name="Accessibility" xml:space="preserve">
     <value>Pristupačnost</value>
   </data>
+  <data name="MustHoldCapsLock" xml:space="preserve">
+    <value>Tipka za velika slova je aktivna samo dok je pritisnuta</value>
+  </data>
+  <data name="MustHoldCapsLockToolTip" xml:space="preserve">
+    <value>Otpuštanje tipke za velika slova odmah će je deaktivirati, umjesto standardnijeg ponašanja da je se mora ponovo pritisnuti.</value>
+  </data>
+  <data name="RunElevated" xml:space="preserve">
+    <value>Pokreni s višim ovlastima (preporučeno)</value>
+  </data>
+  <data name="RunElevatedToolTip" xml:space="preserve">
+    <value>Kompozicija neće raditi u nekim programima ako WinCompose ne radi s višim ovlastima. Ova opcija smanjuje šanse da će se to dogoditi.</value>
+  </data>
 </root>

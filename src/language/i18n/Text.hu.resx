@@ -153,6 +153,12 @@
   <data name="KeyEscape" xml:space="preserve">
     <value>ESC</value>
   </data>
+  <data name="KeyConvert" xml:space="preserve">
+    <value>Konverzió</value>
+  </data>
+  <data name="KeyNonConvert" xml:space="preserve">
+    <value>Nem-konverzió</value>
+  </data>
   <data name="KeyScroll" xml:space="preserve">
     <value>Scroll Lock</value>
   </data>
@@ -161,6 +167,30 @@
   </data>
   <data name="KeyReturn" xml:space="preserve">
     <value>Újsor</value>
+  </data>
+  <data name="Composing" xml:space="preserve">
+    <value>Komponálás</value>
+  </data>
+  <data name="UseXorgRules" xml:space="preserve">
+    <value>Az Xorg projekt szekvenciáinak használata</value>
+  </data>
+  <data name="UseXorgRulesToolTip" xml:space="preserve">
+    <value>Használja az Xorg projekt (http://www.x.org/) 3000 komponáló szekvenciáját. Ezek a legtöbb standard Linux rendszeren megtalálható szekvenciák.</value>
+  </data>
+  <data name="UseXComposeRules" xml:space="preserve">
+    <value>Használja az XCompose projekt szekvenciáit</value>
+  </data>
+  <data name="UseXComposeRulesToolTip" xml:space="preserve">
+    <value>Használja a szabad forrású XCompose projekt (https://github.com/kragen/xcompose) 1000 komponáló szekvenciáját. E szekvenciák némelyike ütközik az Xorg-éival.</value>
+  </data>
+  <data name="UseEmojiRules" xml:space="preserve">
+    <value>Használja a WinCompose emoji szekvenciáit</value>
+  </data>
+  <data name="UseEmojiRulesToolTip" xml:space="preserve">
+    <value>Használja azokat az emojikat komponáló szekvenciákat, amelyeket a WinCompose szerzője és a közreműködők készítettek.</value>
+  </data>
+  <data name="DebugWindow" xml:space="preserve">
+    <value>Hibakereső ablak</value>
   </data>
   <data name="ShowSequences" xml:space="preserve">
     <value>Szekvenciák mutatása…</value>
@@ -171,14 +201,26 @@
   <data name="Restart" xml:space="preserve">
     <value>Újraindítás</value>
   </data>
+  <data name="DonationPage" xml:space="preserve">
+    <value>Támogatók oldala</value>
+  </data>
   <data name="VisitWebsite" xml:space="preserve">
     <value>Honlap meglátogatása</value>
   </data>
   <data name="Exit" xml:space="preserve">
     <value>Kilépés</value>
   </data>
+  <data name="UnicodeCharacters" xml:space="preserve">
+    <value>Unicode karakter</value>
+  </data>
   <data name="Sequences" xml:space="preserve">
     <value>Szekvenciák</value>
+  </data>
+  <data name="SwapOnInvalid" xml:space="preserve">
+    <value>Fordítva is megpróbálja a két billentyűt</value>
+  </data>
+  <data name="SwapOnInvalidToolTip" xml:space="preserve">
+    <value>Fordítva is megpróbálja a két-billentyűs szekvenciát. Pl. ha az E A nem valós szekvencia, megpróbálja az A E-t helyette.</value>
   </data>
   <data name="Search" xml:space="preserve">
     <value>Keresési szűrő:</value>
@@ -187,34 +229,151 @@
     <value>Komponáló billentyű:</value>
   </data>
   <data name="ComposeKeyToolTip" xml:space="preserve">
-    <value>Válasszon egy billentyűt, mely Komponáló Billentyűként kellene majd működjön.</value>
+    <value>Válassza ki, hogy melyik billentyű működjön Komponáló Billentyűként.</value>
+  </data>
+  <data name="ResetTimeout" xml:space="preserve">
+    <value>Elvetés késleltetése</value>
   </data>
   <data name="UnicodeInput" xml:space="preserve">
     <value>Haladó Unicode bevitel</value>
   </data>
+  <data name="UnicodeInputToolTip" xml:space="preserve">
+    <value>Minden Unicode karakter bevitelének engedélyezése, még ha nincs is hozzá definiált szekvencia. Például a &quot;Komponálás U 1 A 3 F Enter&quot; szekvencia az U+1A3F karaktert fogja adni</value>
+  </data>
+  <data name="InvalidSequences" xml:space="preserve">
+    <value>Helytelen szekvenciák esetén</value>
+  </data>
+  <data name="CaseInsensitive" xml:space="preserve">
+    <value>Ha nem sikerül, próbálja meg a kis- és nagybetűk megkülönböztetése nélkül is</value>
+  </data>
+  <data name="CaseInsensitiveToolTip" xml:space="preserve">
+    <value>Ha a bevitt szekvencia nem létezik, de kis- és nagybetűk cseréjével igen, akkor automatikusan javítsa.</value>
+  </data>
+  <data name="DiscardOnInvalid" xml:space="preserve">
+    <value>Minden leütött karakter elvetése</value>
+  </data>
+  <data name="DiscardOnInvalidToolTip" xml:space="preserve">
+    <value>Ha a bevitt szekvencia nem létezik, minden karakter elvetése. Az alapértelmezés az összes karakter megjelenítése, mint ha a komponáló gombot meg sem nyomtuk volna.</value>
+  </data>
+  <data name="BeepOnInvalid" xml:space="preserve">
+    <value>Hangjelzés</value>
+  </data>
+  <data name="BeepOnInvalidToolTip" xml:space="preserve">
+    <value>Ha a szekvencia nem létezik, adjon ki hangjelzést.</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>A kezelőfelület nyelve:</value>
+  </data>
+  <data name="LanguageToolTip" xml:space="preserve">
+    <value>Válassza ki a WinCompose felhasználói felületének nyelvét. Alapértelmezés a rendszer nyelve.</value>
+  </data>
   <data name="Close" xml:space="preserve">
     <value>Bezár</value>
+  </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Vágólapra másolás</value>
+  </data>
+  <data name="Emoji" xml:space="preserve">
+    <value>Emoji</value>
   </data>
   <data name="Apply" xml:space="preserve">
     <value>Alkalmaz</value>
   </data>
+  <data name="KeepOriginalKey" xml:space="preserve">
+    <value>A komponáló billentyű eredeti funkciójának megtartása</value>
+  </data>
+  <data name="KeepOriginalKeyToolTip" xml:space="preserve">
+    <value>Próbálja a WinCompose a lehető legjobban megőrizni a billentyű eredeti funkcióját. Például az Alt-Tab gyorsbillentyű működni fog akkor is, ha az Alt a komponáló billentyű.</value>
+  </data>
+  <data name="InsertZwsp" xml:space="preserve">
+    <value>Az Office alkalmazásokban null-szélességű szóközök beszúrása</value>
+  </data>
+  <data name="InsertZwspToolTip" xml:space="preserve">
+    <value>A Microsoft Office alkalmazások néha menet közben megváltoztatják a dokumentum betűtípusát bizonyos Unicode karakterek bevitelekor. Ez a funkció megelőzi ezt a hibát egy láthatatlan karakter beillesztésével.</value>
+  </data>
+  <data name="EmulateCapsLock" xml:space="preserve">
+    <value>A Caps Lock emulálása a két shift megnyomásával</value>
+  </data>
+  <data name="EmulateCapsLockToolTip" xml:space="preserve">
+    <value>Ha a Caps Lockot használjuk komponáló billentyűként, az eredeti funkciója elérhetetlen lesz. Ezzel a beállítással a két Shift egyidejű megnyomása bekapcsolja a Caps Lockot.</value>
+  </data>
+  <data name="ShiftDisablesCapsLock" xml:space="preserve">
+    <value>A Shift billentyű kikapcsolja a Caps Lockot</value>
+  </data>
+  <data name="ShiftDisablesCapsLockToolTip" xml:space="preserve">
+    <value>Ha a Caps Lock van komponáló billentyűként beállítva, az eredeti funkciója elvész. Ezzel a beállítással a Shift billentyű kikapcsolja a Caps Lockot.</value>
+  </data>
+  <data name="CapsLockCapitalizes" xml:space="preserve">
+    <value>A Caps Lock mindent nagybetűsít</value>
+  </data>
+  <data name="CapsLockCapitalizesToolTip" xml:space="preserve">
+    <value>Ha a Caps Lock be van kapcsolva, az ékezetes betűk, mint pl. az „é” is nagybetűként fognak megjelenni, pl. „É”.</value>
+  </data>
   <data name="Categories" xml:space="preserve">
     <value>Kategóriák</value>
   </data>
+  <data name="InSelectedCategories" xml:space="preserve">
+    <value>A kiválasztott kategóriákban</value>
+  </data>
+  <data name="Options" xml:space="preserve">
+    <value>Beállítások — WinCompose</value>
+  </data>
   <data name="ShowOptions" xml:space="preserve">
-    <value>Lehetőségek…</value>
+    <value>Beállítások…</value>
+  </data>
+  <data name="TrayToolTip" xml:space="preserve">
+    <value>WinCompose v{2} a {0} billentyűvel ({1} szekvencia)</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>Általános</value>
+  </data>
+  <data name="Behavior" xml:space="preserve">
+    <value>Viselkedés</value>
+  </data>
+  <data name="WindowTitle" xml:space="preserve">
+    <value>Szekvenciák — WinCompose</value>
+  </data>
+  <data name="UserMacros" xml:space="preserve">
+    <value>Felhasználó által definiált makrók</value>
+  </data>
+  <data name="DisabledToolTip" xml:space="preserve">
+    <value>WinCompose letiltva</value>
+  </data>
+  <data name="KeyInsert" xml:space="preserve">
+    <value>Beszúrás</value>
+  </data>
+  <data name="TestTyping" xml:space="preserve">
+    <value>Gépelés kipróbálása</value>
+  </data>
+  <data name="Tweaks" xml:space="preserve">
+    <value>Trükkök</value>
+  </data>
+  <data name="DelaySeconds" xml:space="preserve">
+    <value>{0} másodperc</value>
   </data>
   <data name="About" xml:space="preserve">
     <value>Névjegy</value>
   </data>
+  <data name="Download" xml:space="preserve">
+    <value>A WinCompose {0} letöltése</value>
+  </data>
+  <data name="AboutBoxTitle" xml:space="preserve">
+    <value>A WinCompose névjegye</value>
+  </data>
   <data name="Programming" xml:space="preserve">
-    <value>Programozás</value>
+    <value>Programozták</value>
   </data>
   <data name="Translators" xml:space="preserve">
     <value>Fordítás</value>
   </data>
+  <data name="Authors" xml:space="preserve">
+    <value>Készítették</value>
+  </data>
   <data name="License" xml:space="preserve">
-    <value>Licensz</value>
+    <value>Licenc</value>
+  </data>
+  <data name="NeedRestart" xml:space="preserve">
+    <value>Néhány változás csak a WinCompose újranidítása után lép életbe.</value>
   </data>
   <data name="ReportBug" xml:space="preserve">
     <value>Hibajelentés</value>
@@ -222,7 +381,124 @@
   <data name="Help" xml:space="preserve">
     <value>Segítség</value>
   </data>
+  <data name="UpdatesToolTip" xml:space="preserve">
+    <value>Frissítések elérhetők.</value>
+  </data>
+  <data name="UserDefinedSequences" xml:space="preserve">
+    <value>Felhasználó által definiált szekvenciák</value>
+  </data>
+  <data name="UserDefinedSequencesEdit" xml:space="preserve">
+    <value>Szerkesztés</value>
+  </data>
+  <data name="UserDefinedSequencesReload" xml:space="preserve">
+    <value>Újratöltés</value>
+  </data>
+  <data name="AllowInjected" xml:space="preserve">
+    <value>Leütések szimulációja</value>
+  </data>
+  <data name="AllowInjectedToolTip" xml:space="preserve">
+    <value>Ne vesse el a más szoftverek (pl. AutoHotkey, Synergy) által küldött billentyűket</value>
+  </data>
+  <data name="KeyPrint" xml:space="preserve">
+    <value>Képernyőkép</value>
+  </data>
+  <data name="KeyDisabled" xml:space="preserve">
+    <value>Letiltva</value>
+  </data>
+  <data name="CheckUpdates" xml:space="preserve">
+    <value>Automatikusan keresse a frissítéseket</value>
+  </data>
+  <data name="CheckUpdatesToolTip" xml:space="preserve">
+    <value>Engedélyezés esetén a WinCompose rendszeresen újabb verziókat fog keresni az Interneten. A frissítések nem települnek automatikusan.</value>
+  </data>
+  <data name="KeepIconVisible" xml:space="preserve">
+    <value>Próbálja az értesítési ikont mindig látható helyen tartani</value>
+  </data>
+  <data name="KeepIconVisibleToolTip" xml:space="preserve">
+    <value>Alapértelmezésben a Windows rövid időn belül eltünteti az ikont az értesítési területről. Ez az opció megpróbálja látható helyen tartani.</value>
+  </data>
+  <data name="ChangeComposeKey" xml:space="preserve">
+    <value>Módosítás…</value>
+  </data>
+  <data name="CaptureComposeKey" xml:space="preserve">
+    <value>Nyomja meg a leendő komponáló billentyűt annak kiválasztásához.</value>
+  </data>
+  <data name="AddToFavorites" xml:space="preserve">
+    <value>Kedvencekhez adás</value>
+  </data>
+  <data name="DisableIcon" xml:space="preserve">
+    <value>Az értesítési ikon letiltása</value>
+  </data>
+  <data name="DisableIconToolTip" xml:space="preserve">
+    <value>Kiválasztás esetén a WinCompose nem fogja az értesítési területen megjeleníteni az ikonját. A WinCompose felület megnyitására lehetőségként a Start menüben található &quot;WinCompose Beállítások&quot; és &quot;WinCompose Szekvenciák&quot; pontok maradnak.</value>
+  </data>
+  <data name="KeyHome" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="KeyEnd" xml:space="preserve">
+    <value>End</value>
+  </data>
+  <data name="KeyTab" xml:space="preserve">
+    <value>Tab</value>
+  </data>
+  <data name="NoTimeout" xml:space="preserve">
+    <value>Nincs timeout</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>Haladó</value>
+  </data>
+  <data name="IgnoreRegex" xml:space="preserve">
+    <value>Az ennek a regexnek megfelelő ablakok kihagyása:</value>
+  </data>
+  <data name="IgnoreRegexToolTip" xml:space="preserve">
+    <value>A WinCompose nem fog működni, amikor az aktuális ablak osztályára vagy nevére illeszkedik ez a regular expression.</value>
+  </data>
+  <data name="AlwaysCompose" xml:space="preserve">
+    <value>Alternatív komponáló billentyű legyen mindig a Compose</value>
+  </data>
+  <data name="AlwaysComposeToolTip" xml:space="preserve">
+    <value>Bekapcsolás esetén minden komponáló billentyű Compose-ként lesz értelmezve egy-egy szekvenciában. Alapértelmezésben csak az első leütés lesz komponálásként értelmezve, és minden más komponáló billentyű megőrzi az eredeti funkcióját.</value>
+  </data>
   <data name="SpecialThanks" xml:space="preserve">
     <value>Külön köszönet</value>
+  </data>
+  <data name="RemoveFromFavorites" xml:space="preserve">
+    <value>Törlés a kedvencek közül</value>
+  </data>
+  <data name="Favorites" xml:space="preserve">
+    <value>Kedvencek</value>
+  </data>
+  <data name="TimeoutToolTip" xml:space="preserve">
+    <value>Ha be van állítva, az elkezdett komponáló szekvencia törlésre kerül a megadott idő után, ha nem érzékelhető billentyűzetaktivitás.</value>
+  </data>
+  <data name="KeyboardLed" xml:space="preserve">
+    <value>Billentyűzet LED</value>
+  </data>
+  <data name="KeyboardLedToolTip" xml:space="preserve">
+    <value>Beállítás esetén a megfelelő billentyűzet LED világítani fog, amíg a komponáló szekvencia tart.</value>
+  </data>
+  <data name="KeyCompose" xml:space="preserve">
+    <value>Komponáló billentyű</value>
+  </data>
+  <data name="AutoLaunch" xml:space="preserve">
+    <value>Belépéskor a WinCompose elindítása</value>
+  </data>
+  <data name="AutoLaunchToolTip" xml:space="preserve">
+    <value>Beállítás esetén a WinCompose elindul a felhasználó belépésekor.</value>
+  </data>
+  <data name="Accessibility" xml:space="preserve">
+    <value>Akadálymentesítés</value>
+  </data>
+  <data name="MustHoldCapsLock" xml:space="preserve">
+    <value>A Caps Lock csak lenyomás közben aktív</value>
+  </data>
+  <data name="MustHoldCapsLockToolTip" xml:space="preserve">
+    <value>A Caps Lock felengedése azt azonnal lekapcsolja a szokásos viselkedés helyett, amikor az ismételt megnyomás kapcsolja le.</value>
+  </data>
+  <data name="RunElevated" xml:space="preserve">
+    <value>Futtatás emelt jogosultságokkal (javasolt)</value>
+  </data>
+  <data name="RunElevatedToolTip" xml:space="preserve">
+    <value>A komponálás néhány alkalmazásban nem működik, ha a WinCompose nem emelt jogosultságokkal fut. Ez az opció csökkenti ennek előfordulási valószínűségét.</value>
   </data>
 </root>

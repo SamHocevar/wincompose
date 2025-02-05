@@ -480,4 +480,25 @@
   <data name="KeyCompose" xml:space="preserve">
     <value>Σύνθεση</value>
   </data>
+  <data name="AutoLaunch" xml:space="preserve">
+    <value>Εκτέλεση του WinCompose κατά την εκκίνηση</value>
+  </data>
+  <data name="AutoLaunchToolTip" xml:space="preserve">
+    <value>Εαν επιλεχθεί, το WinCompose θα ξεκινάει όταν ο χρήστης συνδεθεί.</value>
+  </data>
+  <data name="Accessibility" xml:space="preserve">
+    <value>Προσβασιμότητα</value>
+  </data>
+  <data name="MustHoldCapsLock" xml:space="preserve">
+    <value>Το Caps Lock είναι ενεργό μόνο όταν μένει πατημένο</value>
+  </data>
+  <data name="MustHoldCapsLockToolTip" xml:space="preserve">
+    <value>Η απελευθέρωση του Caps Lock θα το απενεργοποιήσει αμέσως, αντί για την πιο φυσιολογική συμπεριφορά του να πρέπει να πατηθεί δεύτερη φορά.</value>
+  </data>
+  <data name="RunElevated" xml:space="preserve">
+    <value>Εκκίνηση με αυξημένα δικαιώματα (προτεινόμενο)</value>
+  </data>
+  <data name="RunElevatedToolTip" xml:space="preserve">
+    <value>Η σύνθεση δεν θα λειτουργεί σε κάποιες εφαρμογές εάν το WinCompose δεν εκτελείται με αυξημένα δικαιώματα. Αυτή η επιλογή μειώνει τις πιθανότητες να συμβεί αυτό.</value>
+  </data>
 </root>

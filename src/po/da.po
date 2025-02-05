@@ -9,8 +9,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: Sam Hocevar <sam@hocevar.net>\n"
 "POT-Creation-Date: 2015-03-23 15:27+0100\n"
 "PO-Revision-Date: 2018-08-29 18:14+0000\n"
-"Last-Translator: Alexander Emil Haarlev Schmidt <Alexander.Emil.Haarlev."
-"Schmidt@gmail.com>\n"
+"Last-Translator: Alexander Emil Haarlev Schmidt "
+"<Alexander.Emil.Haarlev.Schmidt@gmail.com>\n"
 "Language-Team: Danish <https://hosted.weblate.org/projects/wincompose/master/"
 "da/>\n"
 "Language: da\n"
@@ -665,7 +665,7 @@ msgid ""
 "happen."
 msgstr ""
 
-#. Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
+#.  Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
 #: language/unicode/Category.resx:121 ID:Control
 msgid "Other, Control"
 msgstr "Anden, kontrol"

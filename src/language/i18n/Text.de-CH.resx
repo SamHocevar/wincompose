@@ -118,25 +118,25 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AutodetectLanguage" xml:space="preserve">
-    <value>Aŭtomata rekono</value>
+    <value>Aŭtomate rekoni</value>
   </data>
   <data name="KeyLMenu" xml:space="preserve">
-    <value>Alt-klavo maldekstra</value>
+    <value>«Alt» maldekstra</value>
   </data>
   <data name="KeyRMenu" xml:space="preserve">
-    <value>Alt-klavo dekstra</value>
+    <value>«Alt» dekstra</value>
   </data>
   <data name="KeyLControl" xml:space="preserve">
-    <value>Stirklavo maldesktra</value>
+    <value>«Control» maldesktra</value>
   </data>
   <data name="KeyRControl" xml:space="preserve">
-    <value>Stirklavo dekstra</value>
+    <value>«Control» dekstra</value>
   </data>
   <data name="KeyLWin" xml:space="preserve">
-    <value>Vindozo-klavo maldekstra</value>
+    <value>«Windows» maldekstra</value>
   </data>
   <data name="KeyRWin" xml:space="preserve">
-    <value>Vindozo-klavo dekstra</value>
+    <value>«Windows» dekstra</value>
   </data>
   <data name="KeyCapital" xml:space="preserve">
     <value>Majuskla baskulo</value>
@@ -145,13 +145,13 @@
     <value>Nombra baskulo</value>
   </data>
   <data name="KeyPause" xml:space="preserve">
-    <value>Paŭziga klavo</value>
+    <value>Paŭzigo</value>
   </data>
   <data name="KeyApps" xml:space="preserve">
-    <value>Menua/aplikaĵa klavo</value>
+    <value>Menuo</value>
   </data>
   <data name="KeyEscape" xml:space="preserve">
-    <value>Eskapa klavo</value>
+    <value>Eskapo</value>
   </data>
   <data name="KeyConvert" xml:space="preserve">
     <value>Konverto</value>
@@ -163,16 +163,34 @@
     <value>Ruluma baskulo</value>
   </data>
   <data name="KeySpace" xml:space="preserve">
-    <value>Spacostango</value>
+    <value>Spaceto</value>
   </data>
   <data name="KeyReturn" xml:space="preserve">
-    <value>Enenklavo</value>
+    <value>Enigo</value>
+  </data>
+  <data name="Composing" xml:space="preserve">
+    <value>Komponado</value>
+  </data>
+  <data name="UseXorgRules" xml:space="preserve">
+    <value>Uzi makroklavojn de la projekto Xorg</value>
+  </data>
+  <data name="UseXorgRulesToolTip" xml:space="preserve">
+    <value>Uzi la 3.000 kunigajn makroklavojn de la projekto Xorg (http://www.x.org/). Tiuj estas la makroklavoj plej ofte trovitaj en norma Linux-sistemo.</value>
+  </data>
+  <data name="UseXComposeRules" xml:space="preserve">
+    <value>Uzi makroklavojn de la projekto XCompose</value>
+  </data>
+  <data name="UseXComposeRulesToolTip" xml:space="preserve">
+    <value>Uzi la 1.000 kunigajn makroklavojn de la malfermfonta projekto Xcompose (https://github.com/kragen/xcompose). Tiuj makroklavoj eble foje konfliktos kun tiuj de Xorg.</value>
   </data>
   <data name="UseEmojiRules" xml:space="preserve">
     <value>Uzi emoĝiajn makroklavojn de WinCompose</value>
   </data>
+  <data name="UseEmojiRulesToolTip" xml:space="preserve">
+    <value>Uzi la kunigajn makroklavojn por emoĝioj, provizataj de la aŭtoro kaj kontribuantoj de WinCompose.</value>
+  </data>
   <data name="DebugWindow" xml:space="preserve">
-    <value>Fenestro por sencimigo</value>
+    <value>Fenestro de cimspurado</value>
   </data>
   <data name="ShowSequences" xml:space="preserve">
     <value>Montri makroklavojn…</value>
@@ -183,8 +201,11 @@
   <data name="Restart" xml:space="preserve">
     <value>Reŝargi</value>
   </data>
+  <data name="DonationPage" xml:space="preserve">
+    <value>Donaca paĝo</value>
+  </data>
   <data name="VisitWebsite" xml:space="preserve">
-    <value>Nian retpaĝon viziti</value>
+    <value>Viziti retpaĝon</value>
   </data>
   <data name="Exit" xml:space="preserve">
     <value>Eliri</value>
@@ -195,44 +216,56 @@
   <data name="Sequences" xml:space="preserve">
     <value>Makroklavoj</value>
   </data>
+  <data name="SwapOnInvalid" xml:space="preserve">
+    <value>Provi permuti la du klavojn</value>
+  </data>
+  <data name="SwapOnInvalidToolTip" xml:space="preserve">
+    <value>Provi permuti la klavojn de duklava makroklavo. Ekzemple, se Komponi+ E A ne estas valida makroklavo, provu anstataŭe Komponi+ A E.</value>
+  </data>
   <data name="Search" xml:space="preserve">
     <value>Serĉa filtrilo:</value>
   </data>
   <data name="ComposeKey" xml:space="preserve">
-    <value>Kunigo-klavo:</value>
+    <value>Kompona klavo:</value>
   </data>
   <data name="ComposeKeyToolTip" xml:space="preserve">
-    <value>Elektu la klavon kiun estos la kunigo-klavon.</value>
+    <value>Elektu la klavon, kiu estos la kompona klavo.</value>
+  </data>
+  <data name="ResetTimeout" xml:space="preserve">
+    <value>Tempolimo de nuligo</value>
   </data>
   <data name="UnicodeInput" xml:space="preserve">
     <value>Speciala Unikoda enigo</value>
   </data>
+  <data name="UnicodeInputToolTip" xml:space="preserve">
+    <value>Ŝalti la Unikodan enigon por ĉiuj signoj, inkluzive tiuj signoj, kiuj ne havas difinitan makroklavon. Ekzemple, la makroklavo &quot;U 2 6 3 A&quot; eligus la signon ☺ U+263A</value>
+  </data>
   <data name="InvalidSequences" xml:space="preserve">
-    <value>Se nevalida makroklavo estas enigita</value>
+    <value>Je enigo de nevalida makroklavo</value>
   </data>
   <data name="CaseInsensitive" xml:space="preserve">
-    <value>Uzu la usklecoblindajn kongruojn anstataŭ</value>
+    <value>Uzi la uskleco-blindajn kongruojn anstataŭe</value>
   </data>
   <data name="CaseInsensitiveToolTip" xml:space="preserve">
-    <value>Se la enigita makroklavo ne ekzistas, sed ja ekzistas unu ke diferencas nure je la uskleco, aŭtomate uzu la makroklavon de malsama uskleco.</value>
+    <value>Se la enigita makroklavo ne ekzistas, sed ja ekzistas iu, kiu malsamas nur pro uskleco, aŭtomate korekti ĝin.</value>
   </data>
   <data name="DiscardOnInvalid" xml:space="preserve">
-    <value>Forviŝu ĉiujn la signojn tajpitajn</value>
+    <value>Forviŝi ĉiujn signojn tajpitajn</value>
   </data>
   <data name="DiscardOnInvalidToolTip" xml:space="preserve">
-    <value>Se la enigita makroklavo ne ekzistas, forviŝu ĉiujn la signojn ke estis tajpitajn. La konduto defaŭlta estas eligi ĉiujn la signojn, kvazaŭ la kunigo-klavo ne estis premita.</value>
+    <value>Se la enigita makroklavo ne ekzistas, forviŝi ĉiujn jam-tajpitajn signojn. La konduto defaŭlta estas eligi ĉiujn signojn, kvazaŭ la kompona klavo ne uziĝis.</value>
   </data>
   <data name="BeepOnInvalid" xml:space="preserve">
-    <value>Pepu</value>
+    <value>Fari sonon</value>
   </data>
   <data name="BeepOnInvalidToolTip" xml:space="preserve">
-    <value>Se la enigita makroklavo ne ekzistas, ludu sisteman sonefikon (pepon).</value>
+    <value>Se la enigita makroklavo ne ekzistas, eligi sisteman sonon.</value>
   </data>
   <data name="Language" xml:space="preserve">
-    <value>Lingvo de la uzantinterfaco:</value>
+    <value>Interfaca lingvo:</value>
   </data>
   <data name="LanguageToolTip" xml:space="preserve">
-    <value>Elektu la lingvon kiun WinCompose uzas por la uzantinterfaco. Defaŭlte, la lingvo de la operaciumo estas uzata.</value>
+    <value>Elektu la lingvon, kiun WinCompose uzas por la interfaco. Defaŭlte, la lingvo de la operaciumo estas uzata.</value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>Fermi</value>
@@ -247,34 +280,34 @@
     <value>Apliki</value>
   </data>
   <data name="KeepOriginalKey" xml:space="preserve">
-    <value>Konservu la konduton de la kunigo-klavo</value>
+    <value>Konservi la originalan konduton de la kompona klavo</value>
   </data>
   <data name="KeepOriginalKeyToolTip" xml:space="preserve">
-    <value>Se ĉi-agordo estas elektita, WinCompose provos konservi la originalan konduton de la klavo. Ekzemple, la fulmoklavo &quot;Alt-Tab&quot; daŭrus funkcii eĉ se la Alt-klavo estas la elektita kunigo-klavo.</value>
+    <value>WinCompose plej bone klopodos reteni la konduton de la originala klavo. Ekzemple, la fulmoklavo Alt-Tabo plu funkcios, eĉ se Alt estas uzata kiel la kompona klavo.</value>
   </data>
   <data name="InsertZwsp" xml:space="preserve">
-    <value>Enigu nevideblajn spacetajn signojn en la aplikaĵoj Office-aj</value>
+    <value>Enigi nule larĝajn spacetojn en aplikaĵoj Office</value>
   </data>
   <data name="InsertZwspToolTip" xml:space="preserve">
-    <value>&quot;Microsoft Office&quot;-aj aplikaĵoj kelkfoje ŝanĝas la tiparon de la dokumento dinamike se oni eniras certajn Unikodajn signojn. Tiu ĉi funkcio eniros signon nevideblan post la signo Unikoda kiel provizora solvo kontraŭ tiu MS Office-a cimo.</value>
+    <value>Aplikaĵoj de Microsoft Office kelkfoje ŝanĝas la tiparon de la dokumento dinamike, se oni enigas iujn Unikodajn signojn. Tiu ĉi funkcio enigos signon nevideblan post la signo Unikoda, kiel provizora solvo kontraŭ tiu cimo.</value>
   </data>
   <data name="EmulateCapsLock" xml:space="preserve">
-    <value>Imitu la majusklan baskulon kiam oni sinkrone premas la du majuskligajn klavojn</value>
+    <value>Imiti majusklan baskulon uzante ambaŭ Ŝov-klavojn</value>
   </data>
   <data name="EmulateCapsLockToolTip" xml:space="preserve">
-    <value>Se la majuskla baskulo estas uzata kiel la kunigo-klavo, la originala kunduto de la baskulo ne funkcios. Ĉi tiu funkcio ebligas baskuli majusklojn kiam oni sinkrone premas la du majuskligajn (Shift) klavojn.</value>
+    <value>Se la majuskla baskulo estas uzata kiel la kompona klavo, la originala kunduto de la klavo ne funkcios. Ĉi tiu funkcio ebligas baskuli majusklojn premante la du majuskligajn (ŝovajn) klavojn.</value>
   </data>
   <data name="ShiftDisablesCapsLock" xml:space="preserve">
-    <value>La majuskliga klavo malŝatas la majusklan baskulon</value>
+    <value>Malebligi majusklan baskulon per la ŝov-klavo</value>
   </data>
   <data name="ShiftDisablesCapsLockToolTip" xml:space="preserve">
-    <value>Se la majuskla baskulo estas uzata kiel la kunigo-klavo, la originala konduto de la baskulo ne funkcios. Ĉi tiu funkcio ebligas onin malŝalti la majusklan baskulon por premi la majuskligan klavon.</value>
+    <value>Se la majuskla baskulo estas uzata kiel la kompona klavo, la originala konduto de la klavo ne funkcios. Ĉi tiu funkcio ebligas malŝalti la majusklan baskulon premante la majuskligan (ŝovan) klavon.</value>
   </data>
   <data name="CapsLockCapitalizes" xml:space="preserve">
-    <value>La majuskla baskulo ĉiam majuskligas la literojn</value>
+    <value>La majuskla baskulo ĉiam majuskligas literojn</value>
   </data>
   <data name="CapsLockCapitalizesToolTip" xml:space="preserve">
-    <value>Kiam la majuskloj estas baskulitaj, kiam oni tajpas diakritaĵon (ekz:  “é”) WinCompose ĉiam eligos la kongruan majusklan diakritaĵon (ekz: “É”).</value>
+    <value>Kiam la majuskla baskulo estas ŝaltita, tajpi diakritaĵon, ekz. «é», ĉiam eligos la kongruan majusklan diakritaĵon, en tiu ĉi okazo «É».</value>
   </data>
   <data name="Categories" xml:space="preserve">
     <value>Kategorioj</value>
@@ -283,7 +316,7 @@
     <value>En elektitaj kategorioj</value>
   </data>
   <data name="Options" xml:space="preserve">
-    <value>Agordoj - WinCompose</value>
+    <value>Agordoj — WinCompose</value>
   </data>
   <data name="ShowOptions" xml:space="preserve">
     <value>Agordoj…</value>
@@ -292,22 +325,22 @@
     <value>WinCompose v{2} en {0} ({1} makroklavoj)</value>
   </data>
   <data name="General" xml:space="preserve">
-    <value>Ĝenerala</value>
+    <value>Ĝeneralaj</value>
   </data>
   <data name="Behavior" xml:space="preserve">
     <value>Konduto</value>
   </data>
   <data name="WindowTitle" xml:space="preserve">
-    <value>Makroklavoj - WinCompose</value>
+    <value>Makroklavoj — WinCompose</value>
   </data>
   <data name="UserMacros" xml:space="preserve">
-    <value>Makroklavoj difinitaj por la uzanto</value>
+    <value>Makroklavoj tajloritaj</value>
   </data>
   <data name="DisabledToolTip" xml:space="preserve">
-    <value>WinCompose estas malŝaltata</value>
+    <value>WinCompose estas malŝaltita</value>
   </data>
   <data name="KeyInsert" xml:space="preserve">
-    <value>Enmeta klavo</value>
+    <value>Enmeto</value>
   </data>
   <data name="TestTyping" xml:space="preserve">
     <value>Provi la tajpadon</value>
@@ -322,7 +355,7 @@
     <value>Pri</value>
   </data>
   <data name="Download" xml:space="preserve">
-    <value>Elŝuti WinCompose-n {0}</value>
+    <value>Elŝuti WinCompose {0}</value>
   </data>
   <data name="AboutBoxTitle" xml:space="preserve">
     <value>Pri WinCompose</value>
@@ -340,13 +373,13 @@
     <value>Permesilo</value>
   </data>
   <data name="NeedRestart" xml:space="preserve">
-    <value>WinCompose devas reŝarĝi por efektivigi kelkajn agordojn ŝanĝitajn.</value>
+    <value>WinCompose devas reŝargiĝi, por ke iuj ŝanĝoj efektiviĝu.</value>
   </data>
   <data name="ReportBug" xml:space="preserve">
-    <value>Cimraporti</value>
+    <value>Raporti cimon</value>
   </data>
   <data name="Help" xml:space="preserve">
-    <value>Helpilo</value>
+    <value>Helpo</value>
   </data>
   <data name="UpdatesToolTip" xml:space="preserve">
     <value>Ĝisdatigoj estas haveblaj.</value>
@@ -360,13 +393,112 @@
   <data name="UserDefinedSequencesReload" xml:space="preserve">
     <value>Reŝargi</value>
   </data>
+  <data name="AllowInjected" xml:space="preserve">
+    <value>Permesi enĵetitajn klavojn</value>
+  </data>
+  <data name="AllowInjectedToolTip" xml:space="preserve">
+    <value>Ne ignori klavojn, kiuj estas senditaj de aliaj programaroj, ekz. AutoHotKey aŭ Synergy</value>
+  </data>
+  <data name="KeyPrint" xml:space="preserve">
+    <value>Prt Scrn</value>
+  </data>
   <data name="KeyDisabled" xml:space="preserve">
     <value>Malŝaltita</value>
   </data>
   <data name="CheckUpdates" xml:space="preserve">
-    <value>Aŭtomate kontroli ĉu estas ĝisdatigoj</value>
+    <value>Aŭtomate kontroli ĝisdatigojn</value>
+  </data>
+  <data name="CheckUpdatesToolTip" xml:space="preserve">
+    <value>Se ebligite, WinCompose konektos al interreto je kutimaj intervaloj por kontroli novajn versiojn. Ĝisdatigoj ne estas aŭtomate instalitaj.</value>
+  </data>
+  <data name="KeepIconVisible" xml:space="preserve">
+    <value>Provi teni videbla la taskopletan bildsimbolon</value>
+  </data>
+  <data name="KeepIconVisibleToolTip" xml:space="preserve">
+    <value>Defaŭlte, Windows forigos la bildsimbolon de la taskopleto post mallonga tempo. Tiu ĉi agordo provas ĉiam fari ĝin videbla.</value>
+  </data>
+  <data name="ChangeComposeKey" xml:space="preserve">
+    <value>Ŝanĝi…</value>
+  </data>
+  <data name="CaptureComposeKey" xml:space="preserve">
+    <value>Bonvolu premi klavon por uzi kiel vian komponan klavon.</value>
+  </data>
+  <data name="AddToFavorites" xml:space="preserve">
+    <value>Aldoni al ŝatitaj</value>
+  </data>
+  <data name="DisableIcon" xml:space="preserve">
+    <value>Malebligi taskopletan bildsimbolon</value>
+  </data>
+  <data name="DisableIconToolTip" xml:space="preserve">
+    <value>Se ebligite, WinCompose ne plu montros bildsimbolon en la taskopleto. La sola maniero de malfermi la interfacon de WinCompose do estos per la eroj «Agordoj de WinCompose» kaj «Makroklavoj de WinCompose» en la startmenuo.</value>
+  </data>
+  <data name="KeyHome" xml:space="preserve">
+    <value>Hejmen</value>
+  </data>
+  <data name="KeyEnd" xml:space="preserve">
+    <value>Fini</value>
+  </data>
+  <data name="KeyTab" xml:space="preserve">
+    <value>Tabo</value>
+  </data>
+  <data name="NoTimeout" xml:space="preserve">
+    <value>Neniu tempolimo</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>Altnivelaj</value>
+  </data>
+  <data name="IgnoreRegex" xml:space="preserve">
+    <value>Ignori fenestrojn, kiuj kongruas kun la regula esprimo:</value>
+  </data>
+  <data name="IgnoreRegexToolTip" xml:space="preserve">
+    <value>WinCompose estos tute malebligita kiam la klaso aŭ nomo de la nuna fenestro kongruas kun tiu ĉi regula esprimo.</value>
+  </data>
+  <data name="AlwaysCompose" xml:space="preserve">
+    <value>Alterna kompona klavo ĉiam estas Komponi</value>
+  </data>
+  <data name="AlwaysComposeToolTip" xml:space="preserve">
+    <value>Se ebligite, ĉiuj komponaj klavoj estos traktitaj kiel Komponi en makroklavo. Defaŭlte, nur la unua premita klavo agos kiel Komponi, kaj alternaj komponaj klavoj retenos siajn originalajn rolojn.</value>
   </data>
   <data name="SpecialThanks" xml:space="preserve">
-    <value>Rekonoj</value>
+    <value>Special-dank' al</value>
+  </data>
+  <data name="RemoveFromFavorites" xml:space="preserve">
+    <value>Forigi de ŝatitaj</value>
+  </data>
+  <data name="Favorites" xml:space="preserve">
+    <value>Ŝatitaj</value>
+  </data>
+  <data name="TimeoutToolTip" xml:space="preserve">
+    <value>Se agordite, iu ajn kompona makroklavo estos nuligita post difinita tempo, se ne detektiĝas aktiveco de la klavaro.</value>
+  </data>
+  <data name="KeyboardLed" xml:space="preserve">
+    <value>LED de klavaro</value>
+  </data>
+  <data name="KeyboardLedToolTip" xml:space="preserve">
+    <value>Se agordite, la taŭga klavara LED eklumos kiam kompona makroklavo estas farata.</value>
+  </data>
+  <data name="KeyCompose" xml:space="preserve">
+    <value>Kompona klavo</value>
+  </data>
+  <data name="AutoLaunch" xml:space="preserve">
+    <value>Lanĉi WinCompose je ensaluto</value>
+  </data>
+  <data name="AutoLaunchToolTip" xml:space="preserve">
+    <value>Se agordite, WinCompose komenciĝos kiam la uzanto ensalutas.</value>
+  </data>
+  <data name="Accessibility" xml:space="preserve">
+    <value>Alireblo</value>
+  </data>
+  <data name="MustHoldCapsLock" xml:space="preserve">
+    <value>Majuskla baskulo estas aktiva nur depremate</value>
+  </data>
+  <data name="MustHoldCapsLockToolTip" xml:space="preserve">
+    <value>Malteni la majusklo-baskulan klavon tuje malebligos ĝin, anstataŭ la norma konduto de premi ĝin duan fojon por tiel fari.</value>
+  </data>
+  <data name="RunElevated" xml:space="preserve">
+    <value>Plenumi altrange (rekomendata)</value>
+  </data>
+  <data name="RunElevatedToolTip" xml:space="preserve">
+    <value>Komponado ne funkcios en iuj aplikaĵoj se WinCompose ne estas plenumata altrange. Tiu ĉi agordo malpli-ebligas, ke tio okazos.</value>
   </data>
 </root>

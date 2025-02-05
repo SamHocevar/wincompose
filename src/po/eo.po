@@ -576,8 +576,8 @@ msgid ""
 "“WinCompose Settings” and “WinCompose Sequences” entries in the startup menu."
 msgstr ""
 "Se ebligite, WinCompose ne plu montros bildsimbolon en la taskopleto. La "
-"sola maniero de malfermi la interfacon de WinCompose do estos per la eroj «"
-"Agordoj de WinCompose» kaj «Makroklavoj de WinCompose» en la startmenuo."
+"sola maniero de malfermi la interfacon de WinCompose do estos per la eroj "
+"«Agordoj de WinCompose» kaj «Makroklavoj de WinCompose» en la startmenuo."
 
 #. The name of the “Home” key on the keyboard
 #: language/i18n/Text.resx:541 ID:KeyHome
@@ -708,7 +708,7 @@ msgstr ""
 "Komponado ne funkcios en iuj aplikaĵoj se WinCompose ne estas plenumata "
 "altrange. Tiu ĉi agordo malpli-ebligas, ke tio okazos."
 
-#. Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
+#.  Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
 #: language/unicode/Category.resx:121 ID:Control
 msgid "Other, Control"
 msgstr "Aliaj, stiraj"

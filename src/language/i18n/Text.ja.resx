@@ -231,6 +231,9 @@
   <data name="ComposeKeyToolTip" xml:space="preserve">
     <value>Composeキーとなるキーを指定してください。</value>
   </data>
+  <data name="ResetTimeout" xml:space="preserve">
+    <value>タイムアウトをリセット</value>
+  </data>
   <data name="UnicodeInput" xml:space="preserve">
     <value>上級者向けUnicode入力</value>
   </data>
@@ -438,6 +441,9 @@
   <data name="KeyTab" xml:space="preserve">
     <value>Tab</value>
   </data>
+  <data name="NoTimeout" xml:space="preserve">
+    <value>タイムアウトなし</value>
+  </data>
   <data name="Advanced" xml:space="preserve">
     <value>上級者向け</value>
   </data>
@@ -455,5 +461,44 @@
   </data>
   <data name="SpecialThanks" xml:space="preserve">
     <value>スペシャルサンクス</value>
+  </data>
+  <data name="RemoveFromFavorites" xml:space="preserve">
+    <value>お気に入りから削除する</value>
+  </data>
+  <data name="Favorites" xml:space="preserve">
+    <value>お気に入り</value>
+  </data>
+  <data name="TimeoutToolTip" xml:space="preserve">
+    <value>設定した場合、一定時間キーボード入力が検出されないときに合成シーケンスをキャンセルします。</value>
+  </data>
+  <data name="KeyboardLed" xml:space="preserve">
+    <value>キーボードLED</value>
+  </data>
+  <data name="KeyboardLedToolTip" xml:space="preserve">
+    <value>設定した場合、合成シーケンスに対応するキーボードLEDが点灯します。</value>
+  </data>
+  <data name="KeyCompose" xml:space="preserve">
+    <value>Compose</value>
+  </data>
+  <data name="AutoLaunch" xml:space="preserve">
+    <value>ログイン時にWinComposeを起動する</value>
+  </data>
+  <data name="AutoLaunchToolTip" xml:space="preserve">
+    <value>設定した場合、ユーザーがログインしたときにWinComposeが起動します。</value>
+  </data>
+  <data name="Accessibility" xml:space="preserve">
+    <value>アクセシビリティ</value>
+  </data>
+  <data name="MustHoldCapsLock" xml:space="preserve">
+    <value>Caps Lockは、押された間のみ有効です</value>
+  </data>
+  <data name="MustHoldCapsLockToolTip" xml:space="preserve">
+    <value>Caps Lockを標準的な仕様のように二回押さなければならないのに対し、離すとすぐに無効になります。</value>
+  </data>
+  <data name="RunElevated" xml:space="preserve">
+    <value>管理者権限で実行する（推奨）</value>
+  </data>
+  <data name="RunElevatedToolTip" xml:space="preserve">
+    <value>WinComposeが管理者権限で実行されない場合、一部のアプリで合成が動作しないことがあります。 この設定は、そのような現象が発生する可能性を減らします。</value>
   </data>
 </root>

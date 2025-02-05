@@ -13,6 +13,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Globalization;
 using System.IO;
@@ -21,15 +22,18 @@ using System.Resources;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
+using System.Windows;
 using System.Xml;
+using Wpf.Ui;
+using Wpf.Ui.Appearance;
 
 namespace WinCompose
 {
-    public static class Settings
+    public static class Settings 
     {
         private class EntryLocation : Attribute
         {
-            public EntryLocation(string section, string key)
+            public EntryLocation(string section , string key)
             {
                 Section = section;
                 Key = key;
@@ -40,15 +44,15 @@ namespace WinCompose
 
         static Settings()
         {
-            m_ini_file = new IniFile(Path.Combine(Utils.AppDataDir, "settings.ini"));
+            m_ini_file = new IniFile(Path.Combine(Utils.AppDataDir , "settings.ini"));
 
             // Add a save handler to our EntryLocation attributes
             foreach (var v in typeof(Settings).GetProperties())
             {
-                foreach (EntryLocation attr in v.GetCustomAttributes(typeof(EntryLocation), true))
+                foreach (EntryLocation attr in v.GetCustomAttributes(typeof(EntryLocation) , true))
                 {
-                    var entry = v.GetValue(null, null) as SettingsEntry;
-                    entry.ValueChanged += () => ThreadPool.QueueUserWorkItem(_ => m_ini_file.SaveEntry(entry.ToString(), attr.Section, attr.Key));
+                    var entry = v.GetValue(null , null) as SettingsEntry;
+                    entry.ValueChanged += () => ThreadPool.QueueUserWorkItem(_ => m_ini_file.SaveEntry(entry.ToString() , attr.Section , attr.Key));
                 }
             }
 
@@ -59,70 +63,77 @@ namespace WinCompose
 
             // Refresh the window properties when this value changes
             IgnoreRegex.ValueChanged += () => KeyboardLayout.Window.Refresh();
+
+            //Reload theme
+            ThemeMode.ValueChanged += () => SetTheme();
         }
 
         // The application version; trim the build number if it is zero
         public static string Version
-            => Regex.Replace(Assembly.GetExecutingAssembly().GetName().Version.ToString(), "[.]0$", "");
+            => Regex.Replace(Assembly.GetExecutingAssembly().GetName().Version.ToString() , "[.]0$" , "");
 
-        [EntryLocation("global", "language")]
+        [EntryLocation("global" , "language")]
         public static SettingsEntry<string> Language { get; } = new SettingsEntry<string>("");
-        [EntryLocation("global", "autolaunch")]
+        [EntryLocation("global" , "autolaunch")]
         public static SettingsEntry<bool> AutoLaunch { get; } = new SettingsEntry<bool>(true);
-        [EntryLocation("global", "run_elevated")]
+        [EntryLocation("global" , "run_elevated")]
         public static SettingsEntry<bool> RunElevated { get; } = new SettingsEntry<bool>(true);
-        [EntryLocation("global", "check_updates")]
+        [EntryLocation("global" , "check_updates")]
         public static SettingsEntry<bool> CheckUpdates { get; } = new SettingsEntry<bool>(true);
-
-        [EntryLocation("composing", "compose_key")]
-        public static SettingsEntry<KeySequence> ComposeKeys { get; } = new SettingsEntry<KeySequence>(new KeySequence());
-        [EntryLocation("composing", "led_key")]
-        public static SettingsEntry<KeySequence> LedKey { get; } = new SettingsEntry<KeySequence>(new KeySequence());
-        [EntryLocation("composing", "reset_delay")]
-        public static SettingsEntry<int> ResetTimeout { get; } = new SettingsEntry<int>(-1);
-        [EntryLocation("composing", "use_xorg_rules")]
-        public static SettingsEntry<bool> UseXorgRules { get; } = new SettingsEntry<bool>(true);
-        [EntryLocation("composing", "use_xcompose_rules")]
-        public static SettingsEntry<bool> UseXComposeRules { get; } = new SettingsEntry<bool>(true);
-        [EntryLocation("composing", "use_emoji_rules")]
-        public static SettingsEntry<bool> UseEmojiRules { get; } = new SettingsEntry<bool>(true);
-        [EntryLocation("composing", "unicode_input")]
-        public static SettingsEntry<bool> UnicodeInput { get; } = new SettingsEntry<bool>(true);
-        [EntryLocation("composing", "case_insensitive")]
-        public static SettingsEntry<bool> CaseInsensitive { get; } = new SettingsEntry<bool>(false);
-        [EntryLocation("composing", "discard_on_invalid")]
-        public static SettingsEntry<bool> DiscardOnInvalid { get; } = new SettingsEntry<bool>(false);
-        [EntryLocation("composing", "swap_on_invalid")]
-        public static SettingsEntry<bool> SwapOnInvalid { get; } = new SettingsEntry<bool>(false);
-        [EntryLocation("composing", "beep_on_invalid")]
-        public static SettingsEntry<bool> BeepOnInvalid { get; } = new SettingsEntry<bool>(false);
-        [EntryLocation("composing", "keep_original_key")]
-        public static SettingsEntry<bool> KeepOriginalKey { get; } = new SettingsEntry<bool>(false);
-        [EntryLocation("composing", "always_compose")]
-        public static SettingsEntry<bool> AlwaysCompose { get; } = new SettingsEntry<bool>(false);
-
-        [EntryLocation("tweaks", "insert_zwsp")]
-        public static SettingsEntry<bool> InsertZwsp { get; } = new SettingsEntry<bool>(false);
-        [EntryLocation("tweaks", "emulate_capslock")]
-        public static SettingsEntry<bool> EmulateCapsLock { get; } = new SettingsEntry<bool>(false);
-        [EntryLocation("tweaks", "shift_disables_capslock")]
-        public static SettingsEntry<bool> ShiftDisablesCapsLock { get; } = new SettingsEntry<bool>(false);
-        [EntryLocation("tweaks", "must_hold_capslock")]
-        public static SettingsEntry<bool> MustHoldCapsLock { get; } = new SettingsEntry<bool>(false);
-        [EntryLocation("tweaks", "capslock_capitalizes")]
-        public static SettingsEntry<bool> CapsLockCapitalizes { get; } = new SettingsEntry<bool>(false);
-        [EntryLocation("tweaks", "allow_injected")]
-        public static SettingsEntry<bool> AllowInjected { get; } = new SettingsEntry<bool>(false);
-        [EntryLocation("tweaks", "keep_icon_visible")]
-        public static SettingsEntry<bool> KeepIconVisible { get; } = new SettingsEntry<bool>(false);
-        [EntryLocation("tweaks", "disable_icon")]
+        [EntryLocation("global" , "theme_mode")]
+        public static SettingsEntry<string> ThemeMode { get; } = new SettingsEntry<string>("");
+        [EntryLocation("tweaks" , "disable_icon")]
         public static SettingsEntry<bool> DisableIcon { get; } = new SettingsEntry<bool>(false);
 
-        [EntryLocation("advanced", "ignore_regex")]
+        [EntryLocation("composing" , "compose_key")]
+        public static SettingsEntry<KeySequence> ComposeKeys { get; } = new SettingsEntry<KeySequence>(new KeySequence());
+        [EntryLocation("composing" , "led_key")]
+        public static SettingsEntry<KeySequence> LedKey { get; } = new SettingsEntry<KeySequence>(new KeySequence());
+        [EntryLocation("composing" , "reset_delay")]
+        public static SettingsEntry<int> ResetTimeout { get; } = new SettingsEntry<int>(-1);
+        [EntryLocation("composing" , "use_xorg_rules")]
+        public static SettingsEntry<bool> UseXorgRules { get; } = new SettingsEntry<bool>(true);
+        [EntryLocation("composing" , "use_xcompose_rules")]
+        public static SettingsEntry<bool> UseXComposeRules { get; } = new SettingsEntry<bool>(true);
+        [EntryLocation("composing" , "use_emoji_rules")]
+        public static SettingsEntry<bool> UseEmojiRules { get; } = new SettingsEntry<bool>(true);
+        [EntryLocation("composing" , "unicode_input")]
+        public static SettingsEntry<bool> UnicodeInput { get; } = new SettingsEntry<bool>(true);
+        [EntryLocation("composing" , "case_insensitive")]
+        public static SettingsEntry<bool> CaseInsensitive { get; } = new SettingsEntry<bool>(false);
+        [EntryLocation("composing" , "discard_on_invalid")]
+        public static SettingsEntry<bool> DiscardOnInvalid { get; } = new SettingsEntry<bool>(false);
+        [EntryLocation("composing" , "swap_on_invalid")]
+        public static SettingsEntry<bool> SwapOnInvalid { get; } = new SettingsEntry<bool>(false);
+        [EntryLocation("composing" , "beep_on_invalid")]
+        public static SettingsEntry<bool> BeepOnInvalid { get; } = new SettingsEntry<bool>(false);
+        [EntryLocation("composing" , "keep_original_key")]
+        public static SettingsEntry<bool> KeepOriginalKey { get; } = new SettingsEntry<bool>(false);
+        [EntryLocation("composing" , "always_compose")]
+        public static SettingsEntry<bool> AlwaysCompose { get; } = new SettingsEntry<bool>(false);
+
+        [EntryLocation("tweaks" , "insert_zwsp")]
+        public static SettingsEntry<bool> InsertZwsp { get; } = new SettingsEntry<bool>(false);
+        [EntryLocation("tweaks" , "emulate_capslock")]
+        public static SettingsEntry<bool> EmulateCapsLock { get; } = new SettingsEntry<bool>(false);
+        [EntryLocation("tweaks" , "shift_disables_capslock")]
+        public static SettingsEntry<bool> ShiftDisablesCapsLock { get; } = new SettingsEntry<bool>(false);
+        [EntryLocation("tweaks" , "must_hold_capslock")]
+        public static SettingsEntry<bool> MustHoldCapsLock { get; } = new SettingsEntry<bool>(false);
+        [EntryLocation("tweaks" , "capslock_capitalizes")]
+        public static SettingsEntry<bool> CapsLockCapitalizes { get; } = new SettingsEntry<bool>(false);
+        [EntryLocation("tweaks" , "allow_injected")]
+        public static SettingsEntry<bool> AllowInjected { get; } = new SettingsEntry<bool>(false);
+
+
+        [EntryLocation("advanced" , "ignore_regex")]
         public static SettingsEntry<string> IgnoreRegex { get; } = new SettingsEntry<string>("");
 
         public static IEnumerable<Key> ValidComposeKeys => m_valid_compose_keys;
-        public static Dictionary<string, string> ValidLanguages => m_valid_languages;
+        public static Dictionary<string , string> ValidLanguages => m_valid_languages;
+
+        public static List<string> Themes => m_themes;
+        private static readonly List<string> m_themes = new List<string> {"Light", "Dark"};
 
         public static IList<Key> ValidLedKeys { get; } = new List<Key>
         {
@@ -265,6 +276,25 @@ namespace WinCompose
 
             m_sequences.LoadFile(Path.Combine(Utils.UserDir, ".XCompose"));
             m_sequences.LoadFile(Path.Combine(Utils.UserDir, ".XCompose.txt"));
+        }
+
+        public static void SetTheme()
+        {
+            Debug.WriteLine("Loading Theme:" + ThemeMode.Value.ToString());
+            if (ThemeMode.Value == "Light")
+            {
+                
+                ApplicationThemeManager.Apply(ApplicationTheme.Light);
+                
+
+                //Debug.WriteLine(Wpf.Ui.UiApplication.Current.Resources.MergedDictionaries);
+            }
+            else if (ThemeMode.Value == "Dark")
+            {
+                ApplicationThemeManager.Apply(ApplicationTheme.Dark);
+                //Debug.WriteLine(Wpf.Ui.UiApplication.Current.Resources.MergedDictionaries);
+            }
+            Application.Current.Resources.MergedDictionaries[0].Source = Wpf.Ui.UiApplication.Current.Resources.MergedDictionaries[0].Source;
         }
 
         /// <summary>
@@ -428,6 +458,8 @@ namespace WinCompose
         }
 
         private static NLog.ILogger Logger = NLog.LogManager.GetCurrentClassLogger();
+
+        //public static event PropertyChangedEventHandler PropertyChanged;
     }
 }
 

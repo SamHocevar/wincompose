@@ -665,7 +665,8 @@ msgstr "只在按住大写锁定键时启用大写锁定"
 msgid ""
 "Releasing the Caps Lock key will immediately disable it, instead of the more "
 "standard behaviour of having to press it a second time."
-msgstr "松开大写锁定键会立即关闭大写锁定，而不像标准行为：再按一次关闭大写锁定。"
+msgstr ""
+"松开大写锁定键会立即关闭大写锁定，而不像标准行为：再按一次关闭大写锁定。"
 
 #: language/i18n/Text.resx:625 ID:RunElevated
 msgid "Run with elevated privileges (recommended)"
@@ -676,9 +677,10 @@ msgid ""
 "Composition will not work in some applications if WinCompose does not run "
 "with elevated privileges. This options reduces the chances that this will "
 "happen."
-msgstr "若不提权运行WinCompose，组合键会在某些应用程序中失效。本选项减小失效的可能。"
+msgstr ""
+"若不提权运行WinCompose，组合键会在某些应用程序中失效。本选项减小失效的可能。"
 
-#. Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
+#.  Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
 #: language/unicode/Category.resx:121 ID:Control
 msgid "Other, Control"
 msgstr "其他，控制符"

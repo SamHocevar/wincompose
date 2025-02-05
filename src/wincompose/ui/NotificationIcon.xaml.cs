@@ -13,12 +13,12 @@
 using System;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.Drawing;
 using System.Windows;
+using System.Windows.Controls;
+using System.Drawing;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Threading;
-
 using Hardcodet.Wpf.TaskbarNotification;
 
 namespace WinCompose
@@ -56,17 +56,10 @@ namespace WinCompose
 
             TrayMouseDoubleClick += NotifyiconDoubleclicked;
 
-            // Opt-in only, as this feature is a bit controversial
-            if (Settings.KeepIconVisible.Value)
-                NotificationArea.AlwaysShow("wincompose[.]exe");
-
-            // This one is a bit safer
-            m_cleanup_timer = new DispatcherTimer() { Interval = TimeSpan.FromSeconds(30) };
-            m_cleanup_timer.Tick += (o, e) => CleanupNotificationArea();
-            m_cleanup_timer.Start();
-            CleanupNotificationArea();
-
-            Settings.DisableIcon.ValueChanged += MarkIconDirty;
+            Settings.ComposeKeys.ValueChanged += MarkIconDirty;
+            Settings.UseXComposeRules.ValueChanged += MarkIconDirty;
+            Settings.UseEmojiRules.ValueChanged += MarkIconDirty;
+            Settings.UseXorgRules.ValueChanged += MarkIconDirty;
             Composer.Changed += MarkIconDirty;
             Updater.Changed += MarkIconDirty;
             MarkIconDirty();
@@ -76,32 +69,40 @@ namespace WinCompose
 
             CompositionTarget.Rendering += UpdateNotificationIcon;
         }
-
         public new void Dispose()
         {
-            Dispose(true);
             GC.SuppressFinalize(this);
-            base.Dispose();
-        }
-
-        protected virtual void Dispose(bool disposing)
-        {
             CompositionTarget.Rendering -= UpdateNotificationIcon;
 
+            Settings.ComposeKeys.ValueChanged -= MarkIconDirty;
+            Settings.UseXComposeRules.ValueChanged -= MarkIconDirty;
+            Settings.UseEmojiRules.ValueChanged -= MarkIconDirty;
+            Settings.UseXorgRules.ValueChanged -= MarkIconDirty;
             Composer.Changed -= MarkIconDirty;
             Updater.Changed -= MarkIconDirty;
             Updater.Changed -= UpdaterStateChanged;
-
+			
             Application.RemoteControl.ExitEvent -= OnExitEvent;
             Application.RemoteControl.OpenEvent -= OnOpenEvent;
 
             Visibility = Visibility.Collapsed;
 
-            m_cleanup_timer?.Stop();
-            m_cleanup_timer = null;
+            base.Dispose(true);
         }
+        //protected virtual void Dispose(bool disposing)
+        //{
+        //    CompositionTarget.Rendering -= UpdateNotificationIcon;
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        //    Composer.Changed -= MarkIconDirty;
+        //    Updater.Changed -= MarkIconDirty;
+        //    Updater.Changed -= UpdaterStateChanged;
+
+        //    Application.RemoteControl.ExitEvent -= OnExitEvent;
+        //    Application.RemoteControl.OpenEvent -= OnOpenEvent;
+
+        //    Visibility = Visibility.Collapsed;
+
+        //}
 
         public ICommand MenuItemCommand
         {
@@ -158,86 +159,16 @@ namespace WinCompose
             }
         }
 
-        private DispatcherTimer m_cleanup_timer;
-
-        private void CleanupNotificationArea()
-        {
-            // Disable this feature after 60 seconds of user inactivity
-            if (Stfu.User.IdleTime.TotalSeconds > 60)
-                return;
-
-            // Parse the window hierarchy to find the notification area and
-            // send mouse move events to get rid of zombie icons.
-            string[] classes = { "Shell_TrayWnd", "TrayNotifyWnd", "SysPager" };
-            string[] names = { "User Promoted Notification Area", "Notification Area" };
-
-            IntPtr window = IntPtr.Zero;
-            foreach (var win_class in classes)
-                window = NativeMethods.FindWindowEx(window, IntPtr.Zero, win_class, "");
-
-            foreach (var win_name in names)
-            {
-                var area = NativeMethods.FindWindowEx(window, IntPtr.Zero,
-                                                  "ToolbarWindow32", win_name);
-                if (area == IntPtr.Zero)
-                    continue;
-
-                RECT rect;
-                NativeMethods.GetClientRect(area, out rect);
-                for (int y = rect.Top + 4; y < rect.Bottom; y += 8)
-                    for (int x = rect.Left + 4; x < rect.Right; x += 8)
-                        NativeMethods.PostMessage(area, (uint)WM.MOUSEMOVE, 0, (y << 16) | x);
-                NativeMethods.PostMessage(area, (uint)WM.MOUSELEAVE, 0, 0);
-            }
-        }
-
         private SequenceWindow m_sequencewindow;
         private SettingsWindow m_optionswindow;
         private DebugWindow m_debugwindow;
         private AboutBox m_about_box;
 
-        private System.Drawing.Icon GetCurrentIcon()
-        {
-            return GetIcon((Composer.IsComposing?    0x1 : 0x0) |
-                           (Updater.HasNewerVersion? 0x2 : 0x0));
-        }
+        public event PropertyChangedEventHandler PropertyChanged;
 
-        public static System.Drawing.Icon GetIcon(int index)
-        {
-            if (m_icon_cache == null)
-                m_icon_cache = new System.Drawing.Icon[8];
+        //private static System.Drawing.Icon[] m_icon_cache;
 
-            if (m_icon_cache[index] == null)
-            {
-                bool is_composing = (index & 0x1) != 0;
-                bool has_update = (index & 0x2) != 0;
-
-                // XXX: if you create new bitmap images here instead of using bitmaps from
-                // resources, make sure the DPI settings match. Our PNGs are 72 DPI whereas
-                // new Bitmap objects appear to use 96 by default (even if copy-constructed).
-                // A reasonable workaround might be to use Clone().
-                using (Bitmap bitmap = Properties.Resources.KeyEmpty)
-                using (Graphics canvas = Graphics.FromImage(bitmap))
-                {
-                    // LED status: on or off
-                    canvas.DrawImage(is_composing ? Properties.Resources.DecalActive
-                                                  : Properties.Resources.DecalIdle, 0, 0);
-
-                    // Tiny yellow exclamation mark to advertise updates
-                    if (has_update)
-                        canvas.DrawImage(Properties.Resources.DecalUpdate, 0, 0);
-
-                    canvas.Save();
-                    m_icon_cache[index] = System.Drawing.Icon.FromHandle(bitmap.GetHicon());
-                }
-            }
-
-            return m_icon_cache[index];
-        }
-
-        private static System.Drawing.Icon[] m_icon_cache;
-
-        private AtomicFlag m_dirty;
+        private misc.AtomicFlag m_dirty;
 
         private void MarkIconDirty() => m_dirty.Set();
 
@@ -245,9 +176,20 @@ namespace WinCompose
         {
             if (m_dirty.Get())
             {
-                Visibility = Settings.DisableIcon.Value ? Visibility.Collapsed : Visibility.Visible;
-                Icon = GetCurrentIcon();
-                ToolTipText = GetCurrentToolTip();
+                Currenttooltip = GetCurrentToolTip();
+            }
+        }
+        private string CurrentToolTip;
+
+        public string Currenttooltip
+        {
+            get => CurrentToolTip;
+            set
+            {
+                if (value == CurrentToolTip) return;
+                CurrentToolTip = value;
+                Debug.WriteLine(CurrentToolTip);
+                OnPropertyChanged("currenttooltip");
             }
         }
 
@@ -264,7 +206,13 @@ namespace WinCompose
             return ret;
         }
 
-        private void NotifyiconDoubleclicked(object sender, EventArgs e)
+        protected void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this , new PropertyChangedEventArgs(propertyName));
+        }
+
+
+        public void NotifyiconDoubleclicked(object sender, EventArgs e)
         {
             m_sequencewindow = m_sequencewindow ?? new SequenceWindow();
 
@@ -284,8 +232,8 @@ namespace WinCompose
 
         private void UpdaterStateChanged()
         {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(HasNewerVersion)));
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(DownloadHeader)));
+            PropertyChanged?.Invoke(this , new PropertyChangedEventArgs(nameof(HasNewerVersion)));
+            PropertyChanged?.Invoke(this , new PropertyChangedEventArgs(nameof(DownloadHeader)));
         }
 
         private void OnExitEvent() => Application.Current.Shutdown();

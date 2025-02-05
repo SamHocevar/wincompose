@@ -10,7 +10,8 @@ msgstr ""
 "POT-Creation-Date: 2015-03-23 15:27+0100\n"
 "PO-Revision-Date: 2024-07-24 08:09+0000\n"
 "Last-Translator: mkpoli <git@mkpo.li>\n"
-"Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/wincompose/master/zh_Hant/>\n"
+"Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
+"wincompose/master/zh_Hant/>\n"
 "Language: zh_Hant\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -676,9 +677,11 @@ msgid ""
 "Composition will not work in some applications if WinCompose does not run "
 "with elevated privileges. This options reduces the chances that this will "
 "happen."
-msgstr "在某些應用程式，若不以更高的權限執行 WinCompose，則組合鍵無作用。此選項可降低這種問題。"
+msgstr ""
+"在某些應用程式，若不以更高的權限執行 WinCompose，則組合鍵無作用。此選項可降低"
+"這種問題。"
 
-#. Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
+#.  Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
 #: language/unicode/Category.resx:121 ID:Control
 msgid "Other, Control"
 msgstr "其他，控制字元"

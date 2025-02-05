@@ -7,7 +7,7 @@
     <Description></Description>
     <OutputType>Library</OutputType>
     <RootNamespace>WinCompose</RootNamespace>
-    <TargetFrameworks>net40</TargetFrameworks>
+    <TargetFrameworks>net472</TargetFrameworks>
     <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
     <GenerateAssemblyInformationalVersionAttribute>false</GenerateAssemblyInformationalVersionAttribute>
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
@@ -1038,7 +1038,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="GitVersion.MsBuild" Version="5.6.9" PrivateAssets="all">
+    <PackageReference Include="GitVersion.MsBuild" Version="5.6.10" PrivateAssets="all">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>

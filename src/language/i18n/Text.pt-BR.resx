@@ -486,4 +486,19 @@
   <data name="AutoLaunchToolTip" xml:space="preserve">
     <value>Se ativado, o WinCompose será iniciado quando o usuário fizer login.</value>
   </data>
+  <data name="Accessibility" xml:space="preserve">
+    <value>Acessibilidade</value>
+  </data>
+  <data name="MustHoldCapsLock" xml:space="preserve">
+    <value>Caps Lock é ativa somente enquanto pressionada</value>
+  </data>
+  <data name="MustHoldCapsLockToolTip" xml:space="preserve">
+    <value>Soltar a tecla Caps Lock irá desativá-la imediatamente, ao contrário do comportamento padrão que exige pressioná-la outra vez.</value>
+  </data>
+  <data name="RunElevated" xml:space="preserve">
+    <value>Executar com privilégios elevados (recomendado)</value>
+  </data>
+  <data name="RunElevatedToolTip" xml:space="preserve">
+    <value>A composição não vai funcionar em algumas aplicações se o WinCompose não for executado com privilégios elevados. Esta opção reduz as chances de que isso aconteça.</value>
+  </data>
 </root>

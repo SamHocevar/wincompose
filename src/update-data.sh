@@ -23,7 +23,7 @@ cat > ${DEST} << EOF
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: WinCompose $(gitversion -showvariable MajorMinorPatch)\n"
+"Project-Id-Version: WinCompose $(dotnet-gitversion -showvariable MajorMinorPatch)\n"
 "Report-Msgid-Bugs-To: Sam Hocevar <sam@hocevar.net>\n"
 "POT-Creation-Date: 2015-03-23 15:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"

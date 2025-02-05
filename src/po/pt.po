@@ -131,9 +131,9 @@ msgid ""
 "(https://github.com/kragen/xcompose). These sequences may sometimes conflict "
 "with the Xorg ones."
 msgstr ""
-"Usar as 1000 sequências de composição do projeto XCompose (https://github."
-"com/kragen/xcompose). Por vezes estas sequências podem entrar em conflito "
-"com as sequências do Xorg."
+"Usar as 1000 sequências de composição do projeto XCompose (https://"
+"github.com/kragen/xcompose). Por vezes estas sequências podem entrar em "
+"conflito com as sequências do Xorg."
 
 #: language/i18n/Text.resx:209 ID:UseEmojiRules
 msgid "Use WinCompose emoji sequences"
@@ -718,7 +718,7 @@ msgstr ""
 "executado com privilégios elevados. Essas opções reduzem as hipóteses de que "
 "isso aconteça."
 
-#. Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
+#.  Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
 #: language/unicode/Category.resx:121 ID:Control
 msgid "Other, Control"
 msgstr "Outro, control"

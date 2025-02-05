@@ -208,7 +208,7 @@
     <value>Besök hemsidan</value>
   </data>
   <data name="Exit" xml:space="preserve">
-    <value>Stäng</value>
+    <value>Avsluta</value>
   </data>
   <data name="UnicodeCharacters" xml:space="preserve">
     <value>Unicode-tecken</value>
@@ -403,7 +403,7 @@
     <value>Print Screen</value>
   </data>
   <data name="KeyDisabled" xml:space="preserve">
-    <value>Inaktivera</value>
+    <value>Inaktiverad</value>
   </data>
   <data name="CheckUpdates" xml:space="preserve">
     <value>Automatiskt sök efter uppdateringar</value>
@@ -488,5 +488,17 @@
   </data>
   <data name="Accessibility" xml:space="preserve">
     <value>Tillgänglighet</value>
+  </data>
+  <data name="MustHoldCapsLock" xml:space="preserve">
+    <value>Caps Lock är bara aktiv när den hålls nere</value>
+  </data>
+  <data name="MustHoldCapsLockToolTip" xml:space="preserve">
+    <value>Att släppa upp Caps Lock kommer omedelbart inaktivera det, istället för att behöva trycka en andra gång som vanligt.</value>
+  </data>
+  <data name="RunElevated" xml:space="preserve">
+    <value>Kör med utökade privilegier (rekommenderas)</value>
+  </data>
+  <data name="RunElevatedToolTip" xml:space="preserve">
+    <value>Komposition kommer inte fungera i somliga program om WinCompose inte körs med utökade privilegier. Detta val minskar risken att detta sker.</value>
   </data>
 </root>

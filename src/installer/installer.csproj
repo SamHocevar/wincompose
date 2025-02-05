@@ -5,17 +5,20 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{55AF5191-E02C-4445-A578-D209A40C0AC7}</ProjectGuid>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' " />
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' " />
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="installer.iss" />
   </ItemGroup>
   <Target Name="Build">
     <Exec Command="&quot;%ProgramFiles(x86)%\Inno Setup 6\iscc&quot; /V4 /DCONFIG=$(Configuration) &quot;installer.iss&quot;" />
   </Target>
   <Target Name="Clean">
-    <Exec Command="for /F &quot;tokens=*&quot; %%g in ('gitversion -showvariable MajorMinorPatch') do (del ..\WinCompose-Setup-%%g.exe)" />
+    <Exec Command="for /F &quot;tokens=*&quot; %%g in ('dotnet-gitversion -showvariable MajorMinorPatch') do (del ..\WinCompose-Setup-%%g.exe)" />
   </Target>
   <Target Name="Rebuild" DependsOnTargets="Clean;Build" />
 </Project>

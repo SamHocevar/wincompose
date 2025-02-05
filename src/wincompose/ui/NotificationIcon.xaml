@@ -12,14 +12,18 @@
   -->
 
 <tb:TaskbarIcon x:Class="WinCompose.NotificationIcon"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:tb="http://www.hardcodet.net/taskbar"
-             xmlns:wc="clr-namespace:WinCompose"
-             xmlns:i18n="clr-namespace:WinCompose.i18n;assembly=language"
-             xmlns:emoji="clr-namespace:Emoji.Wpf;assembly=Emoji.Wpf">
+                xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                xmlns:tb="http://www.hardcodet.net/taskbar"
+                xmlns:wc="clr-namespace:WinCompose"
+                xmlns:i18n="clr-namespace:WinCompose.i18n;assembly=language"
+                xmlns:emoji="clr-namespace:Emoji.Wpf;assembly=Emoji.Wpf"
+                DataContext="{Binding RelativeSource={RelativeSource Self}}"
+                x:Name="wcToolTip"
+                IconSource="/ui/key_compose.png"
+                ToolTipText="{Binding Currenttooltip}">
 
     <tb:TaskbarIcon.Resources>
         <BooleanToVisibilityConverter x:Key="booleanToVisibilityConverter"/>
@@ -40,14 +44,12 @@
                 <ResourceDictionary>
                     <ResourceDictionary.MergedDictionaries>
                         <!-- Enforce Aero style for this specific context menu. -->
-                        <ResourceDictionary Source="/PresentationFramework.Aero, Version=3.0.0.0,
-                                            Culture=neutral, PublicKeyToken=31bf3856ad364e35,
-                                            ProcessorArchitecture=MSIL;component/themes/Aero.NormalColor.xaml"/>
+                        <!--<ResourceDictionary Source="/PresentationFramework.Aero;component/themes/Aero.NormalColor.xaml"/>-->
                     </ResourceDictionary.MergedDictionaries>
                 </ResourceDictionary>
             </ContextMenu.Resources>
 
-            <MenuItem Height="26" IsEnabled="False" Padding="0,0,0,2">
+            <MenuItem Height="32" IsEnabled="False" Padding="0,0,0,2">
                 <MenuItem.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
                         <GradientStop Color="LightCyan" Offset="0"/>
@@ -58,7 +60,7 @@
                     <Image Source="{StaticResource ComposeKeyImage}" Width="16" Height="16"/>
                 </MenuItem.Icon>
                 <MenuItem.Header>
-                    <TextBlock Foreground="Black" FontWeight="Bold" FontSize="14"
+                    <TextBlock FontWeight="Bold" FontSize="14"
                                Text="WinCompose" VerticalAlignment="Center"/>
                 </MenuItem.Header>
             </MenuItem>

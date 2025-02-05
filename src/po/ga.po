@@ -5,12 +5,14 @@ msgstr ""
 "POT-Creation-Date: 2015-03-23 15:27+0100\n"
 "PO-Revision-Date: 2024-08-25 20:09+0000\n"
 "Last-Translator: Aindriú Mac Giolla Eoin <aindriu80@gmail.com>\n"
-"Language-Team: Irish <https://hosted.weblate.org/projects/wincompose/master/ga/>\n"
+"Language-Team: Irish <https://hosted.weblate.org/projects/wincompose/master/"
+"ga/>\n"
 "Language: ga\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=5; plural=(n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n<11 ? 3 : 4);\n"
+"Plural-Forms: nplurals=5; plural=(n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n<11 ? 3 : "
+"4);\n"
 "X-Generator: Weblate 5.7.1-dev\n"
 
 #. The user can configure the application language and choose between English, French, etc. and Autodetect
@@ -111,7 +113,10 @@ msgstr "Úsáid seichimh ó thionscadal Xorg"
 msgid ""
 "Use the 3,000 compose sequences from the Xorg project (http://www.x.org/). "
 "These are the sequences most commonly found on a standard Linux system."
-msgstr "Úsáid na 3,000 seicheamh cumadóireachta ó thionscadal Xorg (http://www.x.org/). Seo iad na seichimh is coitianta a fhaightear ar chóras caighdeánach Linux."
+msgstr ""
+"Úsáid na 3,000 seicheamh cumadóireachta ó thionscadal Xorg (http://"
+"www.x.org/). Seo iad na seichimh is coitianta a fhaightear ar chóras "
+"caighdeánach Linux."
 
 #: language/i18n/Text.resx:201 ID:UseXComposeRules
 msgid "Use sequences from the XCompose project"
@@ -122,7 +127,10 @@ msgid ""
 "Use the 1,000 compose sequences from the XCompose opensource project "
 "(https://github.com/kragen/xcompose). These sequences may sometimes conflict "
 "with the Xorg ones."
-msgstr "Úsáid na 1,000 seicheamh cumadóireachta ó thionscadal foinse oscailte XCompose (https://github.com/kragen/xcompose). Uaireanta bíonn na seichimh seo ag teacht salach ar na cinn Xorg."
+msgstr ""
+"Úsáid na 1,000 seicheamh cumadóireachta ó thionscadal foinse oscailte "
+"XCompose (https://github.com/kragen/xcompose). Uaireanta bíonn na seichimh "
+"seo ag teacht salach ar na cinn Xorg."
 
 #: language/i18n/Text.resx:209 ID:UseEmojiRules
 msgid "Use WinCompose emoji sequences"
@@ -132,7 +140,9 @@ msgstr "Bain úsáid as sraitheanna emoji WinCompose"
 msgid ""
 "Use the compose sequences for Emoji provided by the WinCompose author and "
 "contributors."
-msgstr "Úsáid na seichimh cumadóireachta do Emoji a chuir an t-údar WinCompose agus na rannpháirtithe ar fáil."
+msgstr ""
+"Úsáid na seichimh cumadóireachta do Emoji a chuir an t-údar WinCompose agus "
+"na rannpháirtithe ar fáil."
 
 #. Menu entry to show the debug window
 #: language/i18n/Text.resx:217 ID:DebugWindow
@@ -183,7 +193,9 @@ msgstr "Déan iarracht an dá eochair a mhalartú"
 msgid ""
 "Try to swap the keys of a two-key sequence. For instance, if Compose E A is "
 "not a valid sequence, try Compose A E instead."
-msgstr "Déan iarracht eochracha seicheamh dhá eochair a mhalartú. Mar shampla, mura seicheamh bailí é Cum E A, bain triail as Cum A E ina ionad sin."
+msgstr ""
+"Déan iarracht eochracha seicheamh dhá eochair a mhalartú. Mar shampla, mura "
+"seicheamh bailí é Cum E A, bain triail as Cum A E ina ionad sin."
 
 #: language/i18n/Text.resx:261 ID:Search
 msgid "Search Filter:"
@@ -211,7 +223,10 @@ msgid ""
 "Enable Unicode input for all characters, even those with no compose sequence "
 "defined. For instance, the following sequence will output character U+1A3F: "
 "Compose U 1 A 3 F Enter"
-msgstr "Cumasaigh ionchur Unicode do gach carachtar, fiú iad siúd nach bhfuil aon seicheamh cumadóireachta sainithe. Mar shampla, aschuirfidh an seicheamh seo a leanas an carachtar U+1A3F: Cum U 1 A 3 F Iontráil"
+msgstr ""
+"Cumasaigh ionchur Unicode do gach carachtar, fiú iad siúd nach bhfuil aon "
+"seicheamh cumadóireachta sainithe. Mar shampla, aschuirfidh an seicheamh seo "
+"a leanas an carachtar U+1A3F: Cum U 1 A 3 F Iontráil"
 
 #. This is the name of a category of settings about what happens when invalid sequences are typed
 #: language/i18n/Text.resx:285 ID:InvalidSequences
@@ -226,7 +241,9 @@ msgstr "Fill ar chluichí cás-neamhíogair"
 msgid ""
 "If the entered sequence does not exist, but there is one that only differs "
 "by case, automatically correct it."
-msgstr "Mura bhfuil an seicheamh iontrála ann, ach go bhfuil ceann ann nach bhfuil éagsúil ach de réir cáis, ceartaigh go huathoibríoch é."
+msgstr ""
+"Mura bhfuil an seicheamh iontrála ann, ach go bhfuil ceann ann nach bhfuil "
+"éagsúil ach de réir cáis, ceartaigh go huathoibríoch é."
 
 #: language/i18n/Text.resx:297 ID:DiscardOnInvalid
 msgid "Discard all typed characters"
@@ -237,7 +254,10 @@ msgid ""
 "If the entered sequence does not exist, discard all the characters that were "
 "typed. The default behaviour is to output the characters as if the compose "
 "key had not been used."
-msgstr "Mura bhfuil an seicheamh iontrála ann, caith amach na carachtair go léir a bhí clóscríofa. Is é an t-iompar réamhshocraithe ná na carachtair a aschur amhail is nár úsáideadh an eochair chumadóireachta."
+msgstr ""
+"Mura bhfuil an seicheamh iontrála ann, caith amach na carachtair go léir a "
+"bhí clóscríofa. Is é an t-iompar réamhshocraithe ná na carachtair a aschur "
+"amhail is nár úsáideadh an eochair chumadóireachta."
 
 #: language/i18n/Text.resx:305 ID:BeepOnInvalid
 msgid "Emit a beep"
@@ -255,7 +275,9 @@ msgstr "Teanga an chomhéadain:"
 msgid ""
 "Select the language that WinCompose uses for the interface. By default the "
 "operating system language is used."
-msgstr "Roghnaigh an teanga a úsáideann WinCompose don chomhéadan. De réir réamhshocraithe úsáidtear teanga an chórais oibriúcháin."
+msgstr ""
+"Roghnaigh an teanga a úsáideann WinCompose don chomhéadan. De réir "
+"réamhshocraithe úsáidtear teanga an chórais oibriúcháin."
 
 #. Close the settings window
 #: language/i18n/Text.resx:321 ID:Close
@@ -287,7 +309,10 @@ msgid ""
 "This tells WinCompose to make a best effort to retain the original key’s "
 "behaviour. For instance, the Alt-Tab shortcut will still work even if Alt is "
 "used as the compose key."
-msgstr "Insíonn sé seo do WinCompose an iarracht is fearr a dhéanamh chun iompar na heochrach bunaidh a choinneáil. Mar shampla, oibreoidh an t-aicearra Alt-Tab fós fiú má úsáidtear Alt mar an eochair chumadóireachta."
+msgstr ""
+"Insíonn sé seo do WinCompose an iarracht is fearr a dhéanamh chun iompar na "
+"heochrach bunaidh a choinneáil. Mar shampla, oibreoidh an t-aicearra Alt-Tab "
+"fós fiú má úsáidtear Alt mar an eochair chumadóireachta."
 
 #: language/i18n/Text.resx:345 ID:InsertZwsp
 msgid "Insert zero-width spaces in Office apps"
@@ -298,7 +323,11 @@ msgid ""
 "Microsoft Office applications sometimes change the document font on the fly "
 "when entering certain Unicode characters. This feature inserts an invisible "
 "character after the Unicode character to work around the bug."
-msgstr "Uaireanta athraíonn feidhmchláir Microsoft Office cló an doiciméid ar an eitilt agus carachtair Unicode áirithe á n-iontráil. Cuireann an ghné seo isteach carachtar dofheicthe tar éis an charachtair Unicode chun oibriú timpeall an fhabht."
+msgstr ""
+"Uaireanta athraíonn feidhmchláir Microsoft Office cló an doiciméid ar an "
+"eitilt agus carachtair Unicode áirithe á n-iontráil. Cuireann an ghné seo "
+"isteach carachtar dofheicthe tar éis an charachtair Unicode chun oibriú "
+"timpeall an fhabht."
 
 #: language/i18n/Text.resx:353 ID:EmulateCapsLock
 msgid "Emulate Caps Lock using both Shift keys"
@@ -309,7 +338,10 @@ msgid ""
 "If Caps Lock is used as the compose key, the original behaviour of the key "
 "becomes unavailable. This feature allows to turn Caps Lock on by pressing "
 "both Shift keys simultaneously."
-msgstr "Má úsáidtear Caps Lock mar an eochair chumadóireachta, ní bheidh iompar bunaidh na heochrach ar fáil. Ligeann an ghné seo Caps Lock a chur ar siúl ach an dá eochair Shift a bhrú ag an am céanna."
+msgstr ""
+"Má úsáidtear Caps Lock mar an eochair chumadóireachta, ní bheidh iompar "
+"bunaidh na heochrach ar fáil. Ligeann an ghné seo Caps Lock a chur ar siúl "
+"ach an dá eochair Shift a bhrú ag an am céanna."
 
 #: language/i18n/Text.resx:361 ID:ShiftDisablesCapsLock
 msgid "Shift key disables Caps Lock"
@@ -320,7 +352,10 @@ msgid ""
 "If Caps Lock is used as the compose key, the original behaviour of the key "
 "becomes unavailable. This feature allows to turn Caps Lock off by pressing "
 "the Shift key."
-msgstr "Má úsáidtear Caps Lock mar an eochair chumadóireachta, ní bheidh iompar bunaidh na heochrach ar fáil. Ligeann an ghné seo Caps Lock a chasadh as ach an eochair Shift a bhrú."
+msgstr ""
+"Má úsáidtear Caps Lock mar an eochair chumadóireachta, ní bheidh iompar "
+"bunaidh na heochrach ar fáil. Ligeann an ghné seo Caps Lock a chasadh as ach "
+"an eochair Shift a bhrú."
 
 #: language/i18n/Text.resx:369 ID:CapsLockCapitalizes
 msgid "Caps Lock always capitalizes letters"
@@ -330,7 +365,10 @@ msgstr "Déanann Caps Lock caipitliú ar litreacha i gcónaí"
 msgid ""
 "When Caps Lock is on, typing an accented letter such as “é” will always "
 "output the corresponding capitalized letter, in this case “É”."
-msgstr "Nuair a bhíonn Caps Lock ar siúl, beidh an litir chaipitlithe chomhfhreagrach aschuir i gcónaí nuair a chlóscríobhtar litir ghéaraithe ar nós “é”, sa chás seo “É”."
+msgstr ""
+"Nuair a bhíonn Caps Lock ar siúl, beidh an litir chaipitlithe "
+"chomhfhreagrach aschuir i gcónaí nuair a chlóscríobhtar litir ghéaraithe ar "
+"nós “é”, sa chás seo “É”."
 
 #. Header for the list of Unicode character categories
 #: language/i18n/Text.resx:377 ID:Categories
@@ -437,7 +475,8 @@ msgstr "Ceadúnas"
 #. Warning message when the user changes the language in the settings window
 #: language/i18n/Text.resx:461 ID:NeedRestart
 msgid "WinCompose needs to be restarted for some changes to take effect."
-msgstr "Ní mór WinCompose a atosú le go dtiocfaidh roinnt athruithe i bhfeidhm."
+msgstr ""
+"Ní mór WinCompose a atosú le go dtiocfaidh roinnt athruithe i bhfeidhm."
 
 #. A button to report bugs (opens web browser)
 #: language/i18n/Text.resx:465 ID:ReportBug
@@ -474,7 +513,9 @@ msgstr "Ceadaigh Eochracha Instealladh"
 
 #: language/i18n/Text.resx:493 ID:AllowInjectedToolTip
 msgid "Do not ignore keys sent by other software like AutoHotkey or Synergy"
-msgstr "Ná déan neamhaird d'eochracha a sheolann bogearraí eile ar nós AutoHotkey nó Synergy"
+msgstr ""
+"Ná déan neamhaird d'eochracha a sheolann bogearraí eile ar nós AutoHotkey nó "
+"Synergy"
 
 #. The name of the “Print Screen” key on the keyboard
 #: language/i18n/Text.resx:497 ID:KeyPrint
@@ -494,17 +535,24 @@ msgstr "Seiceáil go huathoibríoch le haghaidh nuashonruithe"
 msgid ""
 "If enabled, WinCompose will connect to the Internet at regular intervals to "
 "check for new versions. Updates are not installed automatically."
-msgstr "Má tá sé cumasaithe, nascfaidh WinCompose leis an Idirlíon go tráthrialta chun seiceáil le haghaidh leaganacha nua. Ní shuiteáiltear nuashonruithe go huathoibríoch."
+msgstr ""
+"Má tá sé cumasaithe, nascfaidh WinCompose leis an Idirlíon go tráthrialta "
+"chun seiceáil le haghaidh leaganacha nua. Ní shuiteáiltear nuashonruithe go "
+"huathoibríoch."
 
 #: language/i18n/Text.resx:513 ID:KeepIconVisible
 msgid "Try to keep notification area icon always visible"
-msgstr "Déan iarracht deilbhín an limistéir fhógra a choinneáil le feiceáil i gcónaí"
+msgstr ""
+"Déan iarracht deilbhín an limistéir fhógra a choinneáil le feiceáil i gcónaí"
 
 #: language/i18n/Text.resx:517 ID:KeepIconVisibleToolTip
 msgid ""
 "By default, Windows will remove the icon from the notification area after a "
 "short while. This option attempts to keep it always visible."
-msgstr "De réir réamhshocraithe, bainfidh Windows an deilbhín as an limistéar fógra tar éis tamaill ghairid. Déanann an rogha seo iarracht é a choinneáil le feiceáil i gcónaí."
+msgstr ""
+"De réir réamhshocraithe, bainfidh Windows an deilbhín as an limistéar fógra "
+"tar éis tamaill ghairid. Déanann an rogha seo iarracht é a choinneáil le "
+"feiceáil i gcónaí."
 
 #. The user can click on this button to change the current compose key.
 #: language/i18n/Text.resx:521 ID:ChangeComposeKey
@@ -529,7 +577,11 @@ msgid ""
 "If enabled, WinCompose will no longer display an icon in the notification "
 "area. The only way to open the WinCompose interface will then be through the "
 "“WinCompose Settings” and “WinCompose Sequences” entries in the startup menu."
-msgstr "Má tá sé cumasaithe, ní thaispeánfaidh WinCompose deilbhín sa limistéar fógra a thuilleadh. Is é an t-aon bhealach chun comhéadan WinCompose a oscailt ansin ná trí na hiontrálacha “WinCompose Settings” agus “WinCompose Sequences” sa roghchlár tosaithe."
+msgstr ""
+"Má tá sé cumasaithe, ní thaispeánfaidh WinCompose deilbhín sa limistéar "
+"fógra a thuilleadh. Is é an t-aon bhealach chun comhéadan WinCompose a "
+"oscailt ansin ná trí na hiontrálacha “WinCompose Settings” agus “WinCompose "
+"Sequences” sa roghchlár tosaithe."
 
 #. The name of the “Home” key on the keyboard
 #: language/i18n/Text.resx:541 ID:KeyHome
@@ -565,7 +617,9 @@ msgstr "Déan neamhaird de fhuinneoga a mheaitseálann an regex seo:"
 msgid ""
 "WinCompose will be completely disabled when the current window class or "
 "window name matches this regular expression."
-msgstr "Díchumasófar WinCompose go hiomlán nuair a mheaitseálann an rang fuinneoige reatha nó ainm na fuinneoige an slonn rialta seo."
+msgstr ""
+"Díchumasófar WinCompose go hiomlán nuair a mheaitseálann an rang fuinneoige "
+"reatha nó ainm na fuinneoige an slonn rialta seo."
 
 #: language/i18n/Text.resx:569 ID:AlwaysCompose
 msgid "Alternate compose key is always Compose"
@@ -576,7 +630,11 @@ msgid ""
 "If enabled, all compose keys will be treated as Compose in a sequence. By "
 "default, only the first pressed key will act as Compose, and alternate "
 "compose keys will keep their original role."
-msgstr "Má tá sé cumasaithe, déileálfar le gach eochair cumadóireachta mar Chumadóireacht i seicheamh. De réir réamhshocraithe, ní fheidhmeoidh ach an chéad eochair brúite mar Cum, agus coimeádfaidh eochracha cumadóireachta malartacha a ról bunaidh."
+msgstr ""
+"Má tá sé cumasaithe, déileálfar le gach eochair cumadóireachta mar "
+"Chumadóireacht i seicheamh. De réir réamhshocraithe, ní fheidhmeoidh ach an "
+"chéad eochair brúite mar Cum, agus coimeádfaidh eochracha cumadóireachta "
+"malartacha a ról bunaidh."
 
 #. The section for random contributors who aren’t programmers or translators. Might be empty.
 #: language/i18n/Text.resx:577 ID:SpecialThanks
@@ -597,7 +655,9 @@ msgstr "Ceanáin"
 msgid ""
 "If set, any compose sequence will be cancelled after a certain delay if no "
 "keyboard activity is detected."
-msgstr "Má tá sé socraithe, cuirfear aon seicheamh cumadóireachta ar ceal tar éis moille áirithe mura n-aimsítear aon ghníomhaíocht mhéarchláir."
+msgstr ""
+"Má tá sé socraithe, cuirfear aon seicheamh cumadóireachta ar ceal tar éis "
+"moille áirithe mura n-aimsítear aon ghníomhaíocht mhéarchláir."
 
 #: language/i18n/Text.resx:593 ID:KeyboardLed
 msgid "Keyboard LED"
@@ -607,7 +667,9 @@ msgstr "Méarchlár LED"
 msgid ""
 "If set, the corresponding keyboard LED will be lit when a compose sequence "
 "is in progress."
-msgstr "Má tá sé socraithe, déanfar an méarchlár LED comhfhreagrach a lasadh nuair a bhíonn seicheamh cumadóireachta ar siúl."
+msgstr ""
+"Má tá sé socraithe, déanfar an méarchlár LED comhfhreagrach a lasadh nuair a "
+"bhíonn seicheamh cumadóireachta ar siúl."
 
 #. The short name of the compose key
 #: language/i18n/Text.resx:601 ID:KeyCompose
@@ -620,7 +682,9 @@ msgstr "Seoladh WinCompose ar logáil isteach"
 
 #: language/i18n/Text.resx:609 ID:AutoLaunchToolTip
 msgid "If set, WinCompose will be started when the user logs in."
-msgstr "Má tá sé socraithe, cuirfear tús le WinCompose nuair a logálann an t-úsáideoir isteach."
+msgstr ""
+"Má tá sé socraithe, cuirfear tús le WinCompose nuair a logálann an t-"
+"úsáideoir isteach."
 
 #: language/i18n/Text.resx:613 ID:Accessibility
 msgid "Accessibility"
@@ -634,7 +698,9 @@ msgstr "Ní bhíonn Caps Lock gníomhach ach amháin agus é á choinneáil sío
 msgid ""
 "Releasing the Caps Lock key will immediately disable it, instead of the more "
 "standard behaviour of having to press it a second time."
-msgstr "Má scaoiltear an eochair Caps Lock díchumasófar í láithreach, in ionad an iompraíochta níos caighdeánaí a bhaineann le brú a chur air an dara huair."
+msgstr ""
+"Má scaoiltear an eochair Caps Lock díchumasófar í láithreach, in ionad an "
+"iompraíochta níos caighdeánaí a bhaineann le brú a chur air an dara huair."
 
 #: language/i18n/Text.resx:625 ID:RunElevated
 msgid "Run with elevated privileges (recommended)"
@@ -645,9 +711,11 @@ msgid ""
 "Composition will not work in some applications if WinCompose does not run "
 "with elevated privileges. This options reduces the chances that this will "
 "happen."
-msgstr "Ní oibreoidh comhdhéanamh i roinnt feidhmchlár mura ritheann WinCompose le pribhléidí ardaithe. Laghdaíonn na roghanna seo an seans go dtarlóidh sé seo."
+msgstr ""
+"Ní oibreoidh comhdhéanamh i roinnt feidhmchlár mura ritheann WinCompose le "
+"pribhléidí ardaithe. Laghdaíonn na roghanna seo an seans go dtarlóidh sé seo."
 
-#. Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
+#.  Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
 #: language/unicode/Category.resx:121 ID:Control
 msgid "Other, Control"
 msgstr "Eile, Rialúcháin"
@@ -814,8 +882,10 @@ msgid ""
 "seem to be currently installed. The following action may help solve the "
 "problem:"
 msgstr ""
-"Tá an Creat .NET, leagan 4.0 nó níos déanaí de dhíth ar WinCompose, rud nach bhfuil\n"
-"cosúil le bheith suiteáilte faoi láthair. Féadfaidh an gníomh seo a leanas cuidiú leis an bhfadhb a réiteach:"
+"Tá an Creat .NET, leagan 4.0 nó níos déanaí de dhíth ar WinCompose, rud nach "
+"bhfuil\n"
+"cosúil le bheith suiteáilte faoi láthair. Féadfaidh an gníomh seo a leanas "
+"cuidiú leis an bhfadhb a réiteach:"
 
 #. This string appears in the installer, not in WinCompose.
 #: installer/installer.pas:184
@@ -828,7 +898,8 @@ msgid ""
 "Once this is done, you may return to this screen and proceed with the\n"
 "installation."
 msgstr ""
-"Nuair a bheidh sé seo déanta, is féidir leat filleadh ar an scáileán seo agus dul ar aghaidh leis an\n"
+"Nuair a bheidh sé seo déanta, is féidir leat filleadh ar an scáileán seo "
+"agus dul ar aghaidh leis an\n"
 "suiteáil."
 
 #. This string appears in the installer, not in WinCompose.

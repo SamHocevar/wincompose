@@ -5,7 +5,8 @@ msgstr ""
 "POT-Creation-Date: 2015-03-23 15:27+0100\n"
 "PO-Revision-Date: 2023-10-13 10:01+0000\n"
 "Last-Translator: Milan Šalka <salka.milan@googlemail.com>\n"
-"Language-Team: Slovak <https://hosted.weblate.org/projects/wincompose/master/sk/>\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/wincompose/master/"
+"sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -111,7 +112,9 @@ msgstr "Použiť sekvencie projektu Xorg"
 msgid ""
 "Use the 3,000 compose sequences from the Xorg project (http://www.x.org/). "
 "These are the sequences most commonly found on a standard Linux system."
-msgstr "Použiť 3,000 komponovacích sekvencií z projektu Xorg (http://ww.x.org/). Tieto sekvencie sú najčastejšie nájdené na štandardnom systéme Linux."
+msgstr ""
+"Použiť 3,000 komponovacích sekvencií z projektu Xorg (http://ww.x.org/). "
+"Tieto sekvencie sú najčastejšie nájdené na štandardnom systéme Linux."
 
 #: language/i18n/Text.resx:201 ID:UseXComposeRules
 msgid "Use sequences from the XCompose project"
@@ -122,7 +125,10 @@ msgid ""
 "Use the 1,000 compose sequences from the XCompose opensource project "
 "(https://github.com/kragen/xcompose). These sequences may sometimes conflict "
 "with the Xorg ones."
-msgstr "Použiť 1,000 komponovacích sekvencií z projektu XCompose s otvoreným zdrojovým kódom (https://github.com/kragen/xcompose/). Tieto sekvencie sa môžu dostať do konfliktu so sekvenciami z projektu Xorg."
+msgstr ""
+"Použiť 1,000 komponovacích sekvencií z projektu XCompose s otvoreným "
+"zdrojovým kódom (https://github.com/kragen/xcompose/). Tieto sekvencie sa "
+"môžu dostať do konfliktu so sekvenciami z projektu Xorg."
 
 #: language/i18n/Text.resx:209 ID:UseEmojiRules
 msgid "Use WinCompose emoji sequences"
@@ -132,7 +138,8 @@ msgstr "Použiť emoji sekvencie z projektu WinCompose"
 msgid ""
 "Use the compose sequences for Emoji provided by the WinCompose author and "
 "contributors."
-msgstr "Použiť emoji sekvencie poskytnuté autorom WinCompose a jeho prispievateľmi."
+msgstr ""
+"Použiť emoji sekvencie poskytnuté autorom WinCompose a jeho prispievateľmi."
 
 #. Menu entry to show the debug window
 #: language/i18n/Text.resx:217 ID:DebugWindow
@@ -311,7 +318,10 @@ msgid ""
 "Microsoft Office applications sometimes change the document font on the fly "
 "when entering certain Unicode characters. This feature inserts an invisible "
 "character after the Unicode character to work around the bug."
-msgstr "Aplikácie Microsoft Office niekedy automaticky zmenia písmo dokumentu pri zadávaní určitých znakov Unicode. Táto funkcia vloží za problémové znaky neviditeľný znak, ktorý zabráni tomuto správaniu."
+msgstr ""
+"Aplikácie Microsoft Office niekedy automaticky zmenia písmo dokumentu pri "
+"zadávaní určitých znakov Unicode. Táto funkcia vloží za problémové znaky "
+"neviditeľný znak, ktorý zabráni tomuto správaniu."
 
 #: language/i18n/Text.resx:353 ID:EmulateCapsLock
 msgid "Emulate Caps Lock using both Shift keys"
@@ -349,7 +359,9 @@ msgstr "Pri CapsLock vždy písať veľké písmená"
 msgid ""
 "When Caps Lock is on, typing an accented letter such as “é” will always "
 "output the corresponding capitalized letter, in this case “É”."
-msgstr "Ak je funkcia CapsLock zapnutá, písanie sekvencie pre písmeno, napríklad \"é\", vždy vytlačí príslušný variant veľkého písmena, v tomto prípade \"É\"."
+msgstr ""
+"Ak je funkcia CapsLock zapnutá, písanie sekvencie pre písmeno, napríklad "
+"\"é\", vždy vytlačí príslušný variant veľkého písmena, v tomto prípade \"É\"."
 
 #. Header for the list of Unicode character categories
 #: language/i18n/Text.resx:377 ID:Categories
@@ -670,7 +682,7 @@ msgid ""
 "happen."
 msgstr ""
 
-#. Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
+#.  Unicode designation “Cc” (https://msdn.microsoft.com/en-us/library/system.globalization.unicodecategory%28v=vs.110%29.aspx), see also Gucharmap translations (https://git.gnome.org/browse/gucharmap/tree/po)
 #: language/unicode/Category.resx:121 ID:Control
 msgid "Other, Control"
 msgstr "Ostatné, riadiace"

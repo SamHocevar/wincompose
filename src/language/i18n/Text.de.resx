@@ -295,13 +295,13 @@
     <value>Feststelltaste aktivieren mit beiden Umschalt-Tasten</value>
   </data>
   <data name="EmulateCapsLockToolTip" xml:space="preserve">
-    <value>Wenn die Feststelltaste als Compose-Taste benutzt wird, wird das ursprüngliche Verhalten dieser Taste unmöglich. Mit dieser Einstellung können Sie beide Umschalttasten drücken, um die Feststelltaste zu simulieren.</value>
+    <value>Wenn man die Feststelltaste als Compose-Taste benutzt, wird das ursprüngliche Verhalten dieser Taste unmöglich. Mit dieser Einstellung können Sie beide Umschalttasten drücken, um die Feststelltaste zu simulieren.</value>
   </data>
   <data name="ShiftDisablesCapsLock" xml:space="preserve">
     <value>Umschalttaste deaktiviert Feststelltaste</value>
   </data>
   <data name="ShiftDisablesCapsLockToolTip" xml:space="preserve">
-    <value>Wenn die Feststelltaste als Compose-Taste benutzt wird, wird das ursprüngliche Verhalten dieser Taste unmöglich. Mit dieser Einstellung können Sie den Feststellmodus ausschalten, indem Sie die Umschalttaste drücken.</value>
+    <value>Wenn man die Feststelltaste als Compose-Taste benutzt, wird das ursprüngliche Verhalten dieser Taste unmöglich. Mit dieser Einstellung können Sie den Feststellmodus ausschalten, indem Sie die Umschalttaste drücken.</value>
   </data>
   <data name="CapsLockCapitalizes" xml:space="preserve">
     <value>Feststelltaste erzeugt immer Großbuchstaben</value>
@@ -478,6 +478,27 @@
     <value>Falls gesetzt, leuchtet das entsprechende Tastatur-LED Licht auf, wenn eine Compse-Sequenz läuft.</value>
   </data>
   <data name="KeyCompose" xml:space="preserve">
-    <value>Compose</value>
+    <value>Komponieren</value>
+  </data>
+  <data name="AutoLaunch" xml:space="preserve">
+    <value>Starte WinCompose bei Anmeldung</value>
+  </data>
+  <data name="AutoLaunchToolTip" xml:space="preserve">
+    <value>Wenn ausgewählt wird WinCompose gestartet nachdem der Benutzer sich anmeldet.</value>
+  </data>
+  <data name="Accessibility" xml:space="preserve">
+    <value>Erreichbarkeit</value>
+  </data>
+  <data name="MustHoldCapsLock" xml:space="preserve">
+    <value>Die Feststelltaste ist nur aktiv, solange sie gedrückt gehalten wird</value>
+  </data>
+  <data name="MustHoldCapsLockToolTip" xml:space="preserve">
+    <value>Wenn Sie die Feststelltaste loslassen, wird sie sofort deaktiviert, anstatt wie sonst üblich ein zweites Mal gedrückt werden zu müssen.</value>
+  </data>
+  <data name="RunElevated" xml:space="preserve">
+    <value>Mit erweiterten Rechten ausführen (empfohlen)</value>
+  </data>
+  <data name="RunElevatedToolTip" xml:space="preserve">
+    <value>Die Komposition funktioniert in einigen Anwendungen nicht, wenn WinCompose nicht mit erhöhten Rechten ausgeführt wird. Diese Optionen verringern die Wahrscheinlichkeit, dass dies geschieht.</value>
   </data>
 </root>
